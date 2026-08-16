@@ -15,8 +15,12 @@ final class CalendarWorkspace: ObservableObject {
   @Published var hasAccess = EventLoader.hasAccess
   @Published var isRefreshing = false
   @Published var draft: EventDraft?
+  @Published var inspectedEvent: CalendarEventItem?
   @Published var errorText: String?
   @Published var hoveredDate: Date?
+  @Published var mode: MainMode = .calendar
+  @Published var standings: [FootballStanding] = []
+  @Published var tableSeason = ""
 
   private var storeObserver: NSObjectProtocol?
 
@@ -41,6 +45,12 @@ final class CalendarWorkspace: ObservableObject {
     if let storeObserver {
       NotificationCenter.default.removeObserver(storeObserver)
     }
+  }
+
+  enum MainMode: String, CaseIterable, Identifiable {
+    case calendar = "Календарь"
+    case table = "Таблица"
+    var id: String { rawValue }
   }
 
   var startMonday: Bool { CalendarOptions.startMonday }
@@ -227,6 +237,9 @@ final class CalendarWorkspace: ObservableObject {
       includeRPL: CalendarOptions.showRPL,
       includeCup: CalendarOptions.showRussianCup
     )
+    let snapshot = FootballSchedule.Standings.loadSnapshot()
+    standings = snapshot?.rows ?? []
+    tableSeason = snapshot?.season ?? ""
   }
 
   private func snapSelectedDayToMonth() {
@@ -305,18 +318,32 @@ struct CalendarWorkspaceView: View {
   @State private var showMonthPicker = false
 
   var body: some View {
-    HStack(spacing: 0) {
-      VStack(spacing: 0) {
-        toolbar
-        if !workspace.hasAccess {
-          accessBanner
-        }
-        weekdayHeader
-        monthGrid
+    VStack(spacing: 0) {
+      toolbar
+      if !workspace.hasAccess {
+        accessBanner
       }
-      Divider()
-      dayPanel
-        .frame(width: 340)
+      if workspace.mode == .table {
+        StandingsTableView(
+          season: workspace.tableSeason,
+          rows: workspace.standings,
+          followedTeam: workspace.followedTeam
+        ) { team in
+          FollowedTeamNavigation.name = team
+          workspace.reload()
+          CalendarWidgetKind.reload()
+        }
+      } else {
+        HStack(spacing: 0) {
+          VStack(spacing: 0) {
+            weekdayHeader
+            monthGrid
+          }
+          Divider()
+          dayPanel
+            .frame(width: 340)
+        }
+      }
     }
     .background(Color(nsColor: .windowBackgroundColor))
     .frame(minWidth: 980, minHeight: 620)
@@ -334,6 +361,21 @@ struct CalendarWorkspaceView: View {
         workspace.draft = nil
       }
     }
+    .sheet(item: $workspace.inspectedEvent) { event in
+      EventDetailView(
+        event: event,
+        selectedDate: workspace.selectedDate,
+        onEdit: {
+          workspace.inspectedEvent = nil
+          workspace.openEditor(for: event)
+        },
+        onDelete: {
+          workspace.inspectedEvent = nil
+          workspace.delete(event)
+        },
+        onClose: { workspace.inspectedEvent = nil }
+      )
+    }
     .alert("Не удалось сохранить", isPresented: Binding(
       get: { workspace.errorText != nil },
       set: { if !$0 { workspace.errorText = nil } }
@@ -346,44 +388,58 @@ struct CalendarWorkspaceView: View {
 
   private var toolbar: some View {
     HStack(spacing: 10) {
-      Button { workspace.shiftYear(-1) } label: {
-        Image(systemName: "chevron.backward.2")
-      }
-      .help("Предыдущий год")
-      Button { workspace.shiftMonth(-1) } label: {
-        Image(systemName: "chevron.left")
-      }
-      .help("Предыдущий месяц")
-      .keyboardShortcut(.leftArrow, modifiers: .command)
+      if workspace.mode == .calendar {
+        Button { workspace.shiftYear(-1) } label: {
+          Image(systemName: "chevron.backward.2")
+        }
+        .help("Предыдущий год")
+        Button { workspace.shiftMonth(-1) } label: {
+          Image(systemName: "chevron.left")
+        }
+        .help("Предыдущий месяц")
+        .keyboardShortcut(.leftArrow, modifiers: .command)
 
-      Button {
-        showMonthPicker.toggle()
-      } label: {
-        Text(workspace.monthTitle)
+        Button {
+          showMonthPicker.toggle()
+        } label: {
+          Text(workspace.monthTitle)
+            .font(.title2.weight(.semibold))
+            .foregroundStyle(.primary)
+            .frame(minWidth: 220)
+        }
+        .buttonStyle(.plain)
+        .popover(isPresented: $showMonthPicker, arrowEdge: .bottom) {
+          MonthPickerView(month: workspace.displayedMonth) { date in
+            workspace.showMonth(date)
+            showMonthPicker = false
+          }
+        }
+
+        Button { workspace.shiftMonth(1) } label: {
+          Image(systemName: "chevron.right")
+        }
+        .help("Следующий месяц")
+        .keyboardShortcut(.rightArrow, modifiers: .command)
+        Button { workspace.shiftYear(1) } label: {
+          Image(systemName: "chevron.forward.2")
+        }
+        .help("Следующий год")
+
+        Button("Сегодня") { workspace.goToToday() }
+          .keyboardShortcut("t", modifiers: .command)
+      } else {
+        Text(workspace.tableSeason.isEmpty ? "РПЛ" : "РПЛ · \(workspace.tableSeason)")
           .font(.title2.weight(.semibold))
-          .foregroundStyle(.primary)
-          .frame(minWidth: 220)
+          .frame(minWidth: 180, alignment: .leading)
       }
-      .buttonStyle(.plain)
-      .popover(isPresented: $showMonthPicker, arrowEdge: .bottom) {
-        MonthPickerView(month: workspace.displayedMonth) { date in
-          workspace.showMonth(date)
-          showMonthPicker = false
+
+      Picker("", selection: $workspace.mode) {
+        ForEach(CalendarWorkspace.MainMode.allCases) { mode in
+          Text(mode.rawValue).tag(mode)
         }
       }
-
-      Button { workspace.shiftMonth(1) } label: {
-        Image(systemName: "chevron.right")
-      }
-      .help("Следующий месяц")
-      .keyboardShortcut(.rightArrow, modifiers: .command)
-      Button { workspace.shiftYear(1) } label: {
-        Image(systemName: "chevron.forward.2")
-      }
-      .help("Следующий год")
-
-      Button("Сегодня") { workspace.goToToday() }
-        .keyboardShortcut("t", modifiers: .command)
+      .pickerStyle(.segmented)
+      .frame(width: 220)
 
       Spacer()
 
@@ -527,13 +583,19 @@ struct CalendarWorkspaceView: View {
             .font(.callout.weight(.semibold))
             .foregroundStyle(.red)
         }
+        if let team = workspace.followedTeam,
+           let row = workspace.standings.first(where: { TeamNameMatch.matches($0.team, team) }) {
+          Text("РПЛ · \(row.rank) место · \(row.points) оч.")
+            .font(.callout.weight(.medium))
+            .foregroundStyle(.secondary)
+        }
       }
       .padding(16)
 
       Divider()
 
       ScrollView {
-        VStack(alignment: .leading, spacing: 16) {
+        VStack(alignment: .leading, spacing: 10) {
           if !workspace.selectedMatches.isEmpty {
             sectionTitle("Матчи")
             ForEach(workspace.selectedMatches) { view in
@@ -547,11 +609,15 @@ struct CalendarWorkspaceView: View {
               .foregroundStyle(.secondary)
               .font(.callout)
           } else {
-            ForEach(workspace.selectedEvents) { event in
-              EventRow(event: event, selectedDate: workspace.selectedDate) {
-                workspace.openEditor(for: event)
-              } onDelete: {
-                workspace.delete(event)
+            VStack(spacing: 2) {
+              ForEach(workspace.selectedEvents) { event in
+                EventRow(event: event, selectedDate: workspace.selectedDate) {
+                  workspace.inspectedEvent = event
+                } onEdit: {
+                  workspace.openEditor(for: event)
+                } onDelete: {
+                  workspace.delete(event)
+                }
               }
             }
           }
@@ -641,7 +707,7 @@ struct DayCellView: View {
     let isHoliday = holidaysEnabled && RussianHolidays.name(on: date) != nil
     let weekend = CalendarMath.isWeekend(date)
 
-    VStack(alignment: .leading, spacing: 4) {
+    VStack(alignment: .leading, spacing: 3) {
       HStack(spacing: 6) {
         Text("\(Calendar.current.component(.day, from: date))")
           .font(.system(size: 13, weight: isToday || isSelected ? .bold : .semibold))
@@ -671,24 +737,24 @@ struct DayCellView: View {
           .lineLimit(1)
       }
 
-              ForEach(Array(events.prefix(matches.isEmpty ? 3 : 2))) { event in
-        HStack(spacing: 4) {
-          Capsule().fill(event.color.color).frame(width: 3, height: 11)
-          Text(event.title)
-            .font(.system(size: 10))
+              ForEach(Array(events.prefix(matches.isEmpty ? 4 : 2))) { event in
+        HStack(spacing: 3) {
+          Capsule().fill(event.color.color).frame(width: 2, height: 9)
+          Text(event.isAllDay ? event.title : "\(event.timeLabel(on: date)) \(event.title)")
+            .font(.system(size: 9))
             .lineLimit(1)
         }
       }
 
-      if events.count > (matches.isEmpty ? 3 : 2) {
-        Text("ещё \(events.count - (matches.isEmpty ? 3 : 2))")
-          .font(.system(size: 9))
+      if events.count > (matches.isEmpty ? 4 : 2) {
+        Text("+\(events.count - (matches.isEmpty ? 4 : 2))")
+          .font(.system(size: 8))
           .foregroundStyle(.secondary)
       }
 
       Spacer(minLength: 0)
     }
-    .padding(6)
+    .padding(4)
     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
     .background(cellBackground(inMonth: inMonth, selected: isSelected, hovered: hovered))
     .overlay(Rectangle().stroke(Color.primary.opacity(0.06), lineWidth: 0.5))
@@ -750,37 +816,165 @@ struct MatchCard: View {
 struct EventRow: View {
   var event: CalendarEventItem
   var selectedDate: Date
+  var onOpen: () -> Void
   var onEdit: () -> Void
   var onDelete: () -> Void
 
   var body: some View {
-    HStack(alignment: .firstTextBaseline, spacing: 8) {
-      Capsule().fill(event.color.color).frame(width: 4, height: 28)
-      VStack(alignment: .leading, spacing: 2) {
-        Text(event.title)
-          .font(.body.weight(.medium))
-        Text(timeLabel)
-          .font(.caption)
+    Button(action: onOpen) {
+      HStack(spacing: 8) {
+        Capsule().fill(event.color.color).frame(width: 3, height: 16)
+        Text(event.timeLabel(on: selectedDate))
+          .font(.caption.monospacedDigit().weight(.medium))
           .foregroundStyle(.secondary)
+          .frame(width: 92, alignment: .leading)
+          .lineLimit(1)
+        Text(event.title)
+          .font(.callout)
+          .lineLimit(1)
+        Spacer(minLength: 0)
+        if !event.joinLinks.isEmpty {
+          Image(systemName: "video.fill")
+            .font(.caption)
+            .foregroundStyle(.blue)
+        } else if event.location != nil {
+          Image(systemName: "mappin")
+            .font(.caption)
+            .foregroundStyle(.secondary)
+        }
       }
-      Spacer()
+      .padding(.horizontal, 6)
+      .padding(.vertical, 4)
+      .contentShape(Rectangle())
     }
-    .padding(8)
-    .background(Color.primary.opacity(0.04), in: RoundedRectangle(cornerRadius: 8))
-    .contentShape(Rectangle())
-    .onTapGesture(count: 2, perform: onEdit)
+    .buttonStyle(.plain)
     .contextMenu {
+      Button("Подробнее", action: onOpen)
       Button("Изменить", action: onEdit)
       Button("Удалить", role: .destructive, action: onDelete)
     }
   }
+}
 
-  private var timeLabel: String {
-    if event.isAllDay { return "весь день" }
-    if CalendarMath.isSameDay(event.start, selectedDate) {
-      return event.start.formatted(Date.FormatStyle(date: .omitted, time: .shortened).locale(CalendarMath.russian))
+struct EventDetailView: View {
+  var event: CalendarEventItem
+  var selectedDate: Date
+  var onEdit: () -> Void
+  var onDelete: () -> Void
+  var onClose: () -> Void
+
+  var body: some View {
+    VStack(alignment: .leading, spacing: 0) {
+      HStack {
+        Text(event.title)
+          .font(.title2.weight(.semibold))
+        Spacer()
+        Button("Закрыть", action: onClose)
+      }
+      .padding(20)
+
+      ScrollView {
+        VStack(alignment: .leading, spacing: 16) {
+          detailRow("Время", event.timeLabel(on: selectedDate) + extraDate)
+          if let calendarName = event.calendarName {
+            HStack(spacing: 8) {
+              Text("Календарь")
+                .foregroundStyle(.secondary)
+                .frame(width: 90, alignment: .leading)
+              Circle().fill(event.color.color).frame(width: 8, height: 8)
+              Text(calendarName)
+            }
+          }
+          if let location = event.location {
+            detailRow("Место", location)
+          }
+
+          if !event.joinLinks.isEmpty {
+            Text("Подключение")
+              .font(.headline)
+            ForEach(event.joinLinks) { link in
+              if let url = URL(string: link.url) {
+                VStack(alignment: .leading, spacing: 4) {
+                  linkButton(title: "Подключиться · \(link.title)", url: url, prominent: true)
+                  HStack {
+                    Text(link.url)
+                      .font(.caption)
+                      .foregroundStyle(.secondary)
+                      .textSelection(.enabled)
+                      .lineLimit(2)
+                    Spacer()
+                    Button("Копировать") {
+                      NSPasteboard.general.clearContents()
+                      NSPasteboard.general.setString(link.url, forType: .string)
+                    }
+                    .buttonStyle(.plain)
+                    .font(.caption)
+                  }
+                }
+              }
+            }
+          }
+
+          if !event.attendees.isEmpty {
+            Text("Участники")
+              .font(.headline)
+            Text(event.attendees.joined(separator: ", "))
+              .textSelection(.enabled)
+          }
+
+          if let notes = event.notes {
+            Text("Заметки")
+              .font(.headline)
+            Text(notes)
+              .textSelection(.enabled)
+              .frame(maxWidth: .infinity, alignment: .leading)
+          }
+
+          if let url = event.url, !event.joinLinks.contains(where: { $0.url == url }),
+             let parsed = URL(string: url) {
+            linkButton(title: EventLinkExtractor.title(for: url), url: parsed)
+          }
+        }
+        .padding(.horizontal, 20)
+        .padding(.bottom, 12)
+      }
+
+      Divider()
+      HStack {
+        Button("Изменить", action: onEdit)
+        Button("Удалить", role: .destructive, action: onDelete)
+        Spacer()
+      }
+      .padding(16)
     }
-    return "…"
+    .frame(width: 460, height: 520)
+  }
+
+  private var extraDate: String {
+    if event.isAllDay { return "" }
+    if CalendarMath.isSameDay(event.start, selectedDate) { return "" }
+    return " · " + event.start.formatted(.dateTime.day().month(.wide).locale(CalendarMath.russian))
+  }
+
+  private func detailRow(_ title: String, _ value: String) -> some View {
+    HStack(alignment: .firstTextBaseline, spacing: 8) {
+      Text(title)
+        .foregroundStyle(.secondary)
+        .frame(width: 90, alignment: .leading)
+      Text(value)
+        .textSelection(.enabled)
+    }
+  }
+
+  private func linkButton(title: String, url: URL, prominent: Bool = false) -> some View {
+    Button {
+      NSWorkspace.shared.open(url)
+    } label: {
+      Label(title, systemImage: "video.fill")
+        .frame(maxWidth: .infinity)
+    }
+    .buttonStyle(.borderedProminent)
+    .tint(prominent ? Color.accentColor : Color.secondary)
   }
 }
 
@@ -869,5 +1063,171 @@ struct EventEditorView: View {
     }
     .padding(20)
     .frame(width: 420, height: 320)
+  }
+}
+
+struct StandingsTableView: View {
+  var season: String
+  var rows: [FootballStanding]
+  var followedTeam: String?
+  var onSelectTeam: (String) -> Void
+
+  var body: some View {
+    VStack(alignment: .leading, spacing: 0) {
+      if rows.isEmpty {
+        VStack(spacing: 10) {
+          Image(systemName: "list.number")
+            .font(.largeTitle)
+            .foregroundStyle(.secondary)
+          Text("Таблица ещё не загружена")
+            .font(.headline)
+          Text("Нажмите обновление в панели сверху.")
+            .foregroundStyle(.secondary)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+      } else {
+        header
+        Divider()
+        ScrollView {
+          LazyVStack(spacing: 0) {
+            ForEach(rows) { row in
+              Button {
+                onSelectTeam(row.team)
+              } label: {
+                standingRow(row)
+              }
+              .buttonStyle(.plain)
+              Divider()
+            }
+          }
+        }
+        legend
+      }
+    }
+    .frame(maxWidth: .infinity, maxHeight: .infinity)
+  }
+
+  private var header: some View {
+    HStack(spacing: 8) {
+      Color.clear.frame(width: 4, height: 12)
+      Text("#").frame(width: 28, alignment: .center)
+      Text("Команда").frame(maxWidth: .infinity, alignment: .leading)
+      statHeader("И", width: 32)
+      statHeader("В", width: 32)
+      statHeader("Н", width: 32)
+      statHeader("П", width: 32)
+      statHeader("М", width: 52)
+      statHeader("РМ", width: 40)
+      statHeader("О", width: 36)
+      Text("Форма").frame(width: 88, alignment: .center)
+    }
+    .font(.caption.weight(.semibold))
+    .foregroundStyle(.secondary)
+    .padding(.horizontal, 16)
+    .padding(.vertical, 8)
+  }
+
+  private func standingRow(_ row: FootballStanding) -> some View {
+    let followed = followedTeam.map { TeamNameMatch.matches($0, row.team) } ?? false
+    return HStack(spacing: 8) {
+      Rectangle()
+        .fill(zoneColor(row.rank))
+        .frame(width: 4, height: 22)
+        .clipShape(Capsule())
+      Text("\(row.rank)")
+        .font(.body.monospacedDigit().weight(.semibold))
+        .frame(width: 28, alignment: .center)
+      TeamLogoView(urlString: row.logoURL, name: row.team, side: 22)
+      Text(row.team)
+        .font(.body.weight(followed ? .semibold : .regular))
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .lineLimit(1)
+      stat(row.played, width: 32)
+      stat(row.won, width: 32)
+      stat(row.drawn, width: 32)
+      stat(row.lost, width: 32)
+      Text(row.goalsText)
+        .font(.body.monospacedDigit())
+        .frame(width: 52, alignment: .center)
+      Text(row.goalDiffText)
+        .font(.body.monospacedDigit())
+        .foregroundStyle(row.goalDiff > 0 ? Color.green : row.goalDiff < 0 ? Color.red : Color.secondary)
+        .frame(width: 40, alignment: .center)
+      Text("\(row.points)")
+        .font(.body.monospacedDigit().weight(.bold))
+        .frame(width: 36, alignment: .center)
+      HStack(spacing: 4) {
+        ForEach(Array(row.form.enumerated()), id: \.offset) { _, result in
+          Circle()
+            .fill(formColor(result))
+            .frame(width: 9, height: 9)
+            .opacity(result == .none ? 0.25 : 1)
+        }
+      }
+      .frame(width: 88)
+    }
+    .padding(.horizontal, 16)
+    .padding(.vertical, 7)
+    .background(followed ? Color.accentColor.opacity(0.12) : Color.clear)
+    .contentShape(Rectangle())
+  }
+
+  private var legend: some View {
+    HStack(spacing: 16) {
+      legendItem(.blue, "Лига чемпионов")
+      legendItem(.orange, "Лига Европы")
+      legendItem(.yellow, "Стыковые")
+      legendItem(.red, "Вылет")
+      Spacer()
+      Button("Матч ТВ") {
+        if let url = URL(string: "https://matchtv.ru/football/rpl/table") {
+          NSWorkspace.shared.open(url)
+        }
+      }
+      .buttonStyle(.plain)
+      .foregroundStyle(.secondary)
+      .font(.caption)
+    }
+    .font(.caption)
+    .foregroundStyle(.secondary)
+    .padding(.horizontal, 16)
+    .padding(.vertical, 10)
+    .background(Color(nsColor: .controlBackgroundColor))
+  }
+
+  private func legendItem(_ color: Color, _ text: String) -> some View {
+    HStack(spacing: 6) {
+      Capsule().fill(color).frame(width: 8, height: 8)
+      Text(text)
+    }
+  }
+
+  private func statHeader(_ text: String, width: CGFloat) -> some View {
+    Text(text).frame(width: width, alignment: .center)
+  }
+
+  private func stat(_ value: Int, width: CGFloat) -> some View {
+    Text("\(value)")
+      .font(.body.monospacedDigit())
+      .frame(width: width, alignment: .center)
+  }
+
+  private func zoneColor(_ rank: Int) -> Color {
+    switch rank {
+    case 1...2: return .blue
+    case 3: return .orange
+    case 13...14: return .yellow
+    case 15...16: return .red
+    default: return .clear
+    }
+  }
+
+  private func formColor(_ result: FootballFormResult) -> Color {
+    switch result {
+    case .win: return .green
+    case .draw: return .secondary
+    case .loss: return .red
+    case .none: return .secondary
+    }
   }
 }

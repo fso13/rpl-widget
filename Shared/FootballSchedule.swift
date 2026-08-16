@@ -2,6 +2,51 @@ import AppKit
 import Foundation
 import SwiftUI
 
+struct FootballStanding: Codable, Hashable, Identifiable {
+  var rank: Int
+  var team: String
+  var logoURL: String
+  var played: Int
+  var won: Int
+  var drawn: Int
+  var lost: Int
+  var goalsFor: Int
+  var goalsAgainst: Int
+  var goalDiff: Int
+  var points: Int
+  var form: [FootballFormResult]
+
+  var id: String { "\(rank)-\(team)" }
+
+  var goalsText: String { "\(goalsFor):\(goalsAgainst)" }
+
+  var goalDiffText: String {
+    if goalDiff > 0 { return "+\(goalDiff)" }
+    return "\(goalDiff)"
+  }
+}
+
+enum FootballFormResult: String, Codable, Hashable {
+  case win
+  case draw
+  case loss
+  case none
+
+  init(status: String) {
+    switch status {
+    case "winner": self = .win
+    case "tie": self = .draw
+    case "loser": self = .loss
+    default: self = .none
+    }
+  }
+}
+
+struct FootballTableSnapshot: Codable, Hashable {
+  var season: String
+  var rows: [FootballStanding]
+}
+
 enum FootballCompetition: String, Codable, Hashable {
   case rpl = "РПЛ"
   case cup = "Кубок"
@@ -107,20 +152,26 @@ enum FootballSchedule {
 
   static func refreshIfStale() async {
     let stamp = (try? Date(timeIntervalSince1970: Double(String(contentsOf: stampURL)) ?? 0)) ?? .distantPast
-    if Date().timeIntervalSince(stamp) < 20 * 60, !load().isEmpty { return }
+    if Date().timeIntervalSince(stamp) < 20 * 60, !load().isEmpty, !Standings.load().isEmpty { return }
     await syncAll()
   }
 
   static func syncAll() async {
     async let rpl = fetch(from: rplURL, competition: .rpl)
     async let cup = fetch(from: cupURL, competition: .cup)
+    async let table = Standings.fetch()
     let matches = ((try? await rpl) ?? []) + ((try? await cup) ?? [])
-    guard !matches.isEmpty else { return }
-    if let data = try? JSONEncoder().encode(matches) {
-      try? data.write(to: cacheURL, options: .atomic)
-      try? String(Date().timeIntervalSince1970).write(to: stampURL, atomically: true, encoding: .utf8)
+    if !matches.isEmpty {
+      if let data = try? JSONEncoder().encode(matches) {
+        try? data.write(to: cacheURL, options: .atomic)
+        try? String(Date().timeIntervalSince1970).write(to: stampURL, atomically: true, encoding: .utf8)
+      }
+      await prefetchLogos(for: matches)
     }
-    await prefetchLogos(for: matches)
+    if let snapshot = try? await table, !snapshot.rows.isEmpty {
+      Standings.save(snapshot)
+      await prefetchLogos(urls: snapshot.rows.map(\.logoURL))
+    }
   }
 
   static func load() -> [FootballMatch] {
@@ -242,8 +293,12 @@ enum FootballSchedule {
       urls.insert(match.homeLogoURL)
       urls.insert(match.awayLogoURL)
     }
+    await prefetchLogos(urls: Array(urls))
+  }
+
+  private static func prefetchLogos(urls: [String]) async {
     await withTaskGroup(of: Void.self) { group in
-      for urlString in urls where !urlString.isEmpty {
+      for urlString in Set(urls) where !urlString.isEmpty {
         group.addTask { await downloadLogo(urlString) }
       }
     }
@@ -331,6 +386,87 @@ enum FootballSchedule {
             match.range(at: 2).location != NSNotFound
       else { return nil }
       return (ns.substring(with: match.range(at: 1)), ns.substring(with: match.range(at: 2)))
+    }
+  }
+
+  enum Standings {
+    private static let url = URL(string: "https://matchtv.ru/football/rpl/table")!
+    private static var cacheURL: URL { directory.appendingPathComponent("standings.json") }
+
+    static func fetch() async throws -> FootballTableSnapshot {
+      var request = URLRequest(url: url)
+      request.setValue(
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15",
+        forHTTPHeaderField: "User-Agent"
+      )
+      request.setValue("identity", forHTTPHeaderField: "Accept-Encoding")
+      request.timeoutInterval = 20
+      let (data, _) = try await URLSession.shared.data(for: request)
+      guard let html = String(data: data, encoding: .utf8) else {
+        return FootballTableSnapshot(season: "", rows: [])
+      }
+      return parse(html: html)
+    }
+
+    static func save(_ snapshot: FootballTableSnapshot) {
+      guard let data = try? JSONEncoder().encode(snapshot) else { return }
+      try? data.write(to: cacheURL, options: .atomic)
+    }
+
+    static func load() -> [FootballStanding] {
+      loadSnapshot()?.rows ?? []
+    }
+
+    static func loadSnapshot() -> FootballTableSnapshot? {
+      guard let data = try? Data(contentsOf: cacheURL) else { return nil }
+      return try? JSONDecoder().decode(FootballTableSnapshot.self, from: data)
+    }
+
+    static func parse(html: String) -> FootballTableSnapshot {
+      let season = captureFirst(#"(\d{4}-\d{2})(?!-\d)"#, in: html)?.replacingOccurrences(of: "-", with: "/") ?? ""
+      let chunks = html.components(separatedBy: "p-tournament-standings-table__row").dropFirst()
+      let rows = chunks.compactMap(parseRow)
+      return FootballTableSnapshot(season: season, rows: rows)
+    }
+
+    private static func parseRow(_ row: String) -> FootballStanding? {
+      guard let rank = intValue("rank", in: row) else { return nil }
+      let team = captureFirst(#"e-tournament-tables-team__link-text">([^<]+)"#, in: row)?
+        .trimmingCharacters(in: .whitespacesAndNewlines)
+      guard let team, !team.isEmpty else { return nil }
+      let logo = captureFirst(#"<img[^>]+src="([^"]+)""#, in: row) ?? ""
+      let form = captureAll(#"m-game-status-circles__circle--status-([a-z]+)"#, in: row).map(FootballFormResult.init(status:))
+      return FootballStanding(
+        rank: rank,
+        team: team,
+        logoURL: logo,
+        played: intValue("played", in: row) ?? 0,
+        won: intValue("won", in: row) ?? 0,
+        drawn: intValue("drawn", in: row) ?? 0,
+        lost: intValue("lost", in: row) ?? 0,
+        goalsFor: intValue("goalsFor", in: row) ?? 0,
+        goalsAgainst: intValue("goalsAgainst", in: row) ?? 0,
+        goalDiff: signedIntValue("goalsDifference", in: row) ?? 0,
+        points: intValue("points", in: row) ?? 0,
+        form: form
+      )
+    }
+
+    private static func intValue(_ key: String, in row: String) -> Int? {
+      guard let text = cellNumber(key, in: row) else { return nil }
+      return Int(text.replacingOccurrences(of: "+", with: ""))
+    }
+
+    private static func signedIntValue(_ key: String, in row: String) -> Int? {
+      guard let text = cellNumber(key, in: row) else { return nil }
+      return Int(text.replacingOccurrences(of: "+", with: ""))
+    }
+
+    private static func cellNumber(_ key: String, in row: String) -> String? {
+      guard let start = row.range(of: "m-table-body-cell--key-\(key)") else { return nil }
+      let rest = String(row[start.lowerBound...])
+      guard let end = rest.range(of: "</td>") else { return nil }
+      return captureFirst(#">([+\-]?\d+)</span>"#, in: String(rest[..<end.upperBound]))
     }
   }
 }

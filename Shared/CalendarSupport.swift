@@ -192,6 +192,17 @@ struct CalendarEventItem: Codable, Hashable, Identifiable {
   let isAllDay: Bool
   let title: String
   let color: CodableColor
+  let location: String?
+  let notes: String?
+  let url: String?
+  let calendarName: String?
+  let attendees: [String]
+  let joinLinks: [EventJoinLink]
+
+  enum CodingKeys: String, CodingKey {
+    case id, dateKey, endDateKey, start, end, isAllDay, title, color
+    case location, notes, url, calendarName, attendees, joinLinks
+  }
 
   init(event: EKEvent) {
     let startDate = event.startDate ?? Date()
@@ -207,11 +218,110 @@ struct CalendarEventItem: Codable, Hashable, Identifiable {
     isAllDay = event.isAllDay
     title = event.title?.isEmpty == false ? event.title! : "Событие"
     color = CodableColor(cgColor: event.calendar?.cgColor)
+    location = event.location?.isEmpty == false ? event.location : nil
+    notes = event.notes?.isEmpty == false ? event.notes : nil
+    url = event.url?.absoluteString
+    calendarName = event.calendar?.title
+    attendees = (event.attendees ?? []).compactMap { person in
+      let name = person.name?.trimmingCharacters(in: .whitespacesAndNewlines)
+      if let name, !name.isEmpty { return name }
+      return person.url.absoluteString.replacingOccurrences(of: "mailto:", with: "")
+    }
+    joinLinks = EventLinkExtractor.links(from: event)
+  }
+
+  init(from decoder: Decoder) throws {
+    let container = try decoder.container(keyedBy: CodingKeys.self)
+    id = try container.decode(String.self, forKey: .id)
+    dateKey = try container.decode(String.self, forKey: .dateKey)
+    endDateKey = try container.decode(String.self, forKey: .endDateKey)
+    start = try container.decode(Date.self, forKey: .start)
+    end = try container.decode(Date.self, forKey: .end)
+    isAllDay = try container.decode(Bool.self, forKey: .isAllDay)
+    title = try container.decode(String.self, forKey: .title)
+    color = try container.decode(CodableColor.self, forKey: .color)
+    location = try container.decodeIfPresent(String.self, forKey: .location)
+    notes = try container.decodeIfPresent(String.self, forKey: .notes)
+    url = try container.decodeIfPresent(String.self, forKey: .url)
+    calendarName = try container.decodeIfPresent(String.self, forKey: .calendarName)
+    attendees = try container.decodeIfPresent([String].self, forKey: .attendees) ?? []
+    joinLinks = try container.decodeIfPresent([EventJoinLink].self, forKey: .joinLinks) ?? []
   }
 
   func covers(_ date: Date) -> Bool {
     let key = CalendarMath.dateKey(date)
     return key >= dateKey && key <= endDateKey
+  }
+
+  func timeLabel(on date: Date) -> String {
+    if isAllDay { return "весь день" }
+    let style = Date.FormatStyle(date: .omitted, time: .shortened).locale(CalendarMath.russian)
+    if CalendarMath.isSameDay(start, date) {
+      if CalendarMath.isSameDay(end, date), end.timeIntervalSince(start) >= 60 {
+        return "\(start.formatted(style))–\(end.formatted(style))"
+      }
+      return start.formatted(style)
+    }
+    return "…"
+  }
+}
+
+struct EventJoinLink: Codable, Hashable, Identifiable {
+  var title: String
+  var url: String
+  var id: String { url }
+}
+
+enum EventLinkExtractor {
+  static func links(from event: EKEvent) -> [EventJoinLink] {
+    var raw: [String] = []
+    if let url = event.url?.absoluteString { raw.append(url) }
+    if let location = event.location { raw.append(contentsOf: urls(in: location)) }
+    if let notes = event.notes { raw.append(contentsOf: urls(in: notes)) }
+    var seen = Set<String>()
+    return raw.compactMap { value in
+      let cleaned = normalize(value)
+      guard !cleaned.isEmpty, seen.insert(cleaned.lowercased()).inserted else { return nil }
+      return EventJoinLink(title: title(for: cleaned), url: cleaned)
+    }
+  }
+
+  static func urls(in text: String) -> [String] {
+    guard let re = try? NSRegularExpression(
+      pattern: #"(?:https?|zoommtg|msteams|facetime|tel)://[^\s<>"'\)\]]+"#,
+      options: .caseInsensitive
+    ) else { return [] }
+    let ns = text as NSString
+    return re.matches(in: text, range: NSRange(location: 0, length: ns.length)).map { match in
+      trimTrailing(ns.substring(with: match.range))
+    }
+  }
+
+  private static func normalize(_ raw: String) -> String {
+    var value = trimTrailing(raw.trimmingCharacters(in: .whitespacesAndNewlines))
+    if value.lowercased().hasPrefix("www.") {
+      value = "https://" + value
+    }
+    return value
+  }
+
+  private static func trimTrailing(_ raw: String) -> String {
+    raw.trimmingCharacters(in: CharacterSet(charactersIn: ".,;:)]}>\"'"))
+  }
+
+  static func title(for urlString: String) -> String {
+    let lower = urlString.lowercased()
+    if lower.contains("zoom") { return "Zoom" }
+    if lower.contains("meet.google") || lower.contains("hangouts") { return "Google Meet" }
+    if lower.contains("teams.microsoft") || lower.hasPrefix("msteams:") { return "Microsoft Teams" }
+    if lower.contains("telemost") || lower.contains("yandex") { return "Телемост" }
+    if lower.contains("contour") || lower.contains("kontur") || lower.contains("trueconf") { return "Контур.Толк" }
+    if lower.contains("jit.si") { return "Jitsi" }
+    if lower.contains("webex") { return "Webex" }
+    if lower.hasPrefix("facetime:") { return "FaceTime" }
+    if lower.hasPrefix("tel:") { return "Телефон" }
+    if let host = URL(string: urlString)?.host, !host.isEmpty { return host }
+    return "Ссылка"
   }
 }
 
