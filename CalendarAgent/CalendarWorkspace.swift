@@ -354,6 +354,12 @@ struct CalendarWorkspaceView: View {
     .onKeyPress(.upArrow) { workspace.shiftDay(-7); return .handled }
     .onKeyPress(.downArrow) { workspace.shiftDay(7); return .handled }
     .onAppear { workspace.reload() }
+    .onReceive(NotificationCenter.default.publisher(for: .calendarAgentRevealDate)) { note in
+      if let key = note.object as? String, let date = CalendarNavigation.date(fromKey: key) {
+        workspace.mode = .calendar
+        workspace.select(date)
+      }
+    }
     .sheet(item: $workspace.draft) { draft in
       EventEditorView(draft: draft, calendars: workspace.writableCalendars) { saved in
         workspace.save(saved)

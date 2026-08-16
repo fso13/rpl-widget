@@ -1,11 +1,12 @@
 import AppKit
 import EventKit
 import SwiftUI
+import UserNotifications
 
 @MainActor
 final class SettingsModel: ObservableObject {
   enum Pane: String, CaseIterable, Identifiable, Hashable {
-    case calendars, widget, football, system
+    case calendars, widget, football, reminders, system
 
     var id: String { rawValue }
 
@@ -14,6 +15,7 @@ final class SettingsModel: ObservableObject {
       case .calendars: return "Календари"
       case .widget: return "Виджет"
       case .football: return "Футбол"
+      case .reminders: return "Напоминания"
       case .system: return "Система"
       }
     }
@@ -23,6 +25,7 @@ final class SettingsModel: ObservableObject {
       case .calendars: return "calendar"
       case .widget: return "rectangle.grid.2x2"
       case .football: return "sportscourt"
+      case .reminders: return "bell"
       case .system: return "gearshape"
       }
     }
@@ -44,6 +47,15 @@ final class SettingsModel: ObservableObject {
   @Published var showRussianCup = CalendarOptions.showRussianCup
   @Published var followedTeam = FollowedTeamNavigation.name ?? ""
   @Published var launchAtLogin = LoginItem.isEnabled
+  @Published var remindEvents = ReminderOptions.eventsEnabled
+  @Published var remindMatches = ReminderOptions.matchesEnabled
+  @Published var eventLeadMinutes = ReminderOptions.eventLeadMinutes
+  @Published var matchLeadMinutes = ReminderOptions.matchLeadMinutes
+  @Published var remindAllDay = ReminderOptions.allDay
+  @Published var remindFollowedOnly = ReminderOptions.followedTeamOnly
+  @Published var reminderSound = ReminderOptions.sound
+  @Published var notificationStatus: UNAuthorizationStatus = .notDetermined
+  @Published var isRequestingNotifications = false
 
   private var storeObserver: NSObjectProtocol?
 
@@ -63,6 +75,7 @@ final class SettingsModel: ObservableObject {
   init() {
     reloadCalendars()
     lastFootballSync = FootballSchedule.lastSyncDate
+    Task { notificationStatus = await ReminderScheduler.shared.authorizationStatus() }
     storeObserver = NotificationCenter.default.addObserver(
       forName: .EKEventStoreChanged,
       object: EventLoader.store,
@@ -113,6 +126,29 @@ final class SettingsModel: ObservableObject {
     CalendarWidgetKind.reload()
   }
 
+  func persistReminders() {
+    ReminderOptions.eventsEnabled = remindEvents
+    ReminderOptions.matchesEnabled = remindMatches
+    ReminderOptions.eventLeadMinutes = eventLeadMinutes
+    ReminderOptions.matchLeadMinutes = matchLeadMinutes
+    ReminderOptions.allDay = remindAllDay
+    ReminderOptions.followedTeamOnly = remindFollowedOnly
+    ReminderOptions.sound = reminderSound
+    Task {
+      if (remindEvents || remindMatches), notificationStatus == .notDetermined {
+        await requestNotifications()
+      }
+      await ReminderScheduler.shared.reschedule()
+    }
+  }
+
+  func requestNotifications() async {
+    isRequestingNotifications = true
+    defer { isRequestingNotifications = false }
+    _ = await ReminderScheduler.shared.requestAccess()
+    notificationStatus = await ReminderScheduler.shared.authorizationStatus()
+  }
+
   func refreshFootball() async {
     isRefreshingFootball = true
     footballError = nil
@@ -157,6 +193,13 @@ struct AgentSettingsView: View {
     .onChange(of: model.showRPL) { _, _ in model.persistWidget() }
     .onChange(of: model.showRussianCup) { _, _ in model.persistWidget() }
     .onChange(of: model.followedTeam) { _, _ in model.persistWidget() }
+    .onChange(of: model.remindEvents) { _, _ in model.persistReminders() }
+    .onChange(of: model.remindMatches) { _, _ in model.persistReminders() }
+    .onChange(of: model.eventLeadMinutes) { _, _ in model.persistReminders() }
+    .onChange(of: model.matchLeadMinutes) { _, _ in model.persistReminders() }
+    .onChange(of: model.remindAllDay) { _, _ in model.persistReminders() }
+    .onChange(of: model.remindFollowedOnly) { _, _ in model.persistReminders() }
+    .onChange(of: model.reminderSound) { _, _ in model.persistReminders() }
     .onAppear { model.reloadCalendars() }
   }
 
@@ -193,6 +236,7 @@ struct AgentSettingsView: View {
     case .calendars: calendarsPane
     case .widget: widgetPane
     case .football: footballPane
+    case .reminders: remindersPane
     case .system: systemPane
     }
   }
@@ -369,6 +413,79 @@ struct AgentSettingsView: View {
           .foregroundStyle(.red)
       }
     }
+  }
+
+  private var remindersPane: some View {
+    VStack(alignment: .leading, spacing: 16) {
+      header("Напоминания", "Уведомления о событиях календаря и матчах. Приложение должно быть запущено — в том числе как агент в строке меню.")
+
+      GroupBox {
+        HStack(spacing: 12) {
+          Image(systemName: notificationsAllowed ? "checkmark.circle.fill" : "bell.badge")
+            .font(.title2)
+            .foregroundStyle(notificationsAllowed ? .green : .orange)
+          VStack(alignment: .leading, spacing: 4) {
+            Text(notificationsAllowed ? "Уведомления разрешены" : "Нужен доступ к уведомлениям")
+              .font(.headline)
+            Text(notificationsAllowed
+                 ? "macOS покажет баннер в назначенное время."
+                 : "Разрешите уведомления, иначе напоминания не появятся.")
+              .font(.callout)
+              .foregroundStyle(.secondary)
+          }
+          Spacer()
+          if notificationsAllowed {
+            Button("Проверить") {
+              Task { await ReminderScheduler.shared.sendTest() }
+            }
+          } else if model.notificationStatus == .denied {
+            Button("Открыть настройки") {
+              if let url = URL(string: "x-apple.systempreferences:com.apple.preference.notifications") {
+                NSWorkspace.shared.open(url)
+              }
+            }
+          } else {
+            Button(model.isRequestingNotifications ? "Запрос…" : "Разрешить") {
+              Task { await model.requestNotifications() }
+            }
+            .disabled(model.isRequestingNotifications)
+          }
+        }
+        .padding(6)
+      }
+
+      settingsCard {
+        Toggle("События календаря", isOn: $model.remindEvents)
+        Picker("Когда", selection: $model.eventLeadMinutes) {
+          ForEach(ReminderOptions.leadChoices, id: \.self) { minutes in
+            Text(ReminderOptions.leadTitle(minutes)).tag(minutes)
+          }
+        }
+        .disabled(!model.remindEvents)
+        Toggle("Целодневные в 9:00", isOn: $model.remindAllDay)
+          .disabled(!model.remindEvents)
+        Divider()
+        Toggle("Матчи", isOn: $model.remindMatches)
+        Picker("Когда", selection: $model.matchLeadMinutes) {
+          ForEach(ReminderOptions.leadChoices, id: \.self) { minutes in
+            Text(ReminderOptions.leadTitle(minutes)).tag(minutes)
+          }
+        }
+        .disabled(!model.remindMatches)
+        Toggle("Только выбранная команда", isOn: $model.remindFollowedOnly)
+          .disabled(!model.remindMatches)
+        Divider()
+        Toggle("Звук", isOn: $model.reminderSound)
+      }
+
+      Text("Для матчей без указанного времени напоминание не ставится. Если включена «только выбранная команда», уведомления приходят лишь по её играм.")
+        .font(.callout)
+        .foregroundStyle(.secondary)
+    }
+  }
+
+  private var notificationsAllowed: Bool {
+    model.notificationStatus == .authorized || model.notificationStatus == .provisional
   }
 
   private var systemPane: some View {

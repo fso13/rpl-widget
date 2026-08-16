@@ -74,6 +74,22 @@ struct FootballMatch: Codable, Hashable, Identifiable {
     return "TBA"
   }
 
+  var isFinishedOrLive: Bool {
+    if let live, !live.isEmpty { return true }
+    if let homeScore, let awayScore, !homeScore.isEmpty, !awayScore.isEmpty { return true }
+    return false
+  }
+
+  var kickoff: Date? {
+    guard let day = CalendarNavigation.date(fromKey: dateKey) else { return nil }
+    guard let time, !time.isEmpty, time.uppercased() != "TBA" else { return nil }
+    guard let match = time.range(of: #"\d{1,2}\s*[:.]\s*\d{2}"#, options: .regularExpression) else { return nil }
+    let raw = time[match].replacingOccurrences(of: " ", with: "").replacingOccurrences(of: ".", with: ":")
+    let parts = raw.split(separator: ":")
+    guard parts.count >= 2, let hour = Int(parts[0]), let minute = Int(parts[1]) else { return nil }
+    return Calendar.current.date(bySettingHour: hour, minute: minute, second: 0, of: day)
+  }
+
   func involves(team: String) -> Bool {
     home == team || away == team || TeamNameMatch.matches(team, home) || TeamNameMatch.matches(team, away)
   }

@@ -155,9 +155,11 @@ enum CalendarAgent {
   static func start() {
     WidgetNavStore.update { $0.hasCalendarAccess = EventLoader.hasAccess }
     EventCache.syncFromEventKit()
+    NotificationCenter.default.post(name: .calendarDataDidChange, object: nil)
     Task {
       await FootballSchedule.syncAll()
       WidgetCenter.shared.reloadAllTimelines()
+      NotificationCenter.default.post(name: .calendarDataDidChange, object: nil)
     }
     WidgetCenter.shared.reloadAllTimelines()
     if observer == nil {
@@ -168,6 +170,7 @@ enum CalendarAgent {
       ) { _ in
         EventCache.syncFromEventKit()
         WidgetCenter.shared.reloadAllTimelines()
+        NotificationCenter.default.post(name: .calendarDataDidChange, object: nil)
       }
     }
     if footballTimer == nil {
@@ -175,6 +178,7 @@ enum CalendarAgent {
         Task {
           await FootballSchedule.syncAll()
           WidgetCenter.shared.reloadAllTimelines()
+          NotificationCenter.default.post(name: .calendarDataDidChange, object: nil)
         }
       }
       RunLoop.main.add(timer, forMode: .common)
@@ -367,11 +371,20 @@ enum WidgetNavStore {
     var showRussianCup: Bool
     var hasCalendarAccess: Bool
     var enabledCalendarIDs: [String]?
+    var remindEvents: Bool
+    var remindMatches: Bool
+    var eventLeadMinutes: Int
+    var matchLeadMinutes: Int
+    var remindAllDay: Bool
+    var remindFollowedOnly: Bool
+    var reminderSound: Bool
 
     enum CodingKeys: String, CodingKey {
       case displayedMonth, selectedDateKey, agendaOffset, followedTeam
       case startMonday, weekNumbers, holidays, showRPL, showRussianCup, hasCalendarAccess
       case enabledCalendarIDs
+      case remindEvents, remindMatches, eventLeadMinutes, matchLeadMinutes
+      case remindAllDay, remindFollowedOnly, reminderSound
     }
 
     init(
@@ -385,7 +398,14 @@ enum WidgetNavStore {
       showRPL: Bool = true,
       showRussianCup: Bool = true,
       hasCalendarAccess: Bool = false,
-      enabledCalendarIDs: [String]? = nil
+      enabledCalendarIDs: [String]? = nil,
+      remindEvents: Bool = true,
+      remindMatches: Bool = true,
+      eventLeadMinutes: Int = 15,
+      matchLeadMinutes: Int = 30,
+      remindAllDay: Bool = true,
+      remindFollowedOnly: Bool = true,
+      reminderSound: Bool = true
     ) {
       self.displayedMonth = displayedMonth
       self.selectedDateKey = selectedDateKey
@@ -398,6 +418,13 @@ enum WidgetNavStore {
       self.showRussianCup = showRussianCup
       self.hasCalendarAccess = hasCalendarAccess
       self.enabledCalendarIDs = enabledCalendarIDs
+      self.remindEvents = remindEvents
+      self.remindMatches = remindMatches
+      self.eventLeadMinutes = eventLeadMinutes
+      self.matchLeadMinutes = matchLeadMinutes
+      self.remindAllDay = remindAllDay
+      self.remindFollowedOnly = remindFollowedOnly
+      self.reminderSound = reminderSound
     }
 
     init(from decoder: Decoder) throws {
@@ -413,6 +440,13 @@ enum WidgetNavStore {
       showRussianCup = try container.decodeIfPresent(Bool.self, forKey: .showRussianCup) ?? true
       hasCalendarAccess = try container.decodeIfPresent(Bool.self, forKey: .hasCalendarAccess) ?? false
       enabledCalendarIDs = try container.decodeIfPresent([String].self, forKey: .enabledCalendarIDs)
+      remindEvents = try container.decodeIfPresent(Bool.self, forKey: .remindEvents) ?? true
+      remindMatches = try container.decodeIfPresent(Bool.self, forKey: .remindMatches) ?? true
+      eventLeadMinutes = try container.decodeIfPresent(Int.self, forKey: .eventLeadMinutes) ?? 15
+      matchLeadMinutes = try container.decodeIfPresent(Int.self, forKey: .matchLeadMinutes) ?? 30
+      remindAllDay = try container.decodeIfPresent(Bool.self, forKey: .remindAllDay) ?? true
+      remindFollowedOnly = try container.decodeIfPresent(Bool.self, forKey: .remindFollowedOnly) ?? true
+      reminderSound = try container.decodeIfPresent(Bool.self, forKey: .reminderSound) ?? true
     }
   }
 
@@ -567,6 +601,60 @@ enum CalendarOptions {
     get { WidgetNavStore.load().showRussianCup }
     set { WidgetNavStore.update { $0.showRussianCup = newValue } }
   }
+}
+
+enum ReminderOptions {
+  static let leadChoices = [0, 5, 10, 15, 30, 60, 120, 1440]
+
+  static var eventsEnabled: Bool {
+    get { WidgetNavStore.load().remindEvents }
+    set { WidgetNavStore.update { $0.remindEvents = newValue } }
+  }
+
+  static var matchesEnabled: Bool {
+    get { WidgetNavStore.load().remindMatches }
+    set { WidgetNavStore.update { $0.remindMatches = newValue } }
+  }
+
+  static var eventLeadMinutes: Int {
+    get { WidgetNavStore.load().eventLeadMinutes }
+    set { WidgetNavStore.update { $0.eventLeadMinutes = newValue } }
+  }
+
+  static var matchLeadMinutes: Int {
+    get { WidgetNavStore.load().matchLeadMinutes }
+    set { WidgetNavStore.update { $0.matchLeadMinutes = newValue } }
+  }
+
+  static var allDay: Bool {
+    get { WidgetNavStore.load().remindAllDay }
+    set { WidgetNavStore.update { $0.remindAllDay = newValue } }
+  }
+
+  static var followedTeamOnly: Bool {
+    get { WidgetNavStore.load().remindFollowedOnly }
+    set { WidgetNavStore.update { $0.remindFollowedOnly = newValue } }
+  }
+
+  static var sound: Bool {
+    get { WidgetNavStore.load().reminderSound }
+    set { WidgetNavStore.update { $0.reminderSound = newValue } }
+  }
+
+  static func leadTitle(_ minutes: Int) -> String {
+    switch minutes {
+    case 0: return "В момент начала"
+    case 60: return "За 1 час"
+    case 120: return "За 2 часа"
+    case 1440: return "За 1 день"
+    default: return "За \(minutes) мин"
+    }
+  }
+}
+
+extension Notification.Name {
+  static let calendarDataDidChange = Notification.Name("ru.rudenko.macCalendar.dataDidChange")
+  static let calendarAgentRevealDate = Notification.Name("ru.rudenko.macCalendar.agent.revealDate")
 }
 
 enum FollowedTeamNavigation {

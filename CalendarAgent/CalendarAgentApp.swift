@@ -12,12 +12,23 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     NSApp.setActivationPolicy(.accessory)
     setupStatusItem()
     CalendarAgent.start()
+    ReminderScheduler.shared.start()
     settingsObserver = NotificationCenter.default.addObserver(
       forName: .calendarAgentOpenSettings,
       object: nil,
       queue: .main
     ) { [weak self] _ in
       self?.showSettings()
+    }
+    NotificationCenter.default.addObserver(
+      forName: .calendarAgentShowCalendar,
+      object: nil,
+      queue: .main
+    ) { [weak self] note in
+      self?.showCalendar()
+      if let key = note.object as? String {
+        NotificationCenter.default.post(name: .calendarAgentRevealDate, object: key)
+      }
     }
     showCalendar()
   }
