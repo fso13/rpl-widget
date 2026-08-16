@@ -38,6 +38,12 @@ struct FootballMatch: Codable, Hashable, Identifiable {
     if TeamNameMatch.matches(team, away) { return home }
     return nil
   }
+
+  func opponentLogoURL(for team: String) -> String? {
+    if TeamNameMatch.matches(team, home) { return awayLogoURL }
+    if TeamNameMatch.matches(team, away) { return homeLogoURL }
+    return nil
+  }
 }
 
 struct FootballMatchView: Hashable, Identifiable {
@@ -250,6 +256,18 @@ enum FootballSchedule {
     return try? Data(contentsOf: logoFile(for: urlString))
   }
 
+  static func logoImage(for urlString: String) -> NSImage? {
+    guard !urlString.isEmpty else { return nil }
+    if let cached = imageCache.object(forKey: urlString as NSString) {
+      return cached
+    }
+    guard let data = logoData(for: urlString), let image = NSImage(data: data) else { return nil }
+    imageCache.setObject(image, forKey: urlString as NSString)
+    return image
+  }
+
+  private static let imageCache = NSCache<NSString, NSImage>()
+
   private static func logoFile(for urlString: String) -> URL {
     let digest = urlString.unicodeScalars.reduce(into: UInt64(5381)) { hash, scalar in
       hash = ((hash << 5) &+ hash) &+ UInt64(scalar.value)
@@ -306,5 +324,28 @@ enum FootballSchedule {
       else { return nil }
       return (ns.substring(with: match.range(at: 1)), ns.substring(with: match.range(at: 2)))
     }
+  }
+}
+
+struct TeamLogoView: View {
+  var urlString: String
+  var name: String
+  var side: CGFloat
+
+  var body: some View {
+    Group {
+      if let image = FootballSchedule.logoImage(for: urlString) {
+        Image(nsImage: image)
+          .resizable()
+          .interpolation(.high)
+          .scaledToFit()
+      } else {
+        Text(String(name.prefix(1)))
+          .font(.system(size: max(7, side * 0.55), weight: .bold))
+          .frame(maxWidth: .infinity, maxHeight: .infinity)
+          .background(Color.secondary.opacity(0.15), in: Circle())
+      }
+    }
+    .frame(width: side, height: side)
   }
 }

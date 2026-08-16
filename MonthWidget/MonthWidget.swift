@@ -28,6 +28,7 @@ struct CalendarEntry: TimelineEntry {
   let showRussianCup: Bool
   let followedTeamName: String?
   let opponentInitials: [String: String]
+  let opponentLogoURLs: [String: String]
   let events: [CalendarEventItem]
   let football: [FootballMatch]
   let agendaOffset: Int
@@ -90,10 +91,14 @@ struct CalendarProvider: AppIntentTimelineProvider {
     )
     let followedTeamName = FollowedTeamNavigation.name
     var opponentInitials: [String: String] = [:]
+    var opponentLogoURLs: [String: String] = [:]
     if let team = followedTeamName {
       for match in football where match.involves(team: team) {
         if let name = match.opponentName(for: team) {
           opponentInitials[match.dateKey] = String(name.prefix(1))
+        }
+        if let url = match.opponentLogoURL(for: team), !url.isEmpty {
+          opponentLogoURLs[match.dateKey] = url
         }
       }
     }
@@ -110,6 +115,7 @@ struct CalendarProvider: AppIntentTimelineProvider {
       showRussianCup: options.showRussianCup,
       followedTeamName: followedTeamName,
       opponentInitials: opponentInitials,
+      opponentLogoURLs: opponentLogoURLs,
       events: cachedEvents,
       football: football,
       agendaOffset: CalendarNavigation.agendaOffset,
@@ -345,6 +351,7 @@ struct MonthGridView: View {
               hasFootball: entry.visibleFootball.contains { $0.dateKey == dateKey },
               eventColors: entry.events.filter { $0.covers(date) }.prefix(3).map(\.color.color),
               opponentInitial: entry.opponentInitials[dateKey],
+              opponentLogoURL: entry.opponentLogoURLs[dateKey],
               compact: eventLimit > 0
             )
             .frame(maxWidth: .infinity)
@@ -365,6 +372,7 @@ struct DayCell: View {
   var hasFootball: Bool
   var eventColors: [Color]
   var opponentInitial: String? = nil
+  var opponentLogoURL: String? = nil
   var compact: Bool = false
 
   var body: some View {
@@ -386,7 +394,13 @@ struct DayCell: View {
           }
         }
       HStack(spacing: 1) {
-        if let opponentInitial {
+        if let opponentLogoURL {
+          TeamLogoView(
+            urlString: opponentLogoURL,
+            name: opponentInitial ?? "•",
+            side: compact ? 10 : 12
+          )
+        } else if let opponentInitial {
           Text(opponentInitial)
             .font(.system(size: 7, weight: .bold))
             .foregroundStyle(.green)
@@ -545,24 +559,16 @@ struct FootballMatchRow: View {
         .font(.system(size: compact ? 10 : 11, weight: .bold))
         .foregroundStyle(match.competition == .rpl ? Color.blue : Color.orange)
         .frame(width: compact ? 36 : 44, alignment: .leading)
-      teamMark(match.home)
+      TeamLogoView(urlString: match.homeLogoURL, name: match.home, side: compact ? 16 : 22)
       Text(match.statusText)
         .font((compact ? Font.caption2 : Font.caption).monospacedDigit().weight(.semibold))
         .lineLimit(1)
-      teamMark(match.away)
+      TeamLogoView(urlString: match.awayLogoURL, name: match.away, side: compact ? 16 : 22)
       Text("\(match.home) – \(match.away)")
         .font(.caption2)
         .foregroundStyle(.secondary)
         .lineLimit(1)
       Spacer(minLength: 0)
     }
-  }
-
-  private func teamMark(_ name: String) -> some View {
-    let side: CGFloat = compact ? 16 : 22
-    return Text(String(name.prefix(1)))
-      .font(.system(size: compact ? 10 : 12, weight: .bold))
-      .frame(width: side, height: side)
-      .background(Color.secondary.opacity(0.15), in: Circle())
   }
 }
