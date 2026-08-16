@@ -97,6 +97,14 @@ enum FootballSchedule {
     return dir
   }
 
+  static var lastSyncDate: Date? {
+    guard let raw = try? String(contentsOf: stampURL),
+          let interval = Double(raw.trimmingCharacters(in: .whitespacesAndNewlines)),
+          interval > 0
+    else { return nil }
+    return Date(timeIntervalSince1970: interval)
+  }
+
   static func refreshIfStale() async {
     let stamp = (try? Date(timeIntervalSince1970: Double(String(contentsOf: stampURL)) ?? 0)) ?? .distantPast
     if Date().timeIntervalSince(stamp) < 20 * 60, !load().isEmpty { return }

@@ -30,7 +30,7 @@ enum EventLoader {
 
   static func eventsFromStore(from start: Date, to end: Date) -> [CalendarEventItem] {
     guard hasAccess else { return [] }
-    let calendars = store.calendars(for: .event)
+    let calendars = CalendarSelection.selectedCalendars()
     guard !calendars.isEmpty else { return [] }
     let predicate = store.predicateForEvents(withStart: start, end: end, calendars: calendars)
     return store.events(matching: predicate)
@@ -39,6 +39,59 @@ enum EventLoader {
         if lhs.start == rhs.start { return lhs.title < rhs.title }
         return lhs.start < rhs.start
       }
+  }
+}
+
+enum CalendarSelection {
+  static var enabledIDs: Set<String>? {
+    get {
+      guard let ids = WidgetNavStore.load().enabledCalendarIDs else { return nil }
+      return Set(ids)
+    }
+    set {
+      WidgetNavStore.update { $0.enabledCalendarIDs = newValue.map { Array($0).sorted() } }
+    }
+  }
+
+  static func availableCalendars() -> [EKCalendar] {
+    guard EventLoader.hasAccess else { return [] }
+    return EventLoader.store.calendars(for: .event).sorted { lhs, rhs in
+      let leftSource = lhs.source.title
+      let rightSource = rhs.source.title
+      if leftSource != rightSource {
+        return leftSource.localizedCompare(rightSource) == .orderedAscending
+      }
+      return lhs.title.localizedCompare(rhs.title) == .orderedAscending
+    }
+  }
+
+  static func selectedCalendars() -> [EKCalendar] {
+    let all = availableCalendars()
+    guard let enabled = enabledIDs else { return all }
+    return all.filter { enabled.contains($0.calendarIdentifier) }
+  }
+
+  static func isEnabled(_ calendar: EKCalendar) -> Bool {
+    guard let enabled = enabledIDs else { return true }
+    return enabled.contains(calendar.calendarIdentifier)
+  }
+
+  static func setEnabled(_ calendar: EKCalendar, enabled: Bool) {
+    var next = enabledIDs ?? Set(availableCalendars().map(\.calendarIdentifier))
+    if enabled {
+      next.insert(calendar.calendarIdentifier)
+    } else {
+      next.remove(calendar.calendarIdentifier)
+    }
+    enabledIDs = next
+  }
+
+  static func setAll(enabled: Bool) {
+    if enabled {
+      enabledIDs = nil
+    } else {
+      enabledIDs = []
+    }
   }
 }
 
@@ -203,10 +256,12 @@ enum WidgetNavStore {
     var showRPL: Bool
     var showRussianCup: Bool
     var hasCalendarAccess: Bool
+    var enabledCalendarIDs: [String]?
 
     enum CodingKeys: String, CodingKey {
       case displayedMonth, selectedDateKey, agendaOffset, followedTeam
       case startMonday, weekNumbers, holidays, showRPL, showRussianCup, hasCalendarAccess
+      case enabledCalendarIDs
     }
 
     init(
@@ -219,7 +274,8 @@ enum WidgetNavStore {
       holidays: Bool = true,
       showRPL: Bool = true,
       showRussianCup: Bool = true,
-      hasCalendarAccess: Bool = false
+      hasCalendarAccess: Bool = false,
+      enabledCalendarIDs: [String]? = nil
     ) {
       self.displayedMonth = displayedMonth
       self.selectedDateKey = selectedDateKey
@@ -231,6 +287,7 @@ enum WidgetNavStore {
       self.showRPL = showRPL
       self.showRussianCup = showRussianCup
       self.hasCalendarAccess = hasCalendarAccess
+      self.enabledCalendarIDs = enabledCalendarIDs
     }
 
     init(from decoder: Decoder) throws {
@@ -245,6 +302,7 @@ enum WidgetNavStore {
       showRPL = try container.decodeIfPresent(Bool.self, forKey: .showRPL) ?? true
       showRussianCup = try container.decodeIfPresent(Bool.self, forKey: .showRussianCup) ?? true
       hasCalendarAccess = try container.decodeIfPresent(Bool.self, forKey: .hasCalendarAccess) ?? false
+      enabledCalendarIDs = try container.decodeIfPresent([String].self, forKey: .enabledCalendarIDs)
     }
   }
 
