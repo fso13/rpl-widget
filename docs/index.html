@@ -34,8 +34,15 @@
   <main class="layout">
     <section class="panel table-panel" id="table-panel">
       <header class="panel-head">
-        <h2>Турнирная таблица</h2>
-        <p id="table-note">Очки · разница мячей · форма</p>
+        <div>
+          <h2>Турнирная таблица</h2>
+          <p id="table-note">Очки по завершённым матчам</p>
+        </div>
+        <label class="switch" title="Добавить в таблицу текущий счёт идущих матчей">
+          <input type="checkbox" id="live-points">
+          <span class="track"></span>
+          <span class="switch-text">Текущий счёт</span>
+        </label>
       </header>
       <div class="table-wrap">
         <table class="ladder">
@@ -60,6 +67,9 @@
         <li><i class="swatch euro"></i>1–3 еврокубки</li>
         <li><i class="swatch play"></i>13–14 стыки</li>
         <li><i class="swatch down"></i>15–16 вылет</li>
+        <li><i class="dot W"></i>победа</li>
+        <li><i class="dot D"></i>ничья</li>
+        <li><i class="dot L"></i>поражение</li>
       </ul>
     </section>
 

@@ -10,6 +10,7 @@ const state = {
   tour: "next",
   team: "",
   timer: null,
+  livePoints: localStorage.getItem("rpl-live-points") === "1",
 };
 
 const $ = (id) => document.getElementById(id);
@@ -72,6 +73,101 @@ function scoreText(match) {
   return match.time || "TBA";
 }
 
+function resultOf(match, team) {
+  const homeScore = Number(match.homeScore);
+  const awayScore = Number(match.awayScore);
+  if (!Number.isFinite(homeScore) || !Number.isFinite(awayScore)) return null;
+  const scored = match.home === team ? homeScore : awayScore;
+  const conceded = match.home === team ? awayScore : homeScore;
+  if (scored > conceded) return "W";
+  if (scored < conceded) return "L";
+  return "D";
+}
+
+function teamForm(matches, team, includeLive) {
+  return matches
+    .filter((match) => {
+      if (match.home !== team && match.away !== team) return false;
+      if (match.homeScore == null || match.awayScore == null) return false;
+      return match.status === "finished" || (includeLive && match.status === "live");
+    })
+    .sort((a, b) => a.date.localeCompare(b.date) || (a.time || "").localeCompare(b.time || ""))
+    .map((match) => ({
+      result: resultOf(match, team),
+      live: match.status === "live",
+      opponent: match.home === team ? match.away : match.home,
+    }))
+    .filter((item) => item.result);
+}
+
+function applyLiveResult(home, away, homeScore, awayScore) {
+  home.played += 1;
+  away.played += 1;
+  home.goalsFor += homeScore;
+  home.goalsAgainst += awayScore;
+  away.goalsFor += awayScore;
+  away.goalsAgainst += homeScore;
+  home.goalDiff = home.goalsFor - home.goalsAgainst;
+  away.goalDiff = away.goalsFor - away.goalsAgainst;
+  if (homeScore > awayScore) {
+    home.won += 1;
+    home.points += 3;
+    away.lost += 1;
+  } else if (homeScore < awayScore) {
+    away.won += 1;
+    away.points += 3;
+    home.lost += 1;
+  } else {
+    home.drawn += 1;
+    away.drawn += 1;
+    home.points += 1;
+    away.points += 1;
+  }
+}
+
+function displayedStandings(data) {
+  const rows = data.standings.map((row) => ({
+    ...row,
+    baseRank: row.rank,
+    liveApplied: false,
+  }));
+  if (!state.livePoints) return { rows, liveCount: 0 };
+
+  const byName = new Map(rows.map((row) => [row.team, row]));
+  let liveCount = 0;
+  for (const match of data.matches) {
+    if (match.status !== "live") continue;
+    const homeScore = Number(match.homeScore);
+    const awayScore = Number(match.awayScore);
+    if (!Number.isFinite(homeScore) || !Number.isFinite(awayScore)) continue;
+    const home = byName.get(match.home);
+    const away = byName.get(match.away);
+    if (!home || !away) continue;
+    applyLiveResult(home, away, homeScore, awayScore);
+    home.liveApplied = true;
+    away.liveApplied = true;
+    liveCount += 1;
+  }
+  if (!liveCount) return { rows, liveCount: 0 };
+
+  rows.sort(
+    (a, b) =>
+      b.points - a.points
+      || b.goalDiff - a.goalDiff
+      || b.goalsFor - a.goalsFor
+      || a.team.localeCompare(b.team, "ru")
+  );
+  rows.forEach((row, index) => {
+    row.rank = index + 1;
+  });
+  return { rows, liveCount };
+}
+
+function formLabel(item) {
+  const word = item.result === "W" ? "Победа" : item.result === "L" ? "Поражение" : "Ничья";
+  return item.live ? `${word} (сейчас) vs ${item.opponent}` : `${word} vs ${item.opponent}`;
+}
+
 function matchesForView(data) {
   let rows = data.matches;
   if (state.team) {
@@ -89,16 +185,29 @@ function matchesForView(data) {
 }
 
 function renderStandings(data) {
-  $("standings").innerHTML = data.standings
+  const { rows, liveCount } = displayedStandings(data);
+  $("table-note").textContent = state.livePoints && liveCount
+    ? `Учтён текущий счёт ${liveCount} ${liveCount === 1 ? "матча" : "матчей"}`
+    : state.livePoints
+      ? "Нет live-матчей — таблица без изменений"
+      : "Очки по завершённым матчам";
+
+  $("standings").innerHTML = rows
     .map((row) => {
       const on = state.team === row.team ? " is-on" : "";
       const zenit = row.slug === "zenit" ? " zenit" : "";
-      const form = (row.form || [])
-        .map((item) => `<i class="${item}">${item}</i>`)
+      const form = teamForm(data.matches, row.team, state.livePoints)
+        .map((item) => `<i class="${item.result}${item.live ? " is-live" : ""}" title="${formLabel(item)}"></i>`)
         .join("");
       const diff = row.goalDiff > 0 ? `+${row.goalDiff}` : `${row.goalDiff}`;
+      const move = (row.baseRank || row.rank) - row.rank;
+      const shift = move > 0
+        ? `<span class="shift up">▲${move}</span>`
+        : move < 0
+          ? `<span class="shift down">▼${Math.abs(move)}</span>`
+          : "";
       return `<tr class="${zone(row.rank)}${on}${zenit}" data-team="${row.team}">
-        <td class="num">${row.rank}</td>
+        <td class="num">${row.rank}${shift}</td>
         <td class="club">
           <span class="club-cell">
             <img src="${logo(row.slug)}" alt="">
@@ -111,11 +220,17 @@ function renderStandings(data) {
         <td>${row.lost}</td>
         <td class="wide">${row.goalsFor}:${row.goalsAgainst}</td>
         <td>${diff}</td>
-        <td class="pts">${row.points}</td>
-        <td class="form-col"><span class="form">${form}</span></td>
+        <td class="pts${row.liveApplied ? " live-pts" : ""}">${row.points}</td>
+        <td class="form-col"><div class="form-scroll"><span class="form">${form}</span></div></td>
       </tr>`;
     })
     .join("");
+
+  requestAnimationFrame(() => {
+    document.querySelectorAll(".form-scroll").forEach((node) => {
+      node.scrollLeft = node.scrollWidth;
+    });
+  });
 }
 
 function renderPills(data) {
@@ -197,7 +312,7 @@ function renderMatches(data) {
 function fillTeams(data) {
   const select = $("team-filter");
   const current = state.team;
-  const names = data.standings.map((row) => row.team);
+  const names = displayedStandings(data).rows.map((row) => row.team);
   select.innerHTML = `<option value="">Все клубы</option>` + names
     .map((name) => `<option value="${name}">${name}</option>`)
     .join("");
@@ -232,6 +347,13 @@ async function load() {
   scheduleRefresh(state.data);
 }
 
+$("live-points").checked = state.livePoints;
+$("live-points").addEventListener("change", (event) => {
+  state.livePoints = event.target.checked;
+  localStorage.setItem("rpl-live-points", state.livePoints ? "1" : "0");
+  render();
+});
+
 $("reload").addEventListener("click", () => {
   $("updated").textContent = "Обновляю…";
   load().catch((error) => {
@@ -262,6 +384,7 @@ $("team-filter").addEventListener("change", (event) => {
 });
 
 $("standings").addEventListener("click", (event) => {
+  if (event.target.closest(".form-scroll")) return;
   const row = event.target.closest("tr[data-team]");
   if (!row) return;
   state.team = state.team === row.dataset.team ? "" : row.dataset.team;
