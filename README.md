@@ -1,25 +1,51 @@
 # Календарь для macOS
 
-Нативный виджет WidgetKit для рабочего стола и Центра уведомлений. События читаются из стандартного приложения «Календарь».
-
-Система показывает виджеты только у обычного приложения из **/Applications**. Поэтому контейнер нужно туда скопировать и один раз запустить. Иконка в Dock после запуска скрывается сама.
+Нативный виджет WidgetKit и отдельное приложение-агент с иконкой РПЛ в строке меню. События читаются из стандартного «Календаря», матчи и таблица — с [Матч ТВ](https://matchtv.ru/football/rpl/table).
 
 ## Установка
 
+Самый простой способ — скрипт в корне проекта. Он соберёт оба приложения и положит их в **/Applications**.
+
 ```bash
 cd "/Users/rudenkodmitry/Documents/Личное/виджет календарь для мак"
-xcodebuild -scheme CalendarHost -configuration Release -derivedDataPath DerivedData \
-  CODE_SIGN_IDENTITY="-" AD_HOC_CODE_SIGNING_ALLOWED=YES
-rm -rf "/Applications/CalendarHost.app"
-cp -R DerivedData/Build/Products/Release/CalendarHost.app /Applications/
-xattr -cr /Applications/CalendarHost.app
-open /Applications/CalendarHost.app
+chmod +x install.sh
+./install.sh
 ```
 
-Затем:
+Двойной клик по установщику macOS:
 
-1. Если появится окно — нажмите **Разрешить доступ**.
-2. Правый клик по рабочему столу → **Изменить виджеты** (или клик по дате в строке меню).
-3. Найдите **Календарь** (не системный виджет из приложения Календарь Apple).
+```bash
+./install.sh --pkg
+```
 
-Долгое нажатие на виджет → правки: неделя с понедельника, номера недель, праздники, **матчи РПЛ** и **Кубок России**. Матчи дня показываются логотипами команд (календарь [РПЛ](https://matchtv.ru/football/rpl/calendar) и [Кубка](https://matchtv.ru/football/russian-cup/calendar) на Матч ТВ).
+В папке `dist/` появится **Календарь РПЛ 1.0.pkg**. Откройте его и следуйте шагам. Если Gatekeeper остановит пакет, правый клик → **Открыть**.
+
+Удаление:
+
+```bash
+./install.sh --uninstall
+```
+
+После установки:
+
+1. Разрешите доступ к календарям и уведомлениям.
+2. Правый клик по рабочему столу → **Изменить виджеты** → **Календарь**.
+3. Иконка РПЛ в строке меню открывает календарь, таблицу и настройки.
+
+Виджет ставится только из приложения в **/Applications**, поэтому контейнер `CalendarHost` тоже нужен.
+
+## GitHub Pages — таблица РПЛ 2026/27
+
+В папке `docs/` — страница с турнирной таблицей, расписанием и счётом. Данные берутся с Матч ТВ.
+
+1. Залейте репозиторий на GitHub.
+2. **Settings → Pages → Build and deployment**: Source **Deploy from a branch**, branch **main**, folder **/docs**.
+3. Страница откроется как `https://<user>.github.io/<repo>/`.
+
+Таблица и результаты обновляются сами: GitHub Action каждые 20 минут запускает `docs/update.py` и пишет `docs/data/rpl.json`. Вручную:
+
+```bash
+python3 docs/update.py
+```
+
+Локальный просмотр: `python3 -m http.server -d docs 8080` и http://127.0.0.1:8080/.

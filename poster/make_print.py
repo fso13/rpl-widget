@@ -10,6 +10,8 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
 import generate as g
+import generate_a4 as a4
+import generate_cup as cup
 
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 ROOT = g.ROOT
@@ -29,7 +31,7 @@ def export_html() -> Path:
   body.export .stage { padding: 0; }
   body.export .sheet { transform: none !important; }
 """
-    html = html.replace("body {", extra + "\n  body {", 1)
+    html = html.replace("</style>", extra + "\n</style>", 1)
     out = ROOT / "_export-a2.html"
     out.write_text(html, encoding="utf-8")
     return out
@@ -111,8 +113,95 @@ def save_pdf(pages: list[Image.Image], out: Path) -> None:
     print(f"wrote {out.name}: {len(rgb)} стр. · {w_mm:.0f}×{h_mm:.0f} мм")
 
 
+def capture_html_page(html: str, png_path: Path, tag: str) -> None:
+    html = html.replace("<body>", '<body class="export">', 1)
+    html = html.replace(
+        "</style>",
+        """
+  body.export { background: #fff; }
+  body.export .toolbar { display: none !important; }
+  body.export .stage { padding: 0; gap: 0; }
+  body.export .sheet { transform: none !important; }
+</style>""",
+        1,
+    )
+    tmp_html = ROOT / f"_export-{tag}.html"
+    tmp_html.write_text(html, encoding="utf-8")
+    a4_w, a4_h = 1123, 794  # 297×210 mm at 96 CSS px/in
+    try:
+        subprocess.run(
+            [
+                CHROME,
+                "--headless=new",
+                "--disable-gpu",
+                "--hide-scrollbars",
+                "--force-device-scale-factor=3",
+                f"--window-size={a4_w},{a4_h}",
+                f"--screenshot={png_path}",
+                tmp_html.as_uri(),
+            ],
+            check=True,
+            capture_output=True,
+        )
+    finally:
+        tmp_html.unlink(missing_ok=True)
+
+
+def capture_a4_page(page: int, png_path: Path) -> None:
+    matches = g.json.loads(g.DATA.read_text(encoding="utf-8"))
+    capture_html_page(a4.build_html(matches, only_page=page), png_path, f"a4-p{page}")
+
+
+def export_a4_booklet() -> Path:
+    a4.main()
+    out = ROOT / "rpl-2026-27-a4.pdf"
+    print("собираю A4, 2 листа (туры 1–17 и 18–30)…")
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp_path = Path(tmp)
+        images = []
+        for page in (1, 2):
+            png = tmp_path / f"a4-{page}.png"
+            capture_a4_page(page, png)
+            im = Image.open(png).convert("RGB")
+            print(f"  лист {page}: {im.width}×{im.height}px")
+            images.append(im)
+        images[0].save(
+            out,
+            save_all=True,
+            append_images=images[1:],
+            resolution=288.0,
+        )
+    print(f"wrote {out.name}: 2 стр. · A4 альбомная · цвет · ~288 dpi")
+    return out
+
+
+def export_cup_booklet() -> Path:
+    cup.main()
+    data = g.json.loads(cup.DATA.read_text(encoding="utf-8"))
+    out = ROOT / "cup-2026-27-a4.pdf"
+    print("собираю Кубок России A4, 2 листа (группы и сетка)…")
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp_path = Path(tmp)
+        images = []
+        for page in (1, 2):
+            png = tmp_path / f"cup-{page}.png"
+            capture_html_page(cup.build_html(data, only_page=page), png, f"cup-p{page}")
+            im = Image.open(png).convert("RGB")
+            print(f"  лист {page}: {im.width}×{im.height}px")
+            images.append(im)
+        images[0].save(
+            out,
+            save_all=True,
+            append_images=images[1:],
+            resolution=288.0,
+        )
+    print(f"wrote {out.name}: 2 стр. · A4 альбомная · цвет · ~288 dpi")
+    return out
+
+
 def main() -> None:
     g.main()
+    export_a4_booklet()
     html_path = export_html()
     with tempfile.TemporaryDirectory() as tmp:
         full = Path(tmp) / "a2.png"
