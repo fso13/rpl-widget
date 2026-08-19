@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-19T14:59:28+03:00",
+  "updatedAt": "2026-08-19T15:36:23+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -321,7 +321,94 @@
       "homeScore": 2,
       "awayScore": 1,
       "live": null,
-      "status": "finished"
+      "status": "finished",
+      "url": "/football/rpl/552664942-tsska-baltika-24-07-2026",
+      "stadium": "ВЭБ Арена",
+      "referee": "Абросимов",
+      "events": [
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "1'",
+          "player": "Оффор",
+          "assist": "Гассама"
+        },
+        {
+          "type": "own_goal",
+          "side": "home",
+          "minute": "33'",
+          "player": "Андерсон",
+          "assist": null
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "36'",
+          "player": "Глебов",
+          "assist": "Круговой"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Чивич",
+          "playerOut": "Муфи"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Поспелов",
+          "playerOut": "Петров"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "64'",
+          "player": "Мендель"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "69'",
+          "playerIn": "Йенне",
+          "playerOut": "Петров"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "69'",
+          "playerIn": "Беликов",
+          "playerOut": "Мендель"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "76'",
+          "playerIn": "Кармо",
+          "playerOut": "Глебов"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "76'",
+          "playerIn": "Мусаев",
+          "playerOut": "Гонду"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Желтые карточки",
+          "home": "1",
+          "away": "1"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-07-25-Динамо М-Крылья Советов",
@@ -335,7 +422,93 @@
       "homeScore": 0,
       "awayScore": 0,
       "live": null,
-      "status": "finished"
+      "status": "finished",
+      "url": "/football/rpl/552664941-dinamo-kryliasovetov-25-07-2026",
+      "stadium": "ВТБ Арена (Динамо)",
+      "referee": "Заика",
+      "events": [
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "64'",
+          "playerIn": "Крамарич",
+          "playerOut": "Рахманович"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "64'",
+          "playerIn": "Галдамес",
+          "playerOut": "Баньяц"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "64'",
+          "playerIn": "Макаров",
+          "playerOut": "Рассказов"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "64'",
+          "playerIn": "Миранчук",
+          "playerOut": "Гладышев"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "64'",
+          "playerIn": "Окишор",
+          "playerOut": "Фомин"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "77'",
+          "playerIn": "Рубенс",
+          "playerOut": "Скопинцев"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "77'",
+          "playerIn": "Сергеев",
+          "playerOut": "Гомес"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "78'",
+          "playerIn": "Ороз",
+          "playerOut": "Витюгов"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "88'",
+          "playerIn": "Столбов",
+          "playerOut": "Олейников"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Голы",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Желтые карточки",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-07-25-Акрон-Зенит",
@@ -349,7 +522,111 @@
       "homeScore": 0,
       "awayScore": 5,
       "live": null,
-      "status": "finished"
+      "status": "finished",
+      "url": "/football/rpl/552664940-akron-zenit-25-07-2026",
+      "stadium": "Солидарность Арена (Самара-Арена)",
+      "referee": "Прокопов",
+      "events": [
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "7'",
+          "player": "Соболев",
+          "assist": "Педро"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "12'",
+          "player": "Дмитриев"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "18'",
+          "player": "Соболев",
+          "assist": "Глушенков"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "34'",
+          "player": "Мантуан",
+          "assist": "Вендел"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "39'",
+          "player": "Лончар"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "40'",
+          "player": "Барриос"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Аугусто",
+          "playerOut": "Барриос"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Караваев",
+          "playerOut": "Глушенков"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "46'",
+          "playerIn": "Базилевский",
+          "playerOut": "Бистрович"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "46'",
+          "playerIn": "Роча",
+          "playerOut": "Бардыбахин"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "78'",
+          "player": "дос Сантос",
+          "assist": "Соболев"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "84'",
+          "player": "Аугусто",
+          "assist": null
+        }
+      ],
+      "stats": [
+        {
+          "name": "Желтые карточки",
+          "home": "2",
+          "away": "2"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Количество замен",
+          "home": "5",
+          "away": "5"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-07-25-Факел-Динамо Мх",
@@ -363,7 +640,89 @@
       "homeScore": 1,
       "awayScore": 2,
       "live": null,
-      "status": "finished"
+      "status": "finished",
+      "url": "/football/rpl/552664939-fakel-dinamo-25-07-2026",
+      "stadium": "Факел",
+      "referee": "Капленков",
+      "events": [
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "21'",
+          "player": "Якимов",
+          "assist": null
+        },
+        {
+          "type": "own_goal",
+          "side": "away",
+          "minute": "30'",
+          "player": "Журавлёв",
+          "assist": null
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "42'",
+          "player": "Апшацев"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "65'",
+          "playerIn": "Джабраилов",
+          "playerOut": "Апшацев"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "65'",
+          "playerIn": "Лесовой",
+          "playerOut": "Агаларов"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "68'",
+          "playerIn": "Ковалёв",
+          "playerOut": "Якимов"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "75'",
+          "playerIn": "Гиоргобиани",
+          "playerOut": "Альшин"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "75'",
+          "playerIn": "Турищев",
+          "playerOut": "Гнапи"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "79'",
+          "player": "Сандрачук",
+          "assist": "Лесовой"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "84'",
+          "playerIn": "Уридия",
+          "playerOut": "Тодорович"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-07-25-Спартак-Родина",
@@ -377,7 +736,106 @@
       "homeScore": 3,
       "awayScore": 0,
       "live": null,
-      "status": "finished"
+      "status": "finished",
+      "url": "/football/rpl/552664938-spartak-rodina-25-07-2026",
+      "stadium": "Лукойл Арена",
+      "referee": "Шафеев",
+      "events": [
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "24'",
+          "player": "Маркиньос",
+          "assist": "Барко"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "33'",
+          "player": "Егорычев"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "39'",
+          "player": "Дятлов"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "54'",
+          "playerIn": "Посо",
+          "playerOut": "Егорычев"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "63'",
+          "playerIn": "Денисов",
+          "playerOut": "Жедсон"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "63'",
+          "playerIn": "Джику",
+          "playerOut": "Парада"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "63'",
+          "playerIn": "Мартинс",
+          "playerOut": "Угальде"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "74'",
+          "player": "Тимошенко"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "75'",
+          "playerIn": "Мусаев",
+          "playerOut": "Крижан"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "75'",
+          "playerIn": "Абдусаламов",
+          "playerOut": "Бакаев"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "79'",
+          "player": "Мартинс",
+          "assist": "Джику"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "86'",
+          "player": "Пруцев",
+          "assist": "Зобнин"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Количество замен",
+          "home": "5",
+          "away": "5"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-07-26-Оренбург-Ростов",
@@ -391,7 +849,86 @@
       "homeScore": 2,
       "awayScore": 1,
       "live": null,
-      "status": "finished"
+      "status": "finished",
+      "url": "/football/rpl/552664937-orenburg-rostov-26-07-2026",
+      "stadium": "Газовик",
+      "referee": "Новиков",
+      "events": [
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "4'",
+          "player": "Хотулев"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "37'",
+          "player": "Савельев"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "45'",
+          "player": "Ногейра"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "45'",
+          "player": "Кучаев"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Семенчук",
+          "playerOut": "Ногейра"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "47'",
+          "player": "Мелёхин",
+          "assist": null
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "55'",
+          "playerIn": "Олусегун",
+          "playerOut": "Кучаев"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "59'",
+          "player": "Лангович"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "65'",
+          "playerIn": "Касаджиков",
+          "playerOut": "Рыбчинский"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "84'",
+          "player": "Куль",
+          "assist": "Касаджиков"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "90'",
+          "player": "Касаджиков",
+          "assist": null
+        }
+      ],
+      "stats": [],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-07-26-Локомотив-Ахмат",
@@ -405,7 +942,100 @@
       "homeScore": 1,
       "awayScore": 1,
       "live": null,
-      "status": "finished"
+      "status": "finished",
+      "url": "/football/rpl/552664936-lokomotiv-akhmat-26-07-2026",
+      "stadium": "РЖД Арена (Локомотив)",
+      "referee": "Левников",
+      "events": [
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "8'",
+          "player": "Бакаев",
+          "assist": null
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "13'",
+          "player": "Ньямси"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "53'",
+          "player": "Фассон"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "58'",
+          "playerIn": "Ненахов",
+          "playerOut": "Фассон"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "59'",
+          "playerIn": "Кенжебек",
+          "playerOut": "Садулаев"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "68'",
+          "playerIn": "Салтыков",
+          "playerOut": "Бакаев"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "68'",
+          "playerIn": "Коваленко",
+          "playerOut": "Пиняев"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "68'",
+          "playerIn": "Щетинин",
+          "playerOut": "Самородов"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "78'",
+          "playerIn": "Ндонг",
+          "playerOut": "Ибишев"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "78'",
+          "playerIn": "Максути",
+          "playerOut": "Исмаэл"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "83'",
+          "player": "Максути",
+          "assist": null
+        }
+      ],
+      "stats": [
+        {
+          "name": "Голы",
+          "home": "1",
+          "away": "1"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-07-26-Рубин-Краснодар",
@@ -419,7 +1049,87 @@
       "homeScore": 1,
       "awayScore": 3,
       "live": null,
-      "status": "finished"
+      "status": "finished",
+      "url": "/football/rpl/552664935-rubin-krasnodar-26-07-2026",
+      "stadium": "Ак Барс Арена",
+      "referee": "Чистяков",
+      "events": [
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "12'",
+          "player": "Даку",
+          "assist": "Ставер"
+        },
+        {
+          "type": "red",
+          "side": "home",
+          "minute": "18'",
+          "player": "Рожков"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "45'",
+          "player": "Боселли",
+          "assist": null
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "45'",
+          "player": "Кривцов"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "45'",
+          "player": "Грипши"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "45'",
+          "player": "Соарес"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "46'",
+          "playerIn": "Самошников",
+          "playerOut": "Грипши"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "53'",
+          "player": "Кривцов",
+          "assist": "Боселли"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "64'",
+          "playerIn": "Мальдонадо",
+          "playerOut": "Нижегородов"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "64'",
+          "playerIn": "Сиве",
+          "playerOut": "Безруков"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "90'",
+          "player": "Кристиан",
+          "assist": null
+        }
+      ],
+      "stats": [],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-07-31-Родина-Ростов",
@@ -433,7 +1143,92 @@
       "homeScore": 2,
       "awayScore": 4,
       "live": null,
-      "status": "finished"
+      "status": "finished",
+      "url": "/football/rpl/552664950-rodina-rostov-31-07-2026",
+      "stadium": "Арена Химки",
+      "referee": "Набока",
+      "events": [
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "4'",
+          "player": "Посо",
+          "assist": "Максименко"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "13'",
+          "player": "Дятлов"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "16'",
+          "player": "Комаров",
+          "assist": null
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "27'",
+          "playerIn": "Бессмертный",
+          "playerOut": "Сокол"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "48'",
+          "player": "Фищенко"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "49'",
+          "player": "Кучаев"
+        },
+        {
+          "type": "own_goal",
+          "side": "away",
+          "minute": "52'",
+          "player": "Крижан",
+          "assist": null
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "56'",
+          "player": "Лангович",
+          "assist": "Кучаев"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "74'",
+          "player": "Сако",
+          "assist": null
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "90'",
+          "player": "Шанталий",
+          "assist": "Лангович"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Офсайды",
+          "home": "1",
+          "away": "1"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-08-01-Акрон-Рубин",
@@ -447,7 +1242,67 @@
       "homeScore": 1,
       "awayScore": 2,
       "live": null,
-      "status": "finished"
+      "status": "finished",
+      "url": "/football/rpl/552664949-akron-rubin-01-08-2026",
+      "stadium": "Солидарность Арена (Самара-Арена)",
+      "referee": "Бобровский",
+      "events": [
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "15'",
+          "player": "Арройо",
+          "assist": null
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "19'",
+          "player": "Даку",
+          "assist": null
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "29'",
+          "player": "Дмитриев",
+          "assist": "Марадишвили"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "44'",
+          "player": "Даку"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "48'",
+          "player": "Вуячич"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "62'",
+          "playerIn": "Бардыбахин",
+          "playerOut": "Роча"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "62'",
+          "playerIn": "Бистрович",
+          "playerOut": "Марадишвили"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-08-01-ЦСКА-Крылья Советов",
@@ -461,7 +1316,74 @@
       "homeScore": 1,
       "awayScore": 1,
       "live": null,
-      "status": "finished"
+      "status": "finished",
+      "url": "/football/rpl/552664948-tsska-kryliasovetov-01-08-2026",
+      "stadium": "ВЭБ Арена",
+      "referee": "Буланов",
+      "events": [
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "32'",
+          "player": "Попович",
+          "assist": "Гонду"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "63'",
+          "player": "Витюгов",
+          "assist": "Баньяц"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "64'",
+          "playerIn": "Баринов",
+          "playerOut": "Глебов"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "64'",
+          "playerIn": "Кармо",
+          "playerOut": "Попович"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "65'",
+          "playerIn": "Крамарич",
+          "playerOut": "Рахманович"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "70'",
+          "playerIn": "Макаров",
+          "playerOut": "Витюгов"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "70'",
+          "playerIn": "Галдамес",
+          "playerOut": "Баньяц"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Голы",
+          "home": "1",
+          "away": "1"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-08-01-Динамо Мх-Локомотив",
@@ -475,7 +1397,79 @@
       "homeScore": 2,
       "awayScore": 1,
       "live": null,
-      "status": "finished"
+      "status": "finished",
+      "url": "/football/rpl/552664947-dinamo-lokomotiv-01-08-2026",
+      "stadium": "Анжи-Арена",
+      "referee": "Карасев",
+      "events": [
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "27'",
+          "player": "Батраков"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "31'",
+          "player": "Раков",
+          "assist": "Батраков"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "36'",
+          "player": "Раков"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "46'",
+          "playerIn": "Аззи",
+          "playerOut": "Сандрачук"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Еремеев",
+          "playerOut": "Раков"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "46'",
+          "playerIn": "Джабраилов",
+          "playerOut": "Агаларов"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "57'",
+          "player": "Вальдемиро",
+          "assist": "Глушков"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "73'",
+          "player": "Глушков",
+          "assist": "Мрезиг"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Офсайды",
+          "home": "1",
+          "away": "1"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-08-01-Балтика-Динамо М",
@@ -489,7 +1483,81 @@
       "homeScore": 2,
       "awayScore": 1,
       "live": null,
-      "status": "finished"
+      "status": "finished",
+      "url": "/football/rpl/552664946-baltika-dinamo-01-08-2026",
+      "stadium": "Ростех Арена (Калининград)",
+      "referee": "Танашев",
+      "events": [
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "30'",
+          "player": "Андерсон"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "51'",
+          "player": "Мурид"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "57'",
+          "player": "Титков",
+          "assist": "Гассама"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "62'",
+          "playerIn": "Хиль",
+          "playerOut": "Оффор"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "65'",
+          "playerIn": "Касерес",
+          "playerOut": "Глебов"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "65'",
+          "playerIn": "Сергеев",
+          "playerOut": "Зайдензаль"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "65'",
+          "playerIn": "Маринкин",
+          "playerOut": "Гладышев"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "74'",
+          "player": "Хиль",
+          "assist": null
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "76'",
+          "player": "Гомес",
+          "assist": "Сергеев"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-08-02-Оренбург-Зенит",
@@ -503,7 +1571,78 @@
       "homeScore": 0,
       "awayScore": 3,
       "live": null,
-      "status": "finished"
+      "status": "finished",
+      "url": "/football/rpl/552664945-orenburg-zenit-02-08-2026",
+      "stadium": "Газовик",
+      "referee": "Кукуляк",
+      "events": [
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "6'",
+          "player": "Глушенков",
+          "assist": "Педро"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "21'",
+          "player": "Татаев"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "23'",
+          "player": "Вега"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "25'",
+          "player": "Касаджиков"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "46'",
+          "playerIn": "Ценов",
+          "playerOut": "Ведерников"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Дуглас",
+          "playerOut": "Вега"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "58'",
+          "player": "Глушенков",
+          "assist": null
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "66'",
+          "player": "Глушенков",
+          "assist": "дос Сантос"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Удары (в створ)",
+          "home": "12 (2)",
+          "away": "12 (5)"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-08-02-Краснодар-Факел",
@@ -517,7 +1656,86 @@
       "homeScore": 3,
       "awayScore": 2,
       "live": null,
-      "status": "finished"
+      "status": "finished",
+      "url": "/football/rpl/552664944-krasnodar-fakel-02-08-2026",
+      "stadium": "Озон Арена (Краснодар)",
+      "referee": "Матвеев",
+      "events": [
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "4'",
+          "player": "Жубал",
+          "assist": "Оласа"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "27'",
+          "player": "Кривцов",
+          "assist": "Кристиан"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "29'",
+          "player": "Соарес"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "50'",
+          "player": "Жубал"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "59'",
+          "player": "Кривцов",
+          "assist": "Батчи"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "61'",
+          "playerIn": "Турищев",
+          "playerOut": "Гнапи"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "61'",
+          "playerIn": "Уткин",
+          "playerOut": "Кристиан"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "85'",
+          "player": "Турищев",
+          "assist": "Гиоргобиани"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "88'",
+          "player": "Сутормин",
+          "assist": "Пуси"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Офсайды",
+          "home": "2",
+          "away": "2"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-08-02-Ахмат-Спартак",
@@ -531,7 +1749,74 @@
       "homeScore": 1,
       "awayScore": 2,
       "live": null,
-      "status": "finished"
+      "status": "finished",
+      "url": "/football/rpl/552664943-akhmat-spartak-02-08-2026",
+      "stadium": "Ахмат-Арена",
+      "referee": "Фролов",
+      "events": [
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "4'",
+          "player": "Касинтура",
+          "assist": null
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "39'",
+          "player": "Ву",
+          "assist": "Маркиньос"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "42'",
+          "player": "Максименко"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "62'",
+          "playerIn": "Келиано",
+          "playerOut": "Исмаэл"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "62'",
+          "playerIn": "Щетинин",
+          "playerOut": "Самородов"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "65'",
+          "playerIn": "Угальде",
+          "playerOut": "Мартинс"
+        },
+        {
+          "type": "red",
+          "side": "home",
+          "minute": "76'",
+          "player": "Касинтура"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "90'",
+          "player": "Барко",
+          "assist": null
+        }
+      ],
+      "stats": [
+        {
+          "name": "Офсайды",
+          "home": "2",
+          "away": "2"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-08-08-Крылья Советов-Балтика",
@@ -545,7 +1830,62 @@
       "homeScore": 0,
       "awayScore": 2,
       "live": null,
-      "status": "finished"
+      "status": "finished",
+      "url": "/football/rpl/552664958-kryliasovetov-baltika-08-08-2026",
+      "stadium": "Солидарность Арена (Самара-Арена)",
+      "referee": "Чистяков",
+      "events": [
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "3'",
+          "player": "Чивич",
+          "assist": "Мурид"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "46'",
+          "playerIn": "Крамарич",
+          "playerOut": "Баньяц"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "54'",
+          "playerIn": "Хиль",
+          "playerOut": "Оффор"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "54'",
+          "playerIn": "Муфи",
+          "playerOut": "Чивич"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "63'",
+          "playerIn": "Макаров",
+          "playerOut": "Витюгов"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "81'",
+          "player": "Хиль",
+          "assist": "Варатынов"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-08-08-Локомотив-Акрон",
@@ -559,7 +1899,85 @@
       "homeScore": 0,
       "awayScore": 0,
       "live": null,
-      "status": "finished"
+      "status": "finished",
+      "url": "/football/rpl/552664957-lokomotiv-akron-08-08-2026",
+      "stadium": "РЖД Арена (Локомотив)",
+      "referee": "Цыганок",
+      "events": [
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "51'",
+          "player": "Голубев"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "55'",
+          "playerIn": "Раков",
+          "playerOut": "Голубев"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "65'",
+          "playerIn": "Бистрович",
+          "playerOut": "Марадишвили"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "67'",
+          "playerIn": "Руденко",
+          "playerOut": "Пиняев"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "76'",
+          "playerIn": "Эдуардо",
+          "playerOut": "Дмитриев"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "76'",
+          "playerIn": "Хосонов",
+          "playerOut": "Джурасович"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "78'",
+          "player": "Еремеев"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "81'",
+          "player": "Беншимол"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "84'",
+          "playerIn": "Салтыков",
+          "playerOut": "Бакаев"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Голы",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-08-08-ЦСКА-Ростов",
@@ -573,7 +1991,59 @@
       "homeScore": 0,
       "awayScore": 0,
       "live": null,
-      "status": "finished"
+      "status": "finished",
+      "url": "/football/rpl/552664956-rostov-tsska-08-08-2026",
+      "stadium": "ВЭБ Арена",
+      "referee": "Казарцев",
+      "events": [
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "3'",
+          "player": "Сако"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Олусегун",
+          "playerOut": "Мухин"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "59'",
+          "playerIn": "Попович",
+          "playerOut": "Глебов"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "59'",
+          "playerIn": "Мусаев",
+          "playerOut": "Гонду"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "65'",
+          "playerIn": "Алвес",
+          "playerOut": "Обляков"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Голы",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-08-09-Динамо М-Динамо Мх",
@@ -587,7 +2057,99 @@
       "homeScore": 3,
       "awayScore": 1,
       "live": null,
-      "status": "finished"
+      "status": "finished",
+      "url": "/football/rpl/552664955-dinamo-dinamo-09-08-2026",
+      "stadium": "ВТБ Арена (Динамо)",
+      "referee": "Шафеев",
+      "events": [
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "28'",
+          "player": "Рубенс"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "32'",
+          "player": "Фомин"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "36'",
+          "player": "Аларкон"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "61'",
+          "playerIn": "Окишор",
+          "playerOut": "Гомес"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "61'",
+          "playerIn": "Скопинцев",
+          "playerOut": "Рубенс"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "67'",
+          "playerIn": "Сандрачук",
+          "playerOut": "Лесовой"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "67'",
+          "playerIn": "Джабраилов",
+          "playerOut": "Смелов"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "77'",
+          "player": "Маринкин",
+          "assist": "Окишор"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "79'",
+          "player": "Скопинцев",
+          "assist": "Тюкавин"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "81'",
+          "player": "Агаларов",
+          "assist": null
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "90'",
+          "player": "Миранчук",
+          "assist": "Окишор"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Желтые карточки",
+          "home": "3",
+          "away": "3"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-08-09-Зенит-Родина",
@@ -601,7 +2163,77 @@
       "homeScore": 1,
       "awayScore": 2,
       "live": null,
-      "status": "finished"
+      "status": "finished",
+      "url": "/football/rpl/552664954-zenit-rodina-09-08-2026",
+      "stadium": "Газпром Арена",
+      "referee": "Капленков",
+      "events": [
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "23'",
+          "player": "Глушенков",
+          "assist": null
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "30'",
+          "player": "Вендел"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "41'",
+          "player": "Тананеев"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Гарибян",
+          "playerOut": "Тимошенко"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Бакаев",
+          "playerOut": "Абдусаламов"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "59'",
+          "player": "Гарибян",
+          "assist": "Бессмертный"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "65'",
+          "player": "Гарибян",
+          "assist": "Бакаев"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Офсайды",
+          "home": "1",
+          "away": "1"
+        },
+        {
+          "name": "Желтые карточки",
+          "home": "1",
+          "away": "1"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-08-09-Спартак-Краснодар",
@@ -615,7 +2247,69 @@
       "homeScore": 1,
       "awayScore": 2,
       "live": null,
-      "status": "finished"
+      "status": "finished",
+      "url": "/football/rpl/552664953-spartak-krasnodar-09-08-2026",
+      "stadium": "Лукойл Арена",
+      "referee": "Левников",
+      "events": [
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "2'",
+          "player": "Угальде",
+          "assist": "Маркиньос"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "5'",
+          "player": "Оласа",
+          "assist": "Соарес"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "10'",
+          "player": "Батчи",
+          "assist": "Кривцов"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "21'",
+          "player": "Черников"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "46'",
+          "playerIn": "Мартинс",
+          "playerOut": "Барко"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Удары (в створ)",
+          "home": "15 (3)",
+          "away": "15 (3)"
+        },
+        {
+          "name": "Удары по воротам (точность)",
+          "home": "20%",
+          "away": "20%"
+        },
+        {
+          "name": "Офсайды",
+          "home": "2",
+          "away": "2"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-08-09-Рубин-Оренбург",
@@ -629,7 +2323,70 @@
       "homeScore": 1,
       "awayScore": 1,
       "live": null,
-      "status": "finished"
+      "status": "finished",
+      "url": "/football/rpl/552664952-rubin-orenburg-09-08-2026",
+      "stadium": "Ак Барс Арена",
+      "referee": "Кукуян",
+      "events": [
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "38'",
+          "player": "Болотов"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "46'",
+          "playerIn": "Сиве",
+          "playerOut": "Самошников"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "49'",
+          "player": "Ценов",
+          "assist": "Сивис"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "57'",
+          "player": "Ходжа"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "58'",
+          "playerIn": "Иву",
+          "playerOut": "Мальдонадо"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "60'",
+          "player": "Татаев",
+          "assist": null
+        }
+      ],
+      "stats": [
+        {
+          "name": "Голы",
+          "home": "1",
+          "away": "1"
+        },
+        {
+          "name": "Офсайды",
+          "home": "4",
+          "away": "4"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-08-10-Факел-Ахмат",
@@ -643,7 +2400,77 @@
       "homeScore": 0,
       "awayScore": 0,
       "live": null,
-      "status": "finished"
+      "status": "finished",
+      "url": "/football/rpl/552664951-fakel-akhmat-10-08-2026",
+      "stadium": "Факел",
+      "referee": "Сухой",
+      "events": [
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "38'",
+          "playerIn": "Пуси",
+          "playerOut": "Турищев"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "52'",
+          "player": "Сутормин"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "58'",
+          "playerIn": "Ковалёв",
+          "playerOut": "Гиоргобиани"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "58'",
+          "playerIn": "Магомедов",
+          "playerOut": "Сутормин"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "59'",
+          "playerIn": "Исмаэл",
+          "playerOut": "Щетинин"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "66'",
+          "playerIn": "Максути",
+          "playerOut": "Мелкадзе"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "68'",
+          "player": "Максути"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Голы",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Офсайды",
+          "home": "1",
+          "away": "1"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-08-14-Оренбург-Локомотив",
@@ -657,7 +2484,71 @@
       "homeScore": 1,
       "awayScore": 1,
       "live": null,
-      "status": "finished"
+      "status": "finished",
+      "url": "/football/rpl/552664966-orenburg-lokomotiv-14-08-2026",
+      "stadium": "Газовик",
+      "referee": "Фролов",
+      "events": [
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "3'",
+          "player": "Батраков",
+          "assist": "Сильянов"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "29'",
+          "player": "Болотов"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "41'",
+          "player": "Куль"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "61'",
+          "playerIn": "Касаджиков",
+          "playerOut": "Рыбчинский"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "61'",
+          "playerIn": "Жезус",
+          "playerOut": "Гузина"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "62'",
+          "player": "Касаджиков",
+          "assist": "Куль"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "66'",
+          "player": "Лантратов"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Голы",
+          "home": "1",
+          "away": "1"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-08-15-Родина-Акрон",
@@ -671,7 +2562,94 @@
       "homeScore": 3,
       "awayScore": 3,
       "live": null,
-      "status": "finished"
+      "status": "finished",
+      "url": "/football/rpl/552664965-rodina-akron-15-08-2026",
+      "stadium": "Арена Химки",
+      "referee": "Заика",
+      "events": [
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "13'",
+          "player": "Максименко",
+          "assist": "Посо"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "17'",
+          "player": "Бардыбахин"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "45'",
+          "player": "Максименко",
+          "assist": null
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Эдуардо",
+          "playerOut": "Дмитриев"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Бистрович",
+          "playerOut": "Хосонов"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "51'",
+          "player": "Лончар",
+          "assist": "Фернандес"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "59'",
+          "playerIn": "Аревало",
+          "playerOut": "Железнов"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "71'",
+          "player": "Беншимол",
+          "assist": "Эдуардо"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "76'",
+          "player": "Максименко",
+          "assist": "Гарибян"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "86'",
+          "player": "Аревало",
+          "assist": null
+        }
+      ],
+      "stats": [
+        {
+          "name": "Голы",
+          "home": "3",
+          "away": "3"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-08-15-ЦСКА-Факел",
@@ -685,7 +2663,72 @@
       "homeScore": 1,
       "awayScore": 0,
       "live": null,
-      "status": "finished"
+      "status": "finished",
+      "url": "/football/rpl/552664964-tsska-fakel-15-08-2026",
+      "stadium": "ВЭБ Арена",
+      "referee": "Танашев",
+      "events": [
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "46'",
+          "playerIn": "Гонду",
+          "playerOut": "Мусаев"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "46'",
+          "player": "Алвес"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "52'",
+          "player": "Якимов"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "54'",
+          "player": "Тороп"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "54'",
+          "player": "Гнапи"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "63'",
+          "playerIn": "Ковалёв",
+          "playerOut": "Альшин"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "64'",
+          "playerIn": "Багамаев",
+          "playerOut": "Сутормин"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "71'",
+          "player": "Обляков",
+          "assist": null
+        }
+      ],
+      "stats": [
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-08-15-Ростов-Рубин",
@@ -699,7 +2742,71 @@
       "homeScore": 1,
       "awayScore": 1,
       "live": null,
-      "status": "finished"
+      "status": "finished",
+      "url": "/football/rpl/552664963-rostov-rubin-15-08-2026",
+      "stadium": "Ростов Арена",
+      "referee": "Абросимов",
+      "events": [
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "29'",
+          "player": "Комаров"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "30'",
+          "player": "Сулейманов",
+          "assist": "Олусегун"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Рожков",
+          "playerOut": "Сааведра"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "46'",
+          "player": "Мелёхин"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "50'",
+          "player": "Ногейра"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "51'",
+          "player": "Сиве",
+          "assist": null
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "65'",
+          "playerIn": "Кузнецов",
+          "playerOut": "Безруков"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Голы",
+          "home": "1",
+          "away": "1"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-08-15-Краснодар-Ахмат",
@@ -713,7 +2820,53 @@
       "homeScore": 1,
       "awayScore": 0,
       "live": null,
-      "status": "finished"
+      "status": "finished",
+      "url": "/football/rpl/552664962-krasnodar-akhmat-15-08-2026",
+      "stadium": "Озон Арена (Краснодар)",
+      "referee": "Карасев",
+      "events": [
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "5'",
+          "player": "Богосавац"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "45'",
+          "player": "Кристиан",
+          "assist": "Воробьёв"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Сидоров",
+          "playerOut": "Богосавац"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "58'",
+          "playerIn": "Мелкадзе",
+          "playerOut": "Максути"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "65'",
+          "player": "Садулаев"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-08-16-Зенит-Динамо М",
@@ -727,7 +2880,71 @@
       "homeScore": 3,
       "awayScore": 0,
       "live": null,
-      "status": "finished"
+      "status": "finished",
+      "url": "/football/rpl/552664961-zenit-dinamo-16-08-2026",
+      "stadium": "Газпром Арена",
+      "referee": "Чистяков",
+      "events": [
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "29'",
+          "player": "Соболев",
+          "assist": null
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "33'",
+          "player": "Соболев",
+          "assist": "Глушенков"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "46'",
+          "playerIn": "Марсилио",
+          "playerOut": "Марсилио"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "59'",
+          "player": "Андраде"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "60'",
+          "playerIn": "Сергеев",
+          "playerOut": "Гладышев"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "87'",
+          "player": "Глушенков",
+          "assist": null
+        }
+      ],
+      "stats": [
+        {
+          "name": "Офсайды",
+          "home": "1",
+          "away": "1"
+        },
+        {
+          "name": "Желтые карточки",
+          "home": "2",
+          "away": "2"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-08-16-Крылья Советов-Динамо Мх",
@@ -741,7 +2958,80 @@
       "homeScore": 1,
       "awayScore": 4,
       "live": null,
-      "status": "finished"
+      "status": "finished",
+      "url": "/football/rpl/552664960-kryliasovetov-dinamo-16-08-2026",
+      "stadium": "Солидарность Арена (Самара-Арена)",
+      "referee": "Новиков",
+      "events": [
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "5'",
+          "player": "Аларкон",
+          "assist": null
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "9'",
+          "player": "Алибеков"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "16'",
+          "player": "Печенин"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "22'",
+          "player": "Глушков",
+          "assist": null
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "27'",
+          "player": "Олейников",
+          "assist": null
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Агаларов",
+          "playerOut": "Смелов"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "51'",
+          "player": "Ороз"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "77'",
+          "player": "Лесовой",
+          "assist": null
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "90'",
+          "player": "Агаларов",
+          "assist": "Глушков"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Желтые карточки",
+          "home": "3",
+          "away": "3"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-08-16-Балтика-Спартак",
@@ -755,7 +3045,67 @@
       "homeScore": 1,
       "awayScore": 2,
       "live": null,
-      "status": "finished"
+      "status": "finished",
+      "url": "/football/rpl/552664959-baltika-spartak-16-08-2026",
+      "stadium": "Ростех Арена (Калининград)",
+      "referee": "Прокопов",
+      "events": [
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "20'",
+          "player": "Угальде",
+          "assist": "Даку"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "23'",
+          "player": "Мендель",
+          "assist": null
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "47'",
+          "player": "Бевеев"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "49'",
+          "player": "Солари",
+          "assist": null
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "58'",
+          "playerIn": "Муфи",
+          "playerOut": "Петров"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "58'",
+          "playerIn": "Хиль",
+          "playerOut": "Оффор"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "73'",
+          "player": "Мурид"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-08-22-Факел-Оренбург",
@@ -769,7 +3119,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552664974-fakel-orenburg-22-08-2026"
     },
     {
       "id": "rpl-2026-08-22-Ахмат-Ростов",
@@ -783,7 +3134,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552664973-akhmat-rostov-22-08-2026"
     },
     {
       "id": "rpl-2026-08-22-ЦСКА-Локомотив",
@@ -797,7 +3149,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552664972-tsska-lokomotiv-22-08-2026"
     },
     {
       "id": "rpl-2026-08-23-Акрон-Крылья Советов",
@@ -811,7 +3164,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552664971-akron-kryliasovetov-23-08-2026"
     },
     {
       "id": "rpl-2026-08-23-Динамо М-Родина",
@@ -825,7 +3179,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552664970-dinamo-rodina-23-08-2026"
     },
     {
       "id": "rpl-2026-08-23-Динамо Мх-Краснодар",
@@ -839,7 +3194,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552664969-dinamo-krasnodar-23-08-2026"
     },
     {
       "id": "rpl-2026-08-23-Спартак-Зенит",
@@ -853,7 +3209,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552664968-spartak-zenit-23-08-2026"
     },
     {
       "id": "rpl-2026-08-24-Балтика-Рубин",
@@ -867,7 +3224,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552664967-baltika-rubin-24-08-2026"
     },
     {
       "id": "rpl-2026-08-28-Акрон-ЦСКА",
@@ -881,7 +3239,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552664982-akron-tsska-28-08-2026"
     },
     {
       "id": "rpl-2026-08-29-Факел-Зенит",
@@ -895,7 +3254,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552664981-fakel-zenit-29-08-2026"
     },
     {
       "id": "rpl-2026-08-29-Краснодар-Ростов",
@@ -909,7 +3269,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552664980-krasnodar-rostov-29-08-2026"
     },
     {
       "id": "rpl-2026-08-29-Ахмат-Крылья Советов",
@@ -923,7 +3284,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552664979-akhmat-kryliasovetov-29-08-2026"
     },
     {
       "id": "rpl-2026-08-29-Локомотив-Динамо М",
@@ -937,7 +3299,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552664978-lokomotiv-dinamo-29-08-2026"
     },
     {
       "id": "rpl-2026-08-30-Родина-Балтика",
@@ -951,7 +3314,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552664977-rodina-baltika-30-08-2026"
     },
     {
       "id": "rpl-2026-08-30-Спартак-Оренбург",
@@ -965,7 +3329,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552664976-spartak-orenburg-30-08-2026"
     },
     {
       "id": "rpl-2026-08-30-Рубин-Динамо Мх",
@@ -979,7 +3344,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552664975-rubin-dinamo-30-08-2026"
     },
     {
       "id": "rpl-2026-09-05-Крылья Советов-Краснодар",
@@ -993,7 +3359,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552664990-kryliasovetov-krasnodar-05-09-2026"
     },
     {
       "id": "rpl-2026-09-05-Зенит-ЦСКА",
@@ -1007,7 +3374,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552664989-zenit-tsska-05-09-2026"
     },
     {
       "id": "rpl-2026-09-05-Ростов-Факел",
@@ -1021,7 +3389,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552664988-rostov-fakel-05-09-2026"
     },
     {
       "id": "rpl-2026-09-06-Оренбург-Акрон",
@@ -1035,7 +3404,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552664987-orenburg-akron-06-09-2026"
     },
     {
       "id": "rpl-2026-09-06-Динамо Мх-Родина",
@@ -1049,7 +3419,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552664986-dinamo-rodina-06-09-2026"
     },
     {
       "id": "rpl-2026-09-06-Динамо М-Спартак",
@@ -1063,7 +3434,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552664985-dinamo-spartak-06-09-2026"
     },
     {
       "id": "rpl-2026-09-06-Балтика-Локомотив",
@@ -1077,7 +3449,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552664984-baltika-lokomotiv-06-09-2026"
     },
     {
       "id": "rpl-2026-09-07-Рубин-Ахмат",
@@ -1091,7 +3464,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552664983-rubin-akhmat-07-09-2026"
     },
     {
       "id": "rpl-2026-09-11-Крылья Советов-Родина",
@@ -1105,7 +3479,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552664998-kryliasovetov-rodina-11-09-2026"
     },
     {
       "id": "rpl-2026-09-12-Факел-Балтика",
@@ -1119,7 +3494,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552664997-fakel-baltika-12-09-2026"
     },
     {
       "id": "rpl-2026-09-12-Зенит-Локомотив",
@@ -1133,7 +3509,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552664996-zenit-lokomotiv-12-09-2026"
     },
     {
       "id": "rpl-2026-09-12-Динамо М-Оренбург",
@@ -1147,7 +3524,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552664995-dinamo-orenburg-12-09-2026"
     },
     {
       "id": "rpl-2026-09-12-ЦСКА-Рубин",
@@ -1161,7 +3539,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552664994-tsska-rubin-12-09-2026"
     },
     {
       "id": "rpl-2026-09-13-Ахмат-Динамо Мх",
@@ -1175,7 +3554,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552664993-akhmat-dinamo-13-09-2026"
     },
     {
       "id": "rpl-2026-09-13-Спартак-Ростов",
@@ -1189,7 +3569,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552664992-spartak-rostov-13-09-2026"
     },
     {
       "id": "rpl-2026-09-13-Краснодар-Акрон",
@@ -1203,7 +3584,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552664991-krasnodar-akron-13-09-2026"
     },
     {
       "id": "rpl-2026-09-16-Родина-Рубин",
@@ -1217,7 +3599,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665005-rodina-rubin-16-09-2026"
     },
     {
       "id": "rpl-2026-09-16-Спартак-Факел",
@@ -1231,7 +3614,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665006-spartak-fakel-16-09-2026"
     },
     {
       "id": "rpl-2026-09-16-Балтика-Зенит",
@@ -1245,7 +3629,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665003-baltika-zenit-16-09-2026"
     },
     {
       "id": "rpl-2026-09-16-Локомотив-Крылья Советов",
@@ -1259,7 +3644,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665004-lokomotiv-kryliasovetov-16-09-2026"
     },
     {
       "id": "rpl-2026-09-17-Оренбург-Краснодар",
@@ -1273,7 +3659,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665002-orenburg-krasnodar-17-09-2026"
     },
     {
       "id": "rpl-2026-09-17-Акрон-Ахмат",
@@ -1287,7 +3674,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665000-akron-akhmat-17-09-2026"
     },
     {
       "id": "rpl-2026-09-17-Ростов-Динамо М",
@@ -1301,7 +3689,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665001-rostov-dinamo-17-09-2026"
     },
     {
       "id": "rpl-2026-09-17-Динамо Мх-ЦСКА",
@@ -1315,7 +3704,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552664999-dinamo-tsska-17-09-2026"
     },
     {
       "id": "rpl-2026-10-09-Ростов-Акрон",
@@ -1329,7 +3719,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665014-rostov-akron-09-10-2026"
     },
     {
       "id": "rpl-2026-10-10-Оренбург-Динамо Мх",
@@ -1343,7 +3734,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665011-orenburg-dinamo-09-10-2026"
     },
     {
       "id": "rpl-2026-10-10-Факел-Локомотив",
@@ -1357,7 +3749,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665008-fakel-lokomotiv-09-10-2026"
     },
     {
       "id": "rpl-2026-10-10-Крылья Советов-Спартак",
@@ -1371,7 +3764,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665010-kryliasovetov-spartak-09-10-2026"
     },
     {
       "id": "rpl-2026-10-10-Краснодар-Зенит",
@@ -1385,7 +3779,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665013-krasnodar-zenit-09-10-2026"
     },
     {
       "id": "rpl-2026-10-11-Ахмат-Балтика",
@@ -1399,7 +3794,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665007-akhmat-baltika-09-10-2026"
     },
     {
       "id": "rpl-2026-10-11-ЦСКА-Родина",
@@ -1413,7 +3809,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665012-tsska-rodina-09-10-2026"
     },
     {
       "id": "rpl-2026-10-11-Рубин-Динамо М",
@@ -1427,7 +3824,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665009-rubin-dinamo-09-10-2026"
     },
     {
       "id": "rpl-2026-10-16-Родина-Оренбург",
@@ -1441,7 +3839,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665022-rodina-orenburg-16-10-2026"
     },
     {
       "id": "rpl-2026-10-17-Крылья Советов-Факел",
@@ -1455,7 +3854,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665018-kryliasovetov-fakel-16-10-2026"
     },
     {
       "id": "rpl-2026-10-17-Динамо Мх-Акрон",
@@ -1469,7 +3869,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665017-dinamo-akron-16-10-2026"
     },
     {
       "id": "rpl-2026-10-17-Локомотив-Краснодар",
@@ -1483,7 +3884,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665015-lokomotiv-krasnodar-16-10-2026"
     },
     {
       "id": "rpl-2026-10-18-Зенит-Ахмат",
@@ -1497,7 +3899,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665020-zenit-akhmat-16-10-2026"
     },
     {
       "id": "rpl-2026-10-18-Динамо М-ЦСКА",
@@ -1511,7 +3914,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665021-dinamo-tsska-16-10-2026"
     },
     {
       "id": "rpl-2026-10-18-Спартак-Рубин",
@@ -1525,7 +3929,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665019-spartak-rubin-16-10-2026"
     },
     {
       "id": "rpl-2026-10-18-Балтика-Ростов",
@@ -1539,7 +3944,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665016-baltika-rostov-16-10-2026"
     },
     {
       "id": "rpl-2026-10-23-Ахмат-Оренбург",
@@ -1553,7 +3959,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665024-akhmat-orenburg-23-10-2026"
     },
     {
       "id": "rpl-2026-10-24-Акрон-Динамо М",
@@ -1567,7 +3974,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665023-akron-dinamo-23-10-2026"
     },
     {
       "id": "rpl-2026-10-24-Факел-Родина",
@@ -1581,7 +3989,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665030-fakel-rodina-23-10-2026"
     },
     {
       "id": "rpl-2026-10-24-Рубин-Крылья Советов",
@@ -1595,7 +4004,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665026-rubin-kryliasovetov-23-10-2026"
     },
     {
       "id": "rpl-2026-10-24-Краснодар-Балтика",
@@ -1609,7 +4019,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665027-krasnodar-baltika-23-10-2026"
     },
     {
       "id": "rpl-2026-10-25-Ростов-Локомотив",
@@ -1623,7 +4034,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665025-rostov-lokomotiv-23-10-2026"
     },
     {
       "id": "rpl-2026-10-25-ЦСКА-Спартак",
@@ -1637,7 +4049,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665029-tsska-spartak-23-10-2026"
     },
     {
       "id": "rpl-2026-10-25-Зенит-Динамо Мх",
@@ -1651,7 +4064,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665028-zenit-dinamo-23-10-2026"
     },
     {
       "id": "rpl-2026-10-31-Рубин-Факел",
@@ -1665,7 +4079,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665037-rubin-fakel-01-11-2026"
     },
     {
       "id": "rpl-2026-10-31-Динамо М-Ахмат",
@@ -1679,7 +4094,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665038-dinamo-akhmat-01-11-2026"
     },
     {
       "id": "rpl-2026-10-31-Родина-Краснодар",
@@ -1693,7 +4109,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665032-rodina-krasnodar-01-11-2026"
     },
     {
       "id": "rpl-2026-11-01-Оренбург-ЦСКА",
@@ -1707,7 +4124,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665033-orenburg-tsska-01-11-2026"
     },
     {
       "id": "rpl-2026-11-01-Динамо Мх-Ростов",
@@ -1721,7 +4139,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665034-dinamo-rostov-01-11-2026"
     },
     {
       "id": "rpl-2026-11-01-Балтика-Акрон",
@@ -1735,7 +4154,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665035-baltika-akron-01-11-2026"
     },
     {
       "id": "rpl-2026-11-01-Локомотив-Спартак",
@@ -1749,7 +4169,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665031-lokomotiv-spartak-01-11-2026"
     },
     {
       "id": "rpl-2026-11-02-Крылья Советов-Зенит",
@@ -1763,7 +4184,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665036-kryliasovetov-zenit-01-11-2026"
     },
     {
       "id": "rpl-2026-11-06-Локомотив-Рубин",
@@ -1777,7 +4199,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665043-lokomotiv-rubin-07-11-2026"
     },
     {
       "id": "rpl-2026-11-07-Факел-Динамо М",
@@ -1791,7 +4214,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665039-fakel-dinamo-07-11-2026"
     },
     {
       "id": "rpl-2026-11-07-Ахмат-Родина",
@@ -1805,7 +4229,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665046-akhmat-rodina-07-11-2026"
     },
     {
       "id": "rpl-2026-11-07-Краснодар-ЦСКА",
@@ -1819,7 +4244,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665044-krasnodar-tsska-07-11-2026"
     },
     {
       "id": "rpl-2026-11-08-Крылья Советов-Оренбург",
@@ -1833,7 +4259,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665041-kryliasovetov-orenburg-07-11-2026"
     },
     {
       "id": "rpl-2026-11-08-Спартак-Акрон",
@@ -1847,7 +4274,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665040-spartak-akron-07-11-2026"
     },
     {
       "id": "rpl-2026-11-08-Зенит-Ростов",
@@ -1861,7 +4289,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665045-zenit-rostov-07-11-2026"
     },
     {
       "id": "rpl-2026-11-08-Балтика-Динамо Мх",
@@ -1875,7 +4304,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665042-baltika-dinamo-07-11-2026"
     },
     {
       "id": "rpl-2026-11-20-Ростов-Крылья Советов",
@@ -1889,7 +4319,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665053-rostov-kryliasovetov-21-11-2026"
     },
     {
       "id": "rpl-2026-11-21-Оренбург-Балтика",
@@ -1903,7 +4334,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665050-orenburg-baltika-21-11-2026"
     },
     {
       "id": "rpl-2026-11-21-Акрон-Факел",
@@ -1917,7 +4349,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665048-akron-fakel-21-11-2026"
     },
     {
       "id": "rpl-2026-11-21-Рубин-Зенит",
@@ -1931,7 +4364,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665047-rubin-zenit-21-11-2026"
     },
     {
       "id": "rpl-2026-11-21-ЦСКА-Ахмат",
@@ -1945,7 +4379,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665054-tsska-akhmat-21-11-2026"
     },
     {
       "id": "rpl-2026-11-22-Динамо М-Краснодар",
@@ -1959,7 +4394,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665051-dinamo-krasnodar-21-11-2026"
     },
     {
       "id": "rpl-2026-11-22-Динамо Мх-Спартак",
@@ -1973,7 +4409,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665052-dinamo-spartak-21-11-2026"
     },
     {
       "id": "rpl-2026-11-22-Родина-Локомотив",
@@ -1987,7 +4424,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665049-rodina-lokomotiv-21-11-2026"
     },
     {
       "id": "rpl-2026-11-28-Рубин-Акрон",
@@ -2001,7 +4439,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665057-rubin-akron-28-11-2026"
     },
     {
       "id": "rpl-2026-11-28-ЦСКА-Зенит",
@@ -2015,7 +4454,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665060-tsska-zenit-28-11-2026"
     },
     {
       "id": "rpl-2026-11-28-Балтика-Ахмат",
@@ -2029,7 +4469,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665062-baltika-akhmat-28-11-2026"
     },
     {
       "id": "rpl-2026-11-29-Оренбург-Родина",
@@ -2043,7 +4484,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665061-orenburg-rodina-28-11-2026"
     },
     {
       "id": "rpl-2026-11-29-Ростов-Краснодар",
@@ -2057,7 +4499,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665059-rostov-krasnodar-28-11-2026"
     },
     {
       "id": "rpl-2026-11-29-Крылья Советов-Динамо М",
@@ -2071,7 +4514,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665058-kryliasovetov-dinamo-28-11-2026"
     },
     {
       "id": "rpl-2026-11-29-Локомотив-Динамо Мх",
@@ -2085,7 +4529,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665055-lokomotiv-dinamo-28-11-2026"
     },
     {
       "id": "rpl-2026-11-30-Факел-Спартак",
@@ -2099,7 +4544,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665056-fakel-spartak-28-11-2026"
     },
     {
       "id": "rpl-2026-12-04-Динамо Мх-Крылья Советов",
@@ -2113,7 +4559,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665064-dinamo-kryliasovetov-04-12-2026"
     },
     {
       "id": "rpl-2026-12-05-Акрон-Оренбург",
@@ -2127,7 +4574,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665069-akron-orenburg-04-12-2026"
     },
     {
       "id": "rpl-2026-12-05-Родина-ЦСКА",
@@ -2141,7 +4589,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665070-rodina-tsska-04-12-2026"
     },
     {
       "id": "rpl-2026-12-05-Зенит-Балтика",
@@ -2155,7 +4604,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665065-zenit-baltika-04-12-2026"
     },
     {
       "id": "rpl-2026-12-05-Ахмат-Локомотив",
@@ -2169,7 +4619,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665063-akhmat-lokomotiv-04-12-2026"
     },
     {
       "id": "rpl-2026-12-06-Факел-Ростов",
@@ -2183,7 +4634,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665068-fakel-rostov-04-12-2026"
     },
     {
       "id": "rpl-2026-12-06-Спартак-Динамо М",
@@ -2197,7 +4649,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665066-spartak-dinamo-04-12-2026"
     },
     {
       "id": "rpl-2026-12-06-Краснодар-Рубин",
@@ -2211,7 +4664,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665067-krasnodar-rubin-04-12-2026"
     },
     {
       "id": "rpl-2027-02-26-Ахмат-Акрон",
@@ -2225,7 +4679,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665072-akhmat-akron-26-02-2027"
     },
     {
       "id": "rpl-2027-02-26-Балтика-Родина",
@@ -2239,7 +4694,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665073-baltika-rodina-26-02-2027"
     },
     {
       "id": "rpl-2027-02-26-Динамо М-Рубин",
@@ -2253,7 +4709,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665071-dinamo-rubin-26-02-2027"
     },
     {
       "id": "rpl-2027-02-26-Динамо Мх-Оренбург",
@@ -2267,7 +4724,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665078-dinamo-orenburg-26-02-2027"
     },
     {
       "id": "rpl-2027-02-26-Зенит-Факел",
@@ -2281,7 +4739,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665075-zenit-fakel-26-02-2027"
     },
     {
       "id": "rpl-2027-02-26-Краснодар-Спартак",
@@ -2295,7 +4754,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665077-krasnodar-spartak-26-02-2027"
     },
     {
       "id": "rpl-2027-02-26-Крылья Советов-Локомотив",
@@ -2309,7 +4769,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665076-kryliasovetov-lokomotiv-26-02-2027"
     },
     {
       "id": "rpl-2027-02-26-Ростов-ЦСКА",
@@ -2323,7 +4784,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665074-tsska-rostov-26-02-2027"
     },
     {
       "id": "rpl-2027-03-05-Акрон-Спартак",
@@ -2337,7 +4799,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665084-akron-spartak-05-03-2027"
     },
     {
       "id": "rpl-2027-03-05-Ахмат-Рубин",
@@ -2351,7 +4814,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665081-akhmat-rubin-05-03-2027"
     },
     {
       "id": "rpl-2027-03-05-Динамо Мх-Факел",
@@ -2365,7 +4829,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665086-dinamo-fakel-05-03-2027"
     },
     {
       "id": "rpl-2027-03-05-Зенит-Оренбург",
@@ -2379,7 +4844,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665083-zenit-orenburg-05-03-2027"
     },
     {
       "id": "rpl-2027-03-05-Краснодар-Крылья Советов",
@@ -2393,7 +4859,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665080-krasnodar-kryliasovetov-05-03-2027"
     },
     {
       "id": "rpl-2027-03-05-Локомотив-ЦСКА",
@@ -2407,7 +4874,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665079-lokomotiv-tsska-05-03-2027"
     },
     {
       "id": "rpl-2027-03-05-Родина-Динамо М",
@@ -2421,7 +4889,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665085-rodina-dinamo-05-03-2027"
     },
     {
       "id": "rpl-2027-03-05-Ростов-Балтика",
@@ -2435,7 +4904,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665082-rostov-baltika-05-03-2027"
     },
     {
       "id": "rpl-2027-03-12-Акрон-Динамо Мх",
@@ -2449,7 +4919,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665091-akron-dinamo-12-03-2027"
     },
     {
       "id": "rpl-2027-03-12-Балтика-Краснодар",
@@ -2463,7 +4934,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665087-baltika-krasnodar-12-03-2027"
     },
     {
       "id": "rpl-2027-03-12-Динамо М-Локомотив",
@@ -2477,7 +4949,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665093-dinamo-lokomotiv-12-03-2027"
     },
     {
       "id": "rpl-2027-03-12-Оренбург-Крылья Советов",
@@ -2491,7 +4964,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665088-orenburg-kryliasovetov-12-03-2027"
     },
     {
       "id": "rpl-2027-03-12-Родина-Зенит",
@@ -2505,7 +4979,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665090-rodina-zenit-12-03-2027"
     },
     {
       "id": "rpl-2027-03-12-Рубин-Ростов",
@@ -2519,7 +4994,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665094-rubin-rostov-12-03-2027"
     },
     {
       "id": "rpl-2027-03-12-Спартак-Ахмат",
@@ -2533,7 +5009,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665092-spartak-akhmat-12-03-2027"
     },
     {
       "id": "rpl-2027-03-12-Факел-ЦСКА",
@@ -2547,7 +5024,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665089-fakel-tsska-12-03-2027"
     },
     {
       "id": "rpl-2027-03-19-Динамо Мх-Балтика",
@@ -2561,7 +5039,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665101-dinamo-baltika-19-03-2027"
     },
     {
       "id": "rpl-2027-03-19-Зенит-Акрон",
@@ -2575,7 +5054,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665097-zenit-akron-19-03-2027"
     },
     {
       "id": "rpl-2027-03-19-Краснодар-Динамо М",
@@ -2589,7 +5069,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665099-krasnodar-dinamo-19-03-2027"
     },
     {
       "id": "rpl-2027-03-19-Крылья Советов-Ахмат",
@@ -2603,7 +5084,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665102-kryliasovetov-akhmat-19-03-2027"
     },
     {
       "id": "rpl-2027-03-19-Локомотив-Факел",
@@ -2617,7 +5099,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665095-lokomotiv-fakel-19-03-2027"
     },
     {
       "id": "rpl-2027-03-19-Ростов-Родина",
@@ -2631,7 +5114,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665098-rostov-rodina-19-03-2027"
     },
     {
       "id": "rpl-2027-03-19-Рубин-Спартак",
@@ -2645,7 +5129,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665100-rubin-spartak-19-03-2027"
     },
     {
       "id": "rpl-2027-03-19-ЦСКА-Оренбург",
@@ -2659,7 +5144,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665096-tsska-orenburg-19-03-2027"
     },
     {
       "id": "rpl-2027-04-03-Акрон-Локомотив",
@@ -2673,7 +5159,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665108-akron-lokomotiv-03-04-2027"
     },
     {
       "id": "rpl-2027-04-03-Ахмат-Факел",
@@ -2687,7 +5174,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665104-akhmat-fakel-03-04-2027"
     },
     {
       "id": "rpl-2027-04-03-Динамо М-Балтика",
@@ -2701,7 +5189,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665110-dinamo-baltika-03-04-2027"
     },
     {
       "id": "rpl-2027-04-03-Оренбург-Рубин",
@@ -2715,7 +5204,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665105-orenburg-rubin-03-04-2027"
     },
     {
       "id": "rpl-2027-04-03-Родина-Крылья Советов",
@@ -2729,7 +5219,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665107-rodina-kryliasovetov-03-04-2027"
     },
     {
       "id": "rpl-2027-04-03-Ростов-Зенит",
@@ -2743,7 +5234,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665103-rostov-zenit-03-04-2027"
     },
     {
       "id": "rpl-2027-04-03-Спартак-Динамо Мх",
@@ -2757,7 +5249,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665106-spartak-dinamo-03-04-2027"
     },
     {
       "id": "rpl-2027-04-03-ЦСКА-Краснодар",
@@ -2771,7 +5264,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665109-tsska-krasnodar-03-04-2027"
     },
     {
       "id": "rpl-2027-04-10-Ахмат-Динамо М",
@@ -2785,7 +5279,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665115-akhmat-dinamo-10-04-2027"
     },
     {
       "id": "rpl-2027-04-10-Балтика-ЦСКА",
@@ -2799,7 +5294,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665113-baltika-tsska-10-04-2027"
     },
     {
       "id": "rpl-2027-04-10-Динамо Мх-Рубин",
@@ -2813,7 +5309,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665114-dinamo-rubin-10-04-2027"
     },
     {
       "id": "rpl-2027-04-10-Краснодар-Родина",
@@ -2827,7 +5324,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665116-krasnodar-rodina-10-04-2027"
     },
     {
       "id": "rpl-2027-04-10-Крылья Советов-Ростов",
@@ -2841,7 +5339,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665118-kryliasovetov-rostov-10-04-2027"
     },
     {
       "id": "rpl-2027-04-10-Локомотив-Зенит",
@@ -2855,7 +5354,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665111-lokomotiv-zenit-10-04-2027"
     },
     {
       "id": "rpl-2027-04-10-Оренбург-Спартак",
@@ -2869,7 +5369,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665117-orenburg-spartak-10-04-2027"
     },
     {
       "id": "rpl-2027-04-10-Факел-Акрон",
@@ -2883,7 +5384,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665112-fakel-akron-10-04-2027"
     },
     {
       "id": "rpl-2027-04-16-Акрон-Краснодар",
@@ -2897,7 +5399,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665121-akron-krasnodar-16-04-2027"
     },
     {
       "id": "rpl-2027-04-16-Динамо М-Факел",
@@ -2911,7 +5414,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665122-dinamo-fakel-16-04-2027"
     },
     {
       "id": "rpl-2027-04-16-Зенит-Крылья Советов",
@@ -2925,7 +5429,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": null
     },
     {
       "id": "rpl-2027-04-16-Локомотив-Оренбург",
@@ -2939,7 +5444,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665123-lokomotiv-orenburg-16-04-2027"
     },
     {
       "id": "rpl-2027-04-16-Родина-Динамо Мх",
@@ -2953,7 +5459,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665125-rodina-dinamo-16-04-2027"
     },
     {
       "id": "rpl-2027-04-16-Ростов-Ахмат",
@@ -2967,7 +5474,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665126-rostov-akhmat-16-04-2027"
     },
     {
       "id": "rpl-2027-04-16-Рубин-Балтика",
@@ -2981,7 +5489,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665120-rubin-baltika-16-04-2027"
     },
     {
       "id": "rpl-2027-04-16-Спартак-ЦСКА",
@@ -2995,7 +5504,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665124-spartak-tsska-16-04-2027"
     },
     {
       "id": "rpl-2027-04-23-Акрон-Ростов",
@@ -3009,7 +5519,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665132-akron-rostov-23-04-2027"
     },
     {
       "id": "rpl-2027-04-23-Ахмат-Зенит",
@@ -3023,7 +5534,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665128-akhmat-zenit-23-04-2027"
     },
     {
       "id": "rpl-2027-04-23-Балтика-Крылья Советов",
@@ -3037,7 +5549,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665131-baltika-kryliasovetov-23-04-2027"
     },
     {
       "id": "rpl-2027-04-23-Краснодар-Динамо Мх",
@@ -3051,7 +5564,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665134-krasnodar-dinamo-23-04-2027"
     },
     {
       "id": "rpl-2027-04-23-Оренбург-Факел",
@@ -3065,7 +5579,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665127-orenburg-fakel-23-04-2027"
     },
     {
       "id": "rpl-2027-04-23-Родина-Спартак",
@@ -3079,7 +5594,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665133-rodina-spartak-23-04-2027"
     },
     {
       "id": "rpl-2027-04-23-Рубин-Локомотив",
@@ -3093,7 +5609,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665130-rubin-lokomotiv-23-04-2027"
     },
     {
       "id": "rpl-2027-04-23-ЦСКА-Динамо М",
@@ -3107,7 +5624,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665129-tsska-dinamo-23-04-2027"
     },
     {
       "id": "rpl-2027-05-01-Динамо М-Акрон",
@@ -3121,7 +5639,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665137-dinamo-akron-01-05-2027"
     },
     {
       "id": "rpl-2027-05-01-Динамо Мх-Ахмат",
@@ -3135,7 +5654,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665139-dinamo-akhmat-01-05-2027"
     },
     {
       "id": "rpl-2027-05-01-Зенит-Краснодар",
@@ -3149,7 +5669,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665141-zenit-krasnodar-01-05-2027"
     },
     {
       "id": "rpl-2027-05-01-Крылья Советов-ЦСКА",
@@ -3163,7 +5684,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665136-kryliasovetov-tsska-01-05-2027"
     },
     {
       "id": "rpl-2027-05-01-Локомотив-Родина",
@@ -3177,7 +5699,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665140-lokomotiv-rodina-01-05-2027"
     },
     {
       "id": "rpl-2027-05-01-Ростов-Оренбург",
@@ -3191,7 +5714,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665135-rostov-orenburg-01-05-2027"
     },
     {
       "id": "rpl-2027-05-01-Спартак-Балтика",
@@ -3205,7 +5729,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665142-spartak-baltika-01-05-2027"
     },
     {
       "id": "rpl-2027-05-01-Факел-Рубин",
@@ -3219,7 +5744,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665138-fakel-rubin-01-05-2027"
     },
     {
       "id": "rpl-2027-05-08-Балтика-Факел",
@@ -3233,7 +5759,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665147-baltika-fakel-08-05-2027"
     },
     {
       "id": "rpl-2027-05-08-Динамо М-Ростов",
@@ -3247,7 +5774,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665144-dinamo-rostov-08-05-2027"
     },
     {
       "id": "rpl-2027-05-08-Динамо Мх-Зенит",
@@ -3261,7 +5789,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665143-dinamo-zenit-08-05-2027"
     },
     {
       "id": "rpl-2027-05-08-Краснодар-Оренбург",
@@ -3275,7 +5804,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665146-krasnodar-orenburg-08-05-2027"
     },
     {
       "id": "rpl-2027-05-08-Крылья Советов-Рубин",
@@ -3289,7 +5819,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665150-kryliasovetov-rubin-08-05-2027"
     },
     {
       "id": "rpl-2027-05-08-Родина-Ахмат",
@@ -3303,7 +5834,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665145-rodina-akhmat-08-05-2027"
     },
     {
       "id": "rpl-2027-05-08-Спартак-Локомотив",
@@ -3317,7 +5849,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665148-spartak-lokomotiv-08-05-2027"
     },
     {
       "id": "rpl-2027-05-08-ЦСКА-Акрон",
@@ -3331,7 +5864,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665149-tsska-akron-08-05-2027"
     },
     {
       "id": "rpl-2027-05-15-Акрон-Родина",
@@ -3345,7 +5879,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665155-akron-rodina-15-05-2027"
     },
     {
       "id": "rpl-2027-05-15-Ахмат-Краснодар",
@@ -3359,7 +5894,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665152-akhmat-krasnodar-15-05-2027"
     },
     {
       "id": "rpl-2027-05-15-Зенит-Спартак",
@@ -3373,7 +5909,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665156-zenit-spartak-15-05-2027"
     },
     {
       "id": "rpl-2027-05-15-Локомотив-Балтика",
@@ -3387,7 +5924,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665154-lokomotiv-baltika-15-05-2027"
     },
     {
       "id": "rpl-2027-05-15-Оренбург-Динамо М",
@@ -3401,7 +5939,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665153-orenburg-dinamo-15-05-2027"
     },
     {
       "id": "rpl-2027-05-15-Ростов-Динамо Мх",
@@ -3415,7 +5954,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665151-rostov-dinamo-15-05-2027"
     },
     {
       "id": "rpl-2027-05-15-Рубин-ЦСКА",
@@ -3429,7 +5969,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665158-rubin-tsska-15-05-2027"
     },
     {
       "id": "rpl-2027-05-15-Факел-Крылья Советов",
@@ -3443,7 +5984,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665157-fakel-kryliasovetov-15-05-2027"
     },
     {
       "id": "rpl-2027-05-22-Акрон-Балтика",
@@ -3457,7 +5999,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665165-akron-baltika-22-05-2027"
     },
     {
       "id": "rpl-2027-05-22-Динамо М-Зенит",
@@ -3471,7 +6014,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665166-dinamo-zenit-22-05-2027"
     },
     {
       "id": "rpl-2027-05-22-Локомотив-Ростов",
@@ -3485,7 +6029,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665162-lokomotiv-rostov-22-05-2027"
     },
     {
       "id": "rpl-2027-05-22-Оренбург-Ахмат",
@@ -3499,7 +6044,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665164-orenburg-akhmat-22-05-2027"
     },
     {
       "id": "rpl-2027-05-22-Рубин-Родина",
@@ -3513,7 +6059,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665163-rubin-rodina-22-05-2027"
     },
     {
       "id": "rpl-2027-05-22-Спартак-Крылья Советов",
@@ -3527,7 +6074,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665160-spartak-kryliasovetov-22-05-2027"
     },
     {
       "id": "rpl-2027-05-22-Факел-Краснодар",
@@ -3541,7 +6089,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665161-fakel-krasnodar-22-05-2027"
     },
     {
       "id": "rpl-2027-05-22-ЦСКА-Динамо Мх",
@@ -3555,7 +6104,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665159-tsska-dinamo-22-05-2027"
     },
     {
       "id": "rpl-2027-05-29-Ахмат-ЦСКА",
@@ -3569,7 +6119,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665171-akhmat-tsska-29-05-2027"
     },
     {
       "id": "rpl-2027-05-29-Балтика-Оренбург",
@@ -3583,7 +6134,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665173-baltika-orenburg-29-05-2027"
     },
     {
       "id": "rpl-2027-05-29-Динамо Мх-Динамо М",
@@ -3597,7 +6149,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665174-dinamo-dinamo-29-05-2027"
     },
     {
       "id": "rpl-2027-05-29-Зенит-Рубин",
@@ -3611,7 +6164,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665168-zenit-rubin-29-05-2027"
     },
     {
       "id": "rpl-2027-05-29-Краснодар-Локомотив",
@@ -3625,7 +6179,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665169-krasnodar-lokomotiv-29-05-2027"
     },
     {
       "id": "rpl-2027-05-29-Крылья Советов-Акрон",
@@ -3639,7 +6194,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665170-kryliasovetov-akron-29-05-2027"
     },
     {
       "id": "rpl-2027-05-29-Родина-Факел",
@@ -3653,7 +6209,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665172-rodina-fakel-29-05-2027"
     },
     {
       "id": "rpl-2027-05-29-Ростов-Спартак",
@@ -3667,7 +6224,8 @@
       "homeScore": null,
       "awayScore": null,
       "live": null,
-      "status": "scheduled"
+      "status": "scheduled",
+      "url": "/football/rpl/552665167-rostov-spartak-29-05-2027"
     }
   ]
 }

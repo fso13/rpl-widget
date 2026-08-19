@@ -138,7 +138,7 @@ def parse_standings(html: str) -> dict[str, Any]:
     return {"season": season.replace("-", "/"), "rows": rows}
 
 
-def parse_card(card: str, tour: int, date_key: str) -> dict[str, Any] | None:
+def parse_card(card: str, tour: int, date_key: str, href: str | None = None) -> dict[str, Any] | None:
     titles = capture_all(r'm-tournament-game-participant__title">([^<]+)', card)
     if len(titles) < 2:
         return None
@@ -152,6 +152,7 @@ def parse_card(card: str, tour: int, date_key: str) -> dict[str, Any] | None:
         r"e-tournament-game-card-additional-top-content__live[^>]*>\s*([^<]+)",
         card,
     )
+    href = href or capture_first(r'href="(/football/rpl/\d+-[^"]+)"', card)
     home_score = scores[0] if len(scores) > 0 and scores[0] != "" else None
     away_score = scores[1] if len(scores) > 1 and scores[1] != "" else None
     if live:
@@ -178,6 +179,7 @@ def parse_card(card: str, tour: int, date_key: str) -> dict[str, Any] | None:
         "awayScore": int(away_score) if away_score is not None and away_score.isdigit() else away_score,
         "live": live,
         "status": status,
+        "url": href,
     }
 
 
@@ -196,8 +198,11 @@ def parse_calendar(html: str) -> list[dict[str, Any]]:
             start = marker.end()
             end = date_matches[index + 1].start() if index + 1 < len(date_matches) else len(body)
             day = body[start:end]
-            for card in day.split("e-tournament-game-card-team-vs-team-content")[1:]:
-                parsed = parse_card(card, tour, date_key)
+            chunks = day.split("e-tournament-game-card-team-vs-team-content")
+            for index, card in enumerate(chunks[1:], start=1):
+                prev = chunks[index - 1]
+                hrefs = re.findall(r'href="(/football/rpl/\d+-[^"]+)"', prev)
+                parsed = parse_card(card, tour, date_key, href=hrefs[-1] if hrefs else None)
                 if not parsed:
                     continue
                 key = (tour, date_key, normalize(parsed["home"]), normalize(parsed["away"]))
@@ -249,7 +254,7 @@ def merge_matches(local: list[dict[str, Any]], live: list[dict[str, Any]]) -> li
         row = dict(item)
         if overlay:
             used.add(id(overlay))
-            for field in ("date", "time", "homeScore", "awayScore", "live", "status", "id"):
+            for field in ("date", "time", "homeScore", "awayScore", "live", "status", "id", "url"):
                 if overlay.get(field) not in (None, ""):
                     row[field] = overlay[field]
             row["home"] = overlay["home"]
@@ -348,6 +353,206 @@ def standings_from_matches(matches: list[dict[str, Any]]) -> list[dict[str, Any]
     return rows
 
 
+EVENT_TITLES = r"Гол|Автогол|Желтая карточка|Красная карточка|Изменение составов"
+DETAIL_VERSION = 3
+EVENT_TYPES = {
+    "Гол": "goal",
+    "Автогол": "own_goal",
+    "Желтая карточка": "yellow",
+    "Красная карточка": "red",
+    "Изменение составов": "sub",
+}
+
+
+def clean_minute(raw: str | None) -> str:
+    return (raw or "").replace("’", "'").replace("′", "'").strip()
+
+
+def parse_overview_goals(html: str) -> list[dict[str, Any]]:
+    start = html.find("p-game-main-info-goals-overview")
+    if start < 0:
+        return []
+    end = html.find("p-game-timeline", start)
+    block = html[start : end if end > start else start + 25000]
+    events: list[dict[str, Any]] = []
+    for part in re.split(r"p-game-main-info-goals-overview-goal ", block)[1:]:
+        side = "home" if "variant-home" in part[:150] else "away"
+        player = capture_first(r"goals-overview-goal__scorer[^>]*>([^<]+)", part)
+        assist = capture_first(r"goals-overview-goal__assistents[^>]*>([^<]+)", part)
+        minute = clean_minute(capture_first(r'goals-overview-goal__minute">([^<]+)', part))
+        if not player or not minute:
+            continue
+        own = "автогол" in part.lower() or "own-goal" in part.lower() or "owngoal" in part.lower()
+        events.append(
+            {
+                "type": "own_goal" if own else "goal",
+                "side": side,
+                "minute": minute,
+                "player": player,
+                "assist": assist,
+            }
+        )
+    return events
+
+
+def parse_timeline_events(html: str) -> list[dict[str, Any]]:
+    events: list[dict[str, Any]] = []
+    for marker in re.finditer(rf'title="({EVENT_TITLES})"', html):
+        kind = EVENT_TYPES[marker.group(1)]
+        window = html[max(0, marker.start() - 500) : marker.end() + 4500]
+        minute = clean_minute(capture_first(r'event-time__minute">([^<]+)', window))
+        before = window[: max(window.find('title="'), 0)]
+        side = "home" if "event-time--variant-home" in before else "away"
+        event: dict[str, Any] = {"type": kind, "side": side, "minute": minute}
+        if kind in ("goal", "own_goal"):
+            event["player"] = capture_first(r"goal-template__scorer[^>]*>([^<]+)", window)
+            event["assist"] = capture_first(r"goal-template__assistant[^>]*>([^<]+)", window)
+        elif kind in ("yellow", "red"):
+            event["player"] = capture_first(r"basic-template__name[^>]*>([^<]+)", window)
+        elif kind == "sub":
+            incoming = None
+            outgoing = None
+            names = capture_all(r"changing-template-player__name[^>]*>([^<]+)", window)
+            for part in window.split("changing-template-player ")[1:3]:
+                name = capture_first(r"changing-template-player__name[^>]*>([^<]+)", part)
+                if not name:
+                    continue
+                if "2DB343" in part:
+                    incoming = name
+                elif "F43E31" in part:
+                    outgoing = name
+            if incoming is None and names:
+                incoming = names[0]
+            if outgoing is None and len(names) > 1:
+                outgoing = names[1]
+            event["playerIn"] = incoming
+            event["playerOut"] = outgoing
+        events.append(event)
+    return events
+
+
+def merge_events(overview: list[dict[str, Any]], timeline: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    own_keys = {
+        (item["minute"], item.get("player"))
+        for item in timeline
+        if item["type"] == "own_goal"
+    }
+    goals: list[dict[str, Any]] = []
+    seen: set[tuple[str, str | None]] = set()
+    source = overview or [item for item in timeline if item["type"] in ("goal", "own_goal")]
+    for item in source:
+        key = (item["minute"], item.get("player"))
+        if key in seen:
+            continue
+        seen.add(key)
+        row = dict(item)
+        if key in own_keys:
+            row["type"] = "own_goal"
+        goals.append(row)
+    extras = [item for item in timeline if item["type"] not in ("goal", "own_goal")]
+    merged = goals + extras
+
+    def sort_key(item: dict[str, Any]) -> tuple[int, int, str]:
+        text = str(item.get("minute") or "").replace("'", "")
+        parts = text.split("+")
+        main = int(re.sub(r"\D", "", parts[0]) or 0)
+        extra = int(re.sub(r"\D", "", parts[1]) or 0) if len(parts) > 1 else 0
+        return (main, extra, item.get("type") or "")
+
+    merged.sort(key=sort_key)
+    return merged
+
+
+def parse_match_detail(html: str) -> dict[str, Any]:
+    stadium = capture_first(r"p-game-main-info-header__stadium-name[^>]*>([^<]+)", html)
+    referee = capture_first(r"p-game-main-info-header__referee-name[^>]*>([^<]+)", html)
+    events = merge_events(parse_overview_goals(html), parse_timeline_events(html))
+    stats: list[dict[str, str]] = []
+    for home, name, away in re.findall(
+        r'color--text-color--gray-500">([^<]+)</span>'
+        r'<span class="typography typography--variant-body-m-regular color color--text-color--gray-800">([^<]+)</span>'
+        r'<span class="typography typography--variant-body-l-regular color color--text-color--gray-500">([^<]+)</span>',
+        html,
+    ):
+        stats.append({"name": name.strip(), "home": home.strip(), "away": away.strip()})
+    return {
+        "stadium": stadium,
+        "referee": referee,
+        "events": events,
+        "stats": stats,
+        "detailsVersion": DETAIL_VERSION,
+    }
+
+
+def previous_matches() -> dict[str, dict[str, Any]]:
+    if not OUT.exists():
+        return {}
+    try:
+        payload = json.loads(OUT.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+    return {item["id"]: item for item in payload.get("matches", []) if "id" in item}
+
+
+def details_complete(old: dict[str, Any]) -> bool:
+    if old.get("detailsVersion") != DETAIL_VERSION:
+        return False
+    for event in old.get("events") or []:
+        kind = event.get("type")
+        if kind in ("goal", "own_goal") and not event.get("player"):
+            return False
+        if kind in ("yellow", "red") and not event.get("player"):
+            return False
+        if kind == "sub" and not (event.get("playerIn") and event.get("playerOut")):
+            return False
+    home_score, away_score = old.get("homeScore"), old.get("awayScore")
+    if isinstance(home_score, int) and isinstance(away_score, int):
+        scored = sum(1 for event in old.get("events") or [] if event.get("type") in ("goal", "own_goal"))
+        if scored != home_score + away_score:
+            return False
+    return True
+
+
+def enrich_matches(matches: list[dict[str, Any]]) -> None:
+    cached = previous_matches()
+    fetched = 0
+    for match in matches:
+        old = cached.get(match["id"], {})
+        if not match.get("url"):
+            match["url"] = old.get("url")
+        reuse = (
+            match["status"] == "finished"
+            and details_complete(old)
+            and old.get("url") == match.get("url")
+        )
+        if reuse:
+            match["events"] = old["events"]
+            match["stats"] = old.get("stats") or []
+            match["stadium"] = old.get("stadium")
+            match["referee"] = old.get("referee")
+            match["detailsVersion"] = old.get("detailsVersion")
+            continue
+        if match["status"] not in ("finished", "live") or not match.get("url"):
+            continue
+        url = match["url"]
+        if url.startswith("/"):
+            url = "https://matchtv.ru" + url
+        try:
+            detail = parse_match_detail(fetch(url))
+        except Exception as error:
+            print(f"detail fail {match['id']}: {error}", file=sys.stderr)
+            if old.get("events"):
+                match["events"] = old["events"]
+                match["stats"] = old.get("stats") or []
+                match["stadium"] = old.get("stadium")
+                match["referee"] = old.get("referee")
+            continue
+        match.update(detail)
+        fetched += 1
+    if fetched:
+        print(f"fetched details for {fetched} matches")
+
+
 def build() -> dict[str, Any]:
     table_html = fetch(TABLE_URL)
     calendar_html = fetch(CALENDAR_URL)
@@ -355,6 +560,7 @@ def build() -> dict[str, Any]:
     live_matches = parse_calendar(calendar_html)
     local_matches = load_local_schedule()
     matches = merge_matches(local_matches, live_matches) if local_matches else live_matches
+    enrich_matches(matches)
 
     standings = table["rows"]
     if len(standings) != 16:

@@ -11,9 +11,18 @@ const state = {
   team: "",
   timer: null,
   livePoints: localStorage.getItem("rpl-live-points") === "1",
+  expandedId: null,
 };
 
-const $ = (id) => document.getElementById(id);
+const $ = (id) => document.getElementById("" + id);
+
+function esc(value) {
+  return String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
 
 function todayKey(now = new Date()) {
   const parts = new Intl.DateTimeFormat("en-CA", {
@@ -71,6 +80,60 @@ function scoreText(match) {
     return `${home}:${away}`;
   }
   return match.time || "TBA";
+}
+
+function minuteKey(minute) {
+  const text = String(minute || "").replace("'", "");
+  const parts = text.split("+").map((part) => parseInt(part, 10) || 0);
+  return (parts[0] || 0) * 100 + (parts[1] || 0);
+}
+
+function eventWho(event) {
+  if (event.type === "goal" || event.type === "own_goal") {
+    const note = event.type === "own_goal" ? "автогол" : event.assist;
+    return `<span class="who">
+      <i class="ico ${event.type}"></i>
+      <span>${esc(event.player || "гол")}${note ? `<small>${esc(note)}</small>` : ""}</span>
+    </span>`;
+  }
+  if (event.type === "yellow" || event.type === "red") {
+    return `<span class="who"><i class="ico ${event.type}"></i><span>${esc(event.player || "карточка")}</span></span>`;
+  }
+  if (event.type === "sub") {
+    return `<span class="who sub">
+      <i class="ico sub"></i>
+      <span><b class="in">${esc(event.playerIn || "")}</b><b class="out">${esc(event.playerOut || "")}</b></span>
+    </span>`;
+  }
+  return "";
+}
+
+function matchDetails(match) {
+  if (state.expandedId !== match.id) return "";
+  if (match.status === "scheduled") {
+    return `<div class="match-acc"><p class="acc-empty">События появятся после начала матча</p></div>`;
+  }
+  const events = [...(match.events || [])].sort((a, b) => minuteKey(a.minute) - minuteKey(b.minute));
+  if (!events.length) {
+    return `<div class="match-acc"><p class="acc-empty">Протокол ещё не загружен</p></div>`;
+  }
+  const rows = events.map((event) => `<li class="ev">
+    <div class="col home">${event.side === "home" ? eventWho(event) : ""}</div>
+    <div class="min">${esc(event.minute)}</div>
+    <div class="col away">${event.side === "away" ? eventWho(event) : ""}</div>
+  </li>`).join("");
+  const meta = [match.stadium, match.referee ? `судья ${match.referee}` : ""]
+    .filter(Boolean)
+    .map(esc)
+    .join(" · ");
+  const stats = (match.stats || []).map((row) => `<div class="stat">
+    <b>${esc(row.home)}</b><span>${esc(row.name)}</span><b>${esc(row.away)}</b>
+  </div>`).join("");
+  return `<div class="match-acc">
+    ${meta ? `<p class="acc-meta">${meta}</p>` : ""}
+    <ol class="events">${rows}</ol>
+    ${stats ? `<div class="mini-stats">${stats}</div>` : ""}
+  </div>`;
 }
 
 function resultOf(match, team) {
@@ -291,20 +354,23 @@ function renderMatches(data) {
       : match.status === "finished"
         ? `<small>итог</small>`
         : `<small>${match.time ? "МСК" : "дата"}</small>`;
-    html.push(`<article class="match${zenit}${liveCls}${dim}">
-      <div class="side home">
-        <img class="crest" src="${logo(match.homeSlug)}" alt="">
-        <span>${match.home}</span>
-      </div>
-      <div class="scorebox">
-        <b>${scoreText(match)}</b>
-        ${caption}
-      </div>
-      <div class="side away">
-        <span>${match.away}</span>
-        <img class="crest" src="${logo(match.awaySlug)}" alt="">
-      </div>
-    </article>`);
+    html.push(`<div class="match-wrap${zenit}${liveCls}${dim}${state.expandedId === match.id ? " open" : ""}" data-id="${esc(match.id)}">
+      <article class="match">
+        <div class="side home">
+          <img class="crest" src="${logo(match.homeSlug)}" alt="">
+          <span>${esc(match.home)}</span>
+        </div>
+        <div class="scorebox">
+          <b>${esc(scoreText(match))}</b>
+          ${caption}
+        </div>
+        <div class="side away">
+          <span>${esc(match.away)}</span>
+          <img class="crest" src="${logo(match.awaySlug)}" alt="">
+        </div>
+      </article>
+      ${matchDetails(match)}
+    </div>`);
   }
   $("match-list").innerHTML = html.join("");
 }
@@ -381,6 +447,15 @@ $("tour-pills").addEventListener("click", (event) => {
 $("team-filter").addEventListener("change", (event) => {
   state.team = event.target.value;
   render();
+});
+
+$("match-list").addEventListener("click", (event) => {
+  const head = event.target.closest("article.match");
+  if (!head) return;
+  const wrap = head.closest(".match-wrap");
+  if (!wrap) return;
+  state.expandedId = state.expandedId === wrap.dataset.id ? null : wrap.dataset.id;
+  renderMatches(state.data);
 });
 
 $("standings").addEventListener("click", (event) => {
