@@ -48,17 +48,30 @@ FORM_MAP = {"winner": "W", "tie": "D", "loser": "L"}
 MSK = ZoneInfo("Europe/Moscow")
 
 
-def fetch(url: str) -> str:
+API_BASE = "https://matchtv.ru/api/v1"
+API_STATE = {"LIVE": "live", "END": "finished", "FUTURE": "scheduled"}
+
+
+def fetch(url: str, accept: str = "text/html,application/json;q=0.9,*/*;q=0.8") -> str:
     req = urllib.request.Request(
         url,
         headers={
             "User-Agent": UA,
+            "Accept": accept,
             "Accept-Encoding": "identity",
             "Accept-Language": "ru,en;q=0.8",
+            "Cache-Control": "no-cache",
+            "Pragma": "no-cache",
+            "Referer": "https://matchtv.ru/",
         },
     )
     with urllib.request.urlopen(req, timeout=40) as response:
         return response.read().decode("utf-8", "replace")
+
+
+def fetch_json(url: str) -> Any:
+    payload = json.loads(fetch(url, accept="application/json"))
+    return payload.get("result", payload)
 
 
 def capture_first(pattern: str, text: str) -> str | None:
@@ -210,6 +223,103 @@ def parse_calendar(html: str) -> list[dict[str, Any]]:
     matches = list(found.values())
     matches.sort(key=lambda item: (item["tour"], item["date"], item["time"] or "", item["home"]))
     return matches
+
+
+def numeric_game_id(url: str | None) -> str | None:
+    match = re.search(r"/football/rpl/(\d+)-", url or "")
+    return match.group(1) if match else None
+
+
+def tour_number(label: str | None) -> int | None:
+    match = re.search(r"(\d+)", label or "")
+    return int(match.group(1)) if match else None
+
+
+def score_total(participant: dict[str, Any] | None) -> int | None:
+    raw = ((participant or {}).get("score") or {}).get("total")
+    if raw in (None, ""):
+        return None
+    text = str(raw).strip()
+    return int(text) if text.isdigit() else None
+
+
+def live_clock(game: dict[str, Any]) -> str:
+    clock = game.get("liveTime") or {}
+    title = str(clock.get("title") or "").strip()
+    if not title:
+        return game.get("periodText") or "LIVE"
+    if clock.get("isAddedTime"):
+        return title if "+" in title else f"{title}+'"
+    if title.endswith("'"):
+        return title
+    return f"{title}'"
+
+
+def apply_api_game(match: dict[str, Any], game: dict[str, Any]) -> None:
+    status = API_STATE.get(str(game.get("eventState") or ""), match.get("status") or "scheduled")
+    match["status"] = status
+    home = score_total(game.get("homeParticipant"))
+    away = score_total(game.get("guestParticipant"))
+    if home is not None and away is not None:
+        match["homeScore"] = home
+        match["awayScore"] = away
+    if status == "live":
+        match["live"] = live_clock(game)
+    else:
+        match["live"] = None
+    link = game.get("eventLink")
+    if link:
+        match["url"] = link
+    stadium = game.get("stadium")
+    referee = game.get("referee")
+    if stadium:
+        match["stadium"] = stadium
+    if referee:
+        match["referee"] = referee
+
+
+def load_season_games(matches: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    season_id = None
+    for item in matches:
+        game_id = numeric_game_id(item.get("url"))
+        if not game_id:
+            continue
+        try:
+            info = fetch_json(f"{API_BASE}/games/{game_id}")
+        except Exception as error:
+            print(f"api game {game_id} fail: {error}", file=sys.stderr)
+            continue
+        if isinstance(info, dict) and info.get("seasonId"):
+            season_id = info["seasonId"]
+            break
+    if not season_id:
+        return []
+    try:
+        games = fetch_json(f"{API_BASE}/seasons/{season_id}/games")
+    except Exception as error:
+        print(f"api season {season_id} fail: {error}", file=sys.stderr)
+        return []
+    return games if isinstance(games, list) else []
+
+
+def overlay_api_games(matches: list[dict[str, Any]], games: list[dict[str, Any]]) -> None:
+    by_url: dict[str, dict[str, Any]] = {}
+    by_key: dict[tuple[int, str, str], dict[str, Any]] = {}
+    for game in games:
+        link = game.get("eventLink") or ""
+        if link:
+            by_url[link] = game
+        tour = tour_number(game.get("tour"))
+        home = normalize((game.get("homeParticipant") or {}).get("name") or "")
+        away = normalize((game.get("guestParticipant") or {}).get("name") or "")
+        if tour and home and away:
+            by_key[(tour, home, away)] = game
+    for match in matches:
+        game = by_url.get(match.get("url") or "") or by_key.get(
+            (int(match["tour"]), normalize(match["home"]), normalize(match["away"]))
+        )
+        if game:
+            apply_api_game(match, game)
 
 
 def load_local_schedule() -> list[dict[str, Any]]:
@@ -463,6 +573,24 @@ def merge_events(overview: list[dict[str, Any]], timeline: list[dict[str, Any]])
     return merged
 
 
+def parse_scoreboard(html: str) -> dict[str, Any]:
+    badge = capture_first(r"p-game-main-info-scoreboard-state-badge__text\">([^<]+)", html)
+    score = capture_first(r"p-game-main-info-scoreboard-score__main\">([^<]+)", html)
+    out: dict[str, Any] = {}
+    if score:
+        parts = re.match(r"(\d+)\s*[:\-–]\s*(\d+)", score.strip())
+        if parts:
+            out["homeScore"] = int(parts.group(1))
+            out["awayScore"] = int(parts.group(2))
+    if badge:
+        text = badge.replace("’", "'").replace("′", "'")
+        if re.match(r"(?i)live", text):
+            out["status"] = "live"
+            minute = capture_first(r"(?i)live\s*([0-9]+(?:\s*\+\s*[0-9]+)?)", text)
+            out["live"] = f"{minute.replace(' ', '')}'" if minute else "LIVE"
+    return out
+
+
 def parse_match_detail(html: str) -> dict[str, Any]:
     stadium = capture_first(r"p-game-main-info-header__stadium-name[^>]*>([^<]+)", html)
     referee = capture_first(r"p-game-main-info-header__referee-name[^>]*>([^<]+)", html)
@@ -475,13 +603,15 @@ def parse_match_detail(html: str) -> dict[str, Any]:
         html,
     ):
         stats.append({"name": name.strip(), "home": home.strip(), "away": away.strip()})
-    return {
+    detail = {
         "stadium": stadium,
         "referee": referee,
         "events": events,
         "stats": stats,
         "detailsVersion": DETAIL_VERSION,
     }
+    detail.update(parse_scoreboard(html))
+    return detail
 
 
 def previous_matches() -> dict[str, dict[str, Any]]:
@@ -548,6 +678,13 @@ def enrich_matches(matches: list[dict[str, Any]]) -> None:
                 match["referee"] = old.get("referee")
             continue
         match.update(detail)
+        if detail.get("status") == "live" or match["status"] == "live":
+            if detail.get("homeScore") is not None:
+                match["homeScore"] = detail["homeScore"]
+                match["awayScore"] = detail["awayScore"]
+            if detail.get("live"):
+                match["live"] = detail["live"]
+                match["status"] = "live"
         fetched += 1
     if fetched:
         print(f"fetched details for {fetched} matches")
@@ -560,6 +697,10 @@ def build() -> dict[str, Any]:
     live_matches = parse_calendar(calendar_html)
     local_matches = load_local_schedule()
     matches = merge_matches(local_matches, live_matches) if local_matches else live_matches
+    try:
+        overlay_api_games(matches, load_season_games(matches))
+    except Exception as error:
+        print(f"api overlay fail: {error}", file=sys.stderr)
     enrich_matches(matches)
 
     standings = table["rows"]

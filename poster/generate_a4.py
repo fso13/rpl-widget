@@ -210,41 +210,41 @@ def css(logo_css: str) -> str:
   }}
   .tour header {{
     display: flex; justify-content: space-between; align-items: baseline; gap: 3px;
-    padding: 1mm 1.2mm 0.9mm; background: var(--blue); color: #fff;
+    padding: 0.75mm 1.1mm 0.65mm; background: var(--blue); color: #fff;
   }}
   .tour.spring header {{ background: var(--cyan); }}
-  .tour .num {{ font-size: 8px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }}
-  .tour .span {{ font-size: 6.4px; opacity: .92; white-space: nowrap; }}
-  .matches {{ flex: 1; display: flex; flex-direction: column; padding: 0.2mm 0.6mm 0.3mm; }}
+  .tour .num {{ font-size: 7.4px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }}
+  .tour .span {{ font-size: 6px; opacity: .92; white-space: nowrap; }}
+  .matches {{ flex: 1; display: flex; flex-direction: column; padding: 0.15mm 0.5mm 0.2mm; min-height: 0; }}
   .match {{
     display: flex; align-items: center; justify-content: flex-start;
-    gap: 0.6mm; flex: 1; min-height: 0;
+    gap: 0.5mm; flex: 1 1 0; min-height: 0;
     border-bottom: 1px dotted #d4e4f0;
   }}
   .match:last-child {{ border-bottom: 0; }}
   .match.zenit {{
-    background: var(--cyan-soft); margin: 0 -0.6mm; padding: 0 0.6mm;
+    background: var(--cyan-soft); margin: 0 -0.5mm; padding: 0 0.5mm;
   }}
   .when {{
     display: flex; flex-direction: column; justify-content: center;
-    width: 7.2mm; flex: none; line-height: 1.05;
+    width: 8mm; flex: none; line-height: 1.05;
   }}
-  .when b {{ font-size: 6.2px; font-weight: 700; color: var(--blue); }}
-  .when i {{ font-size: 5.6px; font-style: normal; color: var(--muted); }}
+  .when b {{ font-size: 5.8px; font-weight: 700; color: var(--blue); }}
+  .when i {{ font-size: 5.3px; font-style: normal; color: var(--muted); }}
   .when i:empty {{ display: none; }}
   .side {{ display: flex; align-items: center; flex: none; }}
   .side.ours .mark {{
-    outline: 1px solid var(--cyan); outline-offset: 0.2mm; border-radius: 0.6mm;
+    outline: 1px solid var(--cyan); outline-offset: 0.15mm; border-radius: 0.5mm;
   }}
   .mark {{
-    width: 6.6mm; height: 6.6mm; flex: none; display: block;
+    width: 4.9mm; height: 4.9mm; flex: none; display: block;
     background-size: contain; background-repeat: no-repeat; background-position: center;
   }}
   {logo_css}
-  .score {{ display: flex; align-items: center; justify-content: center; gap: 0.45mm; flex: none; }}
+  .score {{ display: flex; align-items: center; justify-content: center; gap: 0.35mm; flex: none; }}
   .score i {{
-    display: block; width: 4.8mm; height: 4.5mm;
-    border: 1px solid #7aa0bd; background: var(--box); border-radius: 0.35mm;
+    display: block; width: 4mm; height: 3.7mm;
+    border: 1px solid #7aa0bd; background: var(--box); border-radius: 0.3mm;
   }}
   .match.zenit .score i {{ border-color: var(--cyan); }}
   .score em {{ font-size: 8px; font-style: normal; color: #7aa0bd; font-weight: 600; }}
@@ -344,7 +344,7 @@ def build_html(matches: list[dict], only_page: int | None = None) -> str:
         page=1,
         title_tag="Лист 1 · Осень · туры 1–17",
         date_line=g.fmt_range(autumn_dates),
-        extra_meta="Газпром Арена · время МСК, туры 1–9",
+        extra_meta="Газпром Арена · время МСК, туры 1–17",
         tours_html=autumn_tours,
         standings="",
         body_class="autumn",
@@ -357,7 +357,7 @@ def build_html(matches: list[dict], only_page: int | None = None) -> str:
         page=2,
         title_tag="Лист 2 · Весна · туры 18–30",
         date_line=g.fmt_range(spring_dates),
-        extra_meta="С 10-го тура время объявляют позже",
+        extra_meta="С 18-го тура время объявляют позже",
         tours_html=spring_tours,
         standings=standings_block(),
         body_class="spring",
@@ -418,6 +418,12 @@ def main() -> None:
     matches = g.json.loads(g.DATA.read_text(encoding="utf-8"))
     if len(matches) != 240:
         raise SystemExit(f"expected 240 matches, got {len(matches)}")
+    by_tour: dict[int, int] = defaultdict(int)
+    for m in matches:
+        by_tour[m["tour"]] += 1
+    bad = {t: n for t, n in by_tour.items() if n != 8}
+    if bad:
+        raise SystemExit(f"each tour must have 8 matches, got {bad}")
     OUT.write_text(build_html(matches), encoding="utf-8")
     print(f"wrote {OUT} ({OUT.stat().st_size} bytes)")
 

@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-22T21:41:19+03:00",
+  "updatedAt": "2026-08-22T22:10:26+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -3125,6 +3125,8 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664974-fakel-orenburg-22-08-2026",
+      "stadium": "Факел",
+      "referee": "Иванов",
       "events": [
         {
           "type": "yellow",
@@ -3142,14 +3144,14 @@
         {
           "type": "sub",
           "side": "home",
-          "minute": "65'",
+          "minute": "64'",
           "playerIn": "Юрганов",
           "playerOut": "Сутормин"
         },
         {
           "type": "sub",
           "side": "home",
-          "minute": "65'",
+          "minute": "64'",
           "playerIn": "Магомедов",
           "playerOut": "Нетфуллин"
         },
@@ -3177,8 +3179,6 @@
           "away": "0"
         }
       ],
-      "stadium": "Факел",
-      "referee": "Иванов",
       "detailsVersion": 3
     },
     {
@@ -3195,6 +3195,8 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664973-akhmat-rostov-22-08-2026",
+      "stadium": "Ахмат-Арена",
+      "referee": "Бобровский",
       "events": [
         {
           "type": "goal",
@@ -3234,7 +3236,7 @@
           "type": "yellow",
           "side": "away",
           "minute": "57'",
-          "player": "Михайлов"
+          "player": "Кучаев"
         },
         {
           "type": "goal",
@@ -3265,8 +3267,6 @@
           "away": "0"
         }
       ],
-      "stadium": "Ахмат-Арена",
-      "referee": "Бобровский",
       "detailsVersion": 3
     },
     {
@@ -3278,9 +3278,9 @@
       "away": "Локомотив",
       "homeSlug": "cska",
       "awaySlug": "lokomotiv",
-      "homeScore": 2,
-      "awayScore": 1,
-      "live": "62’",
+      "homeScore": 3,
+      "awayScore": 2,
+      "live": "90'",
       "status": "live",
       "url": "/football/rpl/552664972-tsska-lokomotiv-22-08-2026",
       "stadium": "ВЭБ Арена",
@@ -3319,18 +3319,32 @@
           "minute": "50'",
           "player": "Данилов",
           "assist": null
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "68'",
+          "player": "Алвес",
+          "assist": "Гайич"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "75'",
+          "player": "Пиняев",
+          "assist": "Раков"
         }
       ],
       "stats": [
         {
-          "name": "Нарушения",
-          "home": "9",
-          "away": "9"
-        },
-        {
           "name": "Красные карточки",
           "home": "0",
           "away": "0"
+        },
+        {
+          "name": "Пасы (точность)",
+          "home": "81%",
+          "away": "81%"
         }
       ],
       "detailsVersion": 3

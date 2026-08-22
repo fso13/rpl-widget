@@ -23,7 +23,6 @@ MONTH = {
     7: "июл", 8: "авг", 9: "сен", 10: "окт", 11: "ноя", 12: "дек",
 }
 SHORT = {"Крылья Советов": "Крылья"}
-TIMED_TOURS = set(range(1, 10))
 
 
 def team(name: str) -> str:
@@ -74,7 +73,7 @@ def mark(name: str, slugs: dict[str, str]) -> str:
 
 def render_tour(tour: int, matches: list[dict], slugs: dict[str, str]) -> str:
     dates = [datetime.strptime(m["date"], "%Y-%m-%d") for m in matches]
-    timed = tour in TIMED_TOURS
+    timed = any(m.get("time") for m in matches)
     season = "autumn" if tour <= 17 else "spring"
     extra = " timed" if timed else " untimed"
     rows = []
@@ -294,7 +293,7 @@ def build_html(matches: list[dict]) -> str:
   }}
   .when {{
     display: flex; flex-direction: column; justify-content: center;
-    width: 5.2mm; flex: none; line-height: 1.05;
+    width: 6.8mm; flex: none; line-height: 1.05;
   }}
   .when b {{ font-size: 6px; font-weight: 700; color: var(--blue); }}
   .when i {{ font-size: 5.8px; font-style: normal; color: var(--muted); }}
@@ -402,8 +401,8 @@ def build_html(matches: list[dict]) -> str:
         <div class="meta">
           <div class="stars">★ ★</div>
           <div><b>24 июля 2026 — 29 мая 2027</b></div>
-          <div>Газпром Арена · время МСК, туры 1–9</div>
-          <div>С 10-го тура время объявляют позже</div>
+          <div>Газпром Арена · время МСК, туры 1–17</div>
+          <div>С 18-го тура время объявляют позже</div>
         </div>
       </header>
       <div class="clubs">{clubs_strip(uris)}</div>

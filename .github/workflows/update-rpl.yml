@@ -2,7 +2,8 @@ name: Update RPL table
 
 on:
   schedule:
-    - cron: "*/20 * * * *"
+    - cron: "*/5 11-19 * * *"
+    - cron: "*/20 0-10,20-23 * * *"
   workflow_dispatch:
   push:
     paths:
