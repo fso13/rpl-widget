@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-22T15:54:03+03:00",
+  "updatedAt": "2026-08-22T16:36:38+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -3118,11 +3118,9 @@
       "awaySlug": "orenburg",
       "homeScore": 0,
       "awayScore": 0,
-      "live": "19’",
-      "status": "live",
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552664974-fakel-orenburg-22-08-2026",
-      "stadium": "Факел",
-      "referee": "Иванов",
       "events": [],
       "stats": [
         {
@@ -3141,6 +3139,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Факел",
+      "referee": "Иванов",
       "detailsVersion": 3
     },
     {
