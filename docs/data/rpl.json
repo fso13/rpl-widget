@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-22T19:33:16+03:00",
+  "updatedAt": "2026-08-22T19:58:56+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -3188,9 +3188,9 @@
       "away": "Ростов",
       "homeSlug": "akhmat",
       "awaySlug": "rostov",
-      "homeScore": 2,
+      "homeScore": 4,
       "awayScore": 1,
-      "live": "68’",
+      "live": "90’+",
       "status": "live",
       "url": "/football/rpl/552664973-akhmat-rostov-22-08-2026",
       "stadium": "Ахмат-Арена",
@@ -3249,6 +3249,13 @@
           "minute": "68'",
           "player": "Ибишев",
           "assist": "Садулаев"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "78'",
+          "player": "Садулаев",
+          "assist": "Щетинин"
         }
       ],
       "stats": [
