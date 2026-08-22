@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-22T20:56:47+03:00",
+  "updatedAt": "2026-08-22T21:41:19+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -3278,9 +3278,9 @@
       "away": "Локомотив",
       "homeSlug": "cska",
       "awaySlug": "lokomotiv",
-      "homeScore": 1,
+      "homeScore": 2,
       "awayScore": 1,
-      "live": "37’",
+      "live": "62’",
       "status": "live",
       "url": "/football/rpl/552664972-tsska-lokomotiv-22-08-2026",
       "stadium": "ВЭБ Арена",
@@ -3299,18 +3299,33 @@
           "minute": "29'",
           "player": "Гонду",
           "assist": "Кисляк"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "45'",
+          "player": "Ньямси"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Раков",
+          "playerOut": "Мялковский"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "50'",
+          "player": "Данилов",
+          "assist": null
         }
       ],
       "stats": [
         {
-          "name": "Голы",
-          "home": "1",
-          "away": "1"
-        },
-        {
-          "name": "Желтые карточки",
-          "home": "0",
-          "away": "0"
+          "name": "Нарушения",
+          "home": "9",
+          "away": "9"
         },
         {
           "name": "Красные карточки",
