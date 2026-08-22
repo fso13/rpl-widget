@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-22T20:30:02+03:00",
+  "updatedAt": "2026-08-22T20:56:47+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -3278,22 +3278,32 @@
       "away": "Локомотив",
       "homeSlug": "cska",
       "awaySlug": "lokomotiv",
-      "homeScore": 0,
-      "awayScore": 0,
-      "live": "10’",
+      "homeScore": 1,
+      "awayScore": 1,
+      "live": "37’",
       "status": "live",
       "url": "/football/rpl/552664972-tsska-lokomotiv-22-08-2026",
       "stadium": "ВЭБ Арена",
       "referee": "Левников",
-      "events": [],
+      "events": [
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "22'",
+          "player": "Сильянов",
+          "assist": "Бакаев"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "29'",
+          "player": "Гонду",
+          "assist": "Кисляк"
+        }
+      ],
       "stats": [
         {
           "name": "Голы",
-          "home": "0",
-          "away": "0"
-        },
-        {
-          "name": "Офсайды",
           "home": "1",
           "away": "1"
         },
