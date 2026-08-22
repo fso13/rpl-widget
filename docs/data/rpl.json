@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-22T19:58:56+03:00",
+  "updatedAt": "2026-08-22T20:30:02+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -139,21 +139,22 @@
     },
     {
       "rank": 8,
-      "team": "Ростов",
-      "slug": "rostov",
-      "played": 4,
+      "team": "Ахмат",
+      "slug": "akhmat",
+      "played": 5,
       "won": 1,
       "drawn": 2,
-      "lost": 1,
+      "lost": 2,
       "goalsFor": 6,
       "goalsAgainst": 5,
       "goalDiff": 1,
       "points": 5,
       "form": [
-        "L",
-        "W",
         "D",
-        "D"
+        "L",
+        "D",
+        "L",
+        "W"
       ]
     },
     {
@@ -177,6 +178,26 @@
     },
     {
       "rank": 10,
+      "team": "Ростов",
+      "slug": "rostov",
+      "played": 5,
+      "won": 1,
+      "drawn": 2,
+      "lost": 2,
+      "goalsFor": 7,
+      "goalsAgainst": 9,
+      "goalDiff": -2,
+      "points": 5,
+      "form": [
+        "L",
+        "W",
+        "D",
+        "D",
+        "L"
+      ]
+    },
+    {
+      "rank": 11,
       "team": "Динамо М",
       "slug": "dinamo-m",
       "played": 4,
@@ -195,7 +216,7 @@
       ]
     },
     {
-      "rank": 11,
+      "rank": 12,
       "team": "Родина",
       "slug": "rodina",
       "played": 4,
@@ -214,7 +235,7 @@
       ]
     },
     {
-      "rank": 12,
+      "rank": 13,
       "team": "Локомотив",
       "slug": "lokomotiv",
       "played": 4,
@@ -230,25 +251,6 @@
         "L",
         "D",
         "D"
-      ]
-    },
-    {
-      "rank": 13,
-      "team": "Ахмат",
-      "slug": "akhmat",
-      "played": 4,
-      "won": 0,
-      "drawn": 2,
-      "lost": 2,
-      "goalsFor": 2,
-      "goalsAgainst": 4,
-      "goalDiff": -2,
-      "points": 2,
-      "form": [
-        "D",
-        "L",
-        "D",
-        "L"
       ]
     },
     {
@@ -3190,11 +3192,9 @@
       "awaySlug": "rostov",
       "homeScore": 4,
       "awayScore": 1,
-      "live": "90’+",
-      "status": "live",
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552664973-akhmat-rostov-22-08-2026",
-      "stadium": "Ахмат-Арена",
-      "referee": "Бобровский",
       "events": [
         {
           "type": "goal",
@@ -3265,6 +3265,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Ахмат-Арена",
+      "referee": "Бобровский",
       "detailsVersion": 3
     },
     {
@@ -3276,11 +3278,37 @@
       "away": "Локомотив",
       "homeSlug": "cska",
       "awaySlug": "lokomotiv",
-      "homeScore": null,
-      "awayScore": null,
-      "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552664972-tsska-lokomotiv-22-08-2026"
+      "homeScore": 0,
+      "awayScore": 0,
+      "live": "10’",
+      "status": "live",
+      "url": "/football/rpl/552664972-tsska-lokomotiv-22-08-2026",
+      "stadium": "ВЭБ Арена",
+      "referee": "Левников",
+      "events": [],
+      "stats": [
+        {
+          "name": "Голы",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Офсайды",
+          "home": "1",
+          "away": "1"
+        },
+        {
+          "name": "Желтые карточки",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-08-23-Акрон-Крылья Советов",
