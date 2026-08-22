@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-22T17:31:19+03:00",
+  "updatedAt": "2026-08-22T17:57:08+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -121,32 +121,33 @@
       "rank": 7,
       "team": "Оренбург",
       "slug": "orenburg",
-      "played": 4,
+      "played": 5,
       "won": 1,
-      "drawn": 2,
+      "drawn": 3,
       "lost": 1,
       "goalsFor": 4,
       "goalsAgainst": 6,
       "goalDiff": -2,
-      "points": 5,
+      "points": 6,
       "form": [
         "W",
         "L",
+        "D",
         "D",
         "D"
       ]
     },
     {
       "rank": 8,
-      "team": "Рубин",
-      "slug": "rubin",
+      "team": "Ростов",
+      "slug": "rostov",
       "played": 4,
       "won": 1,
       "drawn": 2,
       "lost": 1,
-      "goalsFor": 5,
-      "goalsAgainst": 6,
-      "goalDiff": -1,
+      "goalsFor": 6,
+      "goalsAgainst": 5,
+      "goalDiff": 1,
       "points": 5,
       "form": [
         "L",
@@ -157,15 +158,15 @@
     },
     {
       "rank": 9,
-      "team": "Ростов",
-      "slug": "rostov",
+      "team": "Рубин",
+      "slug": "rubin",
       "played": 4,
       "won": 1,
       "drawn": 2,
       "lost": 1,
-      "goalsFor": 6,
-      "goalsAgainst": 5,
-      "goalDiff": 1,
+      "goalsFor": 5,
+      "goalsAgainst": 6,
+      "goalDiff": -1,
       "points": 5,
       "form": [
         "L",
@@ -252,6 +253,26 @@
     },
     {
       "rank": 14,
+      "team": "Факел",
+      "slug": "fakel",
+      "played": 5,
+      "won": 0,
+      "drawn": 2,
+      "lost": 3,
+      "goalsFor": 3,
+      "goalsAgainst": 6,
+      "goalDiff": -3,
+      "points": 2,
+      "form": [
+        "L",
+        "L",
+        "D",
+        "L",
+        "D"
+      ]
+    },
+    {
+      "rank": 15,
       "team": "Крылья Советов",
       "slug": "krylia",
       "played": 4,
@@ -270,7 +291,7 @@
       ]
     },
     {
-      "rank": 15,
+      "rank": 16,
       "team": "Акрон",
       "slug": "akron",
       "played": 4,
@@ -286,25 +307,6 @@
         "L",
         "D",
         "D"
-      ]
-    },
-    {
-      "rank": 16,
-      "team": "Факел",
-      "slug": "fakel",
-      "played": 4,
-      "won": 0,
-      "drawn": 1,
-      "lost": 3,
-      "goalsFor": 3,
-      "goalsAgainst": 6,
-      "goalDiff": -3,
-      "points": 1,
-      "form": [
-        "L",
-        "L",
-        "D",
-        "L"
       ]
     }
   ],
@@ -3118,11 +3120,9 @@
       "awaySlug": "orenburg",
       "homeScore": 0,
       "awayScore": 0,
-      "live": "90’+",
-      "status": "live",
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552664974-fakel-orenburg-22-08-2026",
-      "stadium": "Факел",
-      "referee": "Иванов",
       "events": [
         {
           "type": "yellow",
@@ -3175,6 +3175,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Факел",
+      "referee": "Иванов",
       "detailsVersion": 3
     },
     {
