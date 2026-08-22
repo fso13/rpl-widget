@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-22T16:58:20+03:00",
+  "updatedAt": "2026-08-22T17:31:19+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -3118,7 +3118,7 @@
       "awaySlug": "orenburg",
       "homeScore": 0,
       "awayScore": 0,
-      "live": "64’",
+      "live": "90’+",
       "status": "live",
       "url": "/football/rpl/552664974-fakel-orenburg-22-08-2026",
       "stadium": "Факел",
@@ -3136,6 +3136,26 @@
           "minute": "46'",
           "playerIn": "Гиоргобиани",
           "playerOut": "Багамаев"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "65'",
+          "playerIn": "Юрганов",
+          "playerOut": "Сутормин"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "65'",
+          "playerIn": "Магомедов",
+          "playerOut": "Нетфуллин"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "67'",
+          "player": "Паласиос"
         }
       ],
       "stats": [
@@ -3145,9 +3165,9 @@
           "away": "0"
         },
         {
-          "name": "Владение мячом",
-          "home": "50%",
-          "away": "50%"
+          "name": "Офсайды",
+          "home": "2",
+          "away": "2"
         },
         {
           "name": "Красные карточки",
