@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-22T18:29:51+03:00",
+  "updatedAt": "2026-08-22T18:55:52+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -3189,12 +3189,10 @@
       "homeSlug": "akhmat",
       "awaySlug": "rostov",
       "homeScore": 1,
-      "awayScore": 0,
-      "live": "24’",
-      "status": "live",
+      "awayScore": 1,
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552664973-akhmat-rostov-22-08-2026",
-      "stadium": "Ахмат-Арена",
-      "referee": "Бобровский",
       "events": [
         {
           "type": "goal",
@@ -3216,6 +3214,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Ахмат-Арена",
+      "referee": "Бобровский",
       "detailsVersion": 3
     },
     {
