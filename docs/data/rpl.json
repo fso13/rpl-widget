@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-22T22:10:26+03:00",
+  "updatedAt": "2026-08-22T22:24:21+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -24,6 +24,26 @@
     },
     {
       "rank": 2,
+      "team": "ЦСКА",
+      "slug": "cska",
+      "played": 5,
+      "won": 3,
+      "drawn": 2,
+      "lost": 0,
+      "goalsFor": 7,
+      "goalsAgainst": 4,
+      "goalDiff": 3,
+      "points": 11,
+      "form": [
+        "W",
+        "D",
+        "D",
+        "W",
+        "W"
+      ]
+    },
+    {
+      "rank": 3,
       "team": "Зенит",
       "slug": "zenit",
       "played": 4,
@@ -42,7 +62,7 @@
       ]
     },
     {
-      "rank": 3,
+      "rank": 4,
       "team": "Спартак",
       "slug": "spartak",
       "played": 4,
@@ -61,7 +81,7 @@
       ]
     },
     {
-      "rank": 4,
+      "rank": 5,
       "team": "Динамо Мх",
       "slug": "dinamo-mh",
       "played": 4,
@@ -76,25 +96,6 @@
         "W",
         "W",
         "L",
-        "W"
-      ]
-    },
-    {
-      "rank": 5,
-      "team": "ЦСКА",
-      "slug": "cska",
-      "played": 4,
-      "won": 2,
-      "drawn": 2,
-      "lost": 0,
-      "goalsFor": 4,
-      "goalsAgainst": 2,
-      "goalDiff": 2,
-      "points": 8,
-      "form": [
-        "W",
-        "D",
-        "D",
         "W"
       ]
     },
@@ -238,19 +239,20 @@
       "rank": 13,
       "team": "Локомотив",
       "slug": "lokomotiv",
-      "played": 4,
+      "played": 5,
       "won": 0,
       "drawn": 3,
-      "lost": 1,
-      "goalsFor": 3,
-      "goalsAgainst": 4,
-      "goalDiff": -1,
+      "lost": 2,
+      "goalsFor": 5,
+      "goalsAgainst": 7,
+      "goalDiff": -2,
       "points": 3,
       "form": [
         "D",
         "L",
         "D",
-        "D"
+        "D",
+        "L"
       ]
     },
     {
@@ -3125,8 +3127,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664974-fakel-orenburg-22-08-2026",
-      "stadium": "Факел",
-      "referee": "Иванов",
       "events": [
         {
           "type": "yellow",
@@ -3179,6 +3179,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Факел",
+      "referee": "Иванов",
       "detailsVersion": 3
     },
     {
@@ -3195,8 +3197,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664973-akhmat-rostov-22-08-2026",
-      "stadium": "Ахмат-Арена",
-      "referee": "Бобровский",
       "events": [
         {
           "type": "goal",
@@ -3267,6 +3267,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Ахмат-Арена",
+      "referee": "Бобровский",
       "detailsVersion": 3
     },
     {
@@ -3280,11 +3282,9 @@
       "awaySlug": "lokomotiv",
       "homeScore": 3,
       "awayScore": 2,
-      "live": "90'",
-      "status": "live",
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552664972-tsska-lokomotiv-22-08-2026",
-      "stadium": "ВЭБ Арена",
-      "referee": "Левников",
       "events": [
         {
           "type": "goal",
@@ -3347,6 +3347,8 @@
           "away": "81%"
         }
       ],
+      "stadium": "ВЭБ Арена",
+      "referee": "Левников",
       "detailsVersion": 3
     },
     {
