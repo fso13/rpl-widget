@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-22T16:36:38+03:00",
+  "updatedAt": "2026-08-22T16:58:20+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -3118,10 +3118,26 @@
       "awaySlug": "orenburg",
       "homeScore": 0,
       "awayScore": 0,
-      "live": null,
-      "status": "finished",
+      "live": "64’",
+      "status": "live",
       "url": "/football/rpl/552664974-fakel-orenburg-22-08-2026",
-      "events": [],
+      "stadium": "Факел",
+      "referee": "Иванов",
+      "events": [
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "35'",
+          "player": "Рыбчинский"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "46'",
+          "playerIn": "Гиоргобиани",
+          "playerOut": "Багамаев"
+        }
+      ],
       "stats": [
         {
           "name": "Голы",
@@ -3129,9 +3145,9 @@
           "away": "0"
         },
         {
-          "name": "Желтые карточки",
-          "home": "0",
-          "away": "0"
+          "name": "Владение мячом",
+          "home": "50%",
+          "away": "50%"
         },
         {
           "name": "Красные карточки",
@@ -3139,8 +3155,6 @@
           "away": "0"
         }
       ],
-      "stadium": "Факел",
-      "referee": "Иванов",
       "detailsVersion": 3
     },
     {
