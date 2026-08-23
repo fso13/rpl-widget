@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-23T21:28:51+03:00",
+  "updatedAt": "2026-08-23T21:58:33+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -3613,7 +3613,7 @@
       "awaySlug": "zenit",
       "homeScore": 2,
       "awayScore": 0,
-      "live": "63'",
+      "live": "90'",
       "status": "live",
       "url": "/football/rpl/552664968-spartak-zenit-23-08-2026",
       "stadium": "Лукойл Арена",
@@ -3669,14 +3669,19 @@
       ],
       "stats": [
         {
-          "name": "Желтые карточки",
-          "home": "1",
-          "away": "1"
+          "name": "Удары (в створ)",
+          "home": "11 (4)",
+          "away": "11 (2)"
         },
         {
-          "name": "Красные карточки",
-          "home": "0",
-          "away": "0"
+          "name": "Угловые",
+          "home": "4",
+          "away": "4"
+        },
+        {
+          "name": "Желтые карточки",
+          "home": "4",
+          "away": "4"
         }
       ],
       "detailsVersion": 3
