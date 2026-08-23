@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-23T12:46:44+03:00",
+  "updatedAt": "2026-08-23T13:21:02+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -3360,11 +3360,39 @@
       "away": "Крылья Советов",
       "homeSlug": "akron",
       "awaySlug": "krylia",
-      "homeScore": null,
-      "awayScore": null,
-      "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552664971-akron-kryliasovetov-23-08-2026"
+      "homeScore": 0,
+      "awayScore": 0,
+      "live": "16'",
+      "status": "live",
+      "url": "/football/rpl/552664971-akron-kryliasovetov-23-08-2026",
+      "stadium": "Солидарность Арена (Самара-Арена)",
+      "referee": "Прокопов",
+      "events": [
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "3'",
+          "player": "Фернандес"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Голы",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Удары (в створ)",
+          "home": "2 (2)",
+          "away": "2 (1)"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-08-23-Динамо М-Родина",
