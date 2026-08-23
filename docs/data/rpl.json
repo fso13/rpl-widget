@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-23T13:56:18+03:00",
+  "updatedAt": "2026-08-23T14:17:25+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -3362,27 +3362,61 @@
       "awaySlug": "krylia",
       "homeScore": 0,
       "awayScore": 1,
-      "live": null,
-      "status": "finished",
+      "live": "55'",
+      "status": "live",
       "url": "/football/rpl/552664971-akron-kryliasovetov-23-08-2026",
+      "stadium": "Солидарность Арена (Самара-Арена)",
+      "referee": "Прокопов",
       "events": [
         {
           "type": "yellow",
           "side": "home",
           "minute": "3'",
           "player": "Фернандес"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "19'",
+          "player": "Чернов",
+          "assist": "Горшков"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "36'",
+          "player": "Витюгов"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "42'",
+          "playerIn": "Рахманович",
+          "playerOut": "Костанца"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "43'",
+          "player": "Бистрович"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "54'",
+          "player": "Чесноков"
         }
       ],
       "stats": [
         {
-          "name": "Голы",
-          "home": "0",
-          "away": "0"
+          "name": "Угловые",
+          "home": "2",
+          "away": "2"
         },
         {
-          "name": "Удары (в створ)",
-          "home": "2 (2)",
-          "away": "2 (1)"
+          "name": "Желтые карточки",
+          "home": "2",
+          "away": "2"
         },
         {
           "name": "Красные карточки",
@@ -3390,8 +3424,6 @@
           "away": "0"
         }
       ],
-      "stadium": "Солидарность Арена (Самара-Арена)",
-      "referee": "Прокопов",
       "detailsVersion": 3
     },
     {
