@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-23T14:57:18+03:00",
+  "updatedAt": "2026-08-23T15:41:09+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -199,6 +199,26 @@
     },
     {
       "rank": 11,
+      "team": "Крылья Советов",
+      "slug": "krylia",
+      "played": 5,
+      "won": 1,
+      "drawn": 2,
+      "lost": 2,
+      "goalsFor": 5,
+      "goalsAgainst": 7,
+      "goalDiff": -2,
+      "points": 5,
+      "form": [
+        "D",
+        "D",
+        "L",
+        "L",
+        "W"
+      ]
+    },
+    {
+      "rank": 12,
       "team": "Динамо М",
       "slug": "dinamo-m",
       "played": 4,
@@ -217,7 +237,7 @@
       ]
     },
     {
-      "rank": 12,
+      "rank": 13,
       "team": "Родина",
       "slug": "rodina",
       "played": 4,
@@ -236,7 +256,7 @@
       ]
     },
     {
-      "rank": 13,
+      "rank": 14,
       "team": "Локомотив",
       "slug": "lokomotiv",
       "played": 5,
@@ -256,7 +276,7 @@
       ]
     },
     {
-      "rank": 14,
+      "rank": 15,
       "team": "Факел",
       "slug": "fakel",
       "played": 5,
@@ -276,41 +296,23 @@
       ]
     },
     {
-      "rank": 15,
-      "team": "Крылья Советов",
-      "slug": "krylia",
-      "played": 4,
-      "won": 0,
-      "drawn": 2,
-      "lost": 2,
-      "goalsFor": 2,
-      "goalsAgainst": 7,
-      "goalDiff": -5,
-      "points": 2,
-      "form": [
-        "D",
-        "D",
-        "L",
-        "L"
-      ]
-    },
-    {
       "rank": 16,
       "team": "Акрон",
       "slug": "akron",
-      "played": 4,
+      "played": 5,
       "won": 0,
       "drawn": 2,
-      "lost": 2,
+      "lost": 3,
       "goalsFor": 4,
-      "goalsAgainst": 10,
-      "goalDiff": -6,
+      "goalsAgainst": 13,
+      "goalDiff": -9,
       "points": 2,
       "form": [
         "L",
         "L",
         "D",
-        "D"
+        "D",
+        "L"
       ]
     }
   ],
@@ -3362,11 +3364,9 @@
       "awaySlug": "krylia",
       "homeScore": 0,
       "awayScore": 3,
-      "live": "90'",
-      "status": "live",
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552664971-akron-kryliasovetov-23-08-2026",
-      "stadium": "Солидарность Арена (Самара-Арена)",
-      "referee": "Прокопов",
       "events": [
         {
           "type": "yellow",
@@ -3435,6 +3435,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Солидарность Арена (Самара-Арена)",
+      "referee": "Прокопов",
       "detailsVersion": 3
     },
     {
@@ -3446,11 +3448,32 @@
       "away": "Родина",
       "homeSlug": "dinamo-m",
       "awaySlug": "rodina",
-      "homeScore": null,
-      "awayScore": null,
-      "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552664970-dinamo-rodina-23-08-2026"
+      "homeScore": 0,
+      "awayScore": 0,
+      "live": "21'",
+      "status": "live",
+      "url": "/football/rpl/552664970-dinamo-rodina-23-08-2026",
+      "stadium": "ВТБ Арена (Динамо)",
+      "referee": "Буланов",
+      "events": [],
+      "stats": [
+        {
+          "name": "Голы",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Желтые карточки",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-08-23-Динамо Мх-Краснодар",
