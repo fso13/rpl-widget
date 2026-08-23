@@ -1,21 +1,22 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-23T19:36:34+03:00",
+  "updatedAt": "2026-08-23T19:57:46+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
       "rank": 1,
       "team": "Краснодар",
       "slug": "krasnodar",
-      "played": 4,
-      "won": 4,
+      "played": 5,
+      "won": 5,
       "drawn": 0,
       "lost": 0,
-      "goalsFor": 9,
+      "goalsFor": 10,
       "goalsAgainst": 4,
-      "goalDiff": 5,
-      "points": 12,
+      "goalDiff": 6,
+      "points": 15,
       "form": [
+        "W",
         "W",
         "W",
         "W",
@@ -84,19 +85,20 @@
       "rank": 5,
       "team": "Динамо Мх",
       "slug": "dinamo-mh",
-      "played": 4,
+      "played": 5,
       "won": 3,
       "drawn": 0,
-      "lost": 1,
+      "lost": 2,
       "goalsFor": 9,
-      "goalsAgainst": 6,
-      "goalDiff": 3,
+      "goalsAgainst": 7,
+      "goalDiff": 2,
       "points": 9,
       "form": [
         "W",
         "W",
         "L",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -3541,6 +3543,8 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664969-dinamo-krasnodar-23-08-2026",
+      "stadium": "Анжи-Арена",
+      "referee": "Казарцев",
       "events": [
         {
           "type": "yellow",
@@ -3575,13 +3579,20 @@
           "minute": "62'",
           "playerIn": "Кордоба",
           "playerOut": "Воробьёв"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "79'",
+          "player": "Жубал",
+          "assist": "Гонсалвеш"
         }
       ],
       "stats": [
         {
-          "name": "Голы",
-          "home": "0",
-          "away": "0"
+          "name": "Удары (в створ)",
+          "home": "8 (1)",
+          "away": "8 (4)"
         },
         {
           "name": "Красные карточки",
@@ -3589,8 +3600,6 @@
           "away": "0"
         }
       ],
-      "stadium": "Анжи-Арена",
-      "referee": "Казарцев",
       "detailsVersion": 3
     },
     {
