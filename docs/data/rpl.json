@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-23T16:20:01+03:00",
+  "updatedAt": "2026-08-23T16:49:55+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -3448,22 +3448,79 @@
       "away": "Родина",
       "homeSlug": "dinamo-m",
       "awaySlug": "rodina",
-      "homeScore": 1,
+      "homeScore": 3,
       "awayScore": 1,
-      "live": null,
-      "status": "finished",
+      "live": "72'",
+      "status": "live",
       "url": "/football/rpl/552664970-dinamo-rodina-23-08-2026",
-      "events": [],
-      "stats": [
+      "stadium": "ВТБ Арена (Динамо)",
+      "referee": "Буланов",
+      "events": [
         {
-          "name": "Голы",
-          "home": "0",
-          "away": "0"
+          "type": "yellow",
+          "side": "home",
+          "minute": "24'",
+          "player": "Маринкин"
         },
         {
-          "name": "Желтые карточки",
-          "home": "0",
-          "away": "0"
+          "type": "yellow",
+          "side": "away",
+          "minute": "27'",
+          "player": "Бессмертный"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "31'",
+          "player": "Посо",
+          "assist": null
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "38'",
+          "player": "Тюкавин",
+          "assist": "Осипенко"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "39'",
+          "playerIn": "Глебов",
+          "playerOut": "Маринкин"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "46'",
+          "playerIn": "Касерес",
+          "playerOut": "Зайдензаль"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "50'",
+          "player": "Тюкавин",
+          "assist": null
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "56'",
+          "player": "Миранчук",
+          "assist": null
+        }
+      ],
+      "stats": [
+        {
+          "name": "Угловые",
+          "home": "2",
+          "away": "2"
+        },
+        {
+          "name": "Офсайды",
+          "home": "4",
+          "away": "4"
         },
         {
           "name": "Красные карточки",
@@ -3471,8 +3528,6 @@
           "away": "0"
         }
       ],
-      "stadium": "ВТБ Арена (Динамо)",
-      "referee": "Буланов",
       "detailsVersion": 3
     },
     {
