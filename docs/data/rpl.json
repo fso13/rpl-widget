@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-23T16:49:55+03:00",
+  "updatedAt": "2026-08-23T17:09:55+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -3450,7 +3450,7 @@
       "awaySlug": "rodina",
       "homeScore": 3,
       "awayScore": 1,
-      "live": "72'",
+      "live": "90'",
       "status": "live",
       "url": "/football/rpl/552664970-dinamo-rodina-23-08-2026",
       "stadium": "ВТБ Арена (Динамо)",
@@ -3513,14 +3513,9 @@
       ],
       "stats": [
         {
-          "name": "Угловые",
-          "home": "2",
-          "away": "2"
-        },
-        {
-          "name": "Офсайды",
-          "home": "4",
-          "away": "4"
+          "name": "Нарушения",
+          "home": "12",
+          "away": "12"
         },
         {
           "name": "Красные карточки",
