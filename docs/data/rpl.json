@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-23T20:41:46+03:00",
+  "updatedAt": "2026-08-23T20:56:46+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -3611,13 +3611,11 @@
       "away": "Зенит",
       "homeSlug": "spartak",
       "awaySlug": "zenit",
-      "homeScore": 1,
+      "homeScore": 2,
       "awayScore": 0,
-      "live": "34'",
-      "status": "live",
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552664968-spartak-zenit-23-08-2026",
-      "stadium": "Лукойл Арена",
-      "referee": "Танашев",
       "events": [
         {
           "type": "own_goal",
@@ -3645,6 +3643,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Лукойл Арена",
+      "referee": "Танашев",
       "detailsVersion": 3
     },
     {
