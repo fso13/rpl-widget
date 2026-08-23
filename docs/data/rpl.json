@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-23T20:22:32+03:00",
+  "updatedAt": "2026-08-23T20:41:46+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -3613,25 +3613,31 @@
       "awaySlug": "zenit",
       "homeScore": 1,
       "awayScore": 0,
-      "live": "15'",
+      "live": "34'",
       "status": "live",
       "url": "/football/rpl/552664968-spartak-zenit-23-08-2026",
       "stadium": "Лукойл Арена",
       "referee": "Танашев",
       "events": [
         {
-          "type": "goal",
+          "type": "own_goal",
           "side": "home",
           "minute": "12'",
-          "player": "Угальде",
+          "player": "Барриос",
           "assist": null
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "21'",
+          "player": "Вендел"
         }
       ],
       "stats": [
         {
-          "name": "Желтые карточки",
-          "home": "0",
-          "away": "0"
+          "name": "Нарушения",
+          "home": "5",
+          "away": "5"
         },
         {
           "name": "Красные карточки",
