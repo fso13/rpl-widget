@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-23T18:47:50+03:00",
+  "updatedAt": "2026-08-23T19:02:15+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -3538,7 +3538,7 @@
       "awaySlug": "krasnodar",
       "homeScore": 0,
       "awayScore": 0,
-      "live": "53'",
+      "live": "67'",
       "status": "live",
       "url": "/football/rpl/552664969-dinamo-krasnodar-23-08-2026",
       "stadium": "Анжи-Арена",
@@ -3563,6 +3563,20 @@
           "minute": "46'",
           "playerIn": "Боселли",
           "playerOut": "Уткин"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "62'",
+          "playerIn": "Оздоев",
+          "playerOut": "Батчи"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "62'",
+          "playerIn": "Кордоба",
+          "playerOut": "Воробьёв"
         }
       ],
       "stats": [
