@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-23T17:09:55+03:00",
+  "updatedAt": "2026-08-23T17:37:41+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -101,6 +101,26 @@
     },
     {
       "rank": 6,
+      "team": "Динамо М",
+      "slug": "dinamo-m",
+      "played": 5,
+      "won": 2,
+      "drawn": 1,
+      "lost": 2,
+      "goalsFor": 7,
+      "goalsAgainst": 7,
+      "goalDiff": 0,
+      "points": 7,
+      "form": [
+        "D",
+        "L",
+        "W",
+        "L",
+        "W"
+      ]
+    },
+    {
+      "rank": 7,
       "team": "Балтика",
       "slug": "baltika",
       "played": 4,
@@ -119,7 +139,7 @@
       ]
     },
     {
-      "rank": 7,
+      "rank": 8,
       "team": "Оренбург",
       "slug": "orenburg",
       "played": 5,
@@ -139,7 +159,7 @@
       ]
     },
     {
-      "rank": 8,
+      "rank": 9,
       "team": "Ахмат",
       "slug": "akhmat",
       "played": 5,
@@ -159,7 +179,7 @@
       ]
     },
     {
-      "rank": 9,
+      "rank": 10,
       "team": "Рубин",
       "slug": "rubin",
       "played": 4,
@@ -178,7 +198,7 @@
       ]
     },
     {
-      "rank": 10,
+      "rank": 11,
       "team": "Ростов",
       "slug": "rostov",
       "played": 5,
@@ -198,7 +218,7 @@
       ]
     },
     {
-      "rank": 11,
+      "rank": 12,
       "team": "Крылья Советов",
       "slug": "krylia",
       "played": 5,
@@ -218,41 +238,23 @@
       ]
     },
     {
-      "rank": 12,
-      "team": "Динамо М",
-      "slug": "dinamo-m",
-      "played": 4,
-      "won": 1,
-      "drawn": 1,
-      "lost": 2,
-      "goalsFor": 4,
-      "goalsAgainst": 6,
-      "goalDiff": -2,
-      "points": 4,
-      "form": [
-        "D",
-        "L",
-        "W",
-        "L"
-      ]
-    },
-    {
       "rank": 13,
       "team": "Родина",
       "slug": "rodina",
-      "played": 4,
+      "played": 5,
       "won": 1,
       "drawn": 1,
-      "lost": 2,
-      "goalsFor": 7,
-      "goalsAgainst": 11,
-      "goalDiff": -4,
+      "lost": 3,
+      "goalsFor": 8,
+      "goalsAgainst": 14,
+      "goalDiff": -6,
       "points": 4,
       "form": [
         "L",
         "L",
         "W",
-        "D"
+        "D",
+        "L"
       ]
     },
     {
@@ -3450,11 +3452,9 @@
       "awaySlug": "rodina",
       "homeScore": 3,
       "awayScore": 1,
-      "live": "90'",
-      "status": "live",
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552664970-dinamo-rodina-23-08-2026",
-      "stadium": "ВТБ Арена (Динамо)",
-      "referee": "Буланов",
       "events": [
         {
           "type": "yellow",
@@ -3523,6 +3523,8 @@
           "away": "0"
         }
       ],
+      "stadium": "ВТБ Арена (Динамо)",
+      "referee": "Буланов",
       "detailsVersion": 3
     },
     {
@@ -3534,11 +3536,32 @@
       "away": "Краснодар",
       "homeSlug": "dinamo-mh",
       "awaySlug": "krasnodar",
-      "homeScore": null,
-      "awayScore": null,
-      "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552664969-dinamo-krasnodar-23-08-2026"
+      "homeScore": 0,
+      "awayScore": 0,
+      "live": "3'",
+      "status": "live",
+      "url": "/football/rpl/552664969-dinamo-krasnodar-23-08-2026",
+      "stadium": "Анжи-Арена",
+      "referee": "Казарцев",
+      "events": [],
+      "stats": [
+        {
+          "name": "Голы",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Желтые карточки",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-08-23-Спартак-Зенит",
