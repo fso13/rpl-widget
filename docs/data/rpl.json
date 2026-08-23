@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-23T13:21:02+03:00",
+  "updatedAt": "2026-08-23T13:56:18+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -3361,12 +3361,10 @@
       "homeSlug": "akron",
       "awaySlug": "krylia",
       "homeScore": 0,
-      "awayScore": 0,
-      "live": "16'",
-      "status": "live",
+      "awayScore": 1,
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552664971-akron-kryliasovetov-23-08-2026",
-      "stadium": "Солидарность Арена (Самара-Арена)",
-      "referee": "Прокопов",
       "events": [
         {
           "type": "yellow",
@@ -3392,6 +3390,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Солидарность Арена (Самара-Арена)",
+      "referee": "Прокопов",
       "detailsVersion": 3
     },
     {
