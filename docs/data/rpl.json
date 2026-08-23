@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-23T21:58:33+03:00",
+  "updatedAt": "2026-08-23T22:25:21+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -25,6 +25,26 @@
     },
     {
       "rank": 2,
+      "team": "Спартак",
+      "slug": "spartak",
+      "played": 5,
+      "won": 4,
+      "drawn": 0,
+      "lost": 1,
+      "goalsFor": 10,
+      "goalsAgainst": 4,
+      "goalDiff": 6,
+      "points": 12,
+      "form": [
+        "W",
+        "W",
+        "L",
+        "W",
+        "W"
+      ]
+    },
+    {
+      "rank": 3,
       "team": "ЦСКА",
       "slug": "cska",
       "played": 5,
@@ -44,41 +64,23 @@
       ]
     },
     {
-      "rank": 3,
+      "rank": 4,
       "team": "Зенит",
       "slug": "zenit",
-      "played": 4,
+      "played": 5,
       "won": 3,
       "drawn": 0,
-      "lost": 1,
+      "lost": 2,
       "goalsFor": 12,
-      "goalsAgainst": 2,
-      "goalDiff": 10,
-      "points": 9,
-      "form": [
-        "W",
-        "W",
-        "L",
-        "W"
-      ]
-    },
-    {
-      "rank": 4,
-      "team": "Спартак",
-      "slug": "spartak",
-      "played": 4,
-      "won": 3,
-      "drawn": 0,
-      "lost": 1,
-      "goalsFor": 8,
       "goalsAgainst": 4,
-      "goalDiff": 4,
+      "goalDiff": 8,
       "points": 9,
       "form": [
         "W",
         "W",
         "L",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -3613,11 +3615,9 @@
       "awaySlug": "zenit",
       "homeScore": 2,
       "awayScore": 0,
-      "live": "90'",
-      "status": "live",
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552664968-spartak-zenit-23-08-2026",
-      "stadium": "Лукойл Арена",
-      "referee": "Танашев",
       "events": [
         {
           "type": "own_goal",
@@ -3684,6 +3684,8 @@
           "away": "4"
         }
       ],
+      "stadium": "Лукойл Арена",
+      "referee": "Танашев",
       "detailsVersion": 3
     },
     {
