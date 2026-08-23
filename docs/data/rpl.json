@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-23T19:57:46+03:00",
+  "updatedAt": "2026-08-23T20:22:32+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -3543,8 +3543,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664969-dinamo-krasnodar-23-08-2026",
-      "stadium": "Анжи-Арена",
-      "referee": "Казарцев",
       "events": [
         {
           "type": "yellow",
@@ -3600,6 +3598,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Анжи-Арена",
+      "referee": "Казарцев",
       "detailsVersion": 3
     },
     {
@@ -3611,11 +3611,35 @@
       "away": "Зенит",
       "homeSlug": "spartak",
       "awaySlug": "zenit",
-      "homeScore": null,
-      "awayScore": null,
-      "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552664968-spartak-zenit-23-08-2026"
+      "homeScore": 1,
+      "awayScore": 0,
+      "live": "15'",
+      "status": "live",
+      "url": "/football/rpl/552664968-spartak-zenit-23-08-2026",
+      "stadium": "Лукойл Арена",
+      "referee": "Танашев",
+      "events": [
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "12'",
+          "player": "Угальде",
+          "assist": null
+        }
+      ],
+      "stats": [
+        {
+          "name": "Желтые карточки",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-08-24-Балтика-Рубин",
