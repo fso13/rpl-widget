@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-23T20:56:46+03:00",
+  "updatedAt": "2026-08-23T21:28:51+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -3613,9 +3613,11 @@
       "awaySlug": "zenit",
       "homeScore": 2,
       "awayScore": 0,
-      "live": null,
-      "status": "finished",
+      "live": "63'",
+      "status": "live",
       "url": "/football/rpl/552664968-spartak-zenit-23-08-2026",
+      "stadium": "Лукойл Арена",
+      "referee": "Танашев",
       "events": [
         {
           "type": "own_goal",
@@ -3629,13 +3631,47 @@
           "side": "away",
           "minute": "21'",
           "player": "Вендел"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "38'",
+          "player": "Зобнин",
+          "assist": "Маркиньос"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "48'",
+          "player": "Маркиньос"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "57'",
+          "playerIn": "Аугусто",
+          "playerOut": "Соболев"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "57'",
+          "playerIn": "Алип",
+          "playerOut": "Марсилио"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "58'",
+          "playerIn": "Денисов",
+          "playerOut": "Литвинов"
         }
       ],
       "stats": [
         {
-          "name": "Нарушения",
-          "home": "5",
-          "away": "5"
+          "name": "Желтые карточки",
+          "home": "1",
+          "away": "1"
         },
         {
           "name": "Красные карточки",
@@ -3643,8 +3679,6 @@
           "away": "0"
         }
       ],
-      "stadium": "Лукойл Арена",
-      "referee": "Танашев",
       "detailsVersion": 3
     },
     {
