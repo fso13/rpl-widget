@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-23T18:26:42+03:00",
+  "updatedAt": "2026-08-23T18:47:50+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -3538,18 +3538,36 @@
       "awaySlug": "krasnodar",
       "homeScore": 0,
       "awayScore": 0,
-      "live": null,
-      "status": "finished",
+      "live": "53'",
+      "status": "live",
       "url": "/football/rpl/552664969-dinamo-krasnodar-23-08-2026",
-      "events": [],
+      "stadium": "Анжи-Арена",
+      "referee": "Казарцев",
+      "events": [
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "29'",
+          "player": "Кордоба"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Гонсалвеш",
+          "playerOut": "Соарес"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Боселли",
+          "playerOut": "Уткин"
+        }
+      ],
       "stats": [
         {
           "name": "Голы",
-          "home": "0",
-          "away": "0"
-        },
-        {
-          "name": "Желтые карточки",
           "home": "0",
           "away": "0"
         },
@@ -3559,8 +3577,6 @@
           "away": "0"
         }
       ],
-      "stadium": "Анжи-Арена",
-      "referee": "Казарцев",
       "detailsVersion": 3
     },
     {
