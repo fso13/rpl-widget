@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-23T14:17:25+03:00",
+  "updatedAt": "2026-08-23T14:39:49+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -3361,8 +3361,8 @@
       "homeSlug": "akron",
       "awaySlug": "krylia",
       "homeScore": 0,
-      "awayScore": 1,
-      "live": "55'",
+      "awayScore": 2,
+      "live": "77'",
       "status": "live",
       "url": "/football/rpl/552664971-akron-kryliasovetov-23-08-2026",
       "stadium": "Солидарность Арена (Самара-Арена)",
@@ -3405,18 +3405,27 @@
           "side": "away",
           "minute": "54'",
           "player": "Чесноков"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "57'",
+          "playerIn": "Хосонов",
+          "playerOut": "Бистрович"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "75'",
+          "player": "Ороз",
+          "assist": null
         }
       ],
       "stats": [
         {
-          "name": "Угловые",
-          "home": "2",
-          "away": "2"
-        },
-        {
           "name": "Желтые карточки",
-          "home": "2",
-          "away": "2"
+          "home": "3",
+          "away": "3"
         },
         {
           "name": "Красные карточки",
