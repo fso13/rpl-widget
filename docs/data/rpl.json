@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-24T22:50:41+03:00",
+  "updatedAt": "2026-08-24T23:14:13+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -3704,6 +3704,8 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664967-baltika-rubin-24-08-2026",
+      "stadium": "Ростех Арена (Калининград)",
+      "referee": "Сухой",
       "events": [
         {
           "type": "goal",
@@ -3753,17 +3755,27 @@
           "minute": "74'",
           "playerIn": "Беликов",
           "playerOut": "Хиль"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "90'",
+          "player": "Варатынов",
+          "assist": "Поспелов"
         }
       ],
       "stats": [
+        {
+          "name": "Голы",
+          "home": "1",
+          "away": "1"
+        },
         {
           "name": "Красные карточки",
           "home": "0",
           "away": "0"
         }
       ],
-      "stadium": "Ростех Арена (Калининград)",
-      "referee": "Сухой",
       "detailsVersion": 3
     },
     {
