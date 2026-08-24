@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-24T22:22:13+03:00",
+  "updatedAt": "2026-08-24T22:50:41+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -105,6 +105,26 @@
     },
     {
       "rank": 6,
+      "team": "Балтика",
+      "slug": "baltika",
+      "played": 5,
+      "won": 2,
+      "drawn": 1,
+      "lost": 2,
+      "goalsFor": 7,
+      "goalsAgainst": 6,
+      "goalDiff": 1,
+      "points": 7,
+      "form": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "D"
+      ]
+    },
+    {
+      "rank": 7,
       "team": "Динамо М",
       "slug": "dinamo-m",
       "played": 5,
@@ -124,26 +144,27 @@
       ]
     },
     {
-      "rank": 7,
-      "team": "Балтика",
-      "slug": "baltika",
-      "played": 4,
-      "won": 2,
-      "drawn": 0,
-      "lost": 2,
+      "rank": 8,
+      "team": "Рубин",
+      "slug": "rubin",
+      "played": 5,
+      "won": 1,
+      "drawn": 3,
+      "lost": 1,
       "goalsFor": 6,
-      "goalsAgainst": 5,
-      "goalDiff": 1,
+      "goalsAgainst": 7,
+      "goalDiff": -1,
       "points": 6,
       "form": [
         "L",
         "W",
-        "W",
-        "L"
+        "D",
+        "D",
+        "D"
       ]
     },
     {
-      "rank": 8,
+      "rank": 9,
       "team": "Оренбург",
       "slug": "orenburg",
       "played": 5,
@@ -163,7 +184,7 @@
       ]
     },
     {
-      "rank": 9,
+      "rank": 10,
       "team": "Ахмат",
       "slug": "akhmat",
       "played": 5,
@@ -183,46 +204,7 @@
       ]
     },
     {
-      "rank": 10,
-      "team": "Рубин",
-      "slug": "rubin",
-      "played": 4,
-      "won": 1,
-      "drawn": 2,
-      "lost": 1,
-      "goalsFor": 5,
-      "goalsAgainst": 6,
-      "goalDiff": -1,
-      "points": 5,
-      "form": [
-        "L",
-        "W",
-        "D",
-        "D"
-      ]
-    },
-    {
       "rank": 11,
-      "team": "Ростов",
-      "slug": "rostov",
-      "played": 5,
-      "won": 1,
-      "drawn": 2,
-      "lost": 2,
-      "goalsFor": 7,
-      "goalsAgainst": 9,
-      "goalDiff": -2,
-      "points": 5,
-      "form": [
-        "L",
-        "W",
-        "D",
-        "D",
-        "L"
-      ]
-    },
-    {
-      "rank": 12,
       "team": "Крылья Советов",
       "slug": "krylia",
       "played": 5,
@@ -239,6 +221,26 @@
         "L",
         "L",
         "W"
+      ]
+    },
+    {
+      "rank": 12,
+      "team": "Ростов",
+      "slug": "rostov",
+      "played": 5,
+      "won": 1,
+      "drawn": 2,
+      "lost": 2,
+      "goalsFor": 7,
+      "goalsAgainst": 9,
+      "goalDiff": -2,
+      "points": 5,
+      "form": [
+        "L",
+        "W",
+        "D",
+        "D",
+        "L"
       ]
     },
     {
@@ -3697,13 +3699,11 @@
       "away": "Рубин",
       "homeSlug": "baltika",
       "awaySlug": "rubin",
-      "homeScore": 0,
+      "homeScore": 1,
       "awayScore": 1,
-      "live": "87'",
-      "status": "live",
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552664967-baltika-rubin-24-08-2026",
-      "stadium": "Ростех Арена (Калининград)",
-      "referee": "Сухой",
       "events": [
         {
           "type": "goal",
@@ -3762,6 +3762,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Ростех Арена (Калининград)",
+      "referee": "Сухой",
       "detailsVersion": 3
     },
     {
