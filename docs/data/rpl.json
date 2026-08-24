@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-24T23:27:48+03:00",
+  "updatedAt": "2026-08-25T00:03:17+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -205,26 +205,6 @@
     },
     {
       "rank": 11,
-      "team": "Крылья Советов",
-      "slug": "krylia",
-      "played": 5,
-      "won": 1,
-      "drawn": 2,
-      "lost": 2,
-      "goalsFor": 5,
-      "goalsAgainst": 7,
-      "goalDiff": -2,
-      "points": 5,
-      "form": [
-        "D",
-        "D",
-        "L",
-        "L",
-        "W"
-      ]
-    },
-    {
-      "rank": 12,
       "team": "Ростов",
       "slug": "rostov",
       "played": 5,
@@ -241,6 +221,26 @@
         "D",
         "D",
         "L"
+      ]
+    },
+    {
+      "rank": 12,
+      "team": "Крылья Советов",
+      "slug": "krylia",
+      "played": 5,
+      "won": 1,
+      "drawn": 2,
+      "lost": 2,
+      "goalsFor": 5,
+      "goalsAgainst": 7,
+      "goalDiff": -2,
+      "points": 5,
+      "form": [
+        "D",
+        "D",
+        "L",
+        "L",
+        "W"
       ]
     },
     {
