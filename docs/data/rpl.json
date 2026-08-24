@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-24T20:36:32+03:00",
+  "updatedAt": "2026-08-24T21:02:38+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -3698,14 +3698,33 @@
       "homeSlug": "baltika",
       "awaySlug": "rubin",
       "homeScore": 0,
-      "awayScore": 0,
-      "live": "0'",
+      "awayScore": 1,
+      "live": "27'",
       "status": "live",
       "url": "/football/rpl/552664967-baltika-rubin-24-08-2026",
       "stadium": "Ростех Арена (Калининград)",
       "referee": "Сухой",
-      "events": [],
-      "stats": [],
+      "events": [
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "8'",
+          "player": "Сиве",
+          "assist": "Рожков"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Желтые карточки",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
       "detailsVersion": 3
     },
     {
