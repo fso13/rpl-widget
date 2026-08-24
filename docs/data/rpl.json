@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-24T21:53:41+03:00",
+  "updatedAt": "2026-08-24T22:22:13+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -3699,7 +3699,7 @@
       "awaySlug": "rubin",
       "homeScore": 0,
       "awayScore": 1,
-      "live": "58'",
+      "live": "87'",
       "status": "live",
       "url": "/football/rpl/552664967-baltika-rubin-24-08-2026",
       "stadium": "Ростех Арена (Калининград)",
@@ -3725,23 +3725,41 @@
           "minute": "56'",
           "playerIn": "Петров",
           "playerOut": "Петров"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "68'",
+          "playerIn": "Сааведра",
+          "playerOut": "Ходжа"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "68'",
+          "playerIn": "Безруков",
+          "playerOut": "Арройо"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "74'",
+          "playerIn": "Поспелов",
+          "playerOut": "Мендель"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "74'",
+          "playerIn": "Беликов",
+          "playerOut": "Хиль"
         }
       ],
       "stats": [
         {
-          "name": "Желтые карточки",
-          "home": "0",
-          "away": "0"
-        },
-        {
           "name": "Красные карточки",
           "home": "0",
           "away": "0"
-        },
-        {
-          "name": "Пасы (точность)",
-          "home": "75%",
-          "away": "75%"
         }
       ],
       "detailsVersion": 3
