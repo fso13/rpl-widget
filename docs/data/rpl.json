@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-24T23:14:13+03:00",
+  "updatedAt": "2026-08-24T23:27:48+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -3704,8 +3704,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664967-baltika-rubin-24-08-2026",
-      "stadium": "Ростех Арена (Калининград)",
-      "referee": "Сухой",
       "events": [
         {
           "type": "goal",
@@ -3776,6 +3774,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Ростех Арена (Калининград)",
+      "referee": "Сухой",
       "detailsVersion": 3
     },
     {
