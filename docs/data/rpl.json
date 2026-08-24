@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-24T19:59:16+03:00",
+  "updatedAt": "2026-08-24T20:36:32+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -3697,11 +3697,16 @@
       "away": "Рубин",
       "homeSlug": "baltika",
       "awaySlug": "rubin",
-      "homeScore": null,
-      "awayScore": null,
-      "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552664967-baltika-rubin-24-08-2026"
+      "homeScore": 0,
+      "awayScore": 0,
+      "live": "0'",
+      "status": "live",
+      "url": "/football/rpl/552664967-baltika-rubin-24-08-2026",
+      "stadium": "Ростех Арена (Калининград)",
+      "referee": "Сухой",
+      "events": [],
+      "stats": [],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-08-28-Акрон-ЦСКА",
