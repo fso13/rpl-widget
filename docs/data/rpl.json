@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-28T19:42:04+03:00",
+  "updatedAt": "2026-08-29T00:18:53+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -47,20 +47,20 @@
       "rank": 3,
       "team": "ЦСКА",
       "slug": "cska",
-      "played": 5,
+      "played": 6,
       "won": 3,
-      "drawn": 2,
+      "drawn": 3,
       "lost": 0,
-      "goalsFor": 7,
-      "goalsAgainst": 4,
+      "goalsFor": 9,
+      "goalsAgainst": 6,
       "goalDiff": 3,
-      "points": 11,
+      "points": 12,
       "form": [
-        "W",
         "D",
         "D",
         "W",
-        "W"
+        "W",
+        "D"
       ]
     },
     {
@@ -285,6 +285,26 @@
     },
     {
       "rank": 15,
+      "team": "Акрон",
+      "slug": "akron",
+      "played": 6,
+      "won": 0,
+      "drawn": 3,
+      "lost": 3,
+      "goalsFor": 6,
+      "goalsAgainst": 15,
+      "goalDiff": -9,
+      "points": 3,
+      "form": [
+        "L",
+        "D",
+        "D",
+        "L",
+        "D"
+      ]
+    },
+    {
+      "rank": 16,
       "team": "Факел",
       "slug": "fakel",
       "played": 5,
@@ -301,26 +321,6 @@
         "D",
         "L",
         "D"
-      ]
-    },
-    {
-      "rank": 16,
-      "team": "Акрон",
-      "slug": "akron",
-      "played": 5,
-      "won": 0,
-      "drawn": 2,
-      "lost": 3,
-      "goalsFor": 4,
-      "goalsAgainst": 13,
-      "goalDiff": -9,
-      "points": 2,
-      "form": [
-        "L",
-        "L",
-        "D",
-        "D",
-        "L"
       ]
     }
   ],
@@ -3789,11 +3789,9 @@
       "awaySlug": "cska",
       "homeScore": 2,
       "awayScore": 2,
-      "live": "81'",
-      "status": "live",
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552664982-akron-tsska-28-08-2026",
-      "stadium": "Солидарность Арена (Самара-Арена)",
-      "referee": "Шадыханов",
       "events": [
         {
           "type": "goal",
@@ -3863,6 +3861,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Солидарность Арена (Самара-Арена)",
+      "referee": "Шадыханов",
       "detailsVersion": 3
     },
     {
