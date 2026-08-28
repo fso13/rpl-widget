@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-28T07:01:42+03:00",
+  "updatedAt": "2026-08-28T19:42:04+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -205,26 +205,6 @@
     },
     {
       "rank": 11,
-      "team": "Ростов",
-      "slug": "rostov",
-      "played": 5,
-      "won": 1,
-      "drawn": 2,
-      "lost": 2,
-      "goalsFor": 7,
-      "goalsAgainst": 9,
-      "goalDiff": -2,
-      "points": 5,
-      "form": [
-        "L",
-        "W",
-        "D",
-        "D",
-        "L"
-      ]
-    },
-    {
-      "rank": 12,
       "team": "Крылья Советов",
       "slug": "krylia",
       "played": 5,
@@ -241,6 +221,26 @@
         "L",
         "L",
         "W"
+      ]
+    },
+    {
+      "rank": 12,
+      "team": "Ростов",
+      "slug": "rostov",
+      "played": 5,
+      "won": 1,
+      "drawn": 2,
+      "lost": 2,
+      "goalsFor": 7,
+      "goalsAgainst": 9,
+      "goalDiff": -2,
+      "points": 5,
+      "form": [
+        "L",
+        "W",
+        "D",
+        "D",
+        "L"
       ]
     },
     {
@@ -3787,11 +3787,83 @@
       "away": "ЦСКА",
       "homeSlug": "akron",
       "awaySlug": "cska",
-      "homeScore": null,
-      "awayScore": null,
-      "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552664982-akron-tsska-28-08-2026"
+      "homeScore": 2,
+      "awayScore": 2,
+      "live": "81'",
+      "status": "live",
+      "url": "/football/rpl/552664982-akron-tsska-28-08-2026",
+      "stadium": "Солидарность Арена (Самара-Арена)",
+      "referee": "Шадыханов",
+      "events": [
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "13'",
+          "player": "Гонду",
+          "assist": "Глебов"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "20'",
+          "playerIn": "Козлов",
+          "playerOut": "Кисляк"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "23'",
+          "player": "Роча",
+          "assist": "Беншимол"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "32'",
+          "player": "Попенков"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "60'",
+          "playerIn": "Кармо",
+          "playerOut": "Попович"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "66'",
+          "player": "Беншимол",
+          "assist": "Лончар"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "71'",
+          "playerIn": "Дмитриев",
+          "playerOut": "Марадишвили"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "77'",
+          "player": "Кармо",
+          "assist": "Алвес"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Голы",
+          "home": "2",
+          "away": "2"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-08-29-Факел-Зенит",
