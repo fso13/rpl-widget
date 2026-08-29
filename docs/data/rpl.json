@@ -1,20 +1,20 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-29T18:26:03+03:00",
+  "updatedAt": "2026-08-29T21:45:07+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
       "rank": 1,
       "team": "Краснодар",
       "slug": "krasnodar",
-      "played": 5,
-      "won": 5,
+      "played": 6,
+      "won": 6,
       "drawn": 0,
       "lost": 0,
-      "goalsFor": 10,
+      "goalsFor": 11,
       "goalsAgainst": 4,
-      "goalDiff": 6,
-      "points": 15,
+      "goalDiff": 7,
+      "points": 18,
       "form": [
         "W",
         "W",
@@ -25,6 +25,26 @@
     },
     {
       "rank": 2,
+      "team": "Зенит",
+      "slug": "zenit",
+      "played": 6,
+      "won": 4,
+      "drawn": 0,
+      "lost": 2,
+      "goalsFor": 13,
+      "goalsAgainst": 4,
+      "goalDiff": 9,
+      "points": 12,
+      "form": [
+        "W",
+        "L",
+        "W",
+        "L",
+        "W"
+      ]
+    },
+    {
+      "rank": 3,
       "team": "Спартак",
       "slug": "spartak",
       "played": 5,
@@ -44,7 +64,7 @@
       ]
     },
     {
-      "rank": 3,
+      "rank": 4,
       "team": "ЦСКА",
       "slug": "cska",
       "played": 6,
@@ -61,26 +81,6 @@
         "W",
         "W",
         "D"
-      ]
-    },
-    {
-      "rank": 4,
-      "team": "Зенит",
-      "slug": "zenit",
-      "played": 6,
-      "won": 4,
-      "drawn": 0,
-      "lost": 2,
-      "goalsFor": 13,
-      "goalsAgainst": 4,
-      "goalDiff": 9,
-      "points": 12,
-      "form": [
-        "W",
-        "L",
-        "W",
-        "L",
-        "W"
       ]
     },
     {
@@ -227,19 +227,19 @@
       "rank": 12,
       "team": "Ростов",
       "slug": "rostov",
-      "played": 5,
+      "played": 6,
       "won": 1,
       "drawn": 2,
-      "lost": 2,
+      "lost": 3,
       "goalsFor": 7,
-      "goalsAgainst": 9,
-      "goalDiff": -2,
+      "goalsAgainst": 10,
+      "goalDiff": -3,
       "points": 5,
       "form": [
-        "L",
         "W",
         "D",
         "D",
+        "L",
         "L"
       ]
     },
@@ -3995,11 +3995,90 @@
       "away": "Крылья Советов",
       "homeSlug": "akhmat",
       "awaySlug": "krylia",
-      "homeScore": null,
-      "awayScore": null,
-      "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552664979-akhmat-kryliasovetov-29-08-2026"
+      "homeScore": 3,
+      "awayScore": 3,
+      "live": "84'",
+      "status": "live",
+      "url": "/football/rpl/552664979-akhmat-kryliasovetov-29-08-2026",
+      "stadium": "Ахмат-Арена",
+      "referee": "Матвеев",
+      "events": [
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "15'",
+          "player": "Олейников",
+          "assist": "Крамарич"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "29'",
+          "player": "Витюгов"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "36'",
+          "player": "Садулаев",
+          "assist": null
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "38'",
+          "player": "Касинтура",
+          "assist": "Садулаев"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "45'",
+          "player": "Чернов",
+          "assist": "Горшков"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Чесноков",
+          "playerOut": "Рахманович"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Макаров",
+          "playerOut": "Рассказов"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "60'",
+          "player": "Мелкадзе",
+          "assist": "Касинтура"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "72'",
+          "player": "Олейников",
+          "assist": "Витюгов"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Голы",
+          "home": "3",
+          "away": "3"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-08-29-Локомотив-Динамо М",
@@ -4010,11 +4089,57 @@
       "away": "Динамо М",
       "homeSlug": "lokomotiv",
       "awaySlug": "dinamo-m",
-      "homeScore": null,
-      "awayScore": null,
-      "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552664978-lokomotiv-dinamo-29-08-2026"
+      "homeScore": 0,
+      "awayScore": 1,
+      "live": "81'",
+      "status": "live",
+      "url": "/football/rpl/552664978-lokomotiv-dinamo-29-08-2026",
+      "stadium": "РЖД Арена (Локомотив)",
+      "referee": "Абросимов",
+      "events": [
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "25'",
+          "player": "Годяев"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "46'",
+          "playerIn": "Морозов",
+          "playerOut": "Джикия"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "52'",
+          "playerIn": "Чавес",
+          "playerOut": "Миранчук"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "65'",
+          "playerIn": "Гомес",
+          "playerOut": "Гомес"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "73'",
+          "player": "Осипенко",
+          "assist": null
+        }
+      ],
+      "stats": [
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-08-30-Родина-Балтика",
