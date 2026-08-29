@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-29T17:55:37+03:00",
+  "updatedAt": "2026-08-29T18:26:03+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -3879,8 +3879,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664981-fakel-zenit-29-08-2026",
-      "stadium": "Факел",
-      "referee": "Фролов",
       "events": [
         {
           "type": "yellow",
@@ -3939,6 +3937,8 @@
         }
       ],
       "stats": [],
+      "stadium": "Факел",
+      "referee": "Фролов",
       "detailsVersion": 3
     },
     {
@@ -3952,11 +3952,9 @@
       "awaySlug": "rostov",
       "homeScore": 1,
       "awayScore": 0,
-      "live": "21'",
-      "status": "live",
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552664980-krasnodar-rostov-29-08-2026",
-      "stadium": "Озон Арена (Краснодар)",
-      "referee": "Новиков",
       "events": [
         {
           "type": "yellow",
@@ -3984,6 +3982,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Озон Арена (Краснодар)",
+      "referee": "Новиков",
       "detailsVersion": 3
     },
     {
