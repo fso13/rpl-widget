@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-29T12:43:19+03:00",
+  "updatedAt": "2026-08-29T17:55:37+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -67,20 +67,20 @@
       "rank": 4,
       "team": "Зенит",
       "slug": "zenit",
-      "played": 5,
-      "won": 3,
+      "played": 6,
+      "won": 4,
       "drawn": 0,
       "lost": 2,
-      "goalsFor": 12,
+      "goalsFor": 13,
       "goalsAgainst": 4,
-      "goalDiff": 8,
-      "points": 9,
+      "goalDiff": 9,
+      "points": 12,
       "form": [
-        "W",
         "W",
         "L",
         "W",
-        "L"
+        "L",
+        "W"
       ]
     },
     {
@@ -307,20 +307,20 @@
       "rank": 16,
       "team": "Факел",
       "slug": "fakel",
-      "played": 5,
+      "played": 6,
       "won": 0,
       "drawn": 2,
-      "lost": 3,
+      "lost": 4,
       "goalsFor": 3,
-      "goalsAgainst": 6,
-      "goalDiff": -3,
+      "goalsAgainst": 7,
+      "goalDiff": -4,
       "points": 2,
       "form": [
         "L",
-        "L",
         "D",
         "L",
-        "D"
+        "D",
+        "L"
       ]
     }
   ],
@@ -3874,11 +3874,72 @@
       "away": "Зенит",
       "homeSlug": "fakel",
       "awaySlug": "zenit",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 1,
       "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552664981-fakel-zenit-29-08-2026"
+      "status": "finished",
+      "url": "/football/rpl/552664981-fakel-zenit-29-08-2026",
+      "stadium": "Факел",
+      "referee": "Фролов",
+      "events": [
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "20'",
+          "player": "Магомедов"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "48'",
+          "playerIn": "Ковалёв",
+          "playerOut": "Альшин"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "65'",
+          "playerIn": "Андраде",
+          "playerOut": "Вега"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "65'",
+          "playerIn": "Караваев",
+          "playerOut": "дос Сантос"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "65'",
+          "playerIn": "Соболев",
+          "playerOut": "Аугусто"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "67'",
+          "playerIn": "Турищев",
+          "playerOut": "Гнапи"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "67'",
+          "playerIn": "Якимов",
+          "playerOut": "Сутормин"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "90'",
+          "player": "Соболев",
+          "assist": null
+        }
+      ],
+      "stats": [],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-08-29-Краснодар-Ростов",
@@ -3889,11 +3950,41 @@
       "away": "Ростов",
       "homeSlug": "krasnodar",
       "awaySlug": "rostov",
-      "homeScore": null,
-      "awayScore": null,
-      "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552664980-krasnodar-rostov-29-08-2026"
+      "homeScore": 1,
+      "awayScore": 0,
+      "live": "21'",
+      "status": "live",
+      "url": "/football/rpl/552664980-krasnodar-rostov-29-08-2026",
+      "stadium": "Озон Арена (Краснодар)",
+      "referee": "Новиков",
+      "events": [
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "5'",
+          "player": "Воробьёв"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "19'",
+          "player": "Жубал",
+          "assist": "Кристиан"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Угловые",
+          "home": "1",
+          "away": "1"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-08-29-Ахмат-Крылья Советов",
