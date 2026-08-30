@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-31T00:32:13+03:00",
+  "updatedAt": "2026-08-31T01:23:29+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -4235,8 +4235,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664976-spartak-orenburg-30-08-2026",
-      "stadium": "Лукойл Арена",
-      "referee": "Чистяков",
       "events": [
         {
           "type": "yellow",
@@ -4309,6 +4307,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Лукойл Арена",
+      "referee": "Чистяков",
       "detailsVersion": 3
     },
     {
@@ -4325,6 +4325,8 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664975-rubin-dinamo-30-08-2026",
+      "stadium": "Ак Барс Арена",
+      "referee": "Каширин",
       "events": [
         {
           "type": "yellow",
@@ -4372,18 +4374,27 @@
           "minute": "73'",
           "player": "Вальдемиро",
           "assist": null
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "87'",
+          "player": "Юкич",
+          "assist": "Арройо"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "90'",
+          "player": "Йочич",
+          "assist": "Самошников"
         }
       ],
       "stats": [
         {
-          "name": "Голы",
-          "home": "1",
-          "away": "1"
-        },
-        {
-          "name": "Угловые",
-          "home": "2",
-          "away": "2"
+          "name": "Нарушения",
+          "home": "12",
+          "away": "12"
         },
         {
           "name": "Красные карточки",
@@ -4391,8 +4402,6 @@
           "away": "0"
         }
       ],
-      "stadium": "Ак Барс Арена",
-      "referee": "Каширин",
       "detailsVersion": 3
     },
     {
