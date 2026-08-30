@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-30T18:09:15+03:00",
+  "updatedAt": "2026-08-30T21:37:41+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -25,6 +25,26 @@
     },
     {
       "rank": 2,
+      "team": "Спартак",
+      "slug": "spartak",
+      "played": 6,
+      "won": 4,
+      "drawn": 1,
+      "lost": 1,
+      "goalsFor": 11,
+      "goalsAgainst": 5,
+      "goalDiff": 6,
+      "points": 13,
+      "form": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "D"
+      ]
+    },
+    {
+      "rank": 3,
       "team": "Зенит",
       "slug": "zenit",
       "played": 6,
@@ -40,26 +60,6 @@
         "L",
         "W",
         "L",
-        "W"
-      ]
-    },
-    {
-      "rank": 3,
-      "team": "Спартак",
-      "slug": "spartak",
-      "played": 5,
-      "won": 4,
-      "drawn": 0,
-      "lost": 1,
-      "goalsFor": 10,
-      "goalsAgainst": 4,
-      "goalDiff": 6,
-      "points": 12,
-      "form": [
-        "W",
-        "W",
-        "L",
-        "W",
         "W"
       ]
     },
@@ -85,26 +85,6 @@
     },
     {
       "rank": 5,
-      "team": "Динамо М",
-      "slug": "dinamo-m",
-      "played": 6,
-      "won": 3,
-      "drawn": 1,
-      "lost": 2,
-      "goalsFor": 8,
-      "goalsAgainst": 7,
-      "goalDiff": 1,
-      "points": 10,
-      "form": [
-        "L",
-        "W",
-        "L",
-        "W",
-        "W"
-      ]
-    },
-    {
-      "rank": 6,
       "team": "Балтика",
       "slug": "baltika",
       "played": 6,
@@ -120,6 +100,26 @@
         "W",
         "L",
         "D",
+        "W"
+      ]
+    },
+    {
+      "rank": 6,
+      "team": "Динамо М",
+      "slug": "dinamo-m",
+      "played": 6,
+      "won": 3,
+      "drawn": 1,
+      "lost": 2,
+      "goalsFor": 8,
+      "goalsAgainst": 7,
+      "goalDiff": 1,
+      "points": 10,
+      "form": [
+        "L",
+        "W",
+        "L",
+        "W",
         "W"
       ]
     },
@@ -145,6 +145,26 @@
     },
     {
       "rank": 8,
+      "team": "Оренбург",
+      "slug": "orenburg",
+      "played": 6,
+      "won": 1,
+      "drawn": 4,
+      "lost": 1,
+      "goalsFor": 5,
+      "goalsAgainst": 7,
+      "goalDiff": -2,
+      "points": 7,
+      "form": [
+        "L",
+        "D",
+        "D",
+        "D",
+        "D"
+      ]
+    },
+    {
+      "rank": 9,
       "team": "Ахмат",
       "slug": "akhmat",
       "played": 6,
@@ -164,7 +184,7 @@
       ]
     },
     {
-      "rank": 9,
+      "rank": 10,
       "team": "Рубин",
       "slug": "rubin",
       "played": 5,
@@ -184,7 +204,7 @@
       ]
     },
     {
-      "rank": 10,
+      "rank": 11,
       "team": "Крылья Советов",
       "slug": "krylia",
       "played": 6,
@@ -200,26 +220,6 @@
         "L",
         "L",
         "W",
-        "D"
-      ]
-    },
-    {
-      "rank": 11,
-      "team": "Оренбург",
-      "slug": "orenburg",
-      "played": 5,
-      "won": 1,
-      "drawn": 3,
-      "lost": 1,
-      "goalsFor": 4,
-      "goalsAgainst": 6,
-      "goalDiff": -2,
-      "points": 6,
-      "form": [
-        "W",
-        "L",
-        "D",
-        "D",
         "D"
       ]
     },
@@ -4155,8 +4155,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664977-rodina-baltika-30-08-2026",
-      "stadium": "Арена Химки",
-      "referee": "Кукуляк",
       "events": [
         {
           "type": "goal",
@@ -4219,6 +4217,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Арена Химки",
+      "referee": "Кукуляк",
       "detailsVersion": 3
     },
     {
@@ -4230,13 +4230,11 @@
       "away": "Оренбург",
       "homeSlug": "spartak",
       "awaySlug": "orenburg",
-      "homeScore": 0,
-      "awayScore": 0,
-      "live": "34'",
-      "status": "live",
+      "homeScore": 1,
+      "awayScore": 1,
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552664976-spartak-orenburg-30-08-2026",
-      "stadium": "Лукойл Арена",
-      "referee": "Чистяков",
       "events": [],
       "stats": [
         {
@@ -4255,6 +4253,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Лукойл Арена",
+      "referee": "Чистяков",
       "detailsVersion": 3
     },
     {
@@ -4266,11 +4266,80 @@
       "away": "Динамо Мх",
       "homeSlug": "rubin",
       "awaySlug": "dinamo-mh",
-      "homeScore": null,
-      "awayScore": null,
-      "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552664975-rubin-dinamo-30-08-2026"
+      "homeScore": 1,
+      "awayScore": 1,
+      "live": "73'",
+      "status": "live",
+      "url": "/football/rpl/552664975-rubin-dinamo-30-08-2026",
+      "stadium": "Ак Барс Арена",
+      "referee": "Каширин",
+      "events": [
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "35'",
+          "player": "Аларкон"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "46'",
+          "playerIn": "Безруков",
+          "playerOut": "Грипши"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Лесовой",
+          "playerOut": "Смелов"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "46'",
+          "playerIn": "Арройо",
+          "playerOut": "Кузнецов"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "60'",
+          "player": "Ходжа"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "62'",
+          "player": "Рожков",
+          "assist": "Сааведра"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "73'",
+          "player": "Вальдемиро",
+          "assist": null
+        }
+      ],
+      "stats": [
+        {
+          "name": "Голы",
+          "home": "1",
+          "away": "1"
+        },
+        {
+          "name": "Угловые",
+          "home": "2",
+          "away": "2"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-09-05-Крылья Советов-Краснодар",
