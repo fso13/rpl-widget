@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-30T21:37:41+03:00",
+  "updatedAt": "2026-08-31T00:32:13+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -125,26 +125,46 @@
     },
     {
       "rank": 7,
-      "team": "Динамо Мх",
-      "slug": "dinamo-mh",
-      "played": 5,
-      "won": 3,
-      "drawn": 0,
-      "lost": 2,
+      "team": "Рубин",
+      "slug": "rubin",
+      "played": 6,
+      "won": 2,
+      "drawn": 3,
+      "lost": 1,
       "goalsFor": 9,
-      "goalsAgainst": 7,
-      "goalDiff": 2,
+      "goalsAgainst": 8,
+      "goalDiff": 1,
       "points": 9,
       "form": [
         "W",
-        "W",
-        "L",
-        "W",
-        "L"
+        "D",
+        "D",
+        "D",
+        "W"
       ]
     },
     {
       "rank": 8,
+      "team": "Динамо Мх",
+      "slug": "dinamo-mh",
+      "played": 6,
+      "won": 3,
+      "drawn": 0,
+      "lost": 3,
+      "goalsFor": 10,
+      "goalsAgainst": 10,
+      "goalDiff": 0,
+      "points": 9,
+      "form": [
+        "W",
+        "L",
+        "W",
+        "L",
+        "L"
+      ]
+    },
+    {
+      "rank": 9,
       "team": "Оренбург",
       "slug": "orenburg",
       "played": 6,
@@ -164,7 +184,7 @@
       ]
     },
     {
-      "rank": 9,
+      "rank": 10,
       "team": "Ахмат",
       "slug": "akhmat",
       "played": 6,
@@ -180,26 +200,6 @@
         "D",
         "L",
         "W",
-        "D"
-      ]
-    },
-    {
-      "rank": 10,
-      "team": "Рубин",
-      "slug": "rubin",
-      "played": 5,
-      "won": 1,
-      "drawn": 3,
-      "lost": 1,
-      "goalsFor": 6,
-      "goalsAgainst": 7,
-      "goalDiff": -1,
-      "points": 6,
-      "form": [
-        "L",
-        "W",
-        "D",
-        "D",
         "D"
       ]
     },
@@ -4235,17 +4235,73 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664976-spartak-orenburg-30-08-2026",
-      "events": [],
+      "stadium": "Лукойл Арена",
+      "referee": "Чистяков",
+      "events": [
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "36'",
+          "player": "Ведерников"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "41'",
+          "player": "Даку"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "45'",
+          "player": "Паласиос"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "59'",
+          "player": "Гузина"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "59'",
+          "player": "Ву"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "61'",
+          "playerIn": "Касаджиков",
+          "playerOut": "Рыбчинский"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "61'",
+          "playerIn": "Назаренко",
+          "playerOut": "Пуэбла"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "66'",
+          "player": "Куль",
+          "assist": "Гузина"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "76'",
+          "player": "Даку",
+          "assist": null
+        }
+      ],
       "stats": [
         {
           "name": "Голы",
-          "home": "0",
-          "away": "0"
-        },
-        {
-          "name": "Желтые карточки",
-          "home": "0",
-          "away": "0"
+          "home": "1",
+          "away": "1"
         },
         {
           "name": "Красные карточки",
@@ -4253,8 +4309,6 @@
           "away": "0"
         }
       ],
-      "stadium": "Лукойл Арена",
-      "referee": "Чистяков",
       "detailsVersion": 3
     },
     {
@@ -4266,13 +4320,11 @@
       "away": "Динамо Мх",
       "homeSlug": "rubin",
       "awaySlug": "dinamo-mh",
-      "homeScore": 1,
+      "homeScore": 3,
       "awayScore": 1,
-      "live": "73'",
-      "status": "live",
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552664975-rubin-dinamo-30-08-2026",
-      "stadium": "Ак Барс Арена",
-      "referee": "Каширин",
       "events": [
         {
           "type": "yellow",
@@ -4339,6 +4391,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Ак Барс Арена",
+      "referee": "Каширин",
       "detailsVersion": 3
     },
     {
