@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-31T01:23:29+03:00",
+  "updatedAt": "2026-08-31T03:48:39+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -4325,8 +4325,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664975-rubin-dinamo-30-08-2026",
-      "stadium": "Ак Барс Арена",
-      "referee": "Каширин",
       "events": [
         {
           "type": "yellow",
@@ -4402,6 +4400,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Ак Барс Арена",
+      "referee": "Каширин",
       "detailsVersion": 3
     },
     {
