@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-09-05T11:34:18+03:00",
+  "updatedAt": "2026-09-05T15:02:12+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -4413,11 +4413,47 @@
       "away": "Краснодар",
       "homeSlug": "krylia",
       "awaySlug": "krasnodar",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 2,
       "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552664990-kryliasovetov-krasnodar-05-09-2026"
+      "status": "finished",
+      "url": "/football/rpl/552664990-kryliasovetov-krasnodar-05-09-2026",
+      "stadium": "Солидарность Арена (Самара-Арена)",
+      "referee": "Танашев",
+      "events": [
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "3'",
+          "player": "Кордоба",
+          "assist": "Воробьёв"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "17'",
+          "player": "Батчи",
+          "assist": "Оласа"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Нарушения",
+          "home": "8",
+          "away": "8"
+        },
+        {
+          "name": "Желтые карточки",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-09-05-Зенит-ЦСКА",
