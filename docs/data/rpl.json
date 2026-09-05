@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-09-05T19:15:45+03:00",
+  "updatedAt": "2026-09-05T21:21:37+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -165,6 +165,26 @@
     },
     {
       "rank": 9,
+      "team": "Ростов",
+      "slug": "rostov",
+      "played": 7,
+      "won": 2,
+      "drawn": 2,
+      "lost": 3,
+      "goalsFor": 10,
+      "goalsAgainst": 11,
+      "goalDiff": -1,
+      "points": 8,
+      "form": [
+        "D",
+        "D",
+        "L",
+        "L",
+        "W"
+      ]
+    },
+    {
+      "rank": 10,
       "team": "Крылья Советов",
       "slug": "krylia",
       "played": 7,
@@ -184,7 +204,7 @@
       ]
     },
     {
-      "rank": 10,
+      "rank": 11,
       "team": "Оренбург",
       "slug": "orenburg",
       "played": 6,
@@ -204,7 +224,7 @@
       ]
     },
     {
-      "rank": 11,
+      "rank": 12,
       "team": "Ахмат",
       "slug": "akhmat",
       "played": 6,
@@ -221,26 +241,6 @@
         "L",
         "W",
         "D"
-      ]
-    },
-    {
-      "rank": 12,
-      "team": "Ростов",
-      "slug": "rostov",
-      "played": 6,
-      "won": 1,
-      "drawn": 2,
-      "lost": 3,
-      "goalsFor": 7,
-      "goalsAgainst": 10,
-      "goalDiff": -3,
-      "points": 5,
-      "form": [
-        "W",
-        "D",
-        "D",
-        "L",
-        "L"
       ]
     },
     {
@@ -307,19 +307,19 @@
       "rank": 16,
       "team": "Факел",
       "slug": "fakel",
-      "played": 6,
+      "played": 7,
       "won": 0,
       "drawn": 2,
-      "lost": 4,
-      "goalsFor": 3,
-      "goalsAgainst": 7,
-      "goalDiff": -4,
+      "lost": 5,
+      "goalsFor": 4,
+      "goalsAgainst": 10,
+      "goalDiff": -6,
       "points": 2,
       "form": [
-        "L",
         "D",
         "L",
         "D",
+        "L",
         "L"
       ]
     }
@@ -4418,8 +4418,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664990-kryliasovetov-krasnodar-05-09-2026",
-      "stadium": "Солидарность Арена (Самара-Арена)",
-      "referee": "Танашев",
       "events": [
         {
           "type": "goal",
@@ -4476,6 +4474,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Солидарность Арена (Самара-Арена)",
+      "referee": "Танашев",
       "detailsVersion": 3
     },
     {
@@ -4492,26 +4492,75 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664989-zenit-tsska-05-09-2026",
-      "events": [],
+      "stadium": "Газпром Арена",
+      "referee": "Прокопов",
+      "events": [
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "7'",
+          "player": "Жоао"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "19'",
+          "player": "Глебов"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "30'",
+          "player": "Абдулкадыров"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "42'",
+          "player": "Андраде"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "45'",
+          "player": "Обляков",
+          "assist": null
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "45'",
+          "player": "Соболев"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "46'",
+          "playerIn": "Волков",
+          "playerOut": "Мантуан"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "84'",
+          "player": "Соболев",
+          "assist": "Луис Энрике"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "90'",
+          "player": "Обляков",
+          "assist": null
+        }
+      ],
       "stats": [
-        {
-          "name": "Голы",
-          "home": "0",
-          "away": "0"
-        },
-        {
-          "name": "Желтые карточки",
-          "home": "0",
-          "away": "0"
-        },
         {
           "name": "Красные карточки",
           "home": "0",
           "away": "0"
         }
       ],
-      "stadium": "Газпром Арена",
-      "referee": "Прокопов",
       "detailsVersion": 3
     },
     {
@@ -4523,13 +4572,11 @@
       "away": "Факел",
       "homeSlug": "rostov",
       "awaySlug": "fakel",
-      "homeScore": 0,
-      "awayScore": 0,
-      "live": "11'",
-      "status": "live",
+      "homeScore": 3,
+      "awayScore": 1,
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552664988-rostov-fakel-05-09-2026",
-      "stadium": "Ростов Арена",
-      "referee": "Сухой",
       "events": [
         {
           "type": "yellow",
@@ -4555,6 +4602,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Ростов Арена",
+      "referee": "Сухой",
       "detailsVersion": 3
     },
     {
