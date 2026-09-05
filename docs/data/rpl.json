@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-09-05T21:21:37+03:00",
+  "updatedAt": "2026-09-05T23:30:10+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -4492,8 +4492,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664989-zenit-tsska-05-09-2026",
-      "stadium": "Газпром Арена",
-      "referee": "Прокопов",
       "events": [
         {
           "type": "yellow",
@@ -4561,6 +4559,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Газпром Арена",
+      "referee": "Прокопов",
       "detailsVersion": 3
     },
     {
@@ -4577,33 +4577,71 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664988-rostov-fakel-05-09-2026",
+      "stadium": "Ростов Арена",
+      "referee": "Сухой",
       "events": [
         {
           "type": "yellow",
           "side": "away",
           "minute": "4'",
           "player": "Эль-Мхассани"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "45'",
+          "player": "Сако"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "56'",
+          "player": "Миронов",
+          "assist": "Олусегун"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "59'",
+          "player": "Кучаев",
+          "assist": null
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "64'",
+          "player": "Сако",
+          "assist": "Миронов"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "65'",
+          "playerIn": "Турищев",
+          "playerOut": "Гнапи"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "65'",
+          "playerIn": "Багамаев",
+          "playerOut": "Тодорович"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "89'",
+          "player": "Кокшаров",
+          "assist": null
         }
       ],
       "stats": [
-        {
-          "name": "Голы",
-          "home": "0",
-          "away": "0"
-        },
-        {
-          "name": "Удары (в створ)",
-          "home": "1 (0)",
-          "away": "1 (1)"
-        },
         {
           "name": "Красные карточки",
           "home": "0",
           "away": "0"
         }
       ],
-      "stadium": "Ростов Арена",
-      "referee": "Сухой",
       "detailsVersion": 3
     },
     {
