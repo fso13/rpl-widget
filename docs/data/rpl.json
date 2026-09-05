@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-09-05T23:30:10+03:00",
+  "updatedAt": "2026-09-06T00:55:06+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -4577,8 +4577,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664988-rostov-fakel-05-09-2026",
-      "stadium": "Ростов Арена",
-      "referee": "Сухой",
       "events": [
         {
           "type": "yellow",
@@ -4642,6 +4640,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Ростов Арена",
+      "referee": "Сухой",
       "detailsVersion": 3
     },
     {
