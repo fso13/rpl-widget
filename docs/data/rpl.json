@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-09-06T23:48:57+03:00",
+  "updatedAt": "2026-09-07T00:56:48+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -4894,6 +4894,8 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664984-baltika-lokomotiv-06-09-2026",
+      "stadium": "Ростех Арена (Калининград)",
+      "referee": "Карасев",
       "events": [
         {
           "type": "yellow",
@@ -4918,23 +4920,41 @@
           "side": "away",
           "minute": "45'",
           "player": "Руденко"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Ненахов",
+          "playerOut": "Монтес Кастро"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "46'",
+          "playerIn": "Хиль",
+          "playerOut": "Оффор"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "46'",
+          "playerIn": "Петров",
+          "playerOut": "Поспелов"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "85'",
+          "player": "Мостовой",
+          "assist": "Комличенко"
         }
       ],
       "stats": [
         {
-          "name": "Голы",
-          "home": "0",
-          "away": "0"
-        },
-        {
-          "name": "Угловые",
-          "home": "2",
-          "away": "2"
-        },
-        {
-          "name": "Офсайды",
-          "home": "1",
-          "away": "1"
+          "name": "Удары по воротам (точность)",
+          "home": "33.3%",
+          "away": "33.3%"
         },
         {
           "name": "Красные карточки",
@@ -4942,8 +4962,6 @@
           "away": "0"
         }
       ],
-      "stadium": "Ростех Арена (Калининград)",
-      "referee": "Карасев",
       "detailsVersion": 3
     },
     {
