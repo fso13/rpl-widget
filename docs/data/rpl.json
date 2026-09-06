@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-09-06T19:39:57+03:00",
+  "updatedAt": "2026-09-06T21:38:16+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -45,26 +45,46 @@
     },
     {
       "rank": 3,
-      "team": "Спартак",
-      "slug": "spartak",
-      "played": 6,
+      "team": "Динамо М",
+      "slug": "dinamo-m",
+      "played": 7,
       "won": 4,
       "drawn": 1,
-      "lost": 1,
-      "goalsFor": 11,
-      "goalsAgainst": 5,
-      "goalDiff": 6,
+      "lost": 2,
+      "goalsFor": 10,
+      "goalsAgainst": 8,
+      "goalDiff": 2,
       "points": 13,
       "form": [
         "W",
         "L",
         "W",
         "W",
-        "D"
+        "W"
       ]
     },
     {
       "rank": 4,
+      "team": "Спартак",
+      "slug": "spartak",
+      "played": 7,
+      "won": 4,
+      "drawn": 1,
+      "lost": 2,
+      "goalsFor": 12,
+      "goalsAgainst": 7,
+      "goalDiff": 5,
+      "points": 13,
+      "form": [
+        "L",
+        "W",
+        "W",
+        "D",
+        "L"
+      ]
+    },
+    {
+      "rank": 5,
       "team": "Зенит",
       "slug": "zenit",
       "played": 7,
@@ -84,7 +104,7 @@
       ]
     },
     {
-      "rank": 5,
+      "rank": 6,
       "team": "Динамо Мх",
       "slug": "dinamo-mh",
       "played": 7,
@@ -104,7 +124,7 @@
       ]
     },
     {
-      "rank": 6,
+      "rank": 7,
       "team": "Балтика",
       "slug": "baltika",
       "played": 6,
@@ -120,26 +140,6 @@
         "W",
         "L",
         "D",
-        "W"
-      ]
-    },
-    {
-      "rank": 7,
-      "team": "Динамо М",
-      "slug": "dinamo-m",
-      "played": 6,
-      "won": 3,
-      "drawn": 1,
-      "lost": 2,
-      "goalsFor": 8,
-      "goalsAgainst": 7,
-      "goalDiff": 1,
-      "points": 10,
-      "form": [
-        "L",
-        "W",
-        "L",
-        "W",
         "W"
       ]
     },
@@ -4658,8 +4658,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664987-orenburg-akron-06-09-2026",
-      "stadium": "Газовик",
-      "referee": "Матвеев",
       "events": [
         {
           "type": "yellow",
@@ -4728,6 +4726,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Газовик",
+      "referee": "Матвеев",
       "detailsVersion": 3
     },
     {
@@ -4744,6 +4744,8 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664986-dinamo-rodina-06-09-2026",
+      "stadium": "Анжи-Арена",
+      "referee": "Бобровский",
       "events": [
         {
           "type": "red",
@@ -4762,17 +4764,50 @@
           "side": "away",
           "minute": "22'",
           "player": "Мещанинов"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "38'",
+          "playerIn": "Махамаджонов",
+          "playerOut": "Сандрачук"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "38'",
+          "playerIn": "Агаларов",
+          "playerOut": "Смелов"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "51'",
+          "player": "Агаларов",
+          "assist": "Апшацев"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "57'",
+          "playerIn": "Егорычев",
+          "playerOut": "Рейна"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "64'",
+          "player": "Мрезиг",
+          "assist": "Лесовой"
         }
       ],
       "stats": [
         {
-          "name": "Голы",
-          "home": "0",
-          "away": "0"
+          "name": "Офсайды",
+          "home": "1",
+          "away": "1"
         }
       ],
-      "stadium": "Анжи-Арена",
-      "referee": "Бобровский",
       "detailsVersion": 3
     },
     {
@@ -4786,11 +4821,9 @@
       "awaySlug": "spartak",
       "homeScore": 2,
       "awayScore": 1,
-      "live": "47'",
-      "status": "live",
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552664985-dinamo-spartak-06-09-2026",
-      "stadium": "ВТБ Арена (Динамо)",
-      "referee": "Левников",
       "events": [
         {
           "type": "goal",
@@ -4843,6 +4876,8 @@
           "away": "0"
         }
       ],
+      "stadium": "ВТБ Арена (Динамо)",
+      "referee": "Левников",
       "detailsVersion": 3
     },
     {
@@ -4854,11 +4889,62 @@
       "away": "Локомотив",
       "homeSlug": "baltika",
       "awaySlug": "lokomotiv",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552664984-baltika-lokomotiv-06-09-2026"
+      "status": "finished",
+      "url": "/football/rpl/552664984-baltika-lokomotiv-06-09-2026",
+      "stadium": "Ростех Арена (Калининград)",
+      "referee": "Карасев",
+      "events": [
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "23'",
+          "player": "Пиняев"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "25'",
+          "player": "Мостовой"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "44'",
+          "player": "Монтес Кастро"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "45'",
+          "player": "Руденко"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Голы",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Угловые",
+          "home": "2",
+          "away": "2"
+        },
+        {
+          "name": "Офсайды",
+          "home": "1",
+          "away": "1"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-09-07-Рубин-Ахмат",
