@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-09-06T09:03:51+03:00",
+  "updatedAt": "2026-09-06T14:04:47+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -185,26 +185,6 @@
     },
     {
       "rank": 10,
-      "team": "Крылья Советов",
-      "slug": "krylia",
-      "played": 7,
-      "won": 1,
-      "drawn": 4,
-      "lost": 2,
-      "goalsFor": 10,
-      "goalsAgainst": 12,
-      "goalDiff": -2,
-      "points": 7,
-      "form": [
-        "L",
-        "L",
-        "W",
-        "D",
-        "D"
-      ]
-    },
-    {
-      "rank": 11,
       "team": "Оренбург",
       "slug": "orenburg",
       "played": 6,
@@ -219,6 +199,26 @@
         "L",
         "D",
         "D",
+        "D",
+        "D"
+      ]
+    },
+    {
+      "rank": 11,
+      "team": "Крылья Советов",
+      "slug": "krylia",
+      "played": 7,
+      "won": 1,
+      "drawn": 4,
+      "lost": 2,
+      "goalsFor": 10,
+      "goalsAgainst": 12,
+      "goalDiff": -2,
+      "points": 7,
+      "form": [
+        "L",
+        "L",
+        "W",
         "D",
         "D"
       ]
@@ -4653,11 +4653,32 @@
       "away": "Акрон",
       "homeSlug": "orenburg",
       "awaySlug": "akron",
-      "homeScore": null,
-      "awayScore": null,
-      "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552664987-orenburg-akron-06-09-2026"
+      "homeScore": 0,
+      "awayScore": 0,
+      "live": "1'",
+      "status": "live",
+      "url": "/football/rpl/552664987-orenburg-akron-06-09-2026",
+      "stadium": "Газовик",
+      "referee": "Матвеев",
+      "events": [],
+      "stats": [
+        {
+          "name": "Голы",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Желтые карточки",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-09-06-Динамо Мх-Родина",
