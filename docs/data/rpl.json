@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-09-06T16:54:53+03:00",
+  "updatedAt": "2026-09-06T19:39:57+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -85,6 +85,26 @@
     },
     {
       "rank": 5,
+      "team": "Динамо Мх",
+      "slug": "dinamo-mh",
+      "played": 7,
+      "won": 4,
+      "drawn": 0,
+      "lost": 3,
+      "goalsFor": 12,
+      "goalsAgainst": 10,
+      "goalDiff": 2,
+      "points": 12,
+      "form": [
+        "L",
+        "W",
+        "L",
+        "L",
+        "W"
+      ]
+    },
+    {
+      "rank": 6,
       "team": "Балтика",
       "slug": "baltika",
       "played": 6,
@@ -104,7 +124,7 @@
       ]
     },
     {
-      "rank": 6,
+      "rank": 7,
       "team": "Динамо М",
       "slug": "dinamo-m",
       "played": 6,
@@ -124,7 +144,7 @@
       ]
     },
     {
-      "rank": 7,
+      "rank": 8,
       "team": "Рубин",
       "slug": "rubin",
       "played": 6,
@@ -141,26 +161,6 @@
         "D",
         "D",
         "W"
-      ]
-    },
-    {
-      "rank": 8,
-      "team": "Динамо Мх",
-      "slug": "dinamo-mh",
-      "played": 6,
-      "won": 3,
-      "drawn": 0,
-      "lost": 3,
-      "goalsFor": 10,
-      "goalsAgainst": 10,
-      "goalDiff": 0,
-      "points": 9,
-      "form": [
-        "W",
-        "L",
-        "W",
-        "L",
-        "L"
       ]
     },
     {
@@ -247,18 +247,18 @@
       "rank": 13,
       "team": "Родина",
       "slug": "rodina",
-      "played": 6,
+      "played": 7,
       "won": 1,
       "drawn": 1,
-      "lost": 4,
+      "lost": 5,
       "goalsFor": 8,
-      "goalsAgainst": 17,
-      "goalDiff": -9,
+      "goalsAgainst": 19,
+      "goalDiff": -11,
       "points": 4,
       "form": [
-        "L",
         "W",
         "D",
+        "L",
         "L",
         "L"
       ]
@@ -4658,17 +4658,69 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664987-orenburg-akron-06-09-2026",
-      "events": [],
+      "stadium": "Газовик",
+      "referee": "Матвеев",
+      "events": [
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "20'",
+          "player": "Болотов"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "36'",
+          "player": "Гузина",
+          "assist": "Рыбчинский"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "44'",
+          "player": "Хосонов"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Бистрович",
+          "playerOut": "Аревало"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Тедич",
+          "playerOut": "Марадишвили"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "75'",
+          "player": "Эдуардо",
+          "assist": "Беншимол"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "78'",
+          "player": "Беншимол",
+          "assist": "Роча"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "83'",
+          "player": "Жезус",
+          "assist": "Томпсон"
+        }
+      ],
       "stats": [
         {
           "name": "Голы",
-          "home": "0",
-          "away": "0"
-        },
-        {
-          "name": "Желтые карточки",
-          "home": "0",
-          "away": "0"
+          "home": "2",
+          "away": "2"
         },
         {
           "name": "Красные карточки",
@@ -4676,8 +4728,6 @@
           "away": "0"
         }
       ],
-      "stadium": "Газовик",
-      "referee": "Матвеев",
       "detailsVersion": 3
     },
     {
@@ -4689,13 +4739,11 @@
       "away": "Родина",
       "homeSlug": "dinamo-mh",
       "awaySlug": "rodina",
-      "homeScore": 0,
+      "homeScore": 2,
       "awayScore": 0,
-      "live": "37'",
-      "status": "live",
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552664986-dinamo-rodina-06-09-2026",
-      "stadium": "Анжи-Арена",
-      "referee": "Бобровский",
       "events": [
         {
           "type": "red",
@@ -4723,6 +4771,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Анжи-Арена",
+      "referee": "Бобровский",
       "detailsVersion": 3
     },
     {
@@ -4734,11 +4784,66 @@
       "away": "Спартак",
       "homeSlug": "dinamo-m",
       "awaySlug": "spartak",
-      "homeScore": null,
-      "awayScore": null,
-      "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552664985-dinamo-spartak-06-09-2026"
+      "homeScore": 2,
+      "awayScore": 1,
+      "live": "47'",
+      "status": "live",
+      "url": "/football/rpl/552664985-dinamo-spartak-06-09-2026",
+      "stadium": "ВТБ Арена (Динамо)",
+      "referee": "Левников",
+      "events": [
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "21'",
+          "player": "Пруцев",
+          "assist": "Маркиньос"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "25'",
+          "player": "Гладышев",
+          "assist": null
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "34'",
+          "player": "Гомес",
+          "assist": "Касерес"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "37'",
+          "player": "Касерес"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "45'",
+          "player": "Умяров"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Нарушения",
+          "home": "6",
+          "away": "6"
+        },
+        {
+          "name": "Желтые карточки",
+          "home": "1",
+          "away": "1"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-09-06-Балтика-Локомотив",
