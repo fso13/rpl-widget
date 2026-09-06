@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-09-06T21:38:16+03:00",
+  "updatedAt": "2026-09-06T23:48:57+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -127,20 +127,20 @@
       "rank": 7,
       "team": "Балтика",
       "slug": "baltika",
-      "played": 6,
+      "played": 7,
       "won": 3,
       "drawn": 1,
-      "lost": 2,
+      "lost": 3,
       "goalsFor": 10,
-      "goalsAgainst": 6,
-      "goalDiff": 4,
+      "goalsAgainst": 7,
+      "goalDiff": 3,
       "points": 10,
       "form": [
         "W",
-        "W",
         "L",
         "D",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -245,6 +245,26 @@
     },
     {
       "rank": 13,
+      "team": "Локомотив",
+      "slug": "lokomotiv",
+      "played": 7,
+      "won": 1,
+      "drawn": 3,
+      "lost": 3,
+      "goalsFor": 6,
+      "goalsAgainst": 8,
+      "goalDiff": -2,
+      "points": 6,
+      "form": [
+        "D",
+        "D",
+        "L",
+        "L",
+        "W"
+      ]
+    },
+    {
+      "rank": 14,
       "team": "Родина",
       "slug": "rodina",
       "played": 7,
@@ -264,7 +284,7 @@
       ]
     },
     {
-      "rank": 14,
+      "rank": 15,
       "team": "Акрон",
       "slug": "akron",
       "played": 7,
@@ -281,26 +301,6 @@
         "L",
         "D",
         "D"
-      ]
-    },
-    {
-      "rank": 15,
-      "team": "Локомотив",
-      "slug": "lokomotiv",
-      "played": 6,
-      "won": 0,
-      "drawn": 3,
-      "lost": 3,
-      "goalsFor": 5,
-      "goalsAgainst": 8,
-      "goalDiff": -3,
-      "points": 3,
-      "form": [
-        "L",
-        "D",
-        "D",
-        "L",
-        "L"
       ]
     },
     {
@@ -4744,8 +4744,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664986-dinamo-rodina-06-09-2026",
-      "stadium": "Анжи-Арена",
-      "referee": "Бобровский",
       "events": [
         {
           "type": "red",
@@ -4808,6 +4806,8 @@
           "away": "1"
         }
       ],
+      "stadium": "Анжи-Арена",
+      "referee": "Бобровский",
       "detailsVersion": 3
     },
     {
@@ -4890,12 +4890,10 @@
       "homeSlug": "baltika",
       "awaySlug": "lokomotiv",
       "homeScore": 0,
-      "awayScore": 0,
+      "awayScore": 1,
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664984-baltika-lokomotiv-06-09-2026",
-      "stadium": "Ростех Арена (Калининград)",
-      "referee": "Карасев",
       "events": [
         {
           "type": "yellow",
@@ -4944,6 +4942,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Ростех Арена (Калининград)",
+      "referee": "Карасев",
       "detailsVersion": 3
     },
     {
