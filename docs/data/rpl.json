@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-09-07T00:56:48+03:00",
+  "updatedAt": "2026-09-07T02:35:17+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -4894,8 +4894,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664984-baltika-lokomotiv-06-09-2026",
-      "stadium": "Ростех Арена (Калининград)",
-      "referee": "Карасев",
       "events": [
         {
           "type": "yellow",
@@ -4962,6 +4960,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Ростех Арена (Калининград)",
+      "referee": "Карасев",
       "detailsVersion": 3
     },
     {
