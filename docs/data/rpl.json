@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-09-06T14:04:47+03:00",
+  "updatedAt": "2026-09-06T16:54:53+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -165,6 +165,26 @@
     },
     {
       "rank": 9,
+      "team": "Оренбург",
+      "slug": "orenburg",
+      "played": 7,
+      "won": 1,
+      "drawn": 5,
+      "lost": 1,
+      "goalsFor": 7,
+      "goalsAgainst": 9,
+      "goalDiff": -2,
+      "points": 8,
+      "form": [
+        "D",
+        "D",
+        "D",
+        "D",
+        "D"
+      ]
+    },
+    {
+      "rank": 10,
       "team": "Ростов",
       "slug": "rostov",
       "played": 7,
@@ -181,26 +201,6 @@
         "L",
         "L",
         "W"
-      ]
-    },
-    {
-      "rank": 10,
-      "team": "Оренбург",
-      "slug": "orenburg",
-      "played": 6,
-      "won": 1,
-      "drawn": 4,
-      "lost": 1,
-      "goalsFor": 5,
-      "goalsAgainst": 7,
-      "goalDiff": -2,
-      "points": 7,
-      "form": [
-        "L",
-        "D",
-        "D",
-        "D",
-        "D"
       ]
     },
     {
@@ -265,6 +265,26 @@
     },
     {
       "rank": 14,
+      "team": "Акрон",
+      "slug": "akron",
+      "played": 7,
+      "won": 0,
+      "drawn": 4,
+      "lost": 3,
+      "goalsFor": 8,
+      "goalsAgainst": 17,
+      "goalDiff": -9,
+      "points": 4,
+      "form": [
+        "D",
+        "D",
+        "L",
+        "D",
+        "D"
+      ]
+    },
+    {
+      "rank": 15,
       "team": "Локомотив",
       "slug": "lokomotiv",
       "played": 6,
@@ -281,26 +301,6 @@
         "D",
         "L",
         "L"
-      ]
-    },
-    {
-      "rank": 15,
-      "team": "Акрон",
-      "slug": "akron",
-      "played": 6,
-      "won": 0,
-      "drawn": 3,
-      "lost": 3,
-      "goalsFor": 6,
-      "goalsAgainst": 15,
-      "goalDiff": -9,
-      "points": 3,
-      "form": [
-        "L",
-        "D",
-        "D",
-        "L",
-        "D"
       ]
     },
     {
@@ -4653,13 +4653,11 @@
       "away": "Акрон",
       "homeSlug": "orenburg",
       "awaySlug": "akron",
-      "homeScore": 0,
-      "awayScore": 0,
-      "live": "1'",
-      "status": "live",
+      "homeScore": 2,
+      "awayScore": 2,
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552664987-orenburg-akron-06-09-2026",
-      "stadium": "Газовик",
-      "referee": "Матвеев",
       "events": [],
       "stats": [
         {
@@ -4678,6 +4676,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Газовик",
+      "referee": "Матвеев",
       "detailsVersion": 3
     },
     {
@@ -4689,11 +4689,41 @@
       "away": "Родина",
       "homeSlug": "dinamo-mh",
       "awaySlug": "rodina",
-      "homeScore": null,
-      "awayScore": null,
-      "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552664986-dinamo-rodina-06-09-2026"
+      "homeScore": 0,
+      "awayScore": 0,
+      "live": "37'",
+      "status": "live",
+      "url": "/football/rpl/552664986-dinamo-rodina-06-09-2026",
+      "stadium": "Анжи-Арена",
+      "referee": "Бобровский",
+      "events": [
+        {
+          "type": "red",
+          "side": "away",
+          "minute": "8'",
+          "player": "Онугха"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "15'",
+          "player": "Посо"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "22'",
+          "player": "Мещанинов"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Голы",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-09-06-Динамо М-Спартак",
