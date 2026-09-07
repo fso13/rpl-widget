@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-09-07T19:15:23+03:00",
+  "updatedAt": "2026-09-07T22:59:46+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -45,26 +45,6 @@
     },
     {
       "rank": 3,
-      "team": "Спартак",
-      "slug": "spartak",
-      "played": 7,
-      "won": 4,
-      "drawn": 1,
-      "lost": 2,
-      "goalsFor": 12,
-      "goalsAgainst": 7,
-      "goalDiff": 5,
-      "points": 13,
-      "form": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
-      ]
-    },
-    {
-      "rank": 4,
       "team": "Динамо М",
       "slug": "dinamo-m",
       "played": 7,
@@ -81,6 +61,26 @@
         "W",
         "W",
         "W"
+      ]
+    },
+    {
+      "rank": 4,
+      "team": "Спартак",
+      "slug": "spartak",
+      "played": 7,
+      "won": 4,
+      "drawn": 1,
+      "lost": 2,
+      "goalsFor": 12,
+      "goalsAgainst": 7,
+      "goalDiff": 5,
+      "points": 13,
+      "form": [
+        "L",
+        "W",
+        "W",
+        "D",
+        "L"
       ]
     },
     {
@@ -147,20 +147,20 @@
       "rank": 8,
       "team": "Рубин",
       "slug": "rubin",
-      "played": 6,
+      "played": 7,
       "won": 2,
-      "drawn": 3,
+      "drawn": 4,
       "lost": 1,
-      "goalsFor": 9,
-      "goalsAgainst": 8,
+      "goalsFor": 10,
+      "goalsAgainst": 9,
       "goalDiff": 1,
-      "points": 9,
+      "points": 10,
       "form": [
+        "D",
+        "D",
+        "D",
         "W",
-        "D",
-        "D",
-        "D",
-        "W"
+        "D"
       ]
     },
     {
@@ -205,6 +205,26 @@
     },
     {
       "rank": 11,
+      "team": "Ахмат",
+      "slug": "akhmat",
+      "played": 7,
+      "won": 1,
+      "drawn": 4,
+      "lost": 2,
+      "goalsFor": 10,
+      "goalsAgainst": 9,
+      "goalDiff": 1,
+      "points": 7,
+      "form": [
+        "D",
+        "L",
+        "W",
+        "D",
+        "D"
+      ]
+    },
+    {
+      "rank": 12,
       "team": "Крылья Советов",
       "slug": "krylia",
       "played": 7,
@@ -220,26 +240,6 @@
         "L",
         "W",
         "D",
-        "D"
-      ]
-    },
-    {
-      "rank": 12,
-      "team": "Ахмат",
-      "slug": "akhmat",
-      "played": 6,
-      "won": 1,
-      "drawn": 3,
-      "lost": 2,
-      "goalsFor": 9,
-      "goalsAgainst": 8,
-      "goalDiff": 1,
-      "points": 6,
-      "form": [
-        "L",
-        "D",
-        "L",
-        "W",
         "D"
       ]
     },
@@ -4973,11 +4973,73 @@
       "away": "Ахмат",
       "homeSlug": "rubin",
       "awaySlug": "akhmat",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 1,
       "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552664983-rubin-akhmat-07-09-2026"
+      "status": "finished",
+      "url": "/football/rpl/552664983-rubin-akhmat-07-09-2026",
+      "stadium": "Ак Барс Арена",
+      "referee": "Буланов",
+      "events": [
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "26'",
+          "player": "Сиве",
+          "assist": null
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Пряхин",
+          "playerOut": "Пряхин"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "56'",
+          "player": "Касинтура",
+          "assist": "Конате"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "57'",
+          "playerIn": "Иву",
+          "playerOut": "Самошников"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "57'",
+          "playerIn": "Йочич",
+          "playerOut": "Безруков"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Голы",
+          "home": "1",
+          "away": "1"
+        },
+        {
+          "name": "Владение мячом",
+          "home": "50%",
+          "away": "50%"
+        },
+        {
+          "name": "Желтые карточки",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-09-11-Крылья Советов-Родина",
