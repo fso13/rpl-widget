@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-09-07T22:59:46+03:00",
+  "updatedAt": "2026-09-08T01:29:47+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -4978,8 +4978,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664983-rubin-akhmat-07-09-2026",
-      "stadium": "Ак Барс Арена",
-      "referee": "Буланов",
       "events": [
         {
           "type": "goal",
@@ -5039,6 +5037,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Ак Барс Арена",
+      "referee": "Буланов",
       "detailsVersion": 3
     },
     {
