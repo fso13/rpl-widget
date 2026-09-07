@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-09-07T15:43:10+03:00",
+  "updatedAt": "2026-09-07T19:15:23+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -45,26 +45,6 @@
     },
     {
       "rank": 3,
-      "team": "Динамо М",
-      "slug": "dinamo-m",
-      "played": 7,
-      "won": 4,
-      "drawn": 1,
-      "lost": 2,
-      "goalsFor": 10,
-      "goalsAgainst": 8,
-      "goalDiff": 2,
-      "points": 13,
-      "form": [
-        "W",
-        "L",
-        "W",
-        "W",
-        "W"
-      ]
-    },
-    {
-      "rank": 4,
       "team": "Спартак",
       "slug": "spartak",
       "played": 7,
@@ -81,6 +61,26 @@
         "W",
         "D",
         "L"
+      ]
+    },
+    {
+      "rank": 4,
+      "team": "Динамо М",
+      "slug": "dinamo-m",
+      "played": 7,
+      "won": 4,
+      "drawn": 1,
+      "lost": 2,
+      "goalsFor": 10,
+      "goalsAgainst": 8,
+      "goalDiff": 2,
+      "points": 13,
+      "form": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "W"
       ]
     },
     {
