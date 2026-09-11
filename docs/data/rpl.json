@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-09-11T20:56:52+03:00",
+  "updatedAt": "2026-09-11T23:32:38+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -5055,8 +5055,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664998-kryliasovetov-rodina-11-09-2026",
-      "stadium": "Солидарность Арена (Самара-Арена)",
-      "referee": "Москалев",
       "events": [
         {
           "type": "yellow",
@@ -5119,6 +5117,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Солидарность Арена (Самара-Арена)",
+      "referee": "Москалев",
       "detailsVersion": 3
     },
     {
