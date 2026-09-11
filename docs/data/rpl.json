@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-09-11T17:49:26+03:00",
+  "updatedAt": "2026-09-11T20:56:52+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -165,6 +165,26 @@
     },
     {
       "rank": 9,
+      "team": "Крылья Советов",
+      "slug": "krylia",
+      "played": 8,
+      "won": 2,
+      "drawn": 4,
+      "lost": 2,
+      "goalsFor": 12,
+      "goalsAgainst": 13,
+      "goalDiff": -1,
+      "points": 10,
+      "form": [
+        "L",
+        "W",
+        "D",
+        "D",
+        "W"
+      ]
+    },
+    {
+      "rank": 10,
       "team": "Оренбург",
       "slug": "orenburg",
       "played": 7,
@@ -184,7 +204,7 @@
       ]
     },
     {
-      "rank": 10,
+      "rank": 11,
       "team": "Ростов",
       "slug": "rostov",
       "played": 7,
@@ -204,7 +224,7 @@
       ]
     },
     {
-      "rank": 11,
+      "rank": 12,
       "team": "Ахмат",
       "slug": "akhmat",
       "played": 7,
@@ -217,26 +237,6 @@
       "points": 7,
       "form": [
         "D",
-        "L",
-        "W",
-        "D",
-        "D"
-      ]
-    },
-    {
-      "rank": 12,
-      "team": "Крылья Советов",
-      "slug": "krylia",
-      "played": 7,
-      "won": 1,
-      "drawn": 4,
-      "lost": 2,
-      "goalsFor": 10,
-      "goalsAgainst": 12,
-      "goalDiff": -2,
-      "points": 7,
-      "form": [
-        "L",
         "L",
         "W",
         "D",
@@ -267,17 +267,17 @@
       "rank": 14,
       "team": "Родина",
       "slug": "rodina",
-      "played": 7,
+      "played": 8,
       "won": 1,
       "drawn": 1,
-      "lost": 5,
-      "goalsFor": 8,
-      "goalsAgainst": 19,
-      "goalDiff": -11,
+      "lost": 6,
+      "goalsFor": 9,
+      "goalsAgainst": 21,
+      "goalDiff": -12,
       "points": 4,
       "form": [
-        "W",
         "D",
+        "L",
         "L",
         "L",
         "L"
@@ -5050,11 +5050,76 @@
       "away": "Родина",
       "homeSlug": "krylia",
       "awaySlug": "rodina",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 1,
       "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552664998-kryliasovetov-rodina-11-09-2026"
+      "status": "finished",
+      "url": "/football/rpl/552664998-kryliasovetov-rodina-11-09-2026",
+      "stadium": "Солидарность Арена (Самара-Арена)",
+      "referee": "Москалев",
+      "events": [
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "35'",
+          "player": "Сокол"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Дятлов",
+          "playerOut": "Гогличидзе"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "58'",
+          "playerIn": "Ороз",
+          "playerOut": "Макаров"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "58'",
+          "playerIn": "Шитов",
+          "playerOut": "Рахманович"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "59'",
+          "player": "Тимошенко",
+          "assist": "Гордюшенко"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "64'",
+          "player": "Крамарич",
+          "assist": "Шитов"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "88'",
+          "player": "Столбов",
+          "assist": "Шитов"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Офсайды",
+          "home": "1",
+          "away": "1"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-09-12-Факел-Балтика",
