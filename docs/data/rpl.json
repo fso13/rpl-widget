@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-09-12T19:34:09+03:00",
+  "updatedAt": "2026-09-12T21:42:35+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -25,6 +25,26 @@
     },
     {
       "rank": 2,
+      "team": "Динамо М",
+      "slug": "dinamo-m",
+      "played": 8,
+      "won": 5,
+      "drawn": 1,
+      "lost": 2,
+      "goalsFor": 11,
+      "goalsAgainst": 8,
+      "goalDiff": 3,
+      "points": 16,
+      "form": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    },
+    {
+      "rank": 3,
       "team": "ЦСКА",
       "slug": "cska",
       "played": 7,
@@ -44,7 +64,7 @@
       ]
     },
     {
-      "rank": 3,
+      "rank": 4,
       "team": "Зенит",
       "slug": "zenit",
       "played": 8,
@@ -60,26 +80,6 @@
         "L",
         "W",
         "L",
-        "W"
-      ]
-    },
-    {
-      "rank": 4,
-      "team": "Динамо М",
-      "slug": "dinamo-m",
-      "played": 7,
-      "won": 4,
-      "drawn": 1,
-      "lost": 2,
-      "goalsFor": 10,
-      "goalsAgainst": 8,
-      "goalDiff": 2,
-      "points": 13,
-      "form": [
-        "W",
-        "L",
-        "W",
-        "W",
         "W"
       ]
     },
@@ -187,20 +187,20 @@
       "rank": 10,
       "team": "Оренбург",
       "slug": "orenburg",
-      "played": 7,
+      "played": 8,
       "won": 1,
       "drawn": 5,
-      "lost": 1,
+      "lost": 2,
       "goalsFor": 7,
-      "goalsAgainst": 9,
-      "goalDiff": -2,
+      "goalsAgainst": 10,
+      "goalDiff": -3,
       "points": 8,
       "form": [
         "D",
         "D",
         "D",
         "D",
-        "D"
+        "L"
       ]
     },
     {
@@ -5135,8 +5135,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664997-fakel-baltika-12-09-2026",
-      "stadium": "Факел",
-      "referee": "Плиско",
       "events": [
         {
           "type": "yellow",
@@ -5213,6 +5211,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Факел",
+      "referee": "Плиско",
       "detailsVersion": 3
     },
     {
@@ -5229,6 +5229,8 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664996-zenit-lokomotiv-12-09-2026",
+      "stadium": "Газпром Арена",
+      "referee": "Новиков",
       "events": [
         {
           "type": "goal",
@@ -5236,22 +5238,56 @@
           "minute": "18'",
           "player": "Руденко",
           "assist": "Бабкин"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "47'",
+          "player": "Андраде",
+          "assist": "Алип"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "65'",
+          "playerIn": "Педро",
+          "playerOut": "Карпукас"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "65'",
+          "playerIn": "Караваев",
+          "playerOut": "Андраде"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "70'",
+          "player": "Луис Энрике",
+          "assist": "Педро"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "73'",
+          "playerIn": "Пиняев",
+          "playerOut": "Бакаев"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "76'",
+          "player": "Морозов"
         }
       ],
       "stats": [
-        {
-          "name": "Желтые карточки",
-          "home": "0",
-          "away": "0"
-        },
         {
           "name": "Красные карточки",
           "home": "0",
           "away": "0"
         }
       ],
-      "stadium": "Газпром Арена",
-      "referee": "Новиков",
       "detailsVersion": 3
     },
     {
@@ -5263,13 +5299,11 @@
       "away": "Оренбург",
       "homeSlug": "dinamo-m",
       "awaySlug": "orenburg",
-      "homeScore": 0,
+      "homeScore": 1,
       "awayScore": 0,
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664995-dinamo-orenburg-12-09-2026",
-      "stadium": "РЖД Арена (Локомотив)",
-      "referee": "Кукуян",
       "events": [],
       "stats": [
         {
@@ -5288,6 +5322,8 @@
           "away": "0"
         }
       ],
+      "stadium": "РЖД Арена (Локомотив)",
+      "referee": "Кукуян",
       "detailsVersion": 3
     },
     {
@@ -5299,11 +5335,36 @@
       "away": "Рубин",
       "homeSlug": "cska",
       "awaySlug": "rubin",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 0,
       "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552664994-tsska-rubin-12-09-2026"
+      "status": "finished",
+      "url": "/football/rpl/552664994-tsska-rubin-12-09-2026",
+      "stadium": "ВЭБ Арена",
+      "referee": "Танашев",
+      "events": [
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "6'",
+          "player": "Обляков",
+          "assist": null
+        },
+        {
+          "type": "red",
+          "side": "home",
+          "minute": "15'",
+          "player": "Рейс"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "18'",
+          "player": "Лобов"
+        }
+      ],
+      "stats": [],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-09-13-Ахмат-Динамо Мх",
