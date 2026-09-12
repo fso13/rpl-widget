@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-09-13T00:55:52+03:00",
+  "updatedAt": "2026-09-13T02:46:24+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -5393,8 +5393,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664994-tsska-rubin-12-09-2026",
-      "stadium": "ВЭБ Арена",
-      "referee": "Танашев",
       "events": [
         {
           "type": "goal",
@@ -5444,6 +5442,8 @@
           "away": "1"
         }
       ],
+      "stadium": "ВЭБ Арена",
+      "referee": "Танашев",
       "detailsVersion": 3
     },
     {
