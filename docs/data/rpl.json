@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-09-12T23:58:03+03:00",
+  "updatedAt": "2026-09-13T00:55:52+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -5304,8 +5304,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664995-dinamo-orenburg-12-09-2026",
-      "stadium": "РЖД Арена (Локомотив)",
-      "referee": "Кукуян",
       "events": [
         {
           "type": "yellow",
@@ -5377,6 +5375,8 @@
         }
       ],
       "stats": [],
+      "stadium": "РЖД Арена (Локомотив)",
+      "referee": "Кукуян",
       "detailsVersion": 3
     },
     {
@@ -5393,6 +5393,8 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664994-tsska-rubin-12-09-2026",
+      "stadium": "ВЭБ Арена",
+      "referee": "Танашев",
       "events": [
         {
           "type": "goal",
@@ -5412,11 +5414,36 @@
           "side": "away",
           "minute": "18'",
           "player": "Лобов"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Грипши",
+          "playerOut": "Лобов"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Рожков",
+          "playerOut": "Рожков"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "58'",
+          "player": "Арройо",
+          "assist": "Юкич"
         }
       ],
-      "stats": [],
-      "stadium": "ВЭБ Арена",
-      "referee": "Танашев",
+      "stats": [
+        {
+          "name": "Голы",
+          "home": "1",
+          "away": "1"
+        }
+      ],
       "detailsVersion": 3
     },
     {
