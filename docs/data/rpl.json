@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-09-12T21:42:35+03:00",
+  "updatedAt": "2026-09-12T23:58:03+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -47,20 +47,20 @@
       "rank": 3,
       "team": "ЦСКА",
       "slug": "cska",
-      "played": 7,
+      "played": 8,
       "won": 4,
-      "drawn": 3,
+      "drawn": 4,
       "lost": 0,
-      "goalsFor": 11,
-      "goalsAgainst": 7,
+      "goalsFor": 12,
+      "goalsAgainst": 8,
       "goalDiff": 4,
-      "points": 15,
+      "points": 16,
       "form": [
-        "D",
         "W",
         "W",
         "D",
-        "W"
+        "W",
+        "D"
       ]
     },
     {
@@ -147,19 +147,19 @@
       "rank": 8,
       "team": "Рубин",
       "slug": "rubin",
-      "played": 7,
+      "played": 8,
       "won": 2,
-      "drawn": 4,
+      "drawn": 5,
       "lost": 1,
-      "goalsFor": 10,
-      "goalsAgainst": 9,
+      "goalsFor": 11,
+      "goalsAgainst": 10,
       "goalDiff": 1,
-      "points": 10,
+      "points": 11,
       "form": [
         "D",
         "D",
-        "D",
         "W",
+        "D",
         "D"
       ]
     },
@@ -5229,8 +5229,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664996-zenit-lokomotiv-12-09-2026",
-      "stadium": "Газпром Арена",
-      "referee": "Новиков",
       "events": [
         {
           "type": "goal",
@@ -5288,6 +5286,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Газпром Арена",
+      "referee": "Новиков",
       "detailsVersion": 3
     },
     {
@@ -5304,26 +5304,79 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664995-dinamo-orenburg-12-09-2026",
-      "events": [],
-      "stats": [
-        {
-          "name": "Голы",
-          "home": "0",
-          "away": "0"
-        },
-        {
-          "name": "Желтые карточки",
-          "home": "0",
-          "away": "0"
-        },
-        {
-          "name": "Красные карточки",
-          "home": "0",
-          "away": "0"
-        }
-      ],
       "stadium": "РЖД Арена (Локомотив)",
       "referee": "Кукуян",
+      "events": [
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "49'",
+          "player": "Болотов"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "58'",
+          "playerIn": "Назаренко",
+          "playerOut": "Касаджиков"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "58'",
+          "playerIn": "Пуэбла",
+          "playerOut": "Голыбин"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "62'",
+          "player": "Куль"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "66'",
+          "playerIn": "Ведерников",
+          "playerOut": "Рыбчинский"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "68'",
+          "playerIn": "Окишор",
+          "playerOut": "Гомес"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "68'",
+          "playerIn": "Фомин",
+          "playerOut": "Гладышев"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "80'",
+          "playerIn": "Жезус",
+          "playerOut": "Гузина"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "84'",
+          "playerIn": "Гутьеррес",
+          "playerOut": "Чавес"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "90'",
+          "player": "Окишор",
+          "assist": "Бителло"
+        }
+      ],
+      "stats": [],
       "detailsVersion": 3
     },
     {
@@ -5336,12 +5389,10 @@
       "homeSlug": "cska",
       "awaySlug": "rubin",
       "homeScore": 1,
-      "awayScore": 0,
+      "awayScore": 1,
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664994-tsska-rubin-12-09-2026",
-      "stadium": "ВЭБ Арена",
-      "referee": "Танашев",
       "events": [
         {
           "type": "goal",
@@ -5364,6 +5415,8 @@
         }
       ],
       "stats": [],
+      "stadium": "ВЭБ Арена",
+      "referee": "Танашев",
       "detailsVersion": 3
     },
     {
