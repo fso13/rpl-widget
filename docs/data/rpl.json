@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-09-12T12:10:08+03:00",
+  "updatedAt": "2026-09-12T15:54:42+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -5130,11 +5130,72 @@
       "away": "Балтика",
       "homeSlug": "fakel",
       "awaySlug": "baltika",
-      "homeScore": null,
-      "awayScore": null,
-      "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552664997-fakel-baltika-12-09-2026"
+      "homeScore": 2,
+      "awayScore": 1,
+      "live": "90'",
+      "status": "live",
+      "url": "/football/rpl/552664997-fakel-baltika-12-09-2026",
+      "stadium": "Факел",
+      "referee": "Плиско",
+      "events": [
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "13'",
+          "player": "Нетфуллин",
+          "assist": "Сутормин"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "46'",
+          "playerIn": "Магомедов",
+          "playerOut": "Сутормин"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Петров",
+          "playerOut": "Поспелов"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Шнапцев",
+          "playerOut": "Бевеев"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Голенков",
+          "playerOut": "Петров"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "51'",
+          "player": "Магомедов",
+          "assist": null
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "74'",
+          "player": "Голенков",
+          "assist": "Хиль"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-09-12-Зенит-Локомотив",
