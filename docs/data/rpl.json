@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-09-12T15:54:42+03:00",
+  "updatedAt": "2026-09-12T16:49:56+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -127,20 +127,20 @@
       "rank": 7,
       "team": "Балтика",
       "slug": "baltika",
-      "played": 7,
+      "played": 8,
       "won": 3,
-      "drawn": 1,
+      "drawn": 2,
       "lost": 3,
-      "goalsFor": 10,
-      "goalsAgainst": 7,
+      "goalsFor": 12,
+      "goalsAgainst": 9,
       "goalDiff": 3,
-      "points": 10,
+      "points": 11,
       "form": [
-        "W",
         "L",
         "D",
         "W",
-        "L"
+        "L",
+        "D"
       ]
     },
     {
@@ -307,20 +307,20 @@
       "rank": 16,
       "team": "Факел",
       "slug": "fakel",
-      "played": 7,
+      "played": 8,
       "won": 0,
-      "drawn": 2,
+      "drawn": 3,
       "lost": 5,
-      "goalsFor": 4,
-      "goalsAgainst": 10,
+      "goalsFor": 6,
+      "goalsAgainst": 12,
       "goalDiff": -6,
-      "points": 2,
+      "points": 3,
       "form": [
-        "D",
         "L",
         "D",
         "L",
-        "L"
+        "L",
+        "D"
       ]
     }
   ],
@@ -5131,12 +5131,10 @@
       "homeSlug": "fakel",
       "awaySlug": "baltika",
       "homeScore": 2,
-      "awayScore": 1,
-      "live": "90'",
-      "status": "live",
+      "awayScore": 2,
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552664997-fakel-baltika-12-09-2026",
-      "stadium": "Факел",
-      "referee": "Плиско",
       "events": [
         {
           "type": "goal",
@@ -5195,6 +5193,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Факел",
+      "referee": "Плиско",
       "detailsVersion": 3
     },
     {
@@ -5206,11 +5206,35 @@
       "away": "Локомотив",
       "homeSlug": "zenit",
       "awaySlug": "lokomotiv",
-      "homeScore": null,
-      "awayScore": null,
-      "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552664996-zenit-lokomotiv-12-09-2026"
+      "homeScore": 0,
+      "awayScore": 1,
+      "live": "29'",
+      "status": "live",
+      "url": "/football/rpl/552664996-zenit-lokomotiv-12-09-2026",
+      "stadium": "Газпром Арена",
+      "referee": "Новиков",
+      "events": [
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "18'",
+          "player": "Руденко",
+          "assist": "Бабкин"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Желтые карточки",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-09-12-Динамо М-Оренбург",
