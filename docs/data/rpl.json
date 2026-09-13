@@ -1,25 +1,25 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-09-13T20:43:50+03:00",
+  "updatedAt": "2026-09-13T22:50:44+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
       "rank": 1,
       "team": "Краснодар",
       "slug": "krasnodar",
-      "played": 7,
+      "played": 8,
       "won": 6,
-      "drawn": 1,
+      "drawn": 2,
       "lost": 0,
-      "goalsFor": 13,
-      "goalsAgainst": 6,
+      "goalsFor": 14,
+      "goalsAgainst": 7,
       "goalDiff": 7,
-      "points": 19,
+      "points": 20,
       "form": [
         "W",
         "W",
         "W",
-        "W",
+        "D",
         "D"
       ]
     },
@@ -265,6 +265,26 @@
     },
     {
       "rank": 14,
+      "team": "Акрон",
+      "slug": "akron",
+      "played": 8,
+      "won": 0,
+      "drawn": 5,
+      "lost": 3,
+      "goalsFor": 9,
+      "goalsAgainst": 18,
+      "goalDiff": -9,
+      "points": 5,
+      "form": [
+        "D",
+        "L",
+        "D",
+        "D",
+        "D"
+      ]
+    },
+    {
+      "rank": 15,
       "team": "Родина",
       "slug": "rodina",
       "played": 8,
@@ -281,26 +301,6 @@
         "L",
         "L",
         "L"
-      ]
-    },
-    {
-      "rank": 15,
-      "team": "Акрон",
-      "slug": "akron",
-      "played": 7,
-      "won": 0,
-      "drawn": 4,
-      "lost": 3,
-      "goalsFor": 8,
-      "goalsAgainst": 17,
-      "goalDiff": -9,
-      "points": 4,
-      "form": [
-        "D",
-        "D",
-        "L",
-        "D",
-        "D"
       ]
     },
     {
@@ -5573,6 +5573,8 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664992-spartak-rostov-13-09-2026",
+      "stadium": "Лукойл Арена",
+      "referee": "Абросимов",
       "events": [
         {
           "type": "goal",
@@ -5580,27 +5582,56 @@
           "minute": "26'",
           "player": "Жедсон",
           "assist": "Денисов"
-        }
-      ],
-      "stats": [
-        {
-          "name": "Нарушения",
-          "home": "4",
-          "away": "4"
         },
         {
-          "name": "Желтые карточки",
-          "home": "0",
-          "away": "0"
+          "type": "goal",
+          "side": "home",
+          "minute": "55'",
+          "player": "Солари",
+          "assist": null
         },
         {
-          "name": "Красные карточки",
-          "home": "0",
-          "away": "0"
+          "type": "sub",
+          "side": "away",
+          "minute": "60'",
+          "playerIn": "Роналдо",
+          "playerOut": "Комаров"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "63'",
+          "player": "Кучаев"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "66'",
+          "playerIn": "Дмитриев",
+          "playerOut": "Маркиньос"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "66'",
+          "playerIn": "Пруцев",
+          "playerOut": "Зобнин"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "67'",
+          "player": "Сулейманов"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "89'",
+          "player": "Массалыга",
+          "assist": "Дмитриев"
         }
       ],
-      "stadium": "Лукойл Арена",
-      "referee": "Абросимов",
+      "stats": [],
       "detailsVersion": 3
     },
     {
@@ -5612,13 +5643,11 @@
       "away": "Акрон",
       "homeSlug": "krasnodar",
       "awaySlug": "akron",
-      "homeScore": 0,
+      "homeScore": 1,
       "awayScore": 1,
-      "live": "46'",
-      "status": "live",
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552664991-krasnodar-akron-13-09-2026",
-      "stadium": "Озон Арена (Краснодар)",
-      "referee": "Казарцев",
       "events": [
         {
           "type": "goal",
@@ -5669,6 +5698,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Озон Арена (Краснодар)",
+      "referee": "Казарцев",
       "detailsVersion": 3
     },
     {
