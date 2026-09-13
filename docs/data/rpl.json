@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-09-13T17:47:06+03:00",
+  "updatedAt": "2026-09-13T20:43:50+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -25,6 +25,26 @@
     },
     {
       "rank": 2,
+      "team": "Спартак",
+      "slug": "spartak",
+      "played": 8,
+      "won": 5,
+      "drawn": 1,
+      "lost": 2,
+      "goalsFor": 15,
+      "goalsAgainst": 7,
+      "goalDiff": 8,
+      "points": 16,
+      "form": [
+        "W",
+        "W",
+        "D",
+        "L",
+        "W"
+      ]
+    },
+    {
+      "rank": 3,
       "team": "Динамо М",
       "slug": "dinamo-m",
       "played": 8,
@@ -44,7 +64,7 @@
       ]
     },
     {
-      "rank": 3,
+      "rank": 4,
       "team": "ЦСКА",
       "slug": "cska",
       "played": 8,
@@ -64,7 +84,7 @@
       ]
     },
     {
-      "rank": 4,
+      "rank": 5,
       "team": "Зенит",
       "slug": "zenit",
       "played": 8,
@@ -81,26 +101,6 @@
         "W",
         "L",
         "W"
-      ]
-    },
-    {
-      "rank": 5,
-      "team": "Спартак",
-      "slug": "spartak",
-      "played": 7,
-      "won": 4,
-      "drawn": 1,
-      "lost": 2,
-      "goalsFor": 12,
-      "goalsAgainst": 7,
-      "goalDiff": 5,
-      "points": 13,
-      "form": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "L"
       ]
     },
     {
@@ -227,20 +227,20 @@
       "rank": 12,
       "team": "Ростов",
       "slug": "rostov",
-      "played": 7,
+      "played": 8,
       "won": 2,
       "drawn": 2,
-      "lost": 3,
+      "lost": 4,
       "goalsFor": 10,
-      "goalsAgainst": 11,
-      "goalDiff": -1,
+      "goalsAgainst": 14,
+      "goalDiff": -4,
       "points": 8,
       "form": [
         "D",
-        "D",
         "L",
         "L",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -5568,13 +5568,11 @@
       "away": "Ростов",
       "homeSlug": "spartak",
       "awaySlug": "rostov",
-      "homeScore": 1,
+      "homeScore": 3,
       "awayScore": 0,
-      "live": "42'",
-      "status": "live",
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552664992-spartak-rostov-13-09-2026",
-      "stadium": "Лукойл Арена",
-      "referee": "Абросимов",
       "events": [
         {
           "type": "goal",
@@ -5601,6 +5599,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Лукойл Арена",
+      "referee": "Абросимов",
       "detailsVersion": 3
     },
     {
@@ -5612,11 +5612,64 @@
       "away": "Акрон",
       "homeSlug": "krasnodar",
       "awaySlug": "akron",
-      "homeScore": null,
-      "awayScore": null,
-      "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552664991-krasnodar-akron-13-09-2026"
+      "homeScore": 0,
+      "awayScore": 1,
+      "live": "46'",
+      "status": "live",
+      "url": "/football/rpl/552664991-krasnodar-akron-13-09-2026",
+      "stadium": "Озон Арена (Краснодар)",
+      "referee": "Казарцев",
+      "events": [
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "13'",
+          "player": "Марадишвили",
+          "assist": "Бардыбахин"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "36'",
+          "player": "Эдуардо"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "37'",
+          "player": "Вахания"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "46'",
+          "playerIn": "Пальцев",
+          "playerOut": "Вахания"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Удары (в створ)",
+          "home": "5 (2)",
+          "away": "5 (3)"
+        },
+        {
+          "name": "Угловые",
+          "home": "1",
+          "away": "1"
+        },
+        {
+          "name": "Желтые карточки",
+          "home": "1",
+          "away": "1"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-09-16-Родина-Рубин",
