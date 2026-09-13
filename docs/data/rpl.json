@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-09-13T22:50:44+03:00",
+  "updatedAt": "2026-09-14T00:49:13+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -5573,8 +5573,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664992-spartak-rostov-13-09-2026",
-      "stadium": "Лукойл Арена",
-      "referee": "Абросимов",
       "events": [
         {
           "type": "goal",
@@ -5632,6 +5630,8 @@
         }
       ],
       "stats": [],
+      "stadium": "Лукойл Арена",
+      "referee": "Абросимов",
       "detailsVersion": 3
     },
     {
@@ -5648,6 +5648,8 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664991-krasnodar-akron-13-09-2026",
+      "stadium": "Озон Арена (Краснодар)",
+      "referee": "Казарцев",
       "events": [
         {
           "type": "goal",
@@ -5674,21 +5676,24 @@
           "minute": "46'",
           "playerIn": "Пальцев",
           "playerOut": "Вахания"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "55'",
+          "player": "Бокоев"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "88'",
+          "player": "Боселли",
+          "assist": null
         }
       ],
       "stats": [
         {
-          "name": "Удары (в створ)",
-          "home": "5 (2)",
-          "away": "5 (3)"
-        },
-        {
-          "name": "Угловые",
-          "home": "1",
-          "away": "1"
-        },
-        {
-          "name": "Желтые карточки",
+          "name": "Голы",
           "home": "1",
           "away": "1"
         },
@@ -5698,8 +5703,6 @@
           "away": "0"
         }
       ],
-      "stadium": "Озон Арена (Краснодар)",
-      "referee": "Казарцев",
       "detailsVersion": 3
     },
     {
