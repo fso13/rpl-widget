@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-09-14T00:49:13+03:00",
+  "updatedAt": "2026-09-14T01:06:47+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -5648,8 +5648,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664991-krasnodar-akron-13-09-2026",
-      "stadium": "Озон Арена (Краснодар)",
-      "referee": "Казарцев",
       "events": [
         {
           "type": "goal",
@@ -5703,6 +5701,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Озон Арена (Краснодар)",
+      "referee": "Казарцев",
       "detailsVersion": 3
     },
     {
