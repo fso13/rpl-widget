@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-09-13T16:27:03+03:00",
+  "updatedAt": "2026-09-13T17:47:06+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -107,20 +107,20 @@
       "rank": 6,
       "team": "Динамо Мх",
       "slug": "dinamo-mh",
-      "played": 7,
+      "played": 8,
       "won": 4,
       "drawn": 0,
-      "lost": 3,
-      "goalsFor": 12,
-      "goalsAgainst": 10,
-      "goalDiff": 2,
+      "lost": 4,
+      "goalsFor": 14,
+      "goalsAgainst": 13,
+      "goalDiff": 1,
       "points": 12,
       "form": [
-        "L",
         "W",
         "L",
         "L",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -165,6 +165,26 @@
     },
     {
       "rank": 9,
+      "team": "Ахмат",
+      "slug": "akhmat",
+      "played": 8,
+      "won": 2,
+      "drawn": 4,
+      "lost": 2,
+      "goalsFor": 13,
+      "goalsAgainst": 11,
+      "goalDiff": 2,
+      "points": 10,
+      "form": [
+        "L",
+        "W",
+        "D",
+        "D",
+        "W"
+      ]
+    },
+    {
+      "rank": 10,
       "team": "Крылья Советов",
       "slug": "krylia",
       "played": 8,
@@ -184,7 +204,7 @@
       ]
     },
     {
-      "rank": 10,
+      "rank": 11,
       "team": "Оренбург",
       "slug": "orenburg",
       "played": 8,
@@ -204,7 +224,7 @@
       ]
     },
     {
-      "rank": 11,
+      "rank": 12,
       "team": "Ростов",
       "slug": "rostov",
       "played": 7,
@@ -221,26 +241,6 @@
         "L",
         "L",
         "W"
-      ]
-    },
-    {
-      "rank": 12,
-      "team": "Ахмат",
-      "slug": "akhmat",
-      "played": 7,
-      "won": 1,
-      "drawn": 4,
-      "lost": 2,
-      "goalsFor": 10,
-      "goalsAgainst": 9,
-      "goalDiff": 1,
-      "points": 7,
-      "form": [
-        "D",
-        "L",
-        "W",
-        "D",
-        "D"
       ]
     },
     {
@@ -5457,11 +5457,9 @@
       "awaySlug": "dinamo-mh",
       "homeScore": 3,
       "awayScore": 2,
-      "live": "90'",
-      "status": "live",
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552664993-akhmat-dinamo-13-09-2026",
-      "stadium": "Ахмат-Арена",
-      "referee": "Шафеев",
       "events": [
         {
           "type": "yellow",
@@ -5557,6 +5555,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Ахмат-Арена",
+      "referee": "Шафеев",
       "detailsVersion": 3
     },
     {
@@ -5568,11 +5568,40 @@
       "away": "Ростов",
       "homeSlug": "spartak",
       "awaySlug": "rostov",
-      "homeScore": null,
-      "awayScore": null,
-      "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552664992-spartak-rostov-13-09-2026"
+      "homeScore": 1,
+      "awayScore": 0,
+      "live": "42'",
+      "status": "live",
+      "url": "/football/rpl/552664992-spartak-rostov-13-09-2026",
+      "stadium": "Лукойл Арена",
+      "referee": "Абросимов",
+      "events": [
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "26'",
+          "player": "Жедсон",
+          "assist": "Денисов"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Нарушения",
+          "home": "4",
+          "away": "4"
+        },
+        {
+          "name": "Желтые карточки",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-09-13-Краснодар-Акрон",
