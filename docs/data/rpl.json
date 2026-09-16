@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-09-16T21:56:32+03:00",
+  "updatedAt": "2026-09-17T00:53:10+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -45,6 +45,26 @@
     },
     {
       "rank": 3,
+      "team": "Зенит",
+      "slug": "zenit",
+      "played": 9,
+      "won": 6,
+      "drawn": 0,
+      "lost": 3,
+      "goalsFor": 19,
+      "goalsAgainst": 9,
+      "goalDiff": 10,
+      "points": 18,
+      "form": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "W"
+      ]
+    },
+    {
+      "rank": 4,
       "team": "Динамо М",
       "slug": "dinamo-m",
       "played": 8,
@@ -64,7 +84,7 @@
       ]
     },
     {
-      "rank": 4,
+      "rank": 5,
       "team": "ЦСКА",
       "slug": "cska",
       "played": 8,
@@ -81,26 +101,6 @@
         "D",
         "W",
         "D"
-      ]
-    },
-    {
-      "rank": 5,
-      "team": "Зенит",
-      "slug": "zenit",
-      "played": 8,
-      "won": 5,
-      "drawn": 0,
-      "lost": 3,
-      "goalsFor": 16,
-      "goalsAgainst": 7,
-      "goalDiff": 9,
-      "points": 15,
-      "form": [
-        "W",
-        "L",
-        "W",
-        "L",
-        "W"
       ]
     },
     {
@@ -147,24 +147,44 @@
       "rank": 8,
       "team": "Балтика",
       "slug": "baltika",
-      "played": 8,
+      "played": 9,
       "won": 3,
       "drawn": 2,
-      "lost": 3,
-      "goalsFor": 12,
-      "goalsAgainst": 9,
-      "goalDiff": 3,
+      "lost": 4,
+      "goalsFor": 14,
+      "goalsAgainst": 12,
+      "goalDiff": 2,
       "points": 11,
       "form": [
-        "L",
         "D",
         "W",
         "L",
-        "D"
+        "D",
+        "L"
       ]
     },
     {
       "rank": 9,
+      "team": "Крылья Советов",
+      "slug": "krylia",
+      "played": 9,
+      "won": 2,
+      "drawn": 5,
+      "lost": 2,
+      "goalsFor": 13,
+      "goalsAgainst": 14,
+      "goalDiff": -1,
+      "points": 11,
+      "form": [
+        "W",
+        "D",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    {
+      "rank": 10,
       "team": "Ахмат",
       "slug": "akhmat",
       "played": 8,
@@ -174,26 +194,6 @@
       "goalsFor": 13,
       "goalsAgainst": 11,
       "goalDiff": 2,
-      "points": 10,
-      "form": [
-        "L",
-        "W",
-        "D",
-        "D",
-        "W"
-      ]
-    },
-    {
-      "rank": 10,
-      "team": "Крылья Советов",
-      "slug": "krylia",
-      "played": 8,
-      "won": 2,
-      "drawn": 4,
-      "lost": 2,
-      "goalsFor": 12,
-      "goalsAgainst": 13,
-      "goalDiff": -1,
       "points": 10,
       "form": [
         "L",
@@ -247,20 +247,20 @@
       "rank": 13,
       "team": "Локомотив",
       "slug": "lokomotiv",
-      "played": 8,
+      "played": 9,
       "won": 1,
-      "drawn": 3,
+      "drawn": 4,
       "lost": 4,
-      "goalsFor": 7,
-      "goalsAgainst": 10,
+      "goalsFor": 8,
+      "goalsAgainst": 11,
       "goalDiff": -3,
-      "points": 6,
+      "points": 7,
       "form": [
-        "D",
         "L",
         "L",
         "W",
-        "L"
+        "L",
+        "D"
       ]
     },
     {
@@ -5719,8 +5719,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665005-rodina-rubin-16-09-2026",
-      "stadium": "Арена Химки",
-      "referee": "Шафеев",
       "events": [
         {
           "type": "yellow",
@@ -5793,6 +5791,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Арена Химки",
+      "referee": "Шафеев",
       "detailsVersion": 3
     },
     {
@@ -5809,8 +5809,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665006-spartak-fakel-16-09-2026",
-      "stadium": "Лукойл Арена",
-      "referee": "Матвеев",
       "events": [
         {
           "type": "sub",
@@ -5862,6 +5860,8 @@
         }
       ],
       "stats": [],
+      "stadium": "Лукойл Арена",
+      "referee": "Матвеев",
       "detailsVersion": 3
     },
     {
@@ -5873,13 +5873,11 @@
       "away": "Зенит",
       "homeSlug": "baltika",
       "awaySlug": "zenit",
-      "homeScore": 1,
-      "awayScore": 2,
-      "live": "47'",
-      "status": "live",
+      "homeScore": 2,
+      "awayScore": 3,
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552665003-baltika-zenit-16-09-2026",
-      "stadium": "Ростех Арена (Калининград)",
-      "referee": "Чистяков",
       "events": [
         {
           "type": "goal",
@@ -5927,6 +5925,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Ростех Арена (Калининград)",
+      "referee": "Чистяков",
       "detailsVersion": 3
     },
     {
@@ -5939,9 +5939,9 @@
       "homeSlug": "lokomotiv",
       "awaySlug": "krylia",
       "homeScore": 1,
-      "awayScore": 0,
-      "live": "52'",
-      "status": "live",
+      "awayScore": 1,
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552665004-lokomotiv-kryliasovetov-16-09-2026",
       "stadium": "РЖД Арена (Локомотив)",
       "referee": "Набока",
@@ -5971,6 +5971,12 @@
           "player": "Чесноков"
         },
         {
+          "type": "yellow",
+          "side": "home",
+          "minute": "45'",
+          "player": "Руденко"
+        },
+        {
           "type": "sub",
           "side": "away",
           "minute": "46'",
@@ -5983,9 +5989,28 @@
           "minute": "46'",
           "playerIn": "Салтыков",
           "playerOut": "Чесноков"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "53'",
+          "player": "Комличенко",
+          "assist": null
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "67'",
+          "player": "Рахманович",
+          "assist": "Салтыков"
         }
       ],
       "stats": [
+        {
+          "name": "Голы",
+          "home": "1",
+          "away": "1"
+        },
         {
           "name": "Красные карточки",
           "home": "0",
