@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-09-17T00:53:10+03:00",
+  "updatedAt": "2026-09-17T01:38:37+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -5878,6 +5878,8 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665003-baltika-zenit-16-09-2026",
+      "stadium": "Ростех Арена (Калининград)",
+      "referee": "Чистяков",
       "events": [
         {
           "type": "goal",
@@ -5906,27 +5908,36 @@
           "minute": "46'",
           "playerIn": "Поспелов",
           "playerOut": "Петров"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "46'",
+          "playerIn": "Беликов",
+          "playerOut": "Мурид"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "49'",
+          "player": "Луис Энрике",
+          "assist": "Соболев"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "81'",
+          "player": "Петров",
+          "assist": null
         }
       ],
       "stats": [
-        {
-          "name": "Угловые",
-          "home": "5",
-          "away": "5"
-        },
-        {
-          "name": "Желтые карточки",
-          "home": "0",
-          "away": "0"
-        },
         {
           "name": "Красные карточки",
           "home": "0",
           "away": "0"
         }
       ],
-      "stadium": "Ростех Арена (Калининград)",
-      "referee": "Чистяков",
       "detailsVersion": 3
     },
     {
@@ -5943,8 +5954,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665004-lokomotiv-kryliasovetov-16-09-2026",
-      "stadium": "РЖД Арена (Локомотив)",
-      "referee": "Набока",
       "events": [
         {
           "type": "yellow",
@@ -6017,6 +6026,8 @@
           "away": "0"
         }
       ],
+      "stadium": "РЖД Арена (Локомотив)",
+      "referee": "Набока",
       "detailsVersion": 3
     },
     {
