@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-09-16T18:18:38+03:00",
+  "updatedAt": "2026-09-16T21:56:32+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -27,19 +27,19 @@
       "rank": 2,
       "team": "Спартак",
       "slug": "spartak",
-      "played": 8,
-      "won": 5,
+      "played": 9,
+      "won": 6,
       "drawn": 1,
       "lost": 2,
-      "goalsFor": 15,
+      "goalsFor": 16,
       "goalsAgainst": 7,
-      "goalDiff": 8,
-      "points": 16,
+      "goalDiff": 9,
+      "points": 19,
       "form": [
-        "W",
         "W",
         "D",
         "L",
+        "W",
         "W"
       ]
     },
@@ -105,6 +105,26 @@
     },
     {
       "rank": 6,
+      "team": "Рубин",
+      "slug": "rubin",
+      "played": 9,
+      "won": 2,
+      "drawn": 6,
+      "lost": 1,
+      "goalsFor": 12,
+      "goalsAgainst": 11,
+      "goalDiff": 1,
+      "points": 12,
+      "form": [
+        "D",
+        "W",
+        "D",
+        "D",
+        "D"
+      ]
+    },
+    {
+      "rank": 7,
       "team": "Динамо Мх",
       "slug": "dinamo-mh",
       "played": 8,
@@ -124,7 +144,7 @@
       ]
     },
     {
-      "rank": 7,
+      "rank": 8,
       "team": "Балтика",
       "slug": "baltika",
       "played": 8,
@@ -140,26 +160,6 @@
         "D",
         "W",
         "L",
-        "D"
-      ]
-    },
-    {
-      "rank": 8,
-      "team": "Рубин",
-      "slug": "rubin",
-      "played": 8,
-      "won": 2,
-      "drawn": 5,
-      "lost": 1,
-      "goalsFor": 11,
-      "goalsAgainst": 10,
-      "goalDiff": 1,
-      "points": 11,
-      "form": [
-        "D",
-        "D",
-        "W",
-        "D",
         "D"
       ]
     },
@@ -265,6 +265,26 @@
     },
     {
       "rank": 14,
+      "team": "Родина",
+      "slug": "rodina",
+      "played": 9,
+      "won": 1,
+      "drawn": 2,
+      "lost": 6,
+      "goalsFor": 10,
+      "goalsAgainst": 22,
+      "goalDiff": -12,
+      "points": 5,
+      "form": [
+        "L",
+        "L",
+        "L",
+        "L",
+        "D"
+      ]
+    },
+    {
+      "rank": 15,
       "team": "Акрон",
       "slug": "akron",
       "played": 8,
@@ -284,43 +304,23 @@
       ]
     },
     {
-      "rank": 15,
-      "team": "Родина",
-      "slug": "rodina",
-      "played": 8,
-      "won": 1,
-      "drawn": 1,
-      "lost": 6,
-      "goalsFor": 9,
-      "goalsAgainst": 21,
-      "goalDiff": -12,
-      "points": 4,
-      "form": [
-        "D",
-        "L",
-        "L",
-        "L",
-        "L"
-      ]
-    },
-    {
       "rank": 16,
       "team": "Факел",
       "slug": "fakel",
-      "played": 8,
+      "played": 9,
       "won": 0,
       "drawn": 3,
-      "lost": 5,
+      "lost": 6,
       "goalsFor": 6,
-      "goalsAgainst": 12,
-      "goalDiff": -6,
+      "goalsAgainst": 13,
+      "goalDiff": -7,
       "points": 3,
       "form": [
-        "L",
         "D",
         "L",
         "L",
-        "D"
+        "D",
+        "L"
       ]
     }
   ],
@@ -5714,11 +5714,86 @@
       "away": "Рубин",
       "homeSlug": "rodina",
       "awaySlug": "rubin",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 1,
       "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665005-rodina-rubin-16-09-2026"
+      "status": "finished",
+      "url": "/football/rpl/552665005-rodina-rubin-16-09-2026",
+      "stadium": "Арена Химки",
+      "referee": "Шафеев",
+      "events": [
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "30'",
+          "player": "Мансилья"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "41'",
+          "player": "Ходжа"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "49'",
+          "player": "Рожков"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "50'",
+          "player": "Мусаев"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "58'",
+          "playerIn": "Максименко",
+          "playerOut": "Мансилья"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "58'",
+          "playerIn": "Абдусаламов",
+          "playerOut": "Рейна"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "59'",
+          "player": "Сиве"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "79'",
+          "player": "Мачадо",
+          "assist": "Бессмертный"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "82'",
+          "player": "Арройо",
+          "assist": "Вуячич"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Голы",
+          "home": "1",
+          "away": "1"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-09-16-Спартак-Факел",
@@ -5729,11 +5804,65 @@
       "away": "Факел",
       "homeSlug": "spartak",
       "awaySlug": "fakel",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 0,
       "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665006-spartak-fakel-16-09-2026"
+      "status": "finished",
+      "url": "/football/rpl/552665006-spartak-fakel-16-09-2026",
+      "stadium": "Лукойл Арена",
+      "referee": "Матвеев",
+      "events": [
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "39'",
+          "playerIn": "Эль-Мхассани",
+          "playerOut": "Турищев"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "58'",
+          "player": "Бардачев"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "61'",
+          "playerIn": "Барко",
+          "playerOut": "Даку"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "61'",
+          "playerIn": "Дмитриев",
+          "playerOut": "Маркиньос"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "64'",
+          "playerIn": "Пуси",
+          "playerOut": "Кокшаров"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "64'",
+          "playerIn": "Гиоргобиани",
+          "playerOut": "Ковалёв"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "90'",
+          "player": "Угальде",
+          "assist": "Солари"
+        }
+      ],
+      "stats": [],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-09-16-Балтика-Зенит",
@@ -5744,11 +5873,61 @@
       "away": "Зенит",
       "homeSlug": "baltika",
       "awaySlug": "zenit",
-      "homeScore": null,
-      "awayScore": null,
-      "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665003-baltika-zenit-16-09-2026"
+      "homeScore": 1,
+      "awayScore": 2,
+      "live": "47'",
+      "status": "live",
+      "url": "/football/rpl/552665003-baltika-zenit-16-09-2026",
+      "stadium": "Ростех Арена (Калининград)",
+      "referee": "Чистяков",
+      "events": [
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "9'",
+          "player": "Глушенков",
+          "assist": "Карпукас"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "16'",
+          "player": "Соболев",
+          "assist": "Педро"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "22'",
+          "player": "Хиль",
+          "assist": "Шильцов"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "46'",
+          "playerIn": "Поспелов",
+          "playerOut": "Петров"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Угловые",
+          "home": "5",
+          "away": "5"
+        },
+        {
+          "name": "Желтые карточки",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-09-16-Локомотив-Крылья Советов",
@@ -5759,11 +5938,61 @@
       "away": "Крылья Советов",
       "homeSlug": "lokomotiv",
       "awaySlug": "krylia",
-      "homeScore": null,
-      "awayScore": null,
-      "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665004-lokomotiv-kryliasovetov-16-09-2026"
+      "homeScore": 1,
+      "awayScore": 0,
+      "live": "52'",
+      "status": "live",
+      "url": "/football/rpl/552665004-lokomotiv-kryliasovetov-16-09-2026",
+      "stadium": "РЖД Арена (Локомотив)",
+      "referee": "Набока",
+      "events": [
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "33'",
+          "player": "Комличенко"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "33'",
+          "player": "Чернов"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "41'",
+          "player": "Чевардин"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "44'",
+          "player": "Чесноков"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Рахманович",
+          "playerOut": "Шитов"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Салтыков",
+          "playerOut": "Чесноков"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-09-17-Оренбург-Краснодар",
