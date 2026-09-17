@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-09-17T18:25:05+03:00",
+  "updatedAt": "2026-09-17T22:09:32+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -25,6 +25,26 @@
     },
     {
       "rank": 2,
+      "team": "Динамо М",
+      "slug": "dinamo-m",
+      "played": 9,
+      "won": 6,
+      "drawn": 1,
+      "lost": 2,
+      "goalsFor": 14,
+      "goalsAgainst": 8,
+      "goalDiff": 6,
+      "points": 19,
+      "form": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    },
+    {
+      "rank": 3,
       "team": "Спартак",
       "slug": "spartak",
       "played": 9,
@@ -44,7 +64,7 @@
       ]
     },
     {
-      "rank": 3,
+      "rank": 4,
       "team": "Зенит",
       "slug": "zenit",
       "played": 9,
@@ -59,26 +79,6 @@
         "L",
         "W",
         "L",
-        "W",
-        "W"
-      ]
-    },
-    {
-      "rank": 4,
-      "team": "Динамо М",
-      "slug": "dinamo-m",
-      "played": 8,
-      "won": 5,
-      "drawn": 1,
-      "lost": 2,
-      "goalsFor": 11,
-      "goalsAgainst": 8,
-      "goalDiff": 3,
-      "points": 16,
-      "form": [
-        "L",
-        "W",
-        "W",
         "W",
         "W"
       ]
@@ -187,20 +187,20 @@
       "rank": 10,
       "team": "Ахмат",
       "slug": "akhmat",
-      "played": 8,
+      "played": 9,
       "won": 2,
       "drawn": 4,
-      "lost": 2,
+      "lost": 3,
       "goalsFor": 13,
-      "goalsAgainst": 11,
-      "goalDiff": 2,
+      "goalsAgainst": 13,
+      "goalDiff": 0,
       "points": 10,
       "form": [
-        "L",
         "W",
         "D",
         "D",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -227,24 +227,44 @@
       "rank": 12,
       "team": "Ростов",
       "slug": "rostov",
-      "played": 8,
+      "played": 9,
       "won": 2,
       "drawn": 2,
-      "lost": 4,
+      "lost": 5,
       "goalsFor": 10,
-      "goalsAgainst": 14,
-      "goalDiff": -4,
+      "goalsAgainst": 17,
+      "goalDiff": -7,
       "points": 8,
       "form": [
-        "D",
         "L",
         "L",
         "W",
+        "L",
         "L"
       ]
     },
     {
       "rank": 13,
+      "team": "Акрон",
+      "slug": "akron",
+      "played": 9,
+      "won": 1,
+      "drawn": 5,
+      "lost": 3,
+      "goalsFor": 11,
+      "goalsAgainst": 18,
+      "goalDiff": -7,
+      "points": 8,
+      "form": [
+        "L",
+        "D",
+        "D",
+        "D",
+        "W"
+      ]
+    },
+    {
+      "rank": 14,
       "team": "Локомотив",
       "slug": "lokomotiv",
       "played": 9,
@@ -264,7 +284,7 @@
       ]
     },
     {
-      "rank": 14,
+      "rank": 15,
       "team": "Родина",
       "slug": "rodina",
       "played": 9,
@@ -280,26 +300,6 @@
         "L",
         "L",
         "L",
-        "D"
-      ]
-    },
-    {
-      "rank": 15,
-      "team": "Акрон",
-      "slug": "akron",
-      "played": 8,
-      "won": 0,
-      "drawn": 5,
-      "lost": 3,
-      "goalsFor": 9,
-      "goalsAgainst": 18,
-      "goalDiff": -9,
-      "points": 5,
-      "form": [
-        "D",
-        "L",
-        "D",
-        "D",
         "D"
       ]
     },
@@ -6044,8 +6044,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665002-orenburg-krasnodar-17-09-2026",
-      "stadium": "Газовик",
-      "referee": "Левников",
       "events": [
         {
           "type": "yellow",
@@ -6106,6 +6104,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Газовик",
+      "referee": "Левников",
       "detailsVersion": 3
     },
     {
@@ -6117,11 +6117,55 @@
       "away": "Ахмат",
       "homeSlug": "akron",
       "awaySlug": "akhmat",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 0,
       "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665000-akron-akhmat-17-09-2026"
+      "status": "finished",
+      "url": "/football/rpl/552665000-akron-akhmat-17-09-2026",
+      "stadium": "Солидарность Арена (Самара-Арена)",
+      "referee": "Заика",
+      "events": [
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "5'",
+          "player": "Беншимол",
+          "assist": "Фернандес"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "17'",
+          "player": "Бокоев"
+        },
+        {
+          "type": "red",
+          "side": "away",
+          "minute": "37'",
+          "player": "Мелкадзе"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "45'",
+          "player": "Ндонг"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "45'",
+          "player": "Родригес"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "87'",
+          "player": "Оганесян",
+          "assist": null
+        }
+      ],
+      "stats": [],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-09-17-Ростов-Динамо М",
@@ -6132,11 +6176,81 @@
       "away": "Динамо М",
       "homeSlug": "rostov",
       "awaySlug": "dinamo-m",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 3,
       "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665001-rostov-dinamo-17-09-2026"
+      "status": "finished",
+      "url": "/football/rpl/552665001-rostov-dinamo-17-09-2026",
+      "stadium": "Ростов Арена",
+      "referee": "Прокопов",
+      "events": [
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "1'",
+          "player": "Касерес"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "8'",
+          "player": "Гомес"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "16'",
+          "player": "Семенчук"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "26'",
+          "playerIn": "Маричаль",
+          "playerOut": "Касерес"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "35'",
+          "player": "Тюкавин",
+          "assist": "Гладышев"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Окишор",
+          "playerOut": "Гомес"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "78'",
+          "player": "Окишор",
+          "assist": "Фомин"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "88'",
+          "player": "Тюкавин",
+          "assist": null
+        }
+      ],
+      "stats": [
+        {
+          "name": "Угловые",
+          "home": "4",
+          "away": "4"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-09-17-Динамо Мх-ЦСКА",
@@ -6147,11 +6261,85 @@
       "away": "ЦСКА",
       "homeSlug": "dinamo-mh",
       "awaySlug": "cska",
-      "homeScore": null,
-      "awayScore": null,
-      "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552664999-dinamo-tsska-17-09-2026"
+      "homeScore": 1,
+      "awayScore": 1,
+      "live": "60'",
+      "status": "live",
+      "url": "/football/rpl/552664999-dinamo-tsska-17-09-2026",
+      "stadium": "Анжи-Арена",
+      "referee": "Фролов",
+      "events": [
+        {
+          "type": "own_goal",
+          "side": "away",
+          "minute": "13'",
+          "player": "Махамаджонов",
+          "assist": null
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "18'",
+          "player": "Мрезиг"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "20'",
+          "player": "Агаларов",
+          "assist": "Смелов"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "25'",
+          "player": "Абдулкадыров"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Гонду",
+          "playerOut": "Мусаев"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "46'",
+          "playerIn": "Хоссейннейджад",
+          "playerOut": "Смелов"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Лукин",
+          "playerOut": "Абдулкадыров"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Голы",
+          "home": "1",
+          "away": "1"
+        },
+        {
+          "name": "Удары (в створ)",
+          "home": "7 (2)",
+          "away": "7 (2)"
+        },
+        {
+          "name": "Удары по воротам (точность)",
+          "home": "28.6%",
+          "away": "28.6%"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-10-09-Ростов-Акрон",
