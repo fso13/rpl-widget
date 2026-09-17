@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-09-17T01:38:37+03:00",
+  "updatedAt": "2026-09-17T03:52:48+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -5878,8 +5878,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665003-baltika-zenit-16-09-2026",
-      "stadium": "Ростех Арена (Калининград)",
-      "referee": "Чистяков",
       "events": [
         {
           "type": "goal",
@@ -5938,6 +5936,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Ростех Арена (Калининград)",
+      "referee": "Чистяков",
       "detailsVersion": 3
     },
     {
