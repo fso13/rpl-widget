@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-09-17T22:09:32+03:00",
+  "updatedAt": "2026-09-18T01:07:56+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -25,26 +25,6 @@
     },
     {
       "rank": 2,
-      "team": "Динамо М",
-      "slug": "dinamo-m",
-      "played": 9,
-      "won": 6,
-      "drawn": 1,
-      "lost": 2,
-      "goalsFor": 14,
-      "goalsAgainst": 8,
-      "goalDiff": 6,
-      "points": 19,
-      "form": [
-        "W",
-        "W",
-        "W",
-        "W",
-        "W"
-      ]
-    },
-    {
-      "rank": 3,
       "team": "Спартак",
       "slug": "spartak",
       "played": 9,
@@ -64,7 +44,47 @@
       ]
     },
     {
+      "rank": 3,
+      "team": "Динамо М",
+      "slug": "dinamo-m",
+      "played": 9,
+      "won": 6,
+      "drawn": 1,
+      "lost": 2,
+      "goalsFor": 14,
+      "goalsAgainst": 8,
+      "goalDiff": 6,
+      "points": 19,
+      "form": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    },
+    {
       "rank": 4,
+      "team": "ЦСКА",
+      "slug": "cska",
+      "played": 9,
+      "won": 5,
+      "drawn": 4,
+      "lost": 0,
+      "goalsFor": 15,
+      "goalsAgainst": 9,
+      "goalDiff": 6,
+      "points": 19,
+      "form": [
+        "W",
+        "D",
+        "W",
+        "D",
+        "W"
+      ]
+    },
+    {
+      "rank": 5,
       "team": "Зенит",
       "slug": "zenit",
       "played": 9,
@@ -81,26 +101,6 @@
         "L",
         "W",
         "W"
-      ]
-    },
-    {
-      "rank": 5,
-      "team": "ЦСКА",
-      "slug": "cska",
-      "played": 8,
-      "won": 4,
-      "drawn": 4,
-      "lost": 0,
-      "goalsFor": 12,
-      "goalsAgainst": 8,
-      "goalDiff": 4,
-      "points": 16,
-      "form": [
-        "W",
-        "W",
-        "D",
-        "W",
-        "D"
       ]
     },
     {
@@ -127,19 +127,19 @@
       "rank": 7,
       "team": "Динамо Мх",
       "slug": "dinamo-mh",
-      "played": 8,
+      "played": 9,
       "won": 4,
       "drawn": 0,
-      "lost": 4,
-      "goalsFor": 14,
-      "goalsAgainst": 13,
-      "goalDiff": 1,
+      "lost": 5,
+      "goalsFor": 15,
+      "goalsAgainst": 16,
+      "goalDiff": -1,
       "points": 12,
       "form": [
-        "W",
         "L",
         "L",
         "W",
+        "L",
         "L"
       ]
     },
@@ -6122,8 +6122,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665000-akron-akhmat-17-09-2026",
-      "stadium": "Солидарность Арена (Самара-Арена)",
-      "referee": "Заика",
       "events": [
         {
           "type": "goal",
@@ -6165,6 +6163,8 @@
         }
       ],
       "stats": [],
+      "stadium": "Солидарность Арена (Самара-Арена)",
+      "referee": "Заика",
       "detailsVersion": 3
     },
     {
@@ -6181,8 +6181,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665001-rostov-dinamo-17-09-2026",
-      "stadium": "Ростов Арена",
-      "referee": "Прокопов",
       "events": [
         {
           "type": "yellow",
@@ -6250,6 +6248,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Ростов Арена",
+      "referee": "Прокопов",
       "detailsVersion": 3
     },
     {
@@ -6262,12 +6262,10 @@
       "homeSlug": "dinamo-mh",
       "awaySlug": "cska",
       "homeScore": 1,
-      "awayScore": 1,
-      "live": "60'",
-      "status": "live",
+      "awayScore": 3,
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552664999-dinamo-tsska-17-09-2026",
-      "stadium": "Анжи-Арена",
-      "referee": "Фролов",
       "events": [
         {
           "type": "own_goal",
@@ -6339,6 +6337,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Анжи-Арена",
+      "referee": "Фролов",
       "detailsVersion": 3
     },
     {
