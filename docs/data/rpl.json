@@ -1,24 +1,24 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-09-17T13:57:57+03:00",
+  "updatedAt": "2026-09-17T18:25:05+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
       "rank": 1,
       "team": "Краснодар",
       "slug": "krasnodar",
-      "played": 8,
+      "played": 9,
       "won": 6,
-      "drawn": 2,
+      "drawn": 3,
       "lost": 0,
       "goalsFor": 14,
       "goalsAgainst": 7,
       "goalDiff": 7,
-      "points": 20,
+      "points": 21,
       "form": [
         "W",
         "W",
-        "W",
+        "D",
         "D",
         "D"
       ]
@@ -207,20 +207,20 @@
       "rank": 11,
       "team": "Оренбург",
       "slug": "orenburg",
-      "played": 8,
+      "played": 9,
       "won": 1,
-      "drawn": 5,
+      "drawn": 6,
       "lost": 2,
       "goalsFor": 7,
       "goalsAgainst": 10,
       "goalDiff": -3,
-      "points": 8,
+      "points": 9,
       "form": [
         "D",
         "D",
         "D",
-        "D",
-        "L"
+        "L",
+        "D"
       ]
     },
     {
@@ -6039,11 +6039,74 @@
       "away": "Краснодар",
       "homeSlug": "orenburg",
       "awaySlug": "krasnodar",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665002-orenburg-krasnodar-17-09-2026"
+      "status": "finished",
+      "url": "/football/rpl/552665002-orenburg-krasnodar-17-09-2026",
+      "stadium": "Газовик",
+      "referee": "Левников",
+      "events": [
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "17'",
+          "player": "Татаев"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "20'",
+          "player": "Хотулев"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "31'",
+          "player": "Тормена"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "62'",
+          "playerIn": "Воробьёв",
+          "playerOut": "Боселли"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "66'",
+          "playerIn": "Оздоев",
+          "playerOut": "Уткин"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "68'",
+          "playerIn": "Касаджиков",
+          "playerOut": "Томпсон"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "68'",
+          "playerIn": "Мехия",
+          "playerOut": "Пыхчеев"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Голы",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-09-17-Акрон-Ахмат",
