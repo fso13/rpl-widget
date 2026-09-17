@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-09-18T01:07:56+03:00",
+  "updatedAt": "2026-09-18T01:39:46+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -6266,6 +6266,8 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664999-dinamo-tsska-17-09-2026",
+      "stadium": "Анжи-Арена",
+      "referee": "Фролов",
       "events": [
         {
           "type": "own_goal",
@@ -6313,32 +6315,29 @@
           "minute": "46'",
           "playerIn": "Лукин",
           "playerOut": "Абдулкадыров"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "69'",
+          "player": "Гонду",
+          "assist": "Олейников"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "79'",
+          "player": "Фиров",
+          "assist": "Кисляк"
         }
       ],
       "stats": [
-        {
-          "name": "Голы",
-          "home": "1",
-          "away": "1"
-        },
-        {
-          "name": "Удары (в створ)",
-          "home": "7 (2)",
-          "away": "7 (2)"
-        },
-        {
-          "name": "Удары по воротам (точность)",
-          "home": "28.6%",
-          "away": "28.6%"
-        },
         {
           "name": "Красные карточки",
           "home": "0",
           "away": "0"
         }
       ],
-      "stadium": "Анжи-Арена",
-      "referee": "Фролов",
       "detailsVersion": 3
     },
     {
