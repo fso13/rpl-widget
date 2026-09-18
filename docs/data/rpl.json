@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-09-18T01:39:46+03:00",
+  "updatedAt": "2026-09-18T03:47:04+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -6266,8 +6266,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552664999-dinamo-tsska-17-09-2026",
-      "stadium": "Анжи-Арена",
-      "referee": "Фролов",
       "events": [
         {
           "type": "own_goal",
@@ -6338,6 +6336,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Анжи-Арена",
+      "referee": "Фролов",
       "detailsVersion": 3
     },
     {
