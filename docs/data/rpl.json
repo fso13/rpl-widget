@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-10T00:45:30+03:00",
+  "updatedAt": "2026-10-10T02:48:37+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -6354,6 +6354,8 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665014-rostov-akron-09-10-2026",
+      "stadium": "Ростов Арена",
+      "referee": "Набока",
       "events": [
         {
           "type": "yellow",
@@ -6366,32 +6368,49 @@
           "side": "away",
           "minute": "24'",
           "player": "Оганесян"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "45'",
+          "player": "Комаров",
+          "assist": null
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "61'",
+          "playerIn": "Роналдо",
+          "playerOut": "Сулейманов"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "63'",
+          "playerIn": "Видосавлевич",
+          "playerOut": "Оганесян"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "63'",
+          "playerIn": "Шуманский",
+          "playerOut": "Эдуардо"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "67'",
+          "player": "Лончар"
         }
       ],
       "stats": [
-        {
-          "name": "Голы",
-          "home": "0",
-          "away": "0"
-        },
-        {
-          "name": "Удары (в створ)",
-          "home": "6 (2)",
-          "away": "6 (2)"
-        },
-        {
-          "name": "Удары по воротам (точность)",
-          "home": "33.3%",
-          "away": "33.3%"
-        },
         {
           "name": "Красные карточки",
           "home": "0",
           "away": "0"
         }
       ],
-      "stadium": "Ростов Арена",
-      "referee": "Набока",
       "detailsVersion": 3
     },
     {
