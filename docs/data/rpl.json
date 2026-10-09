@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-09T20:16:52+03:00",
+  "updatedAt": "2026-10-10T00:45:30+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -165,6 +165,26 @@
     },
     {
       "rank": 9,
+      "team": "Ростов",
+      "slug": "rostov",
+      "played": 10,
+      "won": 3,
+      "drawn": 2,
+      "lost": 5,
+      "goalsFor": 11,
+      "goalsAgainst": 17,
+      "goalDiff": -6,
+      "points": 11,
+      "form": [
+        "L",
+        "W",
+        "L",
+        "L",
+        "W"
+      ]
+    },
+    {
+      "rank": 10,
       "team": "Крылья Советов",
       "slug": "krylia",
       "played": 9,
@@ -184,7 +204,7 @@
       ]
     },
     {
-      "rank": 10,
+      "rank": 11,
       "team": "Ахмат",
       "slug": "akhmat",
       "played": 9,
@@ -204,7 +224,7 @@
       ]
     },
     {
-      "rank": 11,
+      "rank": 12,
       "team": "Оренбург",
       "slug": "orenburg",
       "played": 9,
@@ -224,43 +244,23 @@
       ]
     },
     {
-      "rank": 12,
-      "team": "Ростов",
-      "slug": "rostov",
-      "played": 9,
-      "won": 2,
-      "drawn": 2,
-      "lost": 5,
-      "goalsFor": 10,
-      "goalsAgainst": 17,
-      "goalDiff": -7,
-      "points": 8,
-      "form": [
-        "L",
-        "L",
-        "W",
-        "L",
-        "L"
-      ]
-    },
-    {
       "rank": 13,
       "team": "Акрон",
       "slug": "akron",
-      "played": 9,
+      "played": 10,
       "won": 1,
       "drawn": 5,
-      "lost": 3,
+      "lost": 4,
       "goalsFor": 11,
-      "goalsAgainst": 18,
-      "goalDiff": -7,
+      "goalsAgainst": 19,
+      "goalDiff": -8,
       "points": 8,
       "form": [
-        "L",
         "D",
         "D",
         "D",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -6349,13 +6349,11 @@
       "away": "Акрон",
       "homeSlug": "rostov",
       "awaySlug": "akron",
-      "homeScore": 0,
+      "homeScore": 1,
       "awayScore": 0,
-      "live": "45'",
-      "status": "live",
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552665014-rostov-akron-09-10-2026",
-      "stadium": "Ростов Арена",
-      "referee": "Набока",
       "events": [
         {
           "type": "yellow",
@@ -6392,6 +6390,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Ростов Арена",
+      "referee": "Набока",
       "detailsVersion": 3
     },
     {
