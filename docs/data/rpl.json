@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-09T16:27:41+03:00",
+  "updatedAt": "2026-10-09T20:16:52+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -25,26 +25,6 @@
     },
     {
       "rank": 2,
-      "team": "Спартак",
-      "slug": "spartak",
-      "played": 9,
-      "won": 6,
-      "drawn": 1,
-      "lost": 2,
-      "goalsFor": 16,
-      "goalsAgainst": 7,
-      "goalDiff": 9,
-      "points": 19,
-      "form": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ]
-    },
-    {
-      "rank": 3,
       "team": "Динамо М",
       "slug": "dinamo-m",
       "played": 9,
@@ -64,7 +44,7 @@
       ]
     },
     {
-      "rank": 4,
+      "rank": 3,
       "team": "ЦСКА",
       "slug": "cska",
       "played": 9,
@@ -80,6 +60,26 @@
         "D",
         "W",
         "D",
+        "W"
+      ]
+    },
+    {
+      "rank": 4,
+      "team": "Спартак",
+      "slug": "spartak",
+      "played": 9,
+      "won": 6,
+      "drawn": 1,
+      "lost": 2,
+      "goalsFor": 16,
+      "goalsAgainst": 7,
+      "goalDiff": 9,
+      "points": 19,
+      "form": [
+        "W",
+        "D",
+        "L",
+        "W",
         "W"
       ]
     },
@@ -6349,11 +6349,50 @@
       "away": "Акрон",
       "homeSlug": "rostov",
       "awaySlug": "akron",
-      "homeScore": null,
-      "awayScore": null,
-      "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665014-rostov-akron-09-10-2026"
+      "homeScore": 0,
+      "awayScore": 0,
+      "live": "45'",
+      "status": "live",
+      "url": "/football/rpl/552665014-rostov-akron-09-10-2026",
+      "stadium": "Ростов Арена",
+      "referee": "Набока",
+      "events": [
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "17'",
+          "player": "Бардыбахин"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "24'",
+          "player": "Оганесян"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Голы",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Удары (в створ)",
+          "home": "6 (2)",
+          "away": "6 (2)"
+        },
+        {
+          "name": "Удары по воротам (точность)",
+          "home": "33.3%",
+          "away": "33.3%"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-10-10-Оренбург-Динамо Мх",
