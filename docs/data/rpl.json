@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-10T07:21:03+03:00",
+  "updatedAt": "2026-10-10T13:47:12+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -6422,11 +6422,42 @@
       "away": "Динамо Мх",
       "homeSlug": "orenburg",
       "awaySlug": "dinamo-mh",
-      "homeScore": null,
-      "awayScore": null,
-      "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665011-orenburg-dinamo-09-10-2026"
+      "homeScore": 2,
+      "awayScore": 0,
+      "live": "45'",
+      "status": "live",
+      "url": "/football/rpl/552665011-orenburg-dinamo-09-10-2026",
+      "stadium": "Газовик",
+      "referee": "Матвеев",
+      "events": [
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "17'",
+          "player": "Томпсон",
+          "assist": null
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "39'",
+          "player": "Паласиос",
+          "assist": "Куль"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Желтые карточки",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-10-10-Факел-Локомотив",
