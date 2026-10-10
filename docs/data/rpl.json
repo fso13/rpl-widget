@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-10T23:01:29+03:00",
+  "updatedAt": "2026-10-11T02:13:27+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -6427,8 +6427,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665011-orenburg-dinamo-09-10-2026",
-      "stadium": "Газовик",
-      "referee": "Матвеев",
       "events": [
         {
           "type": "goal",
@@ -6480,6 +6478,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Газовик",
+      "referee": "Матвеев",
       "detailsVersion": 3
     },
     {
@@ -6577,6 +6577,8 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665010-kryliasovetov-spartak-09-10-2026",
+      "stadium": "Солидарность Арена (Самара-Арена)",
+      "referee": "Новиков",
       "events": [
         {
           "type": "red",
@@ -6624,17 +6626,29 @@
           "minute": "64'",
           "playerIn": "Парада",
           "playerOut": "Солари"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "79'",
+          "player": "Угальде",
+          "assist": "Дмитриев"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "86'",
+          "player": "Крамарич",
+          "assist": "Мукаилов"
         }
       ],
       "stats": [
         {
           "name": "Голы",
-          "home": "0",
-          "away": "0"
+          "home": "1",
+          "away": "1"
         }
       ],
-      "stadium": "Солидарность Арена (Самара-Арена)",
-      "referee": "Новиков",
       "detailsVersion": 3
     },
     {
@@ -6651,8 +6665,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665013-krasnodar-zenit-09-10-2026",
-      "stadium": "Озон Арена (Краснодар)",
-      "referee": "Танашев",
       "events": [
         {
           "type": "yellow",
@@ -6734,6 +6746,8 @@
           "away": "3"
         }
       ],
+      "stadium": "Озон Арена (Краснодар)",
+      "referee": "Танашев",
       "detailsVersion": 3
     },
     {
