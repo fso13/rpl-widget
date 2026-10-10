@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-10T02:48:37+03:00",
+  "updatedAt": "2026-10-10T07:21:03+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -6354,8 +6354,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665014-rostov-akron-09-10-2026",
-      "stadium": "Ростов Арена",
-      "referee": "Набока",
       "events": [
         {
           "type": "yellow",
@@ -6411,6 +6409,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Ростов Арена",
+      "referee": "Набока",
       "detailsVersion": 3
     },
     {
