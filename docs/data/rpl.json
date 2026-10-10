@@ -1,30 +1,70 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-10T19:05:30+03:00",
+  "updatedAt": "2026-10-10T23:01:29+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
       "rank": 1,
-      "team": "Краснодар",
-      "slug": "krasnodar",
-      "played": 9,
-      "won": 6,
-      "drawn": 3,
-      "lost": 0,
-      "goalsFor": 14,
-      "goalsAgainst": 7,
-      "goalDiff": 7,
+      "team": "Зенит",
+      "slug": "zenit",
+      "played": 10,
+      "won": 7,
+      "drawn": 0,
+      "lost": 3,
+      "goalsFor": 22,
+      "goalsAgainst": 11,
+      "goalDiff": 11,
       "points": 21,
       "form": [
         "W",
+        "L",
         "W",
-        "D",
-        "D",
-        "D"
+        "W",
+        "W"
       ]
     },
     {
       "rank": 2,
+      "team": "Краснодар",
+      "slug": "krasnodar",
+      "played": 10,
+      "won": 6,
+      "drawn": 3,
+      "lost": 1,
+      "goalsFor": 16,
+      "goalsAgainst": 10,
+      "goalDiff": 6,
+      "points": 21,
+      "form": [
+        "W",
+        "D",
+        "D",
+        "D",
+        "L"
+      ]
+    },
+    {
+      "rank": 3,
+      "team": "Спартак",
+      "slug": "spartak",
+      "played": 10,
+      "won": 6,
+      "drawn": 2,
+      "lost": 2,
+      "goalsFor": 17,
+      "goalsAgainst": 8,
+      "goalDiff": 9,
+      "points": 20,
+      "form": [
+        "D",
+        "L",
+        "W",
+        "W",
+        "D"
+      ]
+    },
+    {
+      "rank": 4,
       "team": "Динамо М",
       "slug": "dinamo-m",
       "played": 9,
@@ -44,7 +84,7 @@
       ]
     },
     {
-      "rank": 3,
+      "rank": 5,
       "team": "ЦСКА",
       "slug": "cska",
       "played": 9,
@@ -60,46 +100,6 @@
         "D",
         "W",
         "D",
-        "W"
-      ]
-    },
-    {
-      "rank": 4,
-      "team": "Спартак",
-      "slug": "spartak",
-      "played": 9,
-      "won": 6,
-      "drawn": 1,
-      "lost": 2,
-      "goalsFor": 16,
-      "goalsAgainst": 7,
-      "goalDiff": 9,
-      "points": 19,
-      "form": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ]
-    },
-    {
-      "rank": 5,
-      "team": "Зенит",
-      "slug": "zenit",
-      "played": 9,
-      "won": 6,
-      "drawn": 0,
-      "lost": 3,
-      "goalsFor": 19,
-      "goalsAgainst": 9,
-      "goalDiff": 10,
-      "points": 18,
-      "form": [
-        "L",
-        "W",
-        "L",
-        "W",
         "W"
       ]
     },
@@ -165,6 +165,26 @@
     },
     {
       "rank": 9,
+      "team": "Крылья Советов",
+      "slug": "krylia",
+      "played": 10,
+      "won": 2,
+      "drawn": 6,
+      "lost": 2,
+      "goalsFor": 14,
+      "goalsAgainst": 15,
+      "goalDiff": -1,
+      "points": 12,
+      "form": [
+        "D",
+        "D",
+        "W",
+        "D",
+        "D"
+      ]
+    },
+    {
+      "rank": 10,
       "team": "Балтика",
       "slug": "baltika",
       "played": 9,
@@ -184,7 +204,7 @@
       ]
     },
     {
-      "rank": 10,
+      "rank": 11,
       "team": "Ростов",
       "slug": "rostov",
       "played": 10,
@@ -201,26 +221,6 @@
         "L",
         "L",
         "W"
-      ]
-    },
-    {
-      "rank": 11,
-      "team": "Крылья Советов",
-      "slug": "krylia",
-      "played": 9,
-      "won": 2,
-      "drawn": 5,
-      "lost": 2,
-      "goalsFor": 13,
-      "goalsAgainst": 14,
-      "goalDiff": -1,
-      "points": 11,
-      "form": [
-        "W",
-        "D",
-        "D",
-        "W",
-        "D"
       ]
     },
     {
@@ -6427,11 +6427,13 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665011-orenburg-dinamo-09-10-2026",
+      "stadium": "Газовик",
+      "referee": "Матвеев",
       "events": [
         {
           "type": "goal",
           "side": "home",
-          "minute": "17'",
+          "minute": "18'",
           "player": "Томпсон",
           "assist": null
         },
@@ -6441,22 +6443,43 @@
           "minute": "39'",
           "player": "Паласиос",
           "assist": "Куль"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Аларкон",
+          "playerOut": "Ахмедов"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Вальдемиро",
+          "playerOut": "Апшацев"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "53'",
+          "player": "Гузина",
+          "assist": "Пуэбла"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "69'",
+          "player": "Томпсон",
+          "assist": null
         }
       ],
       "stats": [
-        {
-          "name": "Желтые карточки",
-          "home": "0",
-          "away": "0"
-        },
         {
           "name": "Красные карточки",
           "home": "0",
           "away": "0"
         }
       ],
-      "stadium": "Газовик",
-      "referee": "Матвеев",
       "detailsVersion": 3
     },
     {
@@ -6473,8 +6496,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665008-fakel-lokomotiv-09-10-2026",
-      "stadium": "Факел",
-      "referee": "Прокопов",
       "events": [
         {
           "type": "goal",
@@ -6538,6 +6559,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Факел",
+      "referee": "Прокопов",
       "detailsVersion": 3
     },
     {
@@ -6549,13 +6572,11 @@
       "away": "Спартак",
       "homeSlug": "krylia",
       "awaySlug": "spartak",
-      "homeScore": 0,
-      "awayScore": 0,
-      "live": "71'",
-      "status": "live",
+      "homeScore": 1,
+      "awayScore": 1,
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552665010-kryliasovetov-spartak-09-10-2026",
-      "stadium": "Солидарность Арена (Самара-Арена)",
-      "referee": "Новиков",
       "events": [
         {
           "type": "red",
@@ -6612,6 +6633,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Солидарность Арена (Самара-Арена)",
+      "referee": "Новиков",
       "detailsVersion": 3
     },
     {
@@ -6623,11 +6646,95 @@
       "away": "Зенит",
       "homeSlug": "krasnodar",
       "awaySlug": "zenit",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 3,
       "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665013-krasnodar-zenit-09-10-2026"
+      "status": "finished",
+      "url": "/football/rpl/552665013-krasnodar-zenit-09-10-2026",
+      "stadium": "Озон Арена (Краснодар)",
+      "referee": "Танашев",
+      "events": [
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "17'",
+          "player": "Соболев"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "19'",
+          "player": "Уткин"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "31'",
+          "player": "Луис Энрике"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "31'",
+          "player": "Оласа"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "40'",
+          "player": "Глушенков",
+          "assist": "Дуглас"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "45'",
+          "player": "Глушенков",
+          "assist": "Педро"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "45'",
+          "player": "Черников"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "46'",
+          "playerIn": "Вахания",
+          "playerOut": "Пальцев"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "53'",
+          "player": "Соболев",
+          "assist": "Педро"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "55'",
+          "player": "Батчи",
+          "assist": null
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "71'",
+          "player": "Кордоба",
+          "assist": "Вахания"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Угловые",
+          "home": "3",
+          "away": "3"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-10-11-Ахмат-Балтика",
