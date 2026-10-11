@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-11T02:13:27+03:00",
+  "updatedAt": "2026-10-11T04:58:02+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -6577,8 +6577,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665010-kryliasovetov-spartak-09-10-2026",
-      "stadium": "Солидарность Арена (Самара-Арена)",
-      "referee": "Новиков",
       "events": [
         {
           "type": "red",
@@ -6649,6 +6647,8 @@
           "away": "1"
         }
       ],
+      "stadium": "Солидарность Арена (Самара-Арена)",
+      "referee": "Новиков",
       "detailsVersion": 3
     },
     {
