@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-11T11:35:04+03:00",
+  "updatedAt": "2026-10-11T18:03:40+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -105,22 +105,22 @@
     },
     {
       "rank": 6,
-      "team": "Оренбург",
-      "slug": "orenburg",
+      "team": "Динамо Мх",
+      "slug": "dinamo-mh",
       "played": 10,
-      "won": 2,
-      "drawn": 6,
-      "lost": 2,
-      "goalsFor": 11,
-      "goalsAgainst": 10,
-      "goalDiff": 1,
+      "won": 4,
+      "drawn": 0,
+      "lost": 6,
+      "goalsFor": 15,
+      "goalsAgainst": 20,
+      "goalDiff": -5,
       "points": 12,
       "form": [
-        "D",
-        "D",
         "L",
-        "D",
-        "W"
+        "W",
+        "L",
+        "L",
+        "L"
       ]
     },
     {
@@ -145,22 +145,22 @@
     },
     {
       "rank": 8,
-      "team": "Динамо Мх",
-      "slug": "dinamo-mh",
+      "team": "Оренбург",
+      "slug": "orenburg",
       "played": 10,
-      "won": 4,
-      "drawn": 0,
-      "lost": 6,
-      "goalsFor": 15,
-      "goalsAgainst": 20,
-      "goalDiff": -5,
+      "won": 2,
+      "drawn": 6,
+      "lost": 2,
+      "goalsFor": 11,
+      "goalsAgainst": 10,
+      "goalDiff": 1,
       "points": 12,
       "form": [
+        "D",
+        "D",
         "L",
-        "W",
-        "L",
-        "L",
-        "L"
+        "D",
+        "W"
       ]
     },
     {
@@ -187,20 +187,20 @@
       "rank": 10,
       "team": "Балтика",
       "slug": "baltika",
-      "played": 9,
+      "played": 10,
       "won": 3,
-      "drawn": 2,
+      "drawn": 3,
       "lost": 4,
       "goalsFor": 14,
       "goalsAgainst": 12,
       "goalDiff": 2,
-      "points": 11,
+      "points": 12,
       "form": [
-        "D",
         "W",
         "L",
         "D",
-        "L"
+        "L",
+        "D"
       ]
     },
     {
@@ -225,6 +225,26 @@
     },
     {
       "rank": 12,
+      "team": "Ахмат",
+      "slug": "akhmat",
+      "played": 10,
+      "won": 2,
+      "drawn": 5,
+      "lost": 3,
+      "goalsFor": 13,
+      "goalsAgainst": 13,
+      "goalDiff": 0,
+      "points": 11,
+      "form": [
+        "D",
+        "D",
+        "W",
+        "L",
+        "D"
+      ]
+    },
+    {
+      "rank": 13,
       "team": "Локомотив",
       "slug": "lokomotiv",
       "played": 10,
@@ -241,26 +261,6 @@
         "L",
         "D",
         "W"
-      ]
-    },
-    {
-      "rank": 13,
-      "team": "Ахмат",
-      "slug": "akhmat",
-      "played": 9,
-      "won": 2,
-      "drawn": 4,
-      "lost": 3,
-      "goalsFor": 13,
-      "goalsAgainst": 13,
-      "goalDiff": 0,
-      "points": 10,
-      "form": [
-        "W",
-        "D",
-        "D",
-        "W",
-        "L"
       ]
     },
     {
@@ -6759,11 +6759,60 @@
       "away": "Балтика",
       "homeSlug": "akhmat",
       "awaySlug": "baltika",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665007-akhmat-baltika-09-10-2026"
+      "status": "finished",
+      "url": "/football/rpl/552665007-akhmat-baltika-09-10-2026",
+      "stadium": "Ахмат-Арена",
+      "referee": "Сухой",
+      "events": [
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "32'",
+          "player": "Оффор"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Мендель",
+          "playerOut": "Петров"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Хиль",
+          "playerOut": "Оффор"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "49'",
+          "player": "Беликов"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "62'",
+          "player": "Варатынов"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Голы",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Угловые",
+          "home": "3",
+          "away": "3"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-10-11-ЦСКА-Родина",
@@ -6774,11 +6823,63 @@
       "away": "Родина",
       "homeSlug": "cska",
       "awaySlug": "rodina",
-      "homeScore": null,
-      "awayScore": null,
-      "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665012-tsska-rodina-09-10-2026"
+      "homeScore": 2,
+      "awayScore": 0,
+      "live": "71'",
+      "status": "live",
+      "url": "/football/rpl/552665012-tsska-rodina-09-10-2026",
+      "stadium": "ВЭБ Арена",
+      "referee": "Чистяков",
+      "events": [
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "24'",
+          "player": "Круговой",
+          "assist": "Обляков"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "35'",
+          "player": "Обляков",
+          "assist": "Олейников"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Мусаев",
+          "playerOut": "Мансилья"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Ушатов",
+          "playerOut": "Фищенко"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "61'",
+          "playerIn": "Онугха",
+          "playerOut": "Тимошенко"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Желтые карточки",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-10-11-Рубин-Динамо М",
