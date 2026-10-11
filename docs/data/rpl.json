@@ -1,10 +1,30 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-11T18:03:40+03:00",
+  "updatedAt": "2026-10-11T19:30:14+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
       "rank": 1,
+      "team": "ЦСКА",
+      "slug": "cska",
+      "played": 10,
+      "won": 6,
+      "drawn": 4,
+      "lost": 0,
+      "goalsFor": 18,
+      "goalsAgainst": 9,
+      "goalDiff": 9,
+      "points": 22,
+      "form": [
+        "D",
+        "W",
+        "D",
+        "W",
+        "W"
+      ]
+    },
+    {
+      "rank": 2,
       "team": "Зенит",
       "slug": "zenit",
       "played": 10,
@@ -24,7 +44,7 @@
       ]
     },
     {
-      "rank": 2,
+      "rank": 3,
       "team": "Краснодар",
       "slug": "krasnodar",
       "played": 10,
@@ -44,7 +64,7 @@
       ]
     },
     {
-      "rank": 3,
+      "rank": 4,
       "team": "Спартак",
       "slug": "spartak",
       "played": 10,
@@ -64,7 +84,7 @@
       ]
     },
     {
-      "rank": 4,
+      "rank": 5,
       "team": "Динамо М",
       "slug": "dinamo-m",
       "played": 9,
@@ -80,26 +100,6 @@
         "W",
         "W",
         "W",
-        "W"
-      ]
-    },
-    {
-      "rank": 5,
-      "team": "ЦСКА",
-      "slug": "cska",
-      "played": 9,
-      "won": 5,
-      "drawn": 4,
-      "lost": 0,
-      "goalsFor": 15,
-      "goalsAgainst": 9,
-      "goalDiff": 6,
-      "points": 19,
-      "form": [
-        "W",
-        "D",
-        "W",
-        "D",
         "W"
       ]
     },
@@ -125,66 +125,6 @@
     },
     {
       "rank": 7,
-      "team": "Рубин",
-      "slug": "rubin",
-      "played": 9,
-      "won": 2,
-      "drawn": 6,
-      "lost": 1,
-      "goalsFor": 12,
-      "goalsAgainst": 11,
-      "goalDiff": 1,
-      "points": 12,
-      "form": [
-        "D",
-        "W",
-        "D",
-        "D",
-        "D"
-      ]
-    },
-    {
-      "rank": 8,
-      "team": "Оренбург",
-      "slug": "orenburg",
-      "played": 10,
-      "won": 2,
-      "drawn": 6,
-      "lost": 2,
-      "goalsFor": 11,
-      "goalsAgainst": 10,
-      "goalDiff": 1,
-      "points": 12,
-      "form": [
-        "D",
-        "D",
-        "L",
-        "D",
-        "W"
-      ]
-    },
-    {
-      "rank": 9,
-      "team": "Крылья Советов",
-      "slug": "krylia",
-      "played": 10,
-      "won": 2,
-      "drawn": 6,
-      "lost": 2,
-      "goalsFor": 14,
-      "goalsAgainst": 15,
-      "goalDiff": -1,
-      "points": 12,
-      "form": [
-        "D",
-        "D",
-        "W",
-        "D",
-        "D"
-      ]
-    },
-    {
-      "rank": 10,
       "team": "Балтика",
       "slug": "baltika",
       "played": 10,
@@ -204,27 +144,67 @@
       ]
     },
     {
-      "rank": 11,
-      "team": "Ростов",
-      "slug": "rostov",
-      "played": 10,
-      "won": 3,
-      "drawn": 2,
-      "lost": 5,
-      "goalsFor": 11,
-      "goalsAgainst": 17,
-      "goalDiff": -6,
-      "points": 11,
+      "rank": 8,
+      "team": "Рубин",
+      "slug": "rubin",
+      "played": 9,
+      "won": 2,
+      "drawn": 6,
+      "lost": 1,
+      "goalsFor": 12,
+      "goalsAgainst": 11,
+      "goalDiff": 1,
+      "points": 12,
       "form": [
-        "L",
+        "D",
         "W",
+        "D",
+        "D",
+        "D"
+      ]
+    },
+    {
+      "rank": 9,
+      "team": "Оренбург",
+      "slug": "orenburg",
+      "played": 10,
+      "won": 2,
+      "drawn": 6,
+      "lost": 2,
+      "goalsFor": 11,
+      "goalsAgainst": 10,
+      "goalDiff": 1,
+      "points": 12,
+      "form": [
+        "D",
+        "D",
         "L",
-        "L",
+        "D",
         "W"
       ]
     },
     {
-      "rank": 12,
+      "rank": 10,
+      "team": "Крылья Советов",
+      "slug": "krylia",
+      "played": 10,
+      "won": 2,
+      "drawn": 6,
+      "lost": 2,
+      "goalsFor": 14,
+      "goalsAgainst": 15,
+      "goalDiff": -1,
+      "points": 12,
+      "form": [
+        "D",
+        "D",
+        "W",
+        "D",
+        "D"
+      ]
+    },
+    {
+      "rank": 11,
       "team": "Ахмат",
       "slug": "akhmat",
       "played": 10,
@@ -241,6 +221,26 @@
         "W",
         "L",
         "D"
+      ]
+    },
+    {
+      "rank": 12,
+      "team": "Ростов",
+      "slug": "rostov",
+      "played": 10,
+      "won": 3,
+      "drawn": 2,
+      "lost": 5,
+      "goalsFor": 11,
+      "goalsAgainst": 17,
+      "goalDiff": -6,
+      "points": 11,
+      "form": [
+        "L",
+        "W",
+        "L",
+        "L",
+        "W"
       ]
     },
     {
@@ -287,20 +287,20 @@
       "rank": 15,
       "team": "Родина",
       "slug": "rodina",
-      "played": 9,
+      "played": 10,
       "won": 1,
       "drawn": 2,
-      "lost": 6,
+      "lost": 7,
       "goalsFor": 10,
-      "goalsAgainst": 22,
-      "goalDiff": -12,
+      "goalsAgainst": 25,
+      "goalDiff": -15,
       "points": 5,
       "form": [
         "L",
         "L",
         "L",
-        "L",
-        "D"
+        "D",
+        "L"
       ]
     },
     {
@@ -6764,8 +6764,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665007-akhmat-baltika-09-10-2026",
-      "stadium": "Ахмат-Арена",
-      "referee": "Сухой",
       "events": [
         {
           "type": "yellow",
@@ -6812,6 +6810,8 @@
           "away": "3"
         }
       ],
+      "stadium": "Ахмат-Арена",
+      "referee": "Сухой",
       "detailsVersion": 3
     },
     {
@@ -6823,13 +6823,11 @@
       "away": "Родина",
       "homeSlug": "cska",
       "awaySlug": "rodina",
-      "homeScore": 2,
+      "homeScore": 3,
       "awayScore": 0,
-      "live": "71'",
-      "status": "live",
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552665012-tsska-rodina-09-10-2026",
-      "stadium": "ВЭБ Арена",
-      "referee": "Чистяков",
       "events": [
         {
           "type": "goal",
@@ -6879,6 +6877,8 @@
           "away": "0"
         }
       ],
+      "stadium": "ВЭБ Арена",
+      "referee": "Чистяков",
       "detailsVersion": 3
     },
     {
@@ -6892,9 +6892,14 @@
       "awaySlug": "dinamo-m",
       "homeScore": null,
       "awayScore": null,
-      "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665009-rubin-dinamo-09-10-2026"
+      "live": "LIVE",
+      "status": "live",
+      "url": "/football/rpl/552665009-rubin-dinamo-09-10-2026",
+      "stadium": "Ак Барс Арена",
+      "referee": "Абросимов",
+      "events": [],
+      "stats": [],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-10-16-Родина-Оренбург",
