@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-12T05:38:11+03:00",
+  "updatedAt": "2026-10-12T12:44:51+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -6897,8 +6897,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665009-rubin-dinamo-09-10-2026",
-      "stadium": "Ак Барс Арена",
-      "referee": "Абросимов",
       "events": [
         {
           "type": "own_goal",
@@ -6945,6 +6943,8 @@
           "away": "1"
         }
       ],
+      "stadium": "Ак Барс Арена",
+      "referee": "Абросимов",
       "detailsVersion": 3
     },
     {
