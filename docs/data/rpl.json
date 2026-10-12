@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-12T02:26:37+03:00",
+  "updatedAt": "2026-10-12T05:38:11+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -6828,8 +6828,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665012-tsska-rodina-09-10-2026",
-      "stadium": "ВЭБ Арена",
-      "referee": "Чистяков",
       "events": [
         {
           "type": "goal",
@@ -6881,6 +6879,8 @@
           "away": "0"
         }
       ],
+      "stadium": "ВЭБ Арена",
+      "referee": "Чистяков",
       "detailsVersion": 3
     },
     {
@@ -6897,10 +6897,54 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665009-rubin-dinamo-09-10-2026",
-      "events": [],
-      "stats": [],
       "stadium": "Ак Барс Арена",
       "referee": "Абросимов",
+      "events": [
+        {
+          "type": "own_goal",
+          "side": "away",
+          "minute": "30'",
+          "player": "Урозов",
+          "assist": null
+        },
+        {
+          "type": "red",
+          "side": "home",
+          "minute": "37'",
+          "player": "Самошников"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "41'",
+          "player": "Касерес"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Зайдензаль",
+          "playerOut": "Касерес"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "55'",
+          "player": "Сааведра"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Угловые",
+          "home": "3",
+          "away": "3"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "1",
+          "away": "1"
+        }
+      ],
       "detailsVersion": 3
     },
     {
