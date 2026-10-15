@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-15T09:23:33+03:00",
+  "updatedAt": "2026-10-15T15:04:29+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -6948,21 +6948,6 @@
       "detailsVersion": 3
     },
     {
-      "id": "rpl-2026-10-16-Родина-Оренбург",
-      "tour": 11,
-      "date": "2026-10-16",
-      "time": "00:00",
-      "home": "Родина",
-      "away": "Оренбург",
-      "homeSlug": "rodina",
-      "awaySlug": "orenburg",
-      "homeScore": null,
-      "awayScore": null,
-      "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665022-rodina-orenburg-16-10-2026"
-    },
-    {
       "id": "rpl-2026-10-17-Крылья Советов-Факел",
       "tour": 11,
       "date": "2026-10-17",
@@ -7041,7 +7026,7 @@
       "id": "rpl-2026-10-18-Спартак-Рубин",
       "tour": 11,
       "date": "2026-10-18",
-      "time": "18:30",
+      "time": "18:45",
       "home": "Спартак",
       "away": "Рубин",
       "homeSlug": "spartak",
@@ -7056,7 +7041,7 @@
       "id": "rpl-2026-10-18-Балтика-Ростов",
       "tour": 11,
       "date": "2026-10-18",
-      "time": "20:45",
+      "time": "21:00",
       "home": "Балтика",
       "away": "Ростов",
       "homeSlug": "baltika",
@@ -7066,6 +7051,21 @@
       "live": null,
       "status": "scheduled",
       "url": "/football/rpl/552665016-baltika-rostov-16-10-2026"
+    },
+    {
+      "id": "rpl-2026-10-19-Родина-Оренбург",
+      "tour": 11,
+      "date": "2026-10-19",
+      "time": "19:30",
+      "home": "Родина",
+      "away": "Оренбург",
+      "homeSlug": "rodina",
+      "awaySlug": "orenburg",
+      "homeScore": null,
+      "awayScore": null,
+      "live": null,
+      "status": "scheduled",
+      "url": "/football/rpl/552665022-rodina-orenburg-16-10-2026"
     },
     {
       "id": "rpl-2026-10-23-Ахмат-Оренбург",
