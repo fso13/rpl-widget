@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-17T17:02:01+03:00",
+  "updatedAt": "2026-10-17T20:00:38+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -105,46 +105,26 @@
     },
     {
       "rank": 6,
-      "team": "Рубин",
-      "slug": "rubin",
-      "played": 10,
-      "won": 2,
-      "drawn": 6,
-      "lost": 2,
-      "goalsFor": 12,
-      "goalsAgainst": 12,
-      "goalDiff": 0,
-      "points": 12,
+      "team": "Динамо Мх",
+      "slug": "dinamo-mh",
+      "played": 11,
+      "won": 4,
+      "drawn": 1,
+      "lost": 6,
+      "goalsFor": 16,
+      "goalsAgainst": 21,
+      "goalDiff": -5,
+      "points": 13,
       "form": [
         "W",
-        "D",
-        "D",
-        "D",
-        "L"
+        "L",
+        "L",
+        "L",
+        "D"
       ]
     },
     {
       "rank": 7,
-      "team": "Оренбург",
-      "slug": "orenburg",
-      "played": 10,
-      "won": 2,
-      "drawn": 6,
-      "lost": 2,
-      "goalsFor": 11,
-      "goalsAgainst": 10,
-      "goalDiff": 1,
-      "points": 12,
-      "form": [
-        "D",
-        "D",
-        "L",
-        "D",
-        "W"
-      ]
-    },
-    {
-      "rank": 8,
       "team": "Балтика",
       "slug": "baltika",
       "played": 10,
@@ -164,23 +144,43 @@
       ]
     },
     {
-      "rank": 9,
-      "team": "Динамо Мх",
-      "slug": "dinamo-mh",
+      "rank": 8,
+      "team": "Рубин",
+      "slug": "rubin",
       "played": 10,
-      "won": 4,
-      "drawn": 0,
-      "lost": 6,
-      "goalsFor": 15,
-      "goalsAgainst": 20,
-      "goalDiff": -5,
+      "won": 2,
+      "drawn": 6,
+      "lost": 2,
+      "goalsFor": 12,
+      "goalsAgainst": 12,
+      "goalDiff": 0,
       "points": 12,
       "form": [
-        "L",
         "W",
-        "L",
-        "L",
+        "D",
+        "D",
+        "D",
         "L"
+      ]
+    },
+    {
+      "rank": 9,
+      "team": "Оренбург",
+      "slug": "orenburg",
+      "played": 10,
+      "won": 2,
+      "drawn": 6,
+      "lost": 2,
+      "goalsFor": 11,
+      "goalsAgainst": 10,
+      "goalDiff": 1,
+      "points": 12,
+      "form": [
+        "D",
+        "D",
+        "L",
+        "D",
+        "W"
       ]
     },
     {
@@ -267,20 +267,20 @@
       "rank": 14,
       "team": "Акрон",
       "slug": "akron",
-      "played": 10,
+      "played": 11,
       "won": 1,
-      "drawn": 5,
+      "drawn": 6,
       "lost": 4,
-      "goalsFor": 11,
-      "goalsAgainst": 19,
+      "goalsFor": 12,
+      "goalsAgainst": 20,
       "goalDiff": -8,
-      "points": 8,
+      "points": 9,
       "form": [
         "D",
         "D",
-        "D",
         "W",
-        "L"
+        "L",
+        "D"
       ]
     },
     {
@@ -7023,13 +7023,11 @@
       "away": "Акрон",
       "homeSlug": "dinamo-mh",
       "awaySlug": "akron",
-      "homeScore": 0,
-      "awayScore": 0,
-      "live": "27'",
-      "status": "live",
+      "homeScore": 1,
+      "awayScore": 1,
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552665017-dinamo-akron-16-10-2026",
-      "stadium": "Анжи-Арена",
-      "referee": "Карасев",
       "events": [
         {
           "type": "yellow",
@@ -7055,6 +7053,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Анжи-Арена",
+      "referee": "Карасев",
       "detailsVersion": 3
     },
     {
@@ -7066,11 +7066,54 @@
       "away": "Краснодар",
       "homeSlug": "lokomotiv",
       "awaySlug": "krasnodar",
-      "homeScore": null,
-      "awayScore": null,
-      "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665015-lokomotiv-krasnodar-16-10-2026"
+      "homeScore": 1,
+      "awayScore": 1,
+      "live": "25'",
+      "status": "live",
+      "url": "/football/rpl/552665015-lokomotiv-krasnodar-16-10-2026",
+      "stadium": "РЖД Арена (Локомотив)",
+      "referee": "Новиков",
+      "events": [
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "2'",
+          "player": "Монтес Кастро"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "5'",
+          "player": "Батчи",
+          "assist": "Кордоба"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "12'",
+          "player": "Ньямси"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "16'",
+          "player": "Титков",
+          "assist": null
+        }
+      ],
+      "stats": [
+        {
+          "name": "Голы",
+          "home": "1",
+          "away": "1"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-10-18-Зенит-Ахмат",
