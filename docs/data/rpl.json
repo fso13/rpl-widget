@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-17T22:11:55+03:00",
+  "updatedAt": "2026-10-18T00:28:08+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -7028,8 +7028,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665017-dinamo-akron-16-10-2026",
-      "stadium": "Анжи-Арена",
-      "referee": "Карасев",
       "events": [
         {
           "type": "yellow",
@@ -7091,6 +7089,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Анжи-Арена",
+      "referee": "Карасев",
       "detailsVersion": 3
     },
     {
@@ -7107,6 +7107,8 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665015-lokomotiv-krasnodar-16-10-2026",
+      "stadium": "РЖД Арена (Локомотив)",
+      "referee": "Новиков",
       "events": [
         {
           "type": "yellow",
@@ -7133,13 +7135,62 @@
           "minute": "16'",
           "player": "Титков",
           "assist": null
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "58'",
+          "playerIn": "Руденко",
+          "playerOut": "Пиняев"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "61'",
+          "playerIn": "Оздоев",
+          "playerOut": "Уткин"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "70'",
+          "playerIn": "Коваленко",
+          "playerOut": "Бакаев"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "71'",
+          "player": "Руденко",
+          "assist": "Ненахов"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "78'",
+          "player": "Коваленко",
+          "assist": "Комличенко"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "86'",
+          "player": "Оласа",
+          "assist": "Батчи"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "90'",
+          "player": "Кордоба",
+          "assist": "Батчи"
         }
       ],
       "stats": [
         {
           "name": "Голы",
-          "home": "1",
-          "away": "1"
+          "home": "3",
+          "away": "3"
         },
         {
           "name": "Красные карточки",
@@ -7147,8 +7198,6 @@
           "away": "0"
         }
       ],
-      "stadium": "РЖД Арена (Локомотив)",
-      "referee": "Новиков",
       "detailsVersion": 3
     },
     {
