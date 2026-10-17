@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-17T16:10:14+03:00",
+  "updatedAt": "2026-10-17T17:02:01+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -6961,8 +6961,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665018-kryliasovetov-fakel-16-10-2026",
-      "stadium": "Солидарность Арена (Самара-Арена)",
-      "referee": "Капленков",
       "events": [
         {
           "type": "goal",
@@ -7012,6 +7010,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Солидарность Арена (Самара-Арена)",
+      "referee": "Капленков",
       "detailsVersion": 3
     },
     {
@@ -7023,11 +7023,39 @@
       "away": "Акрон",
       "homeSlug": "dinamo-mh",
       "awaySlug": "akron",
-      "homeScore": null,
-      "awayScore": null,
-      "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665017-dinamo-akron-16-10-2026"
+      "homeScore": 0,
+      "awayScore": 0,
+      "live": "27'",
+      "status": "live",
+      "url": "/football/rpl/552665017-dinamo-akron-16-10-2026",
+      "stadium": "Анжи-Арена",
+      "referee": "Карасев",
+      "events": [
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "23'",
+          "player": "Зинович"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Голы",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Удары (в створ)",
+          "home": "1 (1)",
+          "away": "1 (0)"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-10-17-Локомотив-Краснодар",
