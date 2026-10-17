@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-18T00:28:08+03:00",
+  "updatedAt": "2026-10-18T00:57:51+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -7107,8 +7107,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665015-lokomotiv-krasnodar-16-10-2026",
-      "stadium": "РЖД Арена (Локомотив)",
-      "referee": "Новиков",
       "events": [
         {
           "type": "yellow",
@@ -7198,6 +7196,8 @@
           "away": "0"
         }
       ],
+      "stadium": "РЖД Арена (Локомотив)",
+      "referee": "Новиков",
       "detailsVersion": 3
     },
     {
