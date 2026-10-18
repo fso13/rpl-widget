@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-18T20:25:12+03:00",
+  "updatedAt": "2026-10-18T22:31:13+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -45,6 +45,26 @@
     },
     {
       "rank": 3,
+      "team": "Спартак",
+      "slug": "spartak",
+      "played": 11,
+      "won": 7,
+      "drawn": 2,
+      "lost": 2,
+      "goalsFor": 21,
+      "goalsAgainst": 8,
+      "goalDiff": 13,
+      "points": 23,
+      "form": [
+        "L",
+        "W",
+        "W",
+        "D",
+        "W"
+      ]
+    },
+    {
+      "rank": 4,
       "team": "ЦСКА",
       "slug": "cska",
       "played": 11,
@@ -64,7 +84,7 @@
       ]
     },
     {
-      "rank": 4,
+      "rank": 5,
       "team": "Краснодар",
       "slug": "krasnodar",
       "played": 11,
@@ -80,26 +100,6 @@
         "D",
         "D",
         "L",
-        "D"
-      ]
-    },
-    {
-      "rank": 5,
-      "team": "Спартак",
-      "slug": "spartak",
-      "played": 10,
-      "won": 6,
-      "drawn": 2,
-      "lost": 2,
-      "goalsFor": 17,
-      "goalsAgainst": 8,
-      "goalDiff": 9,
-      "points": 20,
-      "form": [
-        "D",
-        "L",
-        "W",
-        "W",
         "D"
       ]
     },
@@ -147,19 +147,19 @@
       "rank": 8,
       "team": "Рубин",
       "slug": "rubin",
-      "played": 10,
+      "played": 11,
       "won": 2,
       "drawn": 6,
-      "lost": 2,
+      "lost": 3,
       "goalsFor": 12,
-      "goalsAgainst": 12,
-      "goalDiff": 0,
+      "goalsAgainst": 16,
+      "goalDiff": -4,
       "points": 12,
       "form": [
-        "W",
         "D",
         "D",
         "D",
+        "L",
         "L"
       ]
     },
@@ -7214,8 +7214,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665020-zenit-akhmat-16-10-2026",
-      "stadium": "Газпром Арена",
-      "referee": "Шафеев",
       "events": [
         {
           "type": "yellow",
@@ -7285,6 +7283,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Газпром Арена",
+      "referee": "Шафеев",
       "detailsVersion": 3
     },
     {
@@ -7301,6 +7301,8 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665021-dinamo-tsska-16-10-2026",
+      "stadium": "ВТБ Арена (Динамо)",
+      "referee": "Прокопов",
       "events": [
         {
           "type": "yellow",
@@ -7327,37 +7329,50 @@
           "side": "home",
           "minute": "45'",
           "player": "Фомин"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "67'",
+          "playerIn": "Алвес",
+          "playerOut": "Глебов"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "69'",
+          "playerIn": "Осипенко",
+          "playerOut": "Скопинцев"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "69'",
+          "playerIn": "Гутьеррес",
+          "playerOut": "Гомес"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "88'",
+          "player": "Фернандес",
+          "assist": "Бителло"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "90'",
+          "player": "Окишор",
+          "assist": "Сергеев"
         }
       ],
       "stats": [
         {
-          "name": "Голы",
-          "home": "1",
-          "away": "1"
-        },
-        {
-          "name": "Удары (в створ)",
-          "home": "7 (3)",
-          "away": "7 (5)"
-        },
-        {
-          "name": "Желтые карточки",
-          "home": "1",
-          "away": "1"
-        },
-        {
           "name": "Красные карточки",
           "home": "0",
           "away": "0"
-        },
-        {
-          "name": "Пасы (точность)",
-          "home": "80%",
-          "away": "80%"
         }
       ],
-      "stadium": "ВТБ Арена (Динамо)",
-      "referee": "Прокопов",
       "detailsVersion": 3
     },
     {
@@ -7369,13 +7384,11 @@
       "away": "Рубин",
       "homeSlug": "spartak",
       "awaySlug": "rubin",
-      "homeScore": 3,
+      "homeScore": 4,
       "awayScore": 0,
-      "live": "73'",
-      "status": "live",
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552665019-spartak-rubin-16-10-2026",
-      "stadium": "Лукойл Арена",
-      "referee": "Фролов",
       "events": [
         {
           "type": "yellow",
@@ -7431,22 +7444,67 @@
           "away": "0"
         }
       ],
+      "stadium": "Лукойл Арена",
+      "referee": "Фролов",
       "detailsVersion": 3
     },
     {
       "id": "rpl-2026-10-18-Балтика-Ростов",
       "tour": 11,
       "date": "2026-10-18",
-      "time": "21:00",
+      "time": "20:45",
       "home": "Балтика",
       "away": "Ростов",
       "homeSlug": "baltika",
       "awaySlug": "rostov",
-      "homeScore": null,
-      "awayScore": null,
-      "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665016-baltika-rostov-16-10-2026"
+      "homeScore": 0,
+      "awayScore": 0,
+      "live": "66'",
+      "status": "live",
+      "url": "/football/rpl/552665016-baltika-rostov-16-10-2026",
+      "stadium": "Ростех Арена (Калининград)",
+      "referee": "Буланов",
+      "events": [
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "60'",
+          "playerIn": "Варатынов",
+          "playerOut": "Андерсон"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "60'",
+          "playerIn": "Петров",
+          "playerOut": "Голенков"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "62'",
+          "playerIn": "Роналдо",
+          "playerOut": "Комаров"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Голы",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Желтые карточки",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-10-19-Родина-Оренбург",
