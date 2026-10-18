@@ -1,10 +1,30 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-18T15:38:51+03:00",
+  "updatedAt": "2026-10-18T17:15:35+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
       "rank": 1,
+      "team": "Зенит",
+      "slug": "zenit",
+      "played": 11,
+      "won": 8,
+      "drawn": 0,
+      "lost": 3,
+      "goalsFor": 25,
+      "goalsAgainst": 13,
+      "goalDiff": 12,
+      "points": 24,
+      "form": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    },
+    {
+      "rank": 2,
       "team": "Динамо М",
       "slug": "dinamo-m",
       "played": 10,
@@ -24,7 +44,7 @@
       ]
     },
     {
-      "rank": 2,
+      "rank": 3,
       "team": "ЦСКА",
       "slug": "cska",
       "played": 10,
@@ -44,7 +64,7 @@
       ]
     },
     {
-      "rank": 3,
+      "rank": 4,
       "team": "Краснодар",
       "slug": "krasnodar",
       "played": 11,
@@ -61,26 +81,6 @@
         "D",
         "L",
         "D"
-      ]
-    },
-    {
-      "rank": 4,
-      "team": "Зенит",
-      "slug": "zenit",
-      "played": 10,
-      "won": 7,
-      "drawn": 0,
-      "lost": 3,
-      "goalsFor": 22,
-      "goalsAgainst": 11,
-      "goalDiff": 11,
-      "points": 21,
-      "form": [
-        "W",
-        "L",
-        "W",
-        "W",
-        "W"
       ]
     },
     {
@@ -207,20 +207,20 @@
       "rank": 11,
       "team": "Ахмат",
       "slug": "akhmat",
-      "played": 10,
+      "played": 11,
       "won": 2,
       "drawn": 5,
-      "lost": 3,
-      "goalsFor": 13,
-      "goalsAgainst": 13,
-      "goalDiff": 0,
+      "lost": 4,
+      "goalsFor": 15,
+      "goalsAgainst": 16,
+      "goalDiff": -1,
       "points": 11,
       "form": [
         "D",
-        "D",
         "W",
         "L",
-        "D"
+        "D",
+        "L"
       ]
     },
     {
@@ -7209,13 +7209,11 @@
       "away": "Ахмат",
       "homeSlug": "zenit",
       "awaySlug": "akhmat",
-      "homeScore": 2,
-      "awayScore": 1,
-      "live": "75'",
-      "status": "live",
+      "homeScore": 3,
+      "awayScore": 2,
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552665020-zenit-akhmat-16-10-2026",
-      "stadium": "Газпром Арена",
-      "referee": "Шафеев",
       "events": [
         {
           "type": "yellow",
@@ -7276,6 +7274,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Газпром Арена",
+      "referee": "Шафеев",
       "detailsVersion": 3
     },
     {
@@ -7287,11 +7287,69 @@
       "away": "ЦСКА",
       "homeSlug": "dinamo-m",
       "awaySlug": "cska",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 1,
       "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665021-dinamo-tsska-16-10-2026"
+      "status": "finished",
+      "url": "/football/rpl/552665021-dinamo-tsska-16-10-2026",
+      "stadium": "ВТБ Арена (Динамо)",
+      "referee": "Прокопов",
+      "events": [
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "27'",
+          "player": "Гонду"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "31'",
+          "player": "Тюкавин",
+          "assist": "Гладышев"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "43'",
+          "player": "Обляков",
+          "assist": null
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "45'",
+          "player": "Фомин"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Голы",
+          "home": "1",
+          "away": "1"
+        },
+        {
+          "name": "Удары (в створ)",
+          "home": "7 (3)",
+          "away": "7 (5)"
+        },
+        {
+          "name": "Желтые карточки",
+          "home": "1",
+          "away": "1"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Пасы (точность)",
+          "home": "80%",
+          "away": "80%"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-10-18-Спартак-Рубин",
