@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-19T00:46:06+03:00",
+  "updatedAt": "2026-10-19T01:12:50+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -7389,8 +7389,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665019-spartak-rubin-16-10-2026",
-      "stadium": "Лукойл Арена",
-      "referee": "Фролов",
       "events": [
         {
           "type": "yellow",
@@ -7453,6 +7451,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Лукойл Арена",
+      "referee": "Фролов",
       "detailsVersion": 3
     },
     {
