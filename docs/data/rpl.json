@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-18T11:08:15+03:00",
+  "updatedAt": "2026-10-18T15:38:51+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -7209,11 +7209,74 @@
       "away": "Ахмат",
       "homeSlug": "zenit",
       "awaySlug": "akhmat",
-      "homeScore": null,
-      "awayScore": null,
-      "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665020-zenit-akhmat-16-10-2026"
+      "homeScore": 2,
+      "awayScore": 1,
+      "live": "75'",
+      "status": "live",
+      "url": "/football/rpl/552665020-zenit-akhmat-16-10-2026",
+      "stadium": "Газпром Арена",
+      "referee": "Шафеев",
+      "events": [
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "13'",
+          "player": "Ибишев"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "22'",
+          "player": "Педро"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "25'",
+          "player": "Садулаев",
+          "assist": "Касинтура"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "30'",
+          "player": "Мантуан"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "46'",
+          "playerIn": "дос Сантос",
+          "playerOut": "Педро"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "47'",
+          "player": "Адамов",
+          "assist": null
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "62'",
+          "player": "Глушенков",
+          "assist": "Карпукас"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Желтые карточки",
+          "home": "2",
+          "away": "2"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-10-18-Динамо М-ЦСКА",
