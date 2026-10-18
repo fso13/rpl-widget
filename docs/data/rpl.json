@@ -1,10 +1,30 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-18T17:15:35+03:00",
+  "updatedAt": "2026-10-18T20:25:12+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
       "rank": 1,
+      "team": "Динамо М",
+      "slug": "dinamo-m",
+      "played": 11,
+      "won": 8,
+      "drawn": 1,
+      "lost": 2,
+      "goalsFor": 18,
+      "goalsAgainst": 9,
+      "goalDiff": 9,
+      "points": 25,
+      "form": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    },
+    {
+      "rank": 2,
       "team": "Зенит",
       "slug": "zenit",
       "played": 11,
@@ -24,43 +44,23 @@
       ]
     },
     {
-      "rank": 2,
-      "team": "Динамо М",
-      "slug": "dinamo-m",
-      "played": 10,
-      "won": 7,
-      "drawn": 1,
-      "lost": 2,
-      "goalsFor": 15,
-      "goalsAgainst": 8,
+      "rank": 3,
+      "team": "ЦСКА",
+      "slug": "cska",
+      "played": 11,
+      "won": 6,
+      "drawn": 4,
+      "lost": 1,
+      "goalsFor": 19,
+      "goalsAgainst": 12,
       "goalDiff": 7,
       "points": 22,
       "form": [
         "W",
-        "W",
-        "W",
-        "W",
-        "W"
-      ]
-    },
-    {
-      "rank": 3,
-      "team": "ЦСКА",
-      "slug": "cska",
-      "played": 10,
-      "won": 6,
-      "drawn": 4,
-      "lost": 0,
-      "goalsFor": 18,
-      "goalsAgainst": 9,
-      "goalDiff": 9,
-      "points": 22,
-      "form": [
         "D",
         "W",
-        "D",
         "W",
-        "W"
+        "L"
       ]
     },
     {
@@ -7214,6 +7214,8 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665020-zenit-akhmat-16-10-2026",
+      "stadium": "Газпром Арена",
+      "referee": "Шафеев",
       "events": [
         {
           "type": "yellow",
@@ -7260,22 +7262,29 @@
           "minute": "62'",
           "player": "Глушенков",
           "assist": "Карпукас"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "86'",
+          "player": "Конате",
+          "assist": "Богосавац"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "90'",
+          "player": "дос Сантос",
+          "assist": null
         }
       ],
       "stats": [
-        {
-          "name": "Желтые карточки",
-          "home": "2",
-          "away": "2"
-        },
         {
           "name": "Красные карточки",
           "home": "0",
           "away": "0"
         }
       ],
-      "stadium": "Газпром Арена",
-      "referee": "Шафеев",
       "detailsVersion": 3
     },
     {
@@ -7287,13 +7296,11 @@
       "away": "ЦСКА",
       "homeSlug": "dinamo-m",
       "awaySlug": "cska",
-      "homeScore": 1,
+      "homeScore": 3,
       "awayScore": 1,
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665021-dinamo-tsska-16-10-2026",
-      "stadium": "ВТБ Арена (Динамо)",
-      "referee": "Прокопов",
       "events": [
         {
           "type": "yellow",
@@ -7349,22 +7356,82 @@
           "away": "80%"
         }
       ],
+      "stadium": "ВТБ Арена (Динамо)",
+      "referee": "Прокопов",
       "detailsVersion": 3
     },
     {
       "id": "rpl-2026-10-18-Спартак-Рубин",
       "tour": 11,
       "date": "2026-10-18",
-      "time": "18:45",
+      "time": "18:30",
       "home": "Спартак",
       "away": "Рубин",
       "homeSlug": "spartak",
       "awaySlug": "rubin",
-      "homeScore": null,
-      "awayScore": null,
-      "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665019-spartak-rubin-16-10-2026"
+      "homeScore": 3,
+      "awayScore": 0,
+      "live": "73'",
+      "status": "live",
+      "url": "/football/rpl/552665019-spartak-rubin-16-10-2026",
+      "stadium": "Лукойл Арена",
+      "referee": "Фролов",
+      "events": [
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "4'",
+          "player": "Урозов"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "5'",
+          "player": "Угальде"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "18'",
+          "player": "Солари",
+          "assist": null
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "37'",
+          "player": "Парада"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "43'",
+          "player": "Угальде",
+          "assist": "Литвинов"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Грипши",
+          "playerOut": "Бабаев"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "65'",
+          "player": "Даку",
+          "assist": "Солари"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-10-18-Балтика-Ростов",
