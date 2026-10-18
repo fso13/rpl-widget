@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-18T22:31:13+03:00",
+  "updatedAt": "2026-10-19T00:46:06+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -127,44 +127,24 @@
       "rank": 7,
       "team": "Балтика",
       "slug": "baltika",
-      "played": 10,
+      "played": 11,
       "won": 3,
-      "drawn": 3,
+      "drawn": 4,
       "lost": 4,
       "goalsFor": 14,
       "goalsAgainst": 12,
       "goalDiff": 2,
-      "points": 12,
+      "points": 13,
       "form": [
-        "W",
         "L",
         "D",
         "L",
+        "D",
         "D"
       ]
     },
     {
       "rank": 8,
-      "team": "Рубин",
-      "slug": "rubin",
-      "played": 11,
-      "won": 2,
-      "drawn": 6,
-      "lost": 3,
-      "goalsFor": 12,
-      "goalsAgainst": 16,
-      "goalDiff": -4,
-      "points": 12,
-      "form": [
-        "D",
-        "D",
-        "D",
-        "L",
-        "L"
-      ]
-    },
-    {
-      "rank": 9,
       "team": "Оренбург",
       "slug": "orenburg",
       "played": 10,
@@ -184,7 +164,47 @@
       ]
     },
     {
+      "rank": 9,
+      "team": "Рубин",
+      "slug": "rubin",
+      "played": 11,
+      "won": 2,
+      "drawn": 6,
+      "lost": 3,
+      "goalsFor": 12,
+      "goalsAgainst": 16,
+      "goalDiff": -4,
+      "points": 12,
+      "form": [
+        "D",
+        "D",
+        "D",
+        "L",
+        "L"
+      ]
+    },
+    {
       "rank": 10,
+      "team": "Ростов",
+      "slug": "rostov",
+      "played": 11,
+      "won": 3,
+      "drawn": 3,
+      "lost": 5,
+      "goalsFor": 11,
+      "goalsAgainst": 17,
+      "goalDiff": -6,
+      "points": 12,
+      "form": [
+        "W",
+        "L",
+        "L",
+        "W",
+        "D"
+      ]
+    },
+    {
+      "rank": 11,
       "team": "Крылья Советов",
       "slug": "krylia",
       "played": 11,
@@ -199,26 +219,6 @@
         "D",
         "W",
         "D",
-        "D",
-        "L"
-      ]
-    },
-    {
-      "rank": 11,
-      "team": "Ахмат",
-      "slug": "akhmat",
-      "played": 11,
-      "won": 2,
-      "drawn": 5,
-      "lost": 4,
-      "goalsFor": 15,
-      "goalsAgainst": 16,
-      "goalDiff": -1,
-      "points": 11,
-      "form": [
-        "D",
-        "W",
-        "L",
         "D",
         "L"
       ]
@@ -245,22 +245,22 @@
     },
     {
       "rank": 13,
-      "team": "Ростов",
-      "slug": "rostov",
-      "played": 10,
-      "won": 3,
-      "drawn": 2,
-      "lost": 5,
-      "goalsFor": 11,
-      "goalsAgainst": 17,
-      "goalDiff": -6,
+      "team": "Ахмат",
+      "slug": "akhmat",
+      "played": 11,
+      "won": 2,
+      "drawn": 5,
+      "lost": 4,
+      "goalsFor": 15,
+      "goalsAgainst": 16,
+      "goalDiff": -1,
       "points": 11,
       "form": [
-        "L",
+        "D",
         "W",
         "L",
-        "L",
-        "W"
+        "D",
+        "L"
       ]
     },
     {
@@ -7301,8 +7301,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665021-dinamo-tsska-16-10-2026",
-      "stadium": "ВТБ Арена (Динамо)",
-      "referee": "Прокопов",
       "events": [
         {
           "type": "yellow",
@@ -7373,6 +7371,8 @@
           "away": "0"
         }
       ],
+      "stadium": "ВТБ Арена (Динамо)",
+      "referee": "Прокопов",
       "detailsVersion": 3
     },
     {
@@ -7389,6 +7389,8 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665019-spartak-rubin-16-10-2026",
+      "stadium": "Лукойл Арена",
+      "referee": "Фролов",
       "events": [
         {
           "type": "yellow",
@@ -7435,6 +7437,13 @@
           "minute": "65'",
           "player": "Даку",
           "assist": "Солари"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "90'",
+          "player": "Даку",
+          "assist": null
         }
       ],
       "stats": [
@@ -7444,8 +7453,6 @@
           "away": "0"
         }
       ],
-      "stadium": "Лукойл Арена",
-      "referee": "Фролов",
       "detailsVersion": 3
     },
     {
@@ -7459,11 +7466,9 @@
       "awaySlug": "rostov",
       "homeScore": 0,
       "awayScore": 0,
-      "live": "66'",
-      "status": "live",
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552665016-baltika-rostov-16-10-2026",
-      "stadium": "Ростех Арена (Калининград)",
-      "referee": "Буланов",
       "events": [
         {
           "type": "sub",
@@ -7504,6 +7509,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Ростех Арена (Калининград)",
+      "referee": "Буланов",
       "detailsVersion": 3
     },
     {
