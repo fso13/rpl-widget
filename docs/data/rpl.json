@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-20T00:35:38+03:00",
+  "updatedAt": "2026-10-20T02:17:52+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -7527,6 +7527,8 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665022-rodina-orenburg-16-10-2026",
+      "stadium": "Арена Химки",
+      "referee": "Танашев",
       "events": [
         {
           "type": "yellow",
@@ -7565,13 +7567,38 @@
           "side": "away",
           "minute": "26'",
           "player": "Томпсон"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "50'",
+          "player": "Максименко"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "73'",
+          "player": "Томпсон",
+          "assist": null
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "90'",
+          "player": "Тимошенко",
+          "assist": null
         }
       ],
       "stats": [
         {
           "name": "Голы",
-          "home": "1",
-          "away": "1"
+          "home": "2",
+          "away": "2"
+        },
+        {
+          "name": "Офсайды",
+          "home": "2",
+          "away": "2"
         },
         {
           "name": "Красные карточки",
@@ -7579,8 +7606,6 @@
           "away": "0"
         }
       ],
-      "stadium": "Арена Химки",
-      "referee": "Танашев",
       "detailsVersion": 3
     },
     {
