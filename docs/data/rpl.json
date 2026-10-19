@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-19T20:08:48+03:00",
+  "updatedAt": "2026-10-19T20:18:39+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -7524,7 +7524,7 @@
       "awaySlug": "orenburg",
       "homeScore": 1,
       "awayScore": 1,
-      "live": "37'",
+      "live": "45'",
       "status": "live",
       "url": "/football/rpl/552665022-rodina-orenburg-16-10-2026",
       "stadium": "Арена Химки",
@@ -7579,11 +7579,6 @@
           "name": "Красные карточки",
           "home": "0",
           "away": "0"
-        },
-        {
-          "name": "Пасы (точность)",
-          "home": "80%",
-          "away": "80%"
         }
       ],
       "detailsVersion": 3
