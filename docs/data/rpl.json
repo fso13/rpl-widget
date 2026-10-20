@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-20T02:17:52+03:00",
+  "updatedAt": "2026-10-20T04:54:48+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -7527,8 +7527,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665022-rodina-orenburg-16-10-2026",
-      "stadium": "Арена Химки",
-      "referee": "Танашев",
       "events": [
         {
           "type": "yellow",
@@ -7606,6 +7604,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Арена Химки",
+      "referee": "Танашев",
       "detailsVersion": 3
     },
     {
