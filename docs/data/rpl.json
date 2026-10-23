@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-23T22:31:33+03:00",
+  "updatedAt": "2026-10-24T01:33:59+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -7622,8 +7622,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665024-akhmat-orenburg-23-10-2026",
-      "stadium": "Ахмат-Арена",
-      "referee": "Чебан",
       "events": [
         {
           "type": "goal",
@@ -7680,6 +7678,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Ахмат-Арена",
+      "referee": "Чебан",
       "detailsVersion": 3
     },
     {
