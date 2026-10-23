@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-23T18:37:15+03:00",
+  "updatedAt": "2026-10-23T22:31:33+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -107,44 +107,24 @@
       "rank": 6,
       "team": "Оренбург",
       "slug": "orenburg",
-      "played": 11,
-      "won": 2,
+      "played": 12,
+      "won": 3,
       "drawn": 7,
       "lost": 2,
-      "goalsFor": 13,
+      "goalsFor": 14,
       "goalsAgainst": 12,
-      "goalDiff": 1,
-      "points": 13,
+      "goalDiff": 2,
+      "points": 16,
       "form": [
-        "D",
         "L",
         "D",
         "W",
-        "D"
+        "D",
+        "W"
       ]
     },
     {
       "rank": 7,
-      "team": "Балтика",
-      "slug": "baltika",
-      "played": 11,
-      "won": 3,
-      "drawn": 4,
-      "lost": 4,
-      "goalsFor": 14,
-      "goalsAgainst": 12,
-      "goalDiff": 2,
-      "points": 13,
-      "form": [
-        "L",
-        "D",
-        "L",
-        "D",
-        "D"
-      ]
-    },
-    {
-      "rank": 8,
       "team": "Динамо Мх",
       "slug": "dinamo-mh",
       "played": 11,
@@ -160,6 +140,26 @@
         "L",
         "L",
         "L",
+        "D"
+      ]
+    },
+    {
+      "rank": 8,
+      "team": "Балтика",
+      "slug": "baltika",
+      "played": 11,
+      "won": 3,
+      "drawn": 4,
+      "lost": 4,
+      "goalsFor": 14,
+      "goalsAgainst": 12,
+      "goalDiff": 2,
+      "points": 13,
+      "form": [
+        "L",
+        "D",
+        "L",
+        "D",
         "D"
       ]
     },
@@ -247,19 +247,19 @@
       "rank": 13,
       "team": "Ахмат",
       "slug": "akhmat",
-      "played": 11,
+      "played": 12,
       "won": 2,
       "drawn": 5,
-      "lost": 4,
+      "lost": 5,
       "goalsFor": 15,
-      "goalsAgainst": 16,
-      "goalDiff": -1,
+      "goalsAgainst": 17,
+      "goalDiff": -2,
       "points": 11,
       "form": [
-        "D",
         "W",
         "L",
         "D",
+        "L",
         "L"
       ]
     },
@@ -7617,11 +7617,70 @@
       "away": "Оренбург",
       "homeSlug": "akhmat",
       "awaySlug": "orenburg",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 1,
       "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665024-akhmat-orenburg-23-10-2026"
+      "status": "finished",
+      "url": "/football/rpl/552665024-akhmat-orenburg-23-10-2026",
+      "stadium": "Ахмат-Арена",
+      "referee": "Чебан",
+      "events": [
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "38'",
+          "player": "Рыбчинский",
+          "assist": "Томпсон"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "52'",
+          "playerIn": "Конате",
+          "playerOut": "Щетинин"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "60'",
+          "playerIn": "Хотулев",
+          "playerOut": "Татаев"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "62'",
+          "player": "Гузина"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "66'",
+          "player": "Конате"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "67'",
+          "playerIn": "Максути",
+          "playerOut": "Мелкадзе"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "67'",
+          "playerIn": "Сидоров",
+          "playerOut": "Богосавац"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-10-24-Акрон-Динамо М",
