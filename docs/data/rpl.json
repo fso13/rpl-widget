@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-25T00:53:44+03:00",
+  "updatedAt": "2026-10-25T01:14:09+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -7917,8 +7917,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665027-krasnodar-baltika-23-10-2026",
-      "stadium": "Озон Арена (Краснодар)",
-      "referee": "Прокопов",
       "events": [
         {
           "type": "yellow",
@@ -7985,6 +7983,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Озон Арена (Краснодар)",
+      "referee": "Прокопов",
       "detailsVersion": 3
     },
     {
