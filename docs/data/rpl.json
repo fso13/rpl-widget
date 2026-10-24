@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-24T22:40:49+03:00",
+  "updatedAt": "2026-10-25T00:53:44+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -7917,6 +7917,8 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665027-krasnodar-baltika-23-10-2026",
+      "stadium": "Озон Арена (Краснодар)",
+      "referee": "Прокопов",
       "events": [
         {
           "type": "yellow",
@@ -7930,17 +7932,59 @@
           "minute": "30'",
           "player": "Кордоба",
           "assist": "Вахания"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "57'",
+          "playerIn": "Муфи",
+          "playerOut": "Петров"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "57'",
+          "playerIn": "Беликов",
+          "playerOut": "Петров"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "58'",
+          "player": "Чивич"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "62'",
+          "player": "Вахания"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "67'",
+          "player": "Кристиан"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "90'",
+          "player": "Муйоколо",
+          "assist": "Поспелов"
         }
       ],
       "stats": [
+        {
+          "name": "Голы",
+          "home": "1",
+          "away": "1"
+        },
         {
           "name": "Красные карточки",
           "home": "0",
           "away": "0"
         }
       ],
-      "stadium": "Озон Арена (Краснодар)",
-      "referee": "Прокопов",
       "detailsVersion": 3
     },
     {
