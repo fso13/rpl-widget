@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-24T17:13:02+03:00",
+  "updatedAt": "2026-10-24T20:28:15+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -125,6 +125,26 @@
     },
     {
       "rank": 7,
+      "team": "Крылья Советов",
+      "slug": "krylia",
+      "played": 12,
+      "won": 3,
+      "drawn": 6,
+      "lost": 3,
+      "goalsFor": 17,
+      "goalsAgainst": 17,
+      "goalDiff": 0,
+      "points": 15,
+      "form": [
+        "W",
+        "D",
+        "D",
+        "L",
+        "W"
+      ]
+    },
+    {
+      "rank": 8,
       "team": "Динамо Мх",
       "slug": "dinamo-mh",
       "played": 11,
@@ -144,7 +164,7 @@
       ]
     },
     {
-      "rank": 8,
+      "rank": 9,
       "team": "Балтика",
       "slug": "baltika",
       "played": 11,
@@ -164,27 +184,27 @@
       ]
     },
     {
-      "rank": 9,
+      "rank": 10,
       "team": "Рубин",
       "slug": "rubin",
-      "played": 11,
+      "played": 12,
       "won": 2,
       "drawn": 6,
-      "lost": 3,
+      "lost": 4,
       "goalsFor": 12,
-      "goalsAgainst": 16,
-      "goalDiff": -4,
+      "goalsAgainst": 18,
+      "goalDiff": -6,
       "points": 12,
       "form": [
         "D",
         "D",
-        "D",
+        "L",
         "L",
         "L"
       ]
     },
     {
-      "rank": 10,
+      "rank": 11,
       "team": "Ростов",
       "slug": "rostov",
       "played": 11,
@@ -201,26 +221,6 @@
         "L",
         "W",
         "D"
-      ]
-    },
-    {
-      "rank": 11,
-      "team": "Крылья Советов",
-      "slug": "krylia",
-      "played": 11,
-      "won": 2,
-      "drawn": 6,
-      "lost": 3,
-      "goalsFor": 15,
-      "goalsAgainst": 17,
-      "goalDiff": -2,
-      "points": 12,
-      "form": [
-        "D",
-        "W",
-        "D",
-        "D",
-        "L"
       ]
     },
     {
@@ -7696,6 +7696,8 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665023-akron-dinamo-23-10-2026",
+      "stadium": "Солидарность Арена (Самара-Арена)",
+      "referee": "Капленков",
       "events": [
         {
           "type": "goal",
@@ -7743,6 +7745,13 @@
           "minute": "70'",
           "player": "Бистрович",
           "assist": null
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "90'",
+          "player": "Болдырев",
+          "assist": null
         }
       ],
       "stats": [
@@ -7750,15 +7759,8 @@
           "name": "Красные карточки",
           "home": "0",
           "away": "0"
-        },
-        {
-          "name": "Пасы (точность)",
-          "home": "84%",
-          "away": "84%"
         }
       ],
-      "stadium": "Солидарность Арена (Самара-Арена)",
-      "referee": "Капленков",
       "detailsVersion": 3
     },
     {
@@ -7775,8 +7777,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665030-fakel-rodina-23-10-2026",
-      "stadium": "Факел",
-      "referee": "Абросимов",
       "events": [
         {
           "type": "goal",
@@ -7819,6 +7819,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Факел",
+      "referee": "Абросимов",
       "detailsVersion": 3
     },
     {
@@ -7830,11 +7832,76 @@
       "away": "Крылья Советов",
       "homeSlug": "rubin",
       "awaySlug": "krylia",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 2,
       "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665026-rubin-kryliasovetov-23-10-2026"
+      "status": "finished",
+      "url": "/football/rpl/552665026-rubin-kryliasovetov-23-10-2026",
+      "stadium": "Ак Барс Арена",
+      "referee": "Заика",
+      "events": [
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "22'",
+          "player": "Костанца"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "39'",
+          "player": "Сальседо"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "47'",
+          "player": "Урозов"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "62'",
+          "playerIn": "Шитов",
+          "playerOut": "Баньяц"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "62'",
+          "playerIn": "Фернандес",
+          "playerOut": "Рассказов"
+        },
+        {
+          "type": "own_goal",
+          "side": "away",
+          "minute": "71'",
+          "player": "Вуячич",
+          "assist": null
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "73'",
+          "playerIn": "Безруков",
+          "playerOut": "Рожков"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "77'",
+          "player": "Рахманович",
+          "assist": null
+        }
+      ],
+      "stats": [
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-10-24-Краснодар-Балтика",
@@ -7845,11 +7912,36 @@
       "away": "Балтика",
       "homeSlug": "krasnodar",
       "awaySlug": "baltika",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 0,
       "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665027-krasnodar-baltika-23-10-2026"
+      "status": "finished",
+      "url": "/football/rpl/552665027-krasnodar-baltika-23-10-2026",
+      "stadium": "Озон Арена (Краснодар)",
+      "referee": "Прокопов",
+      "events": [
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "18'",
+          "player": "Андерсон"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "30'",
+          "player": "Кордоба",
+          "assist": "Вахания"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-10-25-Ростов-Локомотив",
