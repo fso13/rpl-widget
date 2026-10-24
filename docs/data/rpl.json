@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-24T09:25:46+03:00",
+  "updatedAt": "2026-10-24T14:34:46+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -7691,11 +7691,75 @@
       "away": "Динамо М",
       "homeSlug": "akron",
       "awaySlug": "dinamo-m",
-      "homeScore": null,
-      "awayScore": null,
-      "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665023-akron-dinamo-23-10-2026"
+      "homeScore": 2,
+      "awayScore": 1,
+      "live": "87'",
+      "status": "live",
+      "url": "/football/rpl/552665023-akron-dinamo-23-10-2026",
+      "stadium": "Солидарность Арена (Самара-Арена)",
+      "referee": "Капленков",
+      "events": [
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "17'",
+          "player": "Шуманский",
+          "assist": "Пестряков"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "25'",
+          "player": "Бардыбахин"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "31'",
+          "playerIn": "Касерес",
+          "playerOut": "Маричаль"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "36'",
+          "player": "Бистрович"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Сергеев",
+          "playerOut": "Фомин"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "55'",
+          "player": "Гладышев",
+          "assist": "Сергеев"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "70'",
+          "player": "Бистрович",
+          "assist": null
+        }
+      ],
+      "stats": [
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Пасы (точность)",
+          "home": "84%",
+          "away": "84%"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-10-24-Факел-Родина",
