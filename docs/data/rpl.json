@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-24T20:28:15+03:00",
+  "updatedAt": "2026-10-24T22:40:49+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -45,6 +45,26 @@
     },
     {
       "rank": 3,
+      "team": "Краснодар",
+      "slug": "krasnodar",
+      "played": 12,
+      "won": 6,
+      "drawn": 5,
+      "lost": 1,
+      "goalsFor": 20,
+      "goalsAgainst": 14,
+      "goalDiff": 6,
+      "points": 23,
+      "form": [
+        "D",
+        "D",
+        "L",
+        "D",
+        "D"
+      ]
+    },
+    {
+      "rank": 4,
       "team": "Спартак",
       "slug": "spartak",
       "played": 11,
@@ -64,7 +84,7 @@
       ]
     },
     {
-      "rank": 4,
+      "rank": 5,
       "team": "ЦСКА",
       "slug": "cska",
       "played": 11,
@@ -81,26 +101,6 @@
         "W",
         "W",
         "L"
-      ]
-    },
-    {
-      "rank": 5,
-      "team": "Краснодар",
-      "slug": "krasnodar",
-      "played": 11,
-      "won": 6,
-      "drawn": 4,
-      "lost": 1,
-      "goalsFor": 19,
-      "goalsAgainst": 13,
-      "goalDiff": 6,
-      "points": 22,
-      "form": [
-        "D",
-        "D",
-        "D",
-        "L",
-        "D"
       ]
     },
     {
@@ -145,6 +145,26 @@
     },
     {
       "rank": 8,
+      "team": "Балтика",
+      "slug": "baltika",
+      "played": 12,
+      "won": 3,
+      "drawn": 5,
+      "lost": 4,
+      "goalsFor": 15,
+      "goalsAgainst": 13,
+      "goalDiff": 2,
+      "points": 14,
+      "form": [
+        "D",
+        "L",
+        "D",
+        "D",
+        "D"
+      ]
+    },
+    {
+      "rank": 9,
       "team": "Динамо Мх",
       "slug": "dinamo-mh",
       "played": 11,
@@ -160,26 +180,6 @@
         "L",
         "L",
         "L",
-        "D"
-      ]
-    },
-    {
-      "rank": 9,
-      "team": "Балтика",
-      "slug": "baltika",
-      "played": 11,
-      "won": 3,
-      "drawn": 4,
-      "lost": 4,
-      "goalsFor": 14,
-      "goalsAgainst": 12,
-      "goalDiff": 2,
-      "points": 13,
-      "form": [
-        "L",
-        "D",
-        "L",
-        "D",
         "D"
       ]
     },
@@ -7696,8 +7696,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665023-akron-dinamo-23-10-2026",
-      "stadium": "Солидарность Арена (Самара-Арена)",
-      "referee": "Капленков",
       "events": [
         {
           "type": "goal",
@@ -7761,6 +7759,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Солидарность Арена (Самара-Арена)",
+      "referee": "Капленков",
       "detailsVersion": 3
     },
     {
@@ -7837,8 +7837,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665026-rubin-kryliasovetov-23-10-2026",
-      "stadium": "Ак Барс Арена",
-      "referee": "Заика",
       "events": [
         {
           "type": "yellow",
@@ -7901,6 +7899,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Ак Барс Арена",
+      "referee": "Заика",
       "detailsVersion": 3
     },
     {
@@ -7913,12 +7913,10 @@
       "homeSlug": "krasnodar",
       "awaySlug": "baltika",
       "homeScore": 1,
-      "awayScore": 0,
+      "awayScore": 1,
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665027-krasnodar-baltika-23-10-2026",
-      "stadium": "Озон Арена (Краснодар)",
-      "referee": "Прокопов",
       "events": [
         {
           "type": "yellow",
@@ -7941,6 +7939,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Озон Арена (Краснодар)",
+      "referee": "Прокопов",
       "detailsVersion": 3
     },
     {
