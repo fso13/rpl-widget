@@ -1,26 +1,26 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-24T14:34:46+03:00",
+  "updatedAt": "2026-10-24T17:13:02+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
       "rank": 1,
       "team": "Динамо М",
       "slug": "dinamo-m",
-      "played": 11,
+      "played": 12,
       "won": 8,
       "drawn": 1,
-      "lost": 2,
-      "goalsFor": 18,
-      "goalsAgainst": 9,
-      "goalDiff": 9,
+      "lost": 3,
+      "goalsFor": 19,
+      "goalsAgainst": 12,
+      "goalDiff": 7,
       "points": 25,
       "form": [
         "W",
         "W",
         "W",
         "W",
-        "W"
+        "L"
       ]
     },
     {
@@ -165,26 +165,6 @@
     },
     {
       "rank": 9,
-      "team": "Ростов",
-      "slug": "rostov",
-      "played": 11,
-      "won": 3,
-      "drawn": 3,
-      "lost": 5,
-      "goalsFor": 11,
-      "goalsAgainst": 17,
-      "goalDiff": -6,
-      "points": 12,
-      "form": [
-        "W",
-        "L",
-        "L",
-        "W",
-        "D"
-      ]
-    },
-    {
-      "rank": 10,
       "team": "Рубин",
       "slug": "rubin",
       "played": 11,
@@ -201,6 +181,26 @@
         "D",
         "L",
         "L"
+      ]
+    },
+    {
+      "rank": 10,
+      "team": "Ростов",
+      "slug": "rostov",
+      "played": 11,
+      "won": 3,
+      "drawn": 3,
+      "lost": 5,
+      "goalsFor": 11,
+      "goalsAgainst": 17,
+      "goalDiff": -6,
+      "points": 12,
+      "form": [
+        "W",
+        "L",
+        "L",
+        "W",
+        "D"
       ]
     },
     {
@@ -225,6 +225,26 @@
     },
     {
       "rank": 12,
+      "team": "Акрон",
+      "slug": "akron",
+      "played": 12,
+      "won": 2,
+      "drawn": 6,
+      "lost": 4,
+      "goalsFor": 15,
+      "goalsAgainst": 21,
+      "goalDiff": -6,
+      "points": 12,
+      "form": [
+        "D",
+        "W",
+        "L",
+        "D",
+        "W"
+      ]
+    },
+    {
+      "rank": 13,
       "team": "Локомотив",
       "slug": "lokomotiv",
       "played": 11,
@@ -244,7 +264,7 @@
       ]
     },
     {
-      "rank": 13,
+      "rank": 14,
       "team": "Ахмат",
       "slug": "akhmat",
       "played": 12,
@@ -264,63 +284,43 @@
       ]
     },
     {
-      "rank": 14,
-      "team": "Акрон",
-      "slug": "akron",
-      "played": 11,
-      "won": 1,
-      "drawn": 6,
-      "lost": 4,
-      "goalsFor": 12,
-      "goalsAgainst": 20,
-      "goalDiff": -8,
-      "points": 9,
-      "form": [
-        "D",
-        "D",
-        "W",
-        "L",
-        "D"
-      ]
-    },
-    {
       "rank": 15,
-      "team": "Факел",
-      "slug": "fakel",
-      "played": 11,
-      "won": 1,
+      "team": "Родина",
+      "slug": "rodina",
+      "played": 12,
+      "won": 2,
       "drawn": 3,
       "lost": 7,
-      "goalsFor": 8,
-      "goalsAgainst": 19,
-      "goalDiff": -11,
-      "points": 6,
+      "goalsFor": 13,
+      "goalsAgainst": 27,
+      "goalDiff": -14,
+      "points": 9,
       "form": [
         "L",
         "D",
         "L",
-        "L",
+        "D",
         "W"
       ]
     },
     {
       "rank": 16,
-      "team": "Родина",
-      "slug": "rodina",
-      "played": 11,
+      "team": "Факел",
+      "slug": "fakel",
+      "played": 12,
       "won": 1,
       "drawn": 3,
-      "lost": 7,
-      "goalsFor": 12,
-      "goalsAgainst": 27,
-      "goalDiff": -15,
+      "lost": 8,
+      "goalsFor": 8,
+      "goalsAgainst": 20,
+      "goalDiff": -12,
       "points": 6,
       "form": [
-        "L",
-        "L",
         "D",
         "L",
-        "D"
+        "L",
+        "W",
+        "L"
       ]
     }
   ],
@@ -7691,13 +7691,11 @@
       "away": "Динамо М",
       "homeSlug": "akron",
       "awaySlug": "dinamo-m",
-      "homeScore": 2,
+      "homeScore": 3,
       "awayScore": 1,
-      "live": "87'",
-      "status": "live",
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552665023-akron-dinamo-23-10-2026",
-      "stadium": "Солидарность Арена (Самара-Арена)",
-      "referee": "Капленков",
       "events": [
         {
           "type": "goal",
@@ -7759,6 +7757,8 @@
           "away": "84%"
         }
       ],
+      "stadium": "Солидарность Арена (Самара-Арена)",
+      "referee": "Капленков",
       "detailsVersion": 3
     },
     {
@@ -7770,11 +7770,56 @@
       "away": "Родина",
       "homeSlug": "fakel",
       "awaySlug": "rodina",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 1,
       "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665030-fakel-rodina-23-10-2026"
+      "status": "finished",
+      "url": "/football/rpl/552665030-fakel-rodina-23-10-2026",
+      "stadium": "Факел",
+      "referee": "Абросимов",
+      "events": [
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "43'",
+          "player": "Онугха",
+          "assist": null
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "46'",
+          "playerIn": "Тодорович",
+          "playerOut": "Тодорович"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "58'",
+          "playerIn": "Посо",
+          "playerOut": "Егорычев"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "60'",
+          "player": "Мусаев"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "61'",
+          "player": "Габараев"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-10-24-Рубин-Крылья Советов",
