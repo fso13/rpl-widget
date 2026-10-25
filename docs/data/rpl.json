@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-25T12:53:14+03:00",
+  "updatedAt": "2026-10-25T17:05:50+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -125,6 +125,26 @@
     },
     {
       "rank": 7,
+      "team": "Ростов",
+      "slug": "rostov",
+      "played": 12,
+      "won": 4,
+      "drawn": 3,
+      "lost": 5,
+      "goalsFor": 13,
+      "goalsAgainst": 17,
+      "goalDiff": -4,
+      "points": 15,
+      "form": [
+        "L",
+        "L",
+        "W",
+        "D",
+        "W"
+      ]
+    },
+    {
+      "rank": 8,
       "team": "Крылья Советов",
       "slug": "krylia",
       "played": 12,
@@ -144,7 +164,7 @@
       ]
     },
     {
-      "rank": 8,
+      "rank": 9,
       "team": "Балтика",
       "slug": "baltika",
       "played": 12,
@@ -164,7 +184,7 @@
       ]
     },
     {
-      "rank": 9,
+      "rank": 10,
       "team": "Динамо Мх",
       "slug": "dinamo-mh",
       "played": 11,
@@ -184,7 +204,7 @@
       ]
     },
     {
-      "rank": 10,
+      "rank": 11,
       "team": "Рубин",
       "slug": "rubin",
       "played": 12,
@@ -201,26 +221,6 @@
         "L",
         "L",
         "L"
-      ]
-    },
-    {
-      "rank": 11,
-      "team": "Ростов",
-      "slug": "rostov",
-      "played": 11,
-      "won": 3,
-      "drawn": 3,
-      "lost": 5,
-      "goalsFor": 11,
-      "goalsAgainst": 17,
-      "goalDiff": -6,
-      "points": 12,
-      "form": [
-        "W",
-        "L",
-        "L",
-        "W",
-        "D"
       ]
     },
     {
@@ -247,20 +247,20 @@
       "rank": 13,
       "team": "Локомотив",
       "slug": "lokomotiv",
-      "played": 11,
+      "played": 12,
       "won": 2,
       "drawn": 5,
-      "lost": 4,
+      "lost": 5,
       "goalsFor": 16,
-      "goalsAgainst": 14,
-      "goalDiff": 2,
+      "goalsAgainst": 16,
+      "goalDiff": 0,
       "points": 11,
       "form": [
-        "W",
         "L",
         "D",
         "W",
-        "D"
+        "D",
+        "L"
       ]
     },
     {
@@ -7996,11 +7996,58 @@
       "away": "Локомотив",
       "homeSlug": "rostov",
       "awaySlug": "lokomotiv",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 0,
       "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665025-rostov-lokomotiv-23-10-2026"
+      "status": "finished",
+      "url": "/football/rpl/552665025-rostov-lokomotiv-23-10-2026",
+      "stadium": "Ростов Арена",
+      "referee": "Москалев",
+      "events": [
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "12'",
+          "player": "Лангович",
+          "assist": "Кучаев"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "24'",
+          "player": "Олусегун",
+          "assist": "Сако"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "25'",
+          "playerIn": "Коваленко",
+          "playerOut": "Бакаев"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Щетинин",
+          "playerOut": "Еремеев"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "60'",
+          "playerIn": "Раков",
+          "playerOut": "Руденко"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-10-25-ЦСКА-Спартак",
@@ -8011,11 +8058,55 @@
       "away": "Спартак",
       "homeSlug": "cska",
       "awaySlug": "spartak",
-      "homeScore": null,
-      "awayScore": null,
-      "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665029-tsska-spartak-23-10-2026"
+      "homeScore": 2,
+      "awayScore": 0,
+      "live": "45'",
+      "status": "live",
+      "url": "/football/rpl/552665029-tsska-spartak-23-10-2026",
+      "stadium": "ВЭБ Арена",
+      "referee": "Левников",
+      "events": [
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "1'",
+          "player": "Глебов",
+          "assist": null
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "18'",
+          "player": "Глебов"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "24'",
+          "player": "Мусаев",
+          "assist": "Круговой"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "37'",
+          "player": "Лукин"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "37'",
+          "player": "Солари"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-10-25-Зенит-Динамо Мх",
@@ -8026,8 +8117,8 @@
       "away": "Динамо Мх",
       "homeSlug": "zenit",
       "awaySlug": "dinamo-mh",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 0,
       "live": null,
       "status": "scheduled",
       "url": "/football/rpl/552665029-tsska-spartak-23-10-2026"
