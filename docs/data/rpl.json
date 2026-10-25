@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-25T17:05:50+03:00",
+  "updatedAt": "2026-10-25T17:45:09+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -8001,8 +8001,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665025-rostov-lokomotiv-23-10-2026",
-      "stadium": "Ростов Арена",
-      "referee": "Москалев",
       "events": [
         {
           "type": "goal",
@@ -8047,6 +8045,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Ростов Арена",
+      "referee": "Москалев",
       "detailsVersion": 3
     },
     {
@@ -8060,7 +8060,7 @@
       "awaySlug": "spartak",
       "homeScore": 2,
       "awayScore": 0,
-      "live": "45'",
+      "live": "66'",
       "status": "live",
       "url": "/football/rpl/552665029-tsska-spartak-23-10-2026",
       "stadium": "ВЭБ Арена",
@@ -8097,6 +8097,19 @@
           "side": "away",
           "minute": "37'",
           "player": "Солари"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "62'",
+          "player": "Жоао"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "64'",
+          "playerIn": "Жедсон",
+          "playerOut": "Бабич"
         }
       ],
       "stats": [
@@ -8119,9 +8132,66 @@
       "awaySlug": "dinamo-mh",
       "homeScore": 2,
       "awayScore": 0,
-      "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665029-tsska-spartak-23-10-2026"
+      "live": "66'",
+      "status": "live",
+      "url": "/football/rpl/552665029-tsska-spartak-23-10-2026",
+      "stadium": "ВЭБ Арена",
+      "referee": "Левников",
+      "events": [
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "1'",
+          "player": "Глебов",
+          "assist": null
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "18'",
+          "player": "Глебов"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "24'",
+          "player": "Мусаев",
+          "assist": "Круговой"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "37'",
+          "player": "Лукин"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "37'",
+          "player": "Солари"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "62'",
+          "player": "Жоао"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "64'",
+          "playerIn": "Жедсон",
+          "playerOut": "Бабич"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-10-31-Рубин-Факел",
