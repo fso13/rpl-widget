@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-11-01T01:51:04+03:00",
+  "updatedAt": "2026-11-01T02:05:04+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -8284,8 +8284,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665038-dinamo-akhmat-01-11-2026",
-      "stadium": "ВТБ Арена (Динамо)",
-      "referee": "Карасев",
       "events": [
         {
           "type": "goal",
@@ -8350,6 +8348,8 @@
           "away": "0"
         }
       ],
+      "stadium": "ВТБ Арена (Динамо)",
+      "referee": "Карасев",
       "detailsVersion": 3
     },
     {
