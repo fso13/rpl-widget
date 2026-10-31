@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-31T12:16:41+03:00",
+  "updatedAt": "2026-10-31T18:23:38+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -125,26 +125,6 @@
     },
     {
       "rank": 7,
-      "team": "Ростов",
-      "slug": "rostov",
-      "played": 12,
-      "won": 4,
-      "drawn": 3,
-      "lost": 5,
-      "goalsFor": 13,
-      "goalsAgainst": 17,
-      "goalDiff": -4,
-      "points": 15,
-      "form": [
-        "L",
-        "L",
-        "W",
-        "D",
-        "W"
-      ]
-    },
-    {
-      "rank": 8,
       "team": "Крылья Советов",
       "slug": "krylia",
       "played": 12,
@@ -164,7 +144,47 @@
       ]
     },
     {
+      "rank": 8,
+      "team": "Ростов",
+      "slug": "rostov",
+      "played": 12,
+      "won": 4,
+      "drawn": 3,
+      "lost": 5,
+      "goalsFor": 13,
+      "goalsAgainst": 17,
+      "goalDiff": -4,
+      "points": 15,
+      "form": [
+        "L",
+        "L",
+        "W",
+        "D",
+        "W"
+      ]
+    },
+    {
       "rank": 9,
+      "team": "Рубин",
+      "slug": "rubin",
+      "played": 13,
+      "won": 3,
+      "drawn": 6,
+      "lost": 4,
+      "goalsFor": 13,
+      "goalsAgainst": 18,
+      "goalDiff": -5,
+      "points": 15,
+      "form": [
+        "D",
+        "L",
+        "L",
+        "L",
+        "W"
+      ]
+    },
+    {
+      "rank": 10,
       "team": "Балтика",
       "slug": "baltika",
       "played": 12,
@@ -184,7 +204,7 @@
       ]
     },
     {
-      "rank": 10,
+      "rank": 11,
       "team": "Динамо Мх",
       "slug": "dinamo-mh",
       "played": 12,
@@ -200,26 +220,6 @@
         "L",
         "L",
         "D",
-        "L"
-      ]
-    },
-    {
-      "rank": 11,
-      "team": "Рубин",
-      "slug": "rubin",
-      "played": 12,
-      "won": 2,
-      "drawn": 6,
-      "lost": 4,
-      "goalsFor": 12,
-      "goalsAgainst": 18,
-      "goalDiff": -6,
-      "points": 12,
-      "form": [
-        "D",
-        "D",
-        "L",
-        "L",
         "L"
       ]
     },
@@ -307,19 +307,19 @@
       "rank": 16,
       "team": "Факел",
       "slug": "fakel",
-      "played": 12,
+      "played": 13,
       "won": 1,
       "drawn": 3,
-      "lost": 8,
+      "lost": 9,
       "goalsFor": 8,
-      "goalsAgainst": 20,
-      "goalDiff": -12,
+      "goalsAgainst": 21,
+      "goalDiff": -13,
       "points": 6,
       "form": [
-        "D",
         "L",
         "L",
         "W",
+        "L",
         "L"
       ]
     }
@@ -8202,11 +8202,73 @@
       "away": "Факел",
       "homeSlug": "rubin",
       "awaySlug": "fakel",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 0,
       "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665037-rubin-fakel-01-11-2026"
+      "status": "finished",
+      "url": "/football/rpl/552665037-rubin-fakel-01-11-2026",
+      "stadium": "Ак Барс Арена",
+      "referee": "Каширин",
+      "events": [
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "10'",
+          "player": "Альшин"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "25'",
+          "player": "Кокшаров"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "35'",
+          "player": "Иву"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "38'",
+          "player": "Сальседо",
+          "assist": null
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "57'",
+          "player": "Самошников"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "58'",
+          "playerIn": "Йочич",
+          "playerOut": "Иву"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "58'",
+          "playerIn": "Грипши",
+          "playerOut": "Бабаев"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Удары по воротам (точность)",
+          "home": "33.3%",
+          "away": "33.3%"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-10-31-Динамо М-Ахмат",
@@ -8217,11 +8279,41 @@
       "away": "Ахмат",
       "homeSlug": "dinamo-m",
       "awaySlug": "akhmat",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 0,
       "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665038-dinamo-akhmat-01-11-2026"
+      "status": "finished",
+      "url": "/football/rpl/552665038-dinamo-akhmat-01-11-2026",
+      "stadium": "ВТБ Арена (Динамо)",
+      "referee": "Карасев",
+      "events": [
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "2'",
+          "player": "Фомин",
+          "assist": null
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "22'",
+          "player": "Сидибе"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Нарушения",
+          "home": "9",
+          "away": "9"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-10-31-Родина-Краснодар",
