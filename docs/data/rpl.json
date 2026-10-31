@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-31T22:43:23+03:00",
+  "updatedAt": "2026-11-01T01:51:04+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -8284,6 +8284,8 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665038-dinamo-akhmat-01-11-2026",
+      "stadium": "ВТБ Арена (Динамо)",
+      "referee": "Карасев",
       "events": [
         {
           "type": "goal",
@@ -8304,6 +8306,41 @@
           "minute": "56'",
           "playerIn": "Щетинин",
           "playerOut": "Ибишев"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "63'",
+          "playerIn": "Гутьеррес",
+          "playerOut": "Гладышев"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "63'",
+          "playerIn": "Казимир",
+          "playerOut": "Гомес"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "65'",
+          "playerIn": "Мелкадзе",
+          "playerOut": "Конате"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "76'",
+          "playerIn": "Максути",
+          "playerOut": "Самородов"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "77'",
+          "player": "Тюкавин",
+          "assist": "Фомин"
         }
       ],
       "stats": [
@@ -8313,8 +8350,6 @@
           "away": "0"
         }
       ],
-      "stadium": "ВТБ Арена (Динамо)",
-      "referee": "Карасев",
       "detailsVersion": 3
     },
     {
@@ -8331,8 +8366,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665032-rodina-krasnodar-01-11-2026",
-      "stadium": "Арена Химки",
-      "referee": "Шафеев",
       "events": [
         {
           "type": "yellow",
@@ -8421,6 +8454,8 @@
           "away": "79%"
         }
       ],
+      "stadium": "Арена Химки",
+      "referee": "Шафеев",
       "detailsVersion": 3
     },
     {
