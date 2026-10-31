@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-31T18:23:38+03:00",
+  "updatedAt": "2026-10-31T18:56:19+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -8207,8 +8207,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665037-rubin-fakel-01-11-2026",
-      "stadium": "Ак Барс Арена",
-      "referee": "Каширин",
       "events": [
         {
           "type": "yellow",
@@ -8268,6 +8266,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Ак Барс Арена",
+      "referee": "Каширин",
       "detailsVersion": 3
     },
     {
@@ -8281,8 +8281,8 @@
       "awaySlug": "akhmat",
       "homeScore": 1,
       "awayScore": 0,
-      "live": null,
-      "status": "finished",
+      "live": "63'",
+      "status": "live",
       "url": "/football/rpl/552665038-dinamo-akhmat-01-11-2026",
       "stadium": "ВТБ Арена (Динамо)",
       "referee": "Карасев",
@@ -8299,14 +8299,16 @@
           "side": "away",
           "minute": "22'",
           "player": "Сидибе"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "56'",
+          "playerIn": "Щетинин",
+          "playerOut": "Ибишев"
         }
       ],
       "stats": [
-        {
-          "name": "Нарушения",
-          "home": "9",
-          "away": "9"
-        },
         {
           "name": "Красные карточки",
           "home": "0",
