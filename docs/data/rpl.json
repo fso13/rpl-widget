@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-11-02T00:01:59+03:00",
+  "updatedAt": "2026-11-02T02:22:04+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -8725,17 +8725,57 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665031-lokomotiv-spartak-01-11-2026",
-      "events": [],
-      "stats": [
+      "stadium": "РЖД Арена (Локомотив)",
+      "referee": "Чистяков",
+      "events": [
         {
-          "name": "Голы",
-          "home": "0",
-          "away": "0"
+          "type": "own_goal",
+          "side": "away",
+          "minute": "11'",
+          "player": "Руденко",
+          "assist": null
         },
         {
-          "name": "Желтые карточки",
-          "home": "0",
-          "away": "0"
+          "type": "sub",
+          "side": "away",
+          "minute": "31'",
+          "playerIn": "Парада",
+          "playerOut": "Дмитриев"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "33'",
+          "player": "Парада",
+          "assist": "Жедсон"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "45'",
+          "player": "Угальде",
+          "assist": "Литвинов"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "46'",
+          "playerIn": "Коваленко",
+          "playerOut": "Бакаев"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "76'",
+          "player": "Барко",
+          "assist": null
+        }
+      ],
+      "stats": [
+        {
+          "name": "Нарушения",
+          "home": "15",
+          "away": "15"
         },
         {
           "name": "Красные карточки",
@@ -8743,8 +8783,6 @@
           "away": "0"
         }
       ],
-      "stadium": "РЖД Арена (Локомотив)",
-      "referee": "Чистяков",
       "detailsVersion": 3
     },
     {
