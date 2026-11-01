@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-11-01T19:19:44+03:00",
+  "updatedAt": "2026-11-01T19:58:55+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -125,6 +125,26 @@
     },
     {
       "rank": 7,
+      "team": "Балтика",
+      "slug": "baltika",
+      "played": 13,
+      "won": 4,
+      "drawn": 5,
+      "lost": 4,
+      "goalsFor": 17,
+      "goalsAgainst": 14,
+      "goalDiff": 3,
+      "points": 17,
+      "form": [
+        "L",
+        "D",
+        "D",
+        "D",
+        "W"
+      ]
+    },
+    {
+      "rank": 8,
       "team": "Оренбург",
       "slug": "orenburg",
       "played": 13,
@@ -144,7 +164,7 @@
       ]
     },
     {
-      "rank": 8,
+      "rank": 9,
       "team": "Крылья Советов",
       "slug": "krylia",
       "played": 12,
@@ -164,7 +184,7 @@
       ]
     },
     {
-      "rank": 9,
+      "rank": 10,
       "team": "Рубин",
       "slug": "rubin",
       "played": 13,
@@ -181,26 +201,6 @@
         "L",
         "L",
         "W"
-      ]
-    },
-    {
-      "rank": 10,
-      "team": "Балтика",
-      "slug": "baltika",
-      "played": 12,
-      "won": 3,
-      "drawn": 5,
-      "lost": 4,
-      "goalsFor": 15,
-      "goalsAgainst": 13,
-      "goalDiff": 2,
-      "points": 14,
-      "form": [
-        "D",
-        "L",
-        "D",
-        "D",
-        "D"
       ]
     },
     {
@@ -247,20 +247,20 @@
       "rank": 13,
       "team": "Акрон",
       "slug": "akron",
-      "played": 12,
+      "played": 13,
       "won": 2,
       "drawn": 6,
-      "lost": 4,
-      "goalsFor": 15,
-      "goalsAgainst": 21,
-      "goalDiff": -6,
+      "lost": 5,
+      "goalsFor": 16,
+      "goalsAgainst": 23,
+      "goalDiff": -7,
       "points": 12,
       "form": [
-        "D",
         "W",
         "L",
         "D",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -8472,8 +8472,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665033-orenburg-tsska-01-11-2026",
-      "stadium": "Газовик",
-      "referee": "Капленков",
       "events": [
         {
           "type": "yellow",
@@ -8536,6 +8534,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Газовик",
+      "referee": "Капленков",
       "detailsVersion": 3
     },
     {
@@ -8552,8 +8552,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665034-dinamo-rostov-01-11-2026",
-      "stadium": "Анжи-Арена",
-      "referee": "Прокопов",
       "events": [
         {
           "type": "yellow",
@@ -8623,6 +8621,8 @@
           "away": "1"
         }
       ],
+      "stadium": "Анжи-Арена",
+      "referee": "Прокопов",
       "detailsVersion": 3
     },
     {
@@ -8636,11 +8636,9 @@
       "awaySlug": "akron",
       "homeScore": 2,
       "awayScore": 1,
-      "live": "90'",
-      "status": "live",
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552665035-baltika-akron-01-11-2026",
-      "stadium": "Ростех Арена (Калининград)",
-      "referee": "Левников",
       "events": [
         {
           "type": "sub",
@@ -8709,6 +8707,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Ростех Арена (Калининград)",
+      "referee": "Левников",
       "detailsVersion": 3
     },
     {
@@ -8720,11 +8720,32 @@
       "away": "Спартак",
       "homeSlug": "lokomotiv",
       "awaySlug": "spartak",
-      "homeScore": null,
-      "awayScore": null,
-      "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665031-lokomotiv-spartak-01-11-2026"
+      "homeScore": 0,
+      "awayScore": 0,
+      "live": "10'",
+      "status": "live",
+      "url": "/football/rpl/552665031-lokomotiv-spartak-01-11-2026",
+      "stadium": "РЖД Арена (Локомотив)",
+      "referee": "Чистяков",
+      "events": [],
+      "stats": [
+        {
+          "name": "Голы",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Желтые карточки",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-11-02-Крылья Советов-Зенит",
