@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-11-01T19:58:55+03:00",
+  "updatedAt": "2026-11-02T00:01:59+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -65,6 +65,26 @@
     },
     {
       "rank": 4,
+      "team": "Спартак",
+      "slug": "spartak",
+      "played": 13,
+      "won": 8,
+      "drawn": 2,
+      "lost": 3,
+      "goalsFor": 25,
+      "goalsAgainst": 10,
+      "goalDiff": 15,
+      "points": 26,
+      "form": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ]
+    },
+    {
+      "rank": 5,
       "team": "Краснодар",
       "slug": "krasnodar",
       "played": 13,
@@ -80,26 +100,6 @@
         "L",
         "D",
         "D",
-        "L"
-      ]
-    },
-    {
-      "rank": 5,
-      "team": "Спартак",
-      "slug": "spartak",
-      "played": 12,
-      "won": 7,
-      "drawn": 2,
-      "lost": 3,
-      "goalsFor": 21,
-      "goalsAgainst": 10,
-      "goalDiff": 11,
-      "points": 23,
-      "form": [
-        "W",
-        "W",
-        "D",
-        "W",
         "L"
       ]
     },
@@ -267,19 +267,19 @@
       "rank": 14,
       "team": "Локомотив",
       "slug": "lokomotiv",
-      "played": 12,
+      "played": 13,
       "won": 2,
       "drawn": 5,
-      "lost": 5,
+      "lost": 6,
       "goalsFor": 16,
-      "goalsAgainst": 16,
-      "goalDiff": 0,
+      "goalsAgainst": 20,
+      "goalDiff": -4,
       "points": 11,
       "form": [
-        "L",
         "D",
         "W",
         "D",
+        "L",
         "L"
       ]
     },
@@ -8721,12 +8721,10 @@
       "homeSlug": "lokomotiv",
       "awaySlug": "spartak",
       "homeScore": 0,
-      "awayScore": 0,
-      "live": "10'",
-      "status": "live",
+      "awayScore": 4,
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552665031-lokomotiv-spartak-01-11-2026",
-      "stadium": "РЖД Арена (Локомотив)",
-      "referee": "Чистяков",
       "events": [],
       "stats": [
         {
@@ -8745,6 +8743,8 @@
           "away": "0"
         }
       ],
+      "stadium": "РЖД Арена (Локомотив)",
+      "referee": "Чистяков",
       "detailsVersion": 3
     },
     {
