@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-11-02T23:29:34+03:00",
+  "updatedAt": "2026-11-02T23:37:03+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -8799,8 +8799,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665036-kryliasovetov-zenit-01-11-2026",
-      "stadium": "Солидарность Арена (Самара-Арена)",
-      "referee": "Кукуляк",
       "events": [
         {
           "type": "goal",
@@ -8870,6 +8868,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Солидарность Арена (Самара-Арена)",
+      "referee": "Кукуляк",
       "detailsVersion": 3
     },
     {
