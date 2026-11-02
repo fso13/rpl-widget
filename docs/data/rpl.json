@@ -1,10 +1,30 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-11-02T13:32:01+03:00",
+  "updatedAt": "2026-11-02T23:29:34+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
       "rank": 1,
+      "team": "Зенит",
+      "slug": "zenit",
+      "played": 13,
+      "won": 10,
+      "drawn": 0,
+      "lost": 3,
+      "goalsFor": 30,
+      "goalsAgainst": 13,
+      "goalDiff": 17,
+      "points": 30,
+      "form": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    },
+    {
+      "rank": 2,
       "team": "Динамо М",
       "slug": "dinamo-m",
       "played": 13,
@@ -20,26 +40,6 @@
         "W",
         "W",
         "L",
-        "W"
-      ]
-    },
-    {
-      "rank": 2,
-      "team": "Зенит",
-      "slug": "zenit",
-      "played": 12,
-      "won": 9,
-      "drawn": 0,
-      "lost": 3,
-      "goalsFor": 27,
-      "goalsAgainst": 13,
-      "goalDiff": 14,
-      "points": 27,
-      "form": [
-        "W",
-        "W",
-        "W",
-        "W",
         "W"
       ]
     },
@@ -167,20 +167,20 @@
       "rank": 9,
       "team": "Крылья Советов",
       "slug": "krylia",
-      "played": 12,
+      "played": 13,
       "won": 3,
       "drawn": 6,
-      "lost": 3,
+      "lost": 4,
       "goalsFor": 17,
-      "goalsAgainst": 17,
-      "goalDiff": 0,
+      "goalsAgainst": 20,
+      "goalDiff": -3,
       "points": 15,
       "form": [
-        "W",
         "D",
         "D",
         "L",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -8794,11 +8794,83 @@
       "away": "Зенит",
       "homeSlug": "krylia",
       "awaySlug": "zenit",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 3,
       "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665036-kryliasovetov-zenit-01-11-2026"
+      "status": "finished",
+      "url": "/football/rpl/552665036-kryliasovetov-zenit-01-11-2026",
+      "stadium": "Солидарность Арена (Самара-Арена)",
+      "referee": "Кукуляк",
+      "events": [
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "26'",
+          "player": "Соболев",
+          "assist": null
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "37'",
+          "player": "Салтыков"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "54'",
+          "player": "Божин"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "58'",
+          "player": "Барриос"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "63'",
+          "playerIn": "Педро",
+          "playerOut": "дос Сантос"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "64'",
+          "playerIn": "Баньяц",
+          "playerOut": "Витюгов"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "64'",
+          "playerIn": "Шитов",
+          "playerOut": "Рассказов"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "67'",
+          "player": "Соболев",
+          "assist": "Глушенков"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "73'",
+          "player": "Карпукас",
+          "assist": "Глушенков"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-11-06-Локомотив-Рубин",
