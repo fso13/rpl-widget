@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-11-02T02:22:04+03:00",
+  "updatedAt": "2026-11-02T05:43:33+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -8725,8 +8725,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665031-lokomotiv-spartak-01-11-2026",
-      "stadium": "РЖД Арена (Локомотив)",
-      "referee": "Чистяков",
       "events": [
         {
           "type": "own_goal",
@@ -8783,6 +8781,8 @@
           "away": "0"
         }
       ],
+      "stadium": "РЖД Арена (Локомотив)",
+      "referee": "Чистяков",
       "detailsVersion": 3
     },
     {
