@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-11-07T01:26:20+03:00",
+  "updatedAt": "2026-11-07T02:56:58+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -8886,6 +8886,8 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665043-lokomotiv-rubin-07-11-2026",
+      "stadium": "РЖД Арена (Локомотив)",
+      "referee": "Танашев",
       "events": [
         {
           "type": "sub",
@@ -8906,32 +8908,42 @@
           "side": "away",
           "minute": "54'",
           "player": "Самошников"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "61'",
+          "player": "Тесленко"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "63'",
+          "playerIn": "Йочич",
+          "playerOut": "Ходжа"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "71'",
+          "player": "Тесленко",
+          "assist": "Бабаев"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "74'",
+          "playerIn": "Рожков",
+          "playerOut": "Бабаев"
         }
       ],
       "stats": [
-        {
-          "name": "Голы",
-          "home": "0",
-          "away": "0"
-        },
-        {
-          "name": "Угловые",
-          "home": "4",
-          "away": "4"
-        },
-        {
-          "name": "Офсайды",
-          "home": "1",
-          "away": "1"
-        },
         {
           "name": "Красные карточки",
           "home": "0",
           "away": "0"
         }
       ],
-      "stadium": "РЖД Арена (Локомотив)",
-      "referee": "Танашев",
       "detailsVersion": 3
     },
     {
