@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-11-06T18:23:00+03:00",
+  "updatedAt": "2026-11-06T20:47:19+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -8881,11 +8881,58 @@
       "away": "Рубин",
       "homeSlug": "lokomotiv",
       "awaySlug": "rubin",
-      "homeScore": null,
-      "awayScore": null,
-      "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665043-lokomotiv-rubin-07-11-2026"
+      "homeScore": 0,
+      "awayScore": 0,
+      "live": "58'",
+      "status": "live",
+      "url": "/football/rpl/552665043-lokomotiv-rubin-07-11-2026",
+      "stadium": "РЖД Арена (Локомотив)",
+      "referee": "Танашев",
+      "events": [
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "46'",
+          "playerIn": "Руденко",
+          "playerOut": "Годяев"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "46'",
+          "playerIn": "Бакаев",
+          "playerOut": "Пиняев"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "54'",
+          "player": "Самошников"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Голы",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Угловые",
+          "home": "4",
+          "away": "4"
+        },
+        {
+          "name": "Офсайды",
+          "home": "1",
+          "away": "1"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-11-07-Факел-Динамо М",
