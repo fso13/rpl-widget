@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-11-06T20:47:19+03:00",
+  "updatedAt": "2026-11-07T01:26:20+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -125,6 +125,26 @@
     },
     {
       "rank": 7,
+      "team": "Рубин",
+      "slug": "rubin",
+      "played": 14,
+      "won": 4,
+      "drawn": 6,
+      "lost": 4,
+      "goalsFor": 14,
+      "goalsAgainst": 18,
+      "goalDiff": -4,
+      "points": 18,
+      "form": [
+        "L",
+        "L",
+        "L",
+        "W",
+        "W"
+      ]
+    },
+    {
+      "rank": 8,
       "team": "Балтика",
       "slug": "baltika",
       "played": 13,
@@ -144,7 +164,7 @@
       ]
     },
     {
-      "rank": 8,
+      "rank": 9,
       "team": "Оренбург",
       "slug": "orenburg",
       "played": 13,
@@ -164,7 +184,7 @@
       ]
     },
     {
-      "rank": 9,
+      "rank": 10,
       "team": "Крылья Советов",
       "slug": "krylia",
       "played": 13,
@@ -181,26 +201,6 @@
         "L",
         "W",
         "L"
-      ]
-    },
-    {
-      "rank": 10,
-      "team": "Рубин",
-      "slug": "rubin",
-      "played": 13,
-      "won": 3,
-      "drawn": 6,
-      "lost": 4,
-      "goalsFor": 13,
-      "goalsAgainst": 18,
-      "goalDiff": -5,
-      "points": 15,
-      "form": [
-        "D",
-        "L",
-        "L",
-        "L",
-        "W"
       ]
     },
     {
@@ -265,26 +265,6 @@
     },
     {
       "rank": 14,
-      "team": "Локомотив",
-      "slug": "lokomotiv",
-      "played": 13,
-      "won": 2,
-      "drawn": 5,
-      "lost": 6,
-      "goalsFor": 16,
-      "goalsAgainst": 20,
-      "goalDiff": -4,
-      "points": 11,
-      "form": [
-        "D",
-        "W",
-        "D",
-        "L",
-        "L"
-      ]
-    },
-    {
-      "rank": 15,
       "team": "Ахмат",
       "slug": "akhmat",
       "played": 13,
@@ -297,6 +277,26 @@
       "points": 11,
       "form": [
         "L",
+        "D",
+        "L",
+        "L",
+        "L"
+      ]
+    },
+    {
+      "rank": 15,
+      "team": "Локомотив",
+      "slug": "lokomotiv",
+      "played": 14,
+      "won": 2,
+      "drawn": 5,
+      "lost": 7,
+      "goalsFor": 16,
+      "goalsAgainst": 21,
+      "goalDiff": -5,
+      "points": 11,
+      "form": [
+        "W",
         "D",
         "L",
         "L",
@@ -8882,12 +8882,10 @@
       "homeSlug": "lokomotiv",
       "awaySlug": "rubin",
       "homeScore": 0,
-      "awayScore": 0,
-      "live": "58'",
-      "status": "live",
+      "awayScore": 1,
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552665043-lokomotiv-rubin-07-11-2026",
-      "stadium": "РЖД Арена (Локомотив)",
-      "referee": "Танашев",
       "events": [
         {
           "type": "sub",
@@ -8932,6 +8930,8 @@
           "away": "0"
         }
       ],
+      "stadium": "РЖД Арена (Локомотив)",
+      "referee": "Танашев",
       "detailsVersion": 3
     },
     {
