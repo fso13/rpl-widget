@@ -1,10 +1,30 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-11-07T14:47:06+03:00",
+  "updatedAt": "2026-11-07T19:43:39+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
       "rank": 1,
+      "team": "Динамо М",
+      "slug": "dinamo-m",
+      "played": 14,
+      "won": 10,
+      "drawn": 1,
+      "lost": 3,
+      "goalsFor": 23,
+      "goalsAgainst": 13,
+      "goalDiff": 10,
+      "points": 31,
+      "form": [
+        "W",
+        "W",
+        "L",
+        "W",
+        "W"
+      ]
+    },
+    {
+      "rank": 2,
       "team": "Зенит",
       "slug": "zenit",
       "played": 13,
@@ -20,26 +40,6 @@
         "W",
         "W",
         "W",
-        "W"
-      ]
-    },
-    {
-      "rank": 2,
-      "team": "Динамо М",
-      "slug": "dinamo-m",
-      "played": 13,
-      "won": 9,
-      "drawn": 1,
-      "lost": 3,
-      "goalsFor": 21,
-      "goalsAgainst": 12,
-      "goalDiff": 9,
-      "points": 28,
-      "form": [
-        "W",
-        "W",
-        "W",
-        "L",
         "W"
       ]
     },
@@ -205,6 +205,26 @@
     },
     {
       "rank": 11,
+      "team": "Ахмат",
+      "slug": "akhmat",
+      "played": 14,
+      "won": 3,
+      "drawn": 5,
+      "lost": 6,
+      "goalsFor": 16,
+      "goalsAgainst": 19,
+      "goalDiff": -3,
+      "points": 14,
+      "form": [
+        "D",
+        "L",
+        "L",
+        "L",
+        "W"
+      ]
+    },
+    {
+      "rank": 12,
       "team": "Динамо Мх",
       "slug": "dinamo-mh",
       "played": 13,
@@ -224,27 +244,27 @@
       ]
     },
     {
-      "rank": 12,
+      "rank": 13,
       "team": "Родина",
       "slug": "rodina",
-      "played": 13,
+      "played": 14,
       "won": 3,
       "drawn": 3,
-      "lost": 7,
+      "lost": 8,
       "goalsFor": 15,
-      "goalsAgainst": 28,
-      "goalDiff": -13,
+      "goalsAgainst": 29,
+      "goalDiff": -14,
       "points": 12,
       "form": [
-        "D",
         "L",
         "D",
         "W",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
-      "rank": 13,
+      "rank": 14,
       "team": "Акрон",
       "slug": "akron",
       "played": 13,
@@ -260,26 +280,6 @@
         "L",
         "D",
         "W",
-        "L"
-      ]
-    },
-    {
-      "rank": 14,
-      "team": "Ахмат",
-      "slug": "akhmat",
-      "played": 13,
-      "won": 2,
-      "drawn": 5,
-      "lost": 6,
-      "goalsFor": 15,
-      "goalsAgainst": 19,
-      "goalDiff": -4,
-      "points": 11,
-      "form": [
-        "L",
-        "D",
-        "L",
-        "L",
         "L"
       ]
     },
@@ -307,18 +307,18 @@
       "rank": 16,
       "team": "Факел",
       "slug": "fakel",
-      "played": 13,
+      "played": 14,
       "won": 1,
       "drawn": 3,
-      "lost": 9,
-      "goalsFor": 8,
-      "goalsAgainst": 21,
-      "goalDiff": -13,
+      "lost": 10,
+      "goalsFor": 9,
+      "goalsAgainst": 23,
+      "goalDiff": -14,
       "points": 6,
       "form": [
         "L",
-        "L",
         "W",
+        "L",
         "L",
         "L"
       ]
@@ -8956,12 +8956,10 @@
       "homeSlug": "fakel",
       "awaySlug": "dinamo-m",
       "homeScore": 1,
-      "awayScore": 1,
-      "live": "45'",
-      "status": "live",
+      "awayScore": 2,
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552665039-fakel-dinamo-07-11-2026",
-      "stadium": "Факел",
-      "referee": "Заика",
       "events": [
         {
           "type": "goal",
@@ -9008,6 +9006,8 @@
           "away": "2"
         }
       ],
+      "stadium": "Факел",
+      "referee": "Заика",
       "detailsVersion": 3
     },
     {
@@ -9019,11 +9019,75 @@
       "away": "Родина",
       "homeSlug": "akhmat",
       "awaySlug": "rodina",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 0,
       "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665046-akhmat-rodina-07-11-2026"
+      "status": "finished",
+      "url": "/football/rpl/552665046-akhmat-rodina-07-11-2026",
+      "stadium": "Ахмат-Арена",
+      "referee": "Буланов",
+      "events": [
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "34'",
+          "player": "Цаке",
+          "assist": "Исмаэл"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "39'",
+          "player": "Рейна"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "60'",
+          "playerIn": "Конате",
+          "playerOut": "Мелкадзе"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "60'",
+          "playerIn": "Максименко",
+          "playerOut": "Абдусаламов"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "60'",
+          "playerIn": "Мещанинов",
+          "playerOut": "Надэ"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "64'",
+          "player": "Егорычев"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "70'",
+          "playerIn": "Ушатов",
+          "playerOut": "Егорычев"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Офсайды",
+          "home": "1",
+          "away": "1"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-11-07-Краснодар-ЦСКА",
@@ -9034,11 +9098,37 @@
       "away": "ЦСКА",
       "homeSlug": "krasnodar",
       "awaySlug": "cska",
-      "homeScore": null,
-      "awayScore": null,
-      "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665044-krasnodar-tsska-07-11-2026"
+      "homeScore": 0,
+      "awayScore": 0,
+      "live": "10'",
+      "status": "live",
+      "url": "/football/rpl/552665044-krasnodar-tsska-07-11-2026",
+      "stadium": "Озон Арена (Краснодар)",
+      "referee": "Карасев",
+      "events": [],
+      "stats": [
+        {
+          "name": "Голы",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Удары (в створ)",
+          "home": "2 (0)",
+          "away": "2 (0)"
+        },
+        {
+          "name": "Желтые карточки",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-11-08-Крылья Советов-Оренбург",
