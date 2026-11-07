@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-11-07T19:43:39+03:00",
+  "updatedAt": "2026-11-07T23:31:44+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -45,26 +45,46 @@
     },
     {
       "rank": 3,
-      "team": "ЦСКА",
-      "slug": "cska",
-      "played": 13,
+      "team": "Краснодар",
+      "slug": "krasnodar",
+      "played": 14,
       "won": 7,
       "drawn": 5,
-      "lost": 1,
-      "goalsFor": 21,
-      "goalsAgainst": 12,
-      "goalDiff": 9,
+      "lost": 2,
+      "goalsFor": 25,
+      "goalsAgainst": 18,
+      "goalDiff": 7,
       "points": 26,
       "form": [
-        "W",
-        "W",
         "L",
-        "W",
-        "D"
+        "D",
+        "D",
+        "L",
+        "W"
       ]
     },
     {
       "rank": 4,
+      "team": "ЦСКА",
+      "slug": "cska",
+      "played": 14,
+      "won": 7,
+      "drawn": 5,
+      "lost": 2,
+      "goalsFor": 23,
+      "goalsAgainst": 16,
+      "goalDiff": 7,
+      "points": 26,
+      "form": [
+        "W",
+        "L",
+        "W",
+        "D",
+        "L"
+      ]
+    },
+    {
+      "rank": 5,
       "team": "Спартак",
       "slug": "spartak",
       "played": 13,
@@ -81,26 +101,6 @@
         "W",
         "L",
         "W"
-      ]
-    },
-    {
-      "rank": 5,
-      "team": "Краснодар",
-      "slug": "krasnodar",
-      "played": 13,
-      "won": 6,
-      "drawn": 5,
-      "lost": 2,
-      "goalsFor": 21,
-      "goalsAgainst": 16,
-      "goalDiff": 5,
-      "points": 23,
-      "form": [
-        "D",
-        "L",
-        "D",
-        "D",
-        "L"
       ]
     },
     {
@@ -8960,6 +8960,8 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665039-fakel-dinamo-07-11-2026",
+      "stadium": "Факел",
+      "referee": "Заика",
       "events": [
         {
           "type": "goal",
@@ -8992,22 +8994,29 @@
           "side": "away",
           "minute": "39'",
           "player": "Гомес"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Осипенко",
+          "playerOut": "Гладышев"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "90'",
+          "player": "Тюкавин",
+          "assist": "Осипенко"
         }
       ],
       "stats": [
         {
-          "name": "Голы",
+          "name": "Красные карточки",
           "home": "1",
           "away": "1"
-        },
-        {
-          "name": "Угловые",
-          "home": "2",
-          "away": "2"
         }
       ],
-      "stadium": "Факел",
-      "referee": "Заика",
       "detailsVersion": 3
     },
     {
@@ -9024,8 +9033,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665046-akhmat-rodina-07-11-2026",
-      "stadium": "Ахмат-Арена",
-      "referee": "Буланов",
       "events": [
         {
           "type": "goal",
@@ -9087,6 +9094,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Ахмат-Арена",
+      "referee": "Буланов",
       "detailsVersion": 3
     },
     {
@@ -9098,13 +9107,11 @@
       "away": "ЦСКА",
       "homeSlug": "krasnodar",
       "awaySlug": "cska",
-      "homeScore": 0,
-      "awayScore": 0,
-      "live": "10'",
-      "status": "live",
+      "homeScore": 4,
+      "awayScore": 2,
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552665044-krasnodar-tsska-07-11-2026",
-      "stadium": "Озон Арена (Краснодар)",
-      "referee": "Карасев",
       "events": [],
       "stats": [
         {
@@ -9128,6 +9135,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Озон Арена (Краснодар)",
+      "referee": "Карасев",
       "detailsVersion": 3
     },
     {
