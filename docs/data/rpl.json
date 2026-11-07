@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-11-07T02:56:58+03:00",
+  "updatedAt": "2026-11-07T08:10:25+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -8886,8 +8886,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665043-lokomotiv-rubin-07-11-2026",
-      "stadium": "РЖД Арена (Локомотив)",
-      "referee": "Танашев",
       "events": [
         {
           "type": "sub",
@@ -8944,6 +8942,8 @@
           "away": "0"
         }
       ],
+      "stadium": "РЖД Арена (Локомотив)",
+      "referee": "Танашев",
       "detailsVersion": 3
     },
     {
