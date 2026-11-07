@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-11-07T08:10:25+03:00",
+  "updatedAt": "2026-11-07T14:47:06+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -8955,11 +8955,60 @@
       "away": "Динамо М",
       "homeSlug": "fakel",
       "awaySlug": "dinamo-m",
-      "homeScore": null,
-      "awayScore": null,
-      "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665039-fakel-dinamo-07-11-2026"
+      "homeScore": 1,
+      "awayScore": 1,
+      "live": "45'",
+      "status": "live",
+      "url": "/football/rpl/552665039-fakel-dinamo-07-11-2026",
+      "stadium": "Факел",
+      "referee": "Заика",
+      "events": [
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "3'",
+          "player": "Фомин",
+          "assist": "Бителло"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "11'",
+          "player": "Тодорович"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "12'",
+          "player": "Якимов",
+          "assist": null
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "17'",
+          "player": "Пуси"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "39'",
+          "player": "Гомес"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Голы",
+          "home": "1",
+          "away": "1"
+        },
+        {
+          "name": "Угловые",
+          "home": "2",
+          "away": "2"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-11-07-Ахмат-Родина",
