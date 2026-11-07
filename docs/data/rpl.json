@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-11-07T23:31:44+03:00",
+  "updatedAt": "2026-11-08T02:24:57+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -8960,8 +8960,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665039-fakel-dinamo-07-11-2026",
-      "stadium": "Факел",
-      "referee": "Заика",
       "events": [
         {
           "type": "goal",
@@ -9017,6 +9015,8 @@
           "away": "1"
         }
       ],
+      "stadium": "Факел",
+      "referee": "Заика",
       "detailsVersion": 3
     },
     {
@@ -9112,31 +9112,86 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665044-krasnodar-tsska-07-11-2026",
-      "events": [],
+      "stadium": "Озон Арена (Краснодар)",
+      "referee": "Карасев",
+      "events": [
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "16'",
+          "player": "Кордоба",
+          "assist": "Кристиан"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "35'",
+          "player": "Кисляк",
+          "assist": null
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "41'",
+          "player": "Батчи",
+          "assist": null
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "58'",
+          "playerIn": "Уткин",
+          "playerOut": "Воробьёв"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "60'",
+          "playerIn": "Глебов",
+          "playerOut": "Олейников"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "63'",
+          "playerIn": "Пальцев",
+          "playerOut": "Петров"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "67'",
+          "player": "Гонсалвеш"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "74'",
+          "player": "Уткин",
+          "assist": null
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "82'",
+          "player": "Кордоба",
+          "assist": "Кристиан"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "90'",
+          "player": "Глебов",
+          "assist": "Мусаев"
+        }
+      ],
       "stats": [
-        {
-          "name": "Голы",
-          "home": "0",
-          "away": "0"
-        },
-        {
-          "name": "Удары (в створ)",
-          "home": "2 (0)",
-          "away": "2 (0)"
-        },
-        {
-          "name": "Желтые карточки",
-          "home": "0",
-          "away": "0"
-        },
         {
           "name": "Красные карточки",
           "home": "0",
           "away": "0"
         }
       ],
-      "stadium": "Озон Арена (Краснодар)",
-      "referee": "Карасев",
       "detailsVersion": 3
     },
     {
