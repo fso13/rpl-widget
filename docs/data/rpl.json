@@ -1,10 +1,30 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-11-08T19:54:16+03:00",
+  "updatedAt": "2026-11-08T23:55:36+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
       "rank": 1,
+      "team": "Зенит",
+      "slug": "zenit",
+      "played": 14,
+      "won": 10,
+      "drawn": 1,
+      "lost": 3,
+      "goalsFor": 32,
+      "goalsAgainst": 15,
+      "goalDiff": 17,
+      "points": 31,
+      "form": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "D"
+      ]
+    },
+    {
+      "rank": 2,
       "team": "Динамо М",
       "slug": "dinamo-m",
       "played": 14,
@@ -19,26 +39,6 @@
         "W",
         "W",
         "L",
-        "W",
-        "W"
-      ]
-    },
-    {
-      "rank": 2,
-      "team": "Зенит",
-      "slug": "zenit",
-      "played": 13,
-      "won": 10,
-      "drawn": 0,
-      "lost": 3,
-      "goalsFor": 30,
-      "goalsAgainst": 13,
-      "goalDiff": 17,
-      "points": 30,
-      "form": [
-        "W",
-        "W",
-        "W",
         "W",
         "W"
       ]
@@ -105,6 +105,26 @@
     },
     {
       "rank": 6,
+      "team": "Ростов",
+      "slug": "rostov",
+      "played": 14,
+      "won": 5,
+      "drawn": 4,
+      "lost": 5,
+      "goalsFor": 18,
+      "goalsAgainst": 19,
+      "goalDiff": -1,
+      "points": 19,
+      "form": [
+        "W",
+        "D",
+        "W",
+        "W",
+        "D"
+      ]
+    },
+    {
+      "rank": 7,
       "team": "Крылья Советов",
       "slug": "krylia",
       "played": 14,
@@ -120,26 +140,6 @@
         "L",
         "W",
         "L",
-        "W"
-      ]
-    },
-    {
-      "rank": 7,
-      "team": "Ростов",
-      "slug": "rostov",
-      "played": 13,
-      "won": 5,
-      "drawn": 3,
-      "lost": 5,
-      "goalsFor": 16,
-      "goalsAgainst": 17,
-      "goalDiff": -1,
-      "points": 18,
-      "form": [
-        "L",
-        "W",
-        "D",
-        "W",
         "W"
       ]
     },
@@ -167,20 +167,20 @@
       "rank": 9,
       "team": "Балтика",
       "slug": "baltika",
-      "played": 13,
+      "played": 14,
       "won": 4,
       "drawn": 5,
-      "lost": 4,
+      "lost": 5,
       "goalsFor": 17,
-      "goalsAgainst": 14,
-      "goalDiff": 3,
+      "goalsAgainst": 15,
+      "goalDiff": 2,
       "points": 17,
       "form": [
-        "L",
         "D",
         "D",
         "D",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -205,6 +205,26 @@
     },
     {
       "rank": 11,
+      "team": "Динамо Мх",
+      "slug": "dinamo-mh",
+      "played": 14,
+      "won": 5,
+      "drawn": 1,
+      "lost": 8,
+      "goalsFor": 17,
+      "goalsAgainst": 26,
+      "goalDiff": -9,
+      "points": 16,
+      "form": [
+        "L",
+        "D",
+        "L",
+        "L",
+        "W"
+      ]
+    },
+    {
+      "rank": 12,
       "team": "Ахмат",
       "slug": "akhmat",
       "played": 14,
@@ -221,26 +241,6 @@
         "L",
         "L",
         "W"
-      ]
-    },
-    {
-      "rank": 12,
-      "team": "Динамо Мх",
-      "slug": "dinamo-mh",
-      "played": 13,
-      "won": 4,
-      "drawn": 1,
-      "lost": 8,
-      "goalsFor": 16,
-      "goalsAgainst": 26,
-      "goalDiff": -10,
-      "points": 13,
-      "form": [
-        "L",
-        "L",
-        "D",
-        "L",
-        "L"
       ]
     },
     {
@@ -9355,12 +9355,10 @@
       "homeSlug": "zenit",
       "awaySlug": "rostov",
       "homeScore": 2,
-      "awayScore": 1,
-      "live": "59'",
-      "status": "live",
+      "awayScore": 2,
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552665045-zenit-rostov-07-11-2026",
-      "stadium": "Газпром Арена",
-      "referee": "Матвеев",
       "events": [
         {
           "type": "yellow",
@@ -9397,6 +9395,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Газпром Арена",
+      "referee": "Матвеев",
       "detailsVersion": 3
     },
     {
@@ -9408,11 +9408,58 @@
       "away": "Динамо Мх",
       "homeSlug": "baltika",
       "awaySlug": "dinamo-mh",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 1,
       "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665042-baltika-dinamo-07-11-2026"
+      "status": "finished",
+      "url": "/football/rpl/552665042-baltika-dinamo-07-11-2026",
+      "stadium": "Ростех Арена (Калининград)",
+      "referee": "Иванов",
+      "events": [
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "4'",
+          "player": "Зинович",
+          "assist": "Хоссейннейджад"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "46'",
+          "playerIn": "Голенков",
+          "playerOut": "Петров"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "57'",
+          "playerIn": "Джабраилов",
+          "playerOut": "Апшацев"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "60'",
+          "playerIn": "Муфи",
+          "playerOut": "Бевеев"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "60'",
+          "playerIn": "Кирш",
+          "playerOut": "Андерсон"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-11-20-Ростов-Крылья Советов",
