@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-11-08T23:55:36+03:00",
+  "updatedAt": "2026-11-09T02:25:24+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -9359,6 +9359,8 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665045-zenit-rostov-07-11-2026",
+      "stadium": "Газпром Арена",
+      "referee": "Матвеев",
       "events": [
         {
           "type": "yellow",
@@ -9386,17 +9388,58 @@
           "minute": "57'",
           "player": "Луис Энрике",
           "assist": "Карпукас"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "64'",
+          "playerIn": "Вендел",
+          "playerOut": "Мантуан"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "64'",
+          "playerIn": "Дивеев",
+          "playerOut": "Соболев"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "69'",
+          "playerIn": "Комаров",
+          "playerOut": "Сулейманов"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "83'",
+          "player": "Комаров",
+          "assist": "Лангович"
         }
       ],
       "stats": [
         {
+          "name": "Голы",
+          "home": "2",
+          "away": "2"
+        },
+        {
+          "name": "Желтые карточки",
+          "home": "2",
+          "away": "2"
+        },
+        {
           "name": "Красные карточки",
           "home": "0",
           "away": "0"
+        },
+        {
+          "name": "Пасы (точность)",
+          "home": "84%",
+          "away": "84%"
         }
       ],
-      "stadium": "Газпром Арена",
-      "referee": "Матвеев",
       "detailsVersion": 3
     },
     {
@@ -9413,8 +9456,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665042-baltika-dinamo-07-11-2026",
-      "stadium": "Ростех Арена (Калининград)",
-      "referee": "Иванов",
       "events": [
         {
           "type": "goal",
@@ -9459,6 +9500,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Ростех Арена (Калининград)",
+      "referee": "Иванов",
       "detailsVersion": 3
     },
     {
