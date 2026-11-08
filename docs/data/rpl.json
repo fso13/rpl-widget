@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-11-08T02:24:57+03:00",
+  "updatedAt": "2026-11-08T05:40:58+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -9112,8 +9112,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665044-krasnodar-tsska-07-11-2026",
-      "stadium": "Озон Арена (Краснодар)",
-      "referee": "Карасев",
       "events": [
         {
           "type": "goal",
@@ -9192,6 +9190,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Озон Арена (Краснодар)",
+      "referee": "Карасев",
       "detailsVersion": 3
     },
     {
