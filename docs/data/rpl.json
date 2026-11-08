@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-11-08T12:51:28+03:00",
+  "updatedAt": "2026-11-08T19:30:01+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -45,6 +45,26 @@
     },
     {
       "rank": 3,
+      "team": "Спартак",
+      "slug": "spartak",
+      "played": 14,
+      "won": 9,
+      "drawn": 2,
+      "lost": 3,
+      "goalsFor": 27,
+      "goalsAgainst": 11,
+      "goalDiff": 16,
+      "points": 29,
+      "form": [
+        "D",
+        "W",
+        "L",
+        "W",
+        "W"
+      ]
+    },
+    {
+      "rank": 4,
       "team": "Краснодар",
       "slug": "krasnodar",
       "played": 14,
@@ -64,7 +84,7 @@
       ]
     },
     {
-      "rank": 4,
+      "rank": 5,
       "team": "ЦСКА",
       "slug": "cska",
       "played": 14,
@@ -84,27 +104,27 @@
       ]
     },
     {
-      "rank": 5,
-      "team": "Спартак",
-      "slug": "spartak",
-      "played": 13,
-      "won": 8,
-      "drawn": 2,
-      "lost": 3,
-      "goalsFor": 25,
-      "goalsAgainst": 10,
-      "goalDiff": 15,
-      "points": 26,
+      "rank": 6,
+      "team": "Крылья Советов",
+      "slug": "krylia",
+      "played": 14,
+      "won": 4,
+      "drawn": 6,
+      "lost": 4,
+      "goalsFor": 19,
+      "goalsAgainst": 20,
+      "goalDiff": -1,
+      "points": 18,
       "form": [
-        "W",
         "D",
+        "L",
         "W",
         "L",
         "W"
       ]
     },
     {
-      "rank": 6,
+      "rank": 7,
       "team": "Ростов",
       "slug": "rostov",
       "played": 13,
@@ -124,7 +144,7 @@
       ]
     },
     {
-      "rank": 7,
+      "rank": 8,
       "team": "Рубин",
       "slug": "rubin",
       "played": 14,
@@ -144,7 +164,7 @@
       ]
     },
     {
-      "rank": 8,
+      "rank": 9,
       "team": "Балтика",
       "slug": "baltika",
       "played": 13,
@@ -164,42 +184,22 @@
       ]
     },
     {
-      "rank": 9,
+      "rank": 10,
       "team": "Оренбург",
       "slug": "orenburg",
-      "played": 13,
+      "played": 14,
       "won": 3,
       "drawn": 8,
-      "lost": 2,
+      "lost": 3,
       "goalsFor": 14,
-      "goalsAgainst": 12,
-      "goalDiff": 2,
+      "goalsAgainst": 14,
+      "goalDiff": 0,
       "points": 17,
       "form": [
-        "D",
         "W",
         "D",
         "W",
-        "D"
-      ]
-    },
-    {
-      "rank": 10,
-      "team": "Крылья Советов",
-      "slug": "krylia",
-      "played": 13,
-      "won": 3,
-      "drawn": 6,
-      "lost": 4,
-      "goalsFor": 17,
-      "goalsAgainst": 20,
-      "goalDiff": -3,
-      "points": 15,
-      "form": [
         "D",
-        "D",
-        "L",
-        "W",
         "L"
       ]
     },
@@ -267,19 +267,19 @@
       "rank": 14,
       "team": "Акрон",
       "slug": "akron",
-      "played": 13,
+      "played": 14,
       "won": 2,
       "drawn": 6,
-      "lost": 5,
-      "goalsFor": 16,
-      "goalsAgainst": 23,
-      "goalDiff": -7,
+      "lost": 6,
+      "goalsFor": 17,
+      "goalsAgainst": 25,
+      "goalDiff": -8,
       "points": 12,
       "form": [
-        "W",
         "L",
         "D",
         "W",
+        "L",
         "L"
       ]
     },
@@ -9203,11 +9203,68 @@
       "away": "Оренбург",
       "homeSlug": "krylia",
       "awaySlug": "orenburg",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 0,
       "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665041-kryliasovetov-orenburg-07-11-2026"
+      "status": "finished",
+      "url": "/football/rpl/552665041-kryliasovetov-orenburg-07-11-2026",
+      "stadium": "Солидарность Арена (Самара-Арена)",
+      "referee": "Чистяков",
+      "events": [
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "4'",
+          "player": "Рахманович",
+          "assist": "Салтыков"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "20'",
+          "player": "Татаев"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "22'",
+          "player": "Паласиос"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "46'",
+          "playerIn": "Витюгов",
+          "playerOut": "Столбов"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "46'",
+          "playerIn": "Рассказов",
+          "playerOut": "Шитов"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "70'",
+          "player": "Мукаилов",
+          "assist": null
+        }
+      ],
+      "stats": [
+        {
+          "name": "Угловые",
+          "home": "7",
+          "away": "7"
+        },
+        {
+          "name": "Офсайды",
+          "home": "2",
+          "away": "2"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-11-08-Спартак-Акрон",
@@ -9218,11 +9275,75 @@
       "away": "Акрон",
       "homeSlug": "spartak",
       "awaySlug": "akron",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 1,
       "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665040-spartak-akron-07-11-2026"
+      "status": "finished",
+      "url": "/football/rpl/552665040-spartak-akron-07-11-2026",
+      "stadium": "Лукойл Арена",
+      "referee": "Шафеев",
+      "events": [
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "39'",
+          "player": "Солари"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "39'",
+          "player": "Лончар"
+        },
+        {
+          "type": "own_goal",
+          "side": "home",
+          "minute": "42'",
+          "player": "Тедич",
+          "assist": null
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Оганесян",
+          "playerOut": "Марадишвили"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Эдуардо",
+          "playerOut": "Пестряков"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "58'",
+          "player": "Лончар",
+          "assist": "Шуманский"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "65'",
+          "player": "Пруцев",
+          "assist": "Барко"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Удары (в створ)",
+          "home": "12 (6)",
+          "away": "12 (6)"
+        },
+        {
+          "name": "Удары по воротам (точность)",
+          "home": "50%",
+          "away": "50%"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-11-08-Зенит-Ростов",
@@ -9233,11 +9354,41 @@
       "away": "Ростов",
       "homeSlug": "zenit",
       "awaySlug": "rostov",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 0,
       "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665045-zenit-rostov-07-11-2026"
+      "status": "finished",
+      "url": "/football/rpl/552665045-zenit-rostov-07-11-2026",
+      "stadium": "Газпром Арена",
+      "referee": "Матвеев",
+      "events": [
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "14'",
+          "player": "Мелёхин"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "15'",
+          "player": "Дуглас",
+          "assist": "Глушенков"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Пасы (точность)",
+          "home": "85%",
+          "away": "85%"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-11-08-Балтика-Динамо Мх",
