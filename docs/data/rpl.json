@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-11-09T02:25:24+03:00",
+  "updatedAt": "2026-11-09T05:57:22+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -9359,8 +9359,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665045-zenit-rostov-07-11-2026",
-      "stadium": "Газпром Арена",
-      "referee": "Матвеев",
       "events": [
         {
           "type": "yellow",
@@ -9440,6 +9438,8 @@
           "away": "84%"
         }
       ],
+      "stadium": "Газпром Арена",
+      "referee": "Матвеев",
       "detailsVersion": 3
     },
     {
