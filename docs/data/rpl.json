@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-11-20T12:10:34+03:00",
+  "updatedAt": "2026-11-20T20:52:17+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -9513,11 +9513,47 @@
       "away": "Крылья Советов",
       "homeSlug": "rostov",
       "awaySlug": "krylia",
-      "homeScore": null,
-      "awayScore": null,
-      "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665053-rostov-kryliasovetov-21-11-2026"
+      "homeScore": 2,
+      "awayScore": 0,
+      "live": "61'",
+      "status": "live",
+      "url": "/football/rpl/552665053-rostov-kryliasovetov-21-11-2026",
+      "stadium": "Ростов Арена",
+      "referee": "Шафеев",
+      "events": [
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "14'",
+          "player": "Олусегун",
+          "assist": null
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "60'",
+          "player": "Сулейманов",
+          "assist": "Олусегун"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Угловые",
+          "home": "3",
+          "away": "3"
+        },
+        {
+          "name": "Желтые карточки",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-11-21-Оренбург-Балтика",
