@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-11-20T20:52:17+03:00",
+  "updatedAt": "2026-11-20T21:56:40+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -107,40 +107,40 @@
       "rank": 6,
       "team": "Ростов",
       "slug": "rostov",
-      "played": 14,
-      "won": 5,
+      "played": 15,
+      "won": 6,
       "drawn": 4,
       "lost": 5,
-      "goalsFor": 18,
+      "goalsFor": 21,
       "goalsAgainst": 19,
-      "goalDiff": -1,
-      "points": 19,
+      "goalDiff": 2,
+      "points": 22,
       "form": [
-        "W",
         "D",
         "W",
         "W",
-        "D"
+        "D",
+        "W"
       ]
     },
     {
       "rank": 7,
       "team": "Крылья Советов",
       "slug": "krylia",
-      "played": 14,
+      "played": 15,
       "won": 4,
       "drawn": 6,
-      "lost": 4,
+      "lost": 5,
       "goalsFor": 19,
-      "goalsAgainst": 20,
-      "goalDiff": -1,
+      "goalsAgainst": 23,
+      "goalDiff": -4,
       "points": 18,
       "form": [
-        "D",
         "L",
         "W",
         "L",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -9513,13 +9513,11 @@
       "away": "Крылья Советов",
       "homeSlug": "rostov",
       "awaySlug": "krylia",
-      "homeScore": 2,
+      "homeScore": 3,
       "awayScore": 0,
-      "live": "61'",
-      "status": "live",
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552665053-rostov-kryliasovetov-21-11-2026",
-      "stadium": "Ростов Арена",
-      "referee": "Шафеев",
       "events": [
         {
           "type": "goal",
@@ -9553,6 +9551,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Ростов Арена",
+      "referee": "Шафеев",
       "detailsVersion": 3
     },
     {
