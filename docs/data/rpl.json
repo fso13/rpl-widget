@@ -1,26 +1,26 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-11-21T19:15:05+03:00",
+  "updatedAt": "2026-11-21T20:51:39+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
       "rank": 1,
       "team": "Зенит",
       "slug": "zenit",
-      "played": 14,
+      "played": 15,
       "won": 10,
       "drawn": 1,
-      "lost": 3,
-      "goalsFor": 32,
-      "goalsAgainst": 15,
-      "goalDiff": 17,
+      "lost": 4,
+      "goalsFor": 33,
+      "goalsAgainst": 18,
+      "goalDiff": 15,
       "points": 31,
       "form": [
         "W",
         "W",
         "W",
-        "W",
-        "D"
+        "D",
+        "L"
       ]
     },
     {
@@ -125,6 +125,26 @@
     },
     {
       "rank": 7,
+      "team": "Рубин",
+      "slug": "rubin",
+      "played": 15,
+      "won": 5,
+      "drawn": 6,
+      "lost": 4,
+      "goalsFor": 17,
+      "goalsAgainst": 19,
+      "goalDiff": -2,
+      "points": 21,
+      "form": [
+        "L",
+        "L",
+        "W",
+        "W",
+        "W"
+      ]
+    },
+    {
+      "rank": 8,
       "team": "Балтика",
       "slug": "baltika",
       "played": 15,
@@ -144,7 +164,7 @@
       ]
     },
     {
-      "rank": 8,
+      "rank": 9,
       "team": "Крылья Советов",
       "slug": "krylia",
       "played": 15,
@@ -161,26 +181,6 @@
         "L",
         "W",
         "L"
-      ]
-    },
-    {
-      "rank": 9,
-      "team": "Рубин",
-      "slug": "rubin",
-      "played": 14,
-      "won": 4,
-      "drawn": 6,
-      "lost": 4,
-      "goalsFor": 14,
-      "goalsAgainst": 18,
-      "goalDiff": -4,
-      "points": 18,
-      "form": [
-        "L",
-        "L",
-        "L",
-        "W",
-        "W"
       ]
     },
     {
@@ -9605,8 +9605,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665050-orenburg-baltika-21-11-2026",
-      "stadium": "Газовик",
-      "referee": "Фролов",
       "events": [
         {
           "type": "own_goal",
@@ -9656,6 +9654,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Газовик",
+      "referee": "Фролов",
       "detailsVersion": 3
     },
     {
@@ -9672,8 +9672,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665048-akron-fakel-21-11-2026",
-      "stadium": "Солидарность Арена (Самара-Арена)",
-      "referee": "Танашев",
       "events": [
         {
           "type": "red",
@@ -9711,6 +9709,8 @@
         }
       ],
       "stats": [],
+      "stadium": "Солидарность Арена (Самара-Арена)",
+      "referee": "Танашев",
       "detailsVersion": 3
     },
     {
@@ -9724,11 +9724,9 @@
       "awaySlug": "zenit",
       "homeScore": 3,
       "awayScore": 1,
-      "live": "81'",
-      "status": "live",
+      "live": null,
+      "status": "finished",
       "url": "/football/rpl/552665047-rubin-zenit-21-11-2026",
-      "stadium": "Ак Барс Арена",
-      "referee": "Карасев",
       "events": [
         {
           "type": "goal",
@@ -9789,6 +9787,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Ак Барс Арена",
+      "referee": "Карасев",
       "detailsVersion": 3
     },
     {
@@ -9800,11 +9800,55 @@
       "away": "Ахмат",
       "homeSlug": "cska",
       "awaySlug": "akhmat",
-      "homeScore": null,
-      "awayScore": null,
-      "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665054-tsska-akhmat-21-11-2026"
+      "homeScore": 0,
+      "awayScore": 0,
+      "live": "47'",
+      "status": "live",
+      "url": "/football/rpl/552665054-tsska-akhmat-21-11-2026",
+      "stadium": "ВЭБ Арена",
+      "referee": "Чистяков",
+      "events": [
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "8'",
+          "player": "Сидоров"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "33'",
+          "player": "Алвес"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Голы",
+          "home": "0",
+          "away": "0"
+        },
+        {
+          "name": "Угловые",
+          "home": "2",
+          "away": "2"
+        },
+        {
+          "name": "Нарушения",
+          "home": "7",
+          "away": "7"
+        },
+        {
+          "name": "Желтые карточки",
+          "home": "1",
+          "away": "1"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-11-22-Динамо М-Краснодар",
