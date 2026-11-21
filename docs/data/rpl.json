@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-11-21T03:38:06+03:00",
+  "updatedAt": "2026-11-21T04:04:24+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -9518,8 +9518,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665053-rostov-kryliasovetov-21-11-2026",
-      "stadium": "Ростов Арена",
-      "referee": "Шафеев",
       "events": [
         {
           "type": "goal",
@@ -9589,6 +9587,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Ростов Арена",
+      "referee": "Шафеев",
       "detailsVersion": 3
     },
     {
