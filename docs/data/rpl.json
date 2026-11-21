@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-11-20T21:56:40+03:00",
+  "updatedAt": "2026-11-21T03:38:06+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -9518,6 +9518,8 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665053-rostov-kryliasovetov-21-11-2026",
+      "stadium": "Ростов Арена",
+      "referee": "Шафеев",
       "events": [
         {
           "type": "goal",
@@ -9532,18 +9534,54 @@
           "minute": "60'",
           "player": "Сулейманов",
           "assist": "Олусегун"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "62'",
+          "player": "Чистяков"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "67'",
+          "playerIn": "Витюгов",
+          "playerOut": "Столбов"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "67'",
+          "playerIn": "Чесноков",
+          "playerOut": "Макаров"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "67'",
+          "playerIn": "Ахметов",
+          "playerOut": "Шитов"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "67'",
+          "playerIn": "Мукаилов",
+          "playerOut": "Баньяц"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "90'",
+          "player": "Шанталий",
+          "assist": null
         }
       ],
       "stats": [
         {
           "name": "Угловые",
-          "home": "3",
-          "away": "3"
-        },
-        {
-          "name": "Желтые карточки",
-          "home": "0",
-          "away": "0"
+          "home": "5",
+          "away": "5"
         },
         {
           "name": "Красные карточки",
@@ -9551,8 +9589,6 @@
           "away": "0"
         }
       ],
-      "stadium": "Ростов Арена",
-      "referee": "Шафеев",
       "detailsVersion": 3
     },
     {
