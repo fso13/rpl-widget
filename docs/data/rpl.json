@@ -1,10 +1,30 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-11-22T10:01:26+03:00",
+  "updatedAt": "2026-11-22T18:26:47+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
       "rank": 1,
+      "team": "Динамо М",
+      "slug": "dinamo-m",
+      "played": 15,
+      "won": 10,
+      "drawn": 2,
+      "lost": 3,
+      "goalsFor": 24,
+      "goalsAgainst": 14,
+      "goalDiff": 10,
+      "points": 32,
+      "form": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "D"
+      ]
+    },
+    {
+      "rank": 2,
       "team": "Зенит",
       "slug": "zenit",
       "played": 15,
@@ -21,26 +41,6 @@
         "W",
         "D",
         "L"
-      ]
-    },
-    {
-      "rank": 2,
-      "team": "Динамо М",
-      "slug": "dinamo-m",
-      "played": 14,
-      "won": 10,
-      "drawn": 1,
-      "lost": 3,
-      "goalsFor": 23,
-      "goalsAgainst": 13,
-      "goalDiff": 10,
-      "points": 31,
-      "form": [
-        "W",
-        "W",
-        "L",
-        "W",
-        "W"
       ]
     },
     {
@@ -67,20 +67,20 @@
       "rank": 4,
       "team": "Краснодар",
       "slug": "krasnodar",
-      "played": 14,
+      "played": 15,
       "won": 7,
-      "drawn": 5,
+      "drawn": 6,
       "lost": 2,
-      "goalsFor": 25,
-      "goalsAgainst": 18,
+      "goalsFor": 26,
+      "goalsAgainst": 19,
       "goalDiff": 7,
-      "points": 26,
+      "points": 27,
       "form": [
-        "L",
         "D",
         "D",
         "L",
-        "W"
+        "W",
+        "D"
       ]
     },
     {
@@ -9890,11 +9890,63 @@
       "away": "Краснодар",
       "homeSlug": "dinamo-m",
       "awaySlug": "krasnodar",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 1,
       "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665051-dinamo-krasnodar-21-11-2026"
+      "status": "finished",
+      "url": "/football/rpl/552665051-dinamo-krasnodar-21-11-2026",
+      "stadium": "ВТБ Арена (Динамо)",
+      "referee": "Левников",
+      "events": [
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "11'",
+          "player": "Кордоба",
+          "assist": "Родригес"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "22'",
+          "player": "Фомин"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "27'",
+          "player": "Гладышев",
+          "assist": "Осипенко"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "34'",
+          "playerIn": "Гонсалвеш",
+          "playerOut": "Соарес"
+        },
+        {
+          "type": "red",
+          "side": "home",
+          "minute": "44'",
+          "player": "Осипенко"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "46'",
+          "playerIn": "Фернандес",
+          "playerOut": "Фомин"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Голы",
+          "home": "1",
+          "away": "1"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-11-22-Динамо Мх-Спартак",
@@ -9905,11 +9957,81 @@
       "away": "Спартак",
       "homeSlug": "dinamo-mh",
       "awaySlug": "spartak",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 1,
       "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665052-dinamo-spartak-21-11-2026"
+      "status": "finished",
+      "url": "/football/rpl/552665052-dinamo-spartak-21-11-2026",
+      "stadium": "Анжи-Арена",
+      "referee": "Прокопов",
+      "events": [
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "14'",
+          "player": "Зобнин",
+          "assist": null
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "25'",
+          "player": "Умяров"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "43'",
+          "player": "Зобнин"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "57'",
+          "playerIn": "Смелов",
+          "playerOut": "Хоссейннейджад"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "57'",
+          "playerIn": "Угальде",
+          "playerOut": "Даку"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "57'",
+          "playerIn": "Денисов",
+          "playerOut": "Зобнин"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "64'",
+          "player": "Литвинов"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "89'",
+          "player": "Лесовой",
+          "assist": "Сундуков"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Голы",
+          "home": "1",
+          "away": "1"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-11-22-Родина-Локомотив",
