@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-11-22T01:27:58+03:00",
+  "updatedAt": "2026-11-22T03:05:47+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -9805,6 +9805,8 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665054-tsska-akhmat-21-11-2026",
+      "stadium": "ВЭБ Арена",
+      "referee": "Чистяков",
       "events": [
         {
           "type": "yellow",
@@ -9817,28 +9819,59 @@
           "side": "home",
           "minute": "33'",
           "player": "Алвес"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "52'",
+          "player": "Садулаев",
+          "assist": null
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "54'",
+          "player": "Исмаэл"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "58'",
+          "player": "Садулаев"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "58'",
+          "player": "Жоао"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "61'",
+          "playerIn": "Олейников",
+          "playerOut": "Алвес"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "63'",
+          "player": "Мелкадзе",
+          "assist": "Касинтура"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "69'",
+          "player": "Кармо",
+          "assist": "Обляков"
         }
       ],
       "stats": [
         {
-          "name": "Голы",
-          "home": "0",
-          "away": "0"
-        },
-        {
-          "name": "Угловые",
+          "name": "Офсайды",
           "home": "2",
           "away": "2"
-        },
-        {
-          "name": "Нарушения",
-          "home": "7",
-          "away": "7"
-        },
-        {
-          "name": "Желтые карточки",
-          "home": "1",
-          "away": "1"
         },
         {
           "name": "Красные карточки",
@@ -9846,8 +9879,6 @@
           "away": "0"
         }
       ],
-      "stadium": "ВЭБ Арена",
-      "referee": "Чистяков",
       "detailsVersion": 3
     },
     {
