@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-11-22T18:26:47+03:00",
+  "updatedAt": "2026-11-22T21:11:42+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -47,20 +47,20 @@
       "rank": 3,
       "team": "Спартак",
       "slug": "spartak",
-      "played": 14,
+      "played": 15,
       "won": 9,
-      "drawn": 2,
+      "drawn": 3,
       "lost": 3,
-      "goalsFor": 27,
-      "goalsAgainst": 11,
+      "goalsFor": 28,
+      "goalsAgainst": 12,
       "goalDiff": 16,
-      "points": 29,
+      "points": 30,
       "form": [
-        "D",
         "W",
         "L",
         "W",
-        "W"
+        "W",
+        "D"
       ]
     },
     {
@@ -227,44 +227,64 @@
       "rank": 12,
       "team": "Динамо Мх",
       "slug": "dinamo-mh",
-      "played": 14,
+      "played": 15,
       "won": 5,
-      "drawn": 1,
+      "drawn": 2,
       "lost": 8,
-      "goalsFor": 17,
-      "goalsAgainst": 26,
+      "goalsFor": 18,
+      "goalsAgainst": 27,
       "goalDiff": -9,
-      "points": 16,
+      "points": 17,
       "form": [
-        "L",
         "D",
+        "L",
+        "L",
+        "W",
+        "D"
+      ]
+    },
+    {
+      "rank": 13,
+      "team": "Локомотив",
+      "slug": "lokomotiv",
+      "played": 15,
+      "won": 3,
+      "drawn": 5,
+      "lost": 7,
+      "goalsFor": 17,
+      "goalsAgainst": 21,
+      "goalDiff": -4,
+      "points": 14,
+      "form": [
+        "D",
+        "L",
         "L",
         "L",
         "W"
       ]
     },
     {
-      "rank": 13,
+      "rank": 14,
       "team": "Родина",
       "slug": "rodina",
-      "played": 14,
+      "played": 15,
       "won": 3,
       "drawn": 3,
-      "lost": 8,
+      "lost": 9,
       "goalsFor": 15,
-      "goalsAgainst": 29,
-      "goalDiff": -14,
+      "goalsAgainst": 30,
+      "goalDiff": -15,
       "points": 12,
       "form": [
-        "L",
         "D",
         "W",
         "W",
+        "L",
         "L"
       ]
     },
     {
-      "rank": 14,
+      "rank": 15,
       "team": "Акрон",
       "slug": "akron",
       "played": 15,
@@ -278,26 +298,6 @@
       "form": [
         "D",
         "W",
-        "L",
-        "L",
-        "L"
-      ]
-    },
-    {
-      "rank": 15,
-      "team": "Локомотив",
-      "slug": "lokomotiv",
-      "played": 14,
-      "won": 2,
-      "drawn": 5,
-      "lost": 7,
-      "goalsFor": 16,
-      "goalsAgainst": 21,
-      "goalDiff": -5,
-      "points": 11,
-      "form": [
-        "W",
-        "D",
         "L",
         "L",
         "L"
@@ -9895,8 +9895,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665051-dinamo-krasnodar-21-11-2026",
-      "stadium": "ВТБ Арена (Динамо)",
-      "referee": "Левников",
       "events": [
         {
           "type": "goal",
@@ -9946,6 +9944,8 @@
           "away": "1"
         }
       ],
+      "stadium": "ВТБ Арена (Динамо)",
+      "referee": "Левников",
       "detailsVersion": 3
     },
     {
@@ -9962,8 +9962,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665052-dinamo-spartak-21-11-2026",
-      "stadium": "Анжи-Арена",
-      "referee": "Прокопов",
       "events": [
         {
           "type": "goal",
@@ -10031,6 +10029,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Анжи-Арена",
+      "referee": "Прокопов",
       "detailsVersion": 3
     },
     {
@@ -10042,11 +10042,74 @@
       "away": "Локомотив",
       "homeSlug": "rodina",
       "awaySlug": "lokomotiv",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 1,
       "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665049-rodina-lokomotiv-21-11-2026"
+      "status": "finished",
+      "url": "/football/rpl/552665049-rodina-lokomotiv-21-11-2026",
+      "stadium": "Арена Химки",
+      "referee": "Сухой",
+      "events": [
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "8'",
+          "player": "Мостовой",
+          "assist": "Морозов"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "17'",
+          "player": "Пиняев"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "43'",
+          "player": "Силва"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "45'",
+          "player": "Егорычев"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "55'",
+          "playerIn": "Бакаев",
+          "playerOut": "Пиняев"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "71'",
+          "playerIn": "Ушатов",
+          "playerOut": "Егорычев"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "71'",
+          "playerIn": "Тимошенко",
+          "playerOut": "Онугха"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Нарушения",
+          "home": "13",
+          "away": "13"
+        },
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-11-28-Рубин-Акрон",
