@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-11-22T03:05:47+03:00",
+  "updatedAt": "2026-11-22T10:01:26+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -9805,8 +9805,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665054-tsska-akhmat-21-11-2026",
-      "stadium": "ВЭБ Арена",
-      "referee": "Чистяков",
       "events": [
         {
           "type": "yellow",
@@ -9879,6 +9877,8 @@
           "away": "0"
         }
       ],
+      "stadium": "ВЭБ Арена",
+      "referee": "Чистяков",
       "detailsVersion": 3
     },
     {
