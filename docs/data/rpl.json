@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-11-22T21:11:42+03:00",
+  "updatedAt": "2026-11-23T02:36:38+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
@@ -10047,8 +10047,6 @@
       "live": null,
       "status": "finished",
       "url": "/football/rpl/552665049-rodina-lokomotiv-21-11-2026",
-      "stadium": "Арена Химки",
-      "referee": "Сухой",
       "events": [
         {
           "type": "goal",
@@ -10109,6 +10107,8 @@
           "away": "0"
         }
       ],
+      "stadium": "Арена Химки",
+      "referee": "Сухой",
       "detailsVersion": 3
     },
     {
