@@ -1,10 +1,30 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-11-28T13:50:33+03:00",
+  "updatedAt": "2026-11-28T21:39:04+03:00",
   "source": "matchtv.ru",
   "standings": [
     {
       "rank": 1,
+      "team": "Зенит",
+      "slug": "zenit",
+      "played": 16,
+      "won": 11,
+      "drawn": 1,
+      "lost": 4,
+      "goalsFor": 37,
+      "goalsAgainst": 19,
+      "goalDiff": 18,
+      "points": 34,
+      "form": [
+        "W",
+        "W",
+        "D",
+        "L",
+        "W"
+      ]
+    },
+    {
+      "rank": 2,
       "team": "Динамо М",
       "slug": "dinamo-m",
       "played": 15,
@@ -21,26 +41,6 @@
         "W",
         "W",
         "D"
-      ]
-    },
-    {
-      "rank": 2,
-      "team": "Зенит",
-      "slug": "zenit",
-      "played": 15,
-      "won": 10,
-      "drawn": 1,
-      "lost": 4,
-      "goalsFor": 33,
-      "goalsAgainst": 18,
-      "goalDiff": 15,
-      "points": 31,
-      "form": [
-        "W",
-        "W",
-        "W",
-        "D",
-        "L"
       ]
     },
     {
@@ -87,24 +87,64 @@
       "rank": 5,
       "team": "ЦСКА",
       "slug": "cska",
-      "played": 15,
+      "played": 16,
       "won": 7,
       "drawn": 5,
-      "lost": 3,
-      "goalsFor": 24,
-      "goalsAgainst": 18,
-      "goalDiff": 6,
+      "lost": 4,
+      "goalsFor": 25,
+      "goalsAgainst": 22,
+      "goalDiff": 3,
       "points": 26,
       "form": [
-        "L",
         "W",
         "D",
+        "L",
         "L",
         "L"
       ]
     },
     {
       "rank": 6,
+      "team": "Рубин",
+      "slug": "rubin",
+      "played": 16,
+      "won": 6,
+      "drawn": 6,
+      "lost": 4,
+      "goalsFor": 20,
+      "goalsAgainst": 19,
+      "goalDiff": 1,
+      "points": 24,
+      "form": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    },
+    {
+      "rank": 7,
+      "team": "Балтика",
+      "slug": "baltika",
+      "played": 16,
+      "won": 6,
+      "drawn": 5,
+      "lost": 5,
+      "goalsFor": 20,
+      "goalsAgainst": 15,
+      "goalDiff": 5,
+      "points": 23,
+      "form": [
+        "D",
+        "W",
+        "L",
+        "W",
+        "W"
+      ]
+    },
+    {
+      "rank": 8,
       "team": "Ростов",
       "slug": "rostov",
       "played": 15,
@@ -120,46 +160,6 @@
         "W",
         "W",
         "D",
-        "W"
-      ]
-    },
-    {
-      "rank": 7,
-      "team": "Рубин",
-      "slug": "rubin",
-      "played": 15,
-      "won": 5,
-      "drawn": 6,
-      "lost": 4,
-      "goalsFor": 17,
-      "goalsAgainst": 19,
-      "goalDiff": -2,
-      "points": 21,
-      "form": [
-        "L",
-        "L",
-        "W",
-        "W",
-        "W"
-      ]
-    },
-    {
-      "rank": 8,
-      "team": "Балтика",
-      "slug": "baltika",
-      "played": 15,
-      "won": 5,
-      "drawn": 5,
-      "lost": 5,
-      "goalsFor": 19,
-      "goalsAgainst": 15,
-      "goalDiff": 4,
-      "points": 20,
-      "form": [
-        "D",
-        "D",
-        "W",
-        "L",
         "W"
       ]
     },
@@ -207,20 +207,20 @@
       "rank": 11,
       "team": "Ахмат",
       "slug": "akhmat",
-      "played": 15,
+      "played": 16,
       "won": 4,
       "drawn": 5,
-      "lost": 6,
+      "lost": 7,
       "goalsFor": 18,
-      "goalsAgainst": 20,
-      "goalDiff": -2,
+      "goalsAgainst": 21,
+      "goalDiff": -3,
       "points": 17,
       "form": [
         "L",
         "L",
-        "L",
         "W",
-        "W"
+        "W",
+        "L"
       ]
     },
     {
@@ -287,17 +287,17 @@
       "rank": 15,
       "team": "Акрон",
       "slug": "akron",
-      "played": 15,
+      "played": 16,
       "won": 2,
       "drawn": 6,
-      "lost": 7,
+      "lost": 8,
       "goalsFor": 17,
-      "goalsAgainst": 27,
-      "goalDiff": -10,
+      "goalsAgainst": 30,
+      "goalDiff": -13,
       "points": 12,
       "form": [
-        "D",
         "W",
+        "L",
         "L",
         "L",
         "L"
@@ -10120,11 +10120,64 @@
       "away": "Акрон",
       "homeSlug": "rubin",
       "awaySlug": "akron",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 0,
       "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665057-rubin-akron-28-11-2026"
+      "status": "finished",
+      "url": "/football/rpl/552665057-rubin-akron-28-11-2026",
+      "stadium": "Ак Барс Арена",
+      "referee": "Иванов",
+      "events": [
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "6'",
+          "player": "Иву",
+          "assist": "Сальседо"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "17'",
+          "player": "Бабаев",
+          "assist": "Иву"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Тедич",
+          "playerOut": "Беншимол"
+        },
+        {
+          "type": "sub",
+          "side": "away",
+          "minute": "46'",
+          "playerIn": "Болдырев",
+          "playerOut": "Шуманский"
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "48'",
+          "player": "Хосонов"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "60'",
+          "player": "Сааведра",
+          "assist": "Сальседо"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-11-28-ЦСКА-Зенит",
@@ -10135,11 +10188,71 @@
       "away": "Зенит",
       "homeSlug": "cska",
       "awaySlug": "zenit",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 4,
       "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665060-tsska-zenit-28-11-2026"
+      "status": "finished",
+      "url": "/football/rpl/552665060-tsska-zenit-28-11-2026",
+      "stadium": "ВЭБ Арена",
+      "referee": "Танашев",
+      "events": [
+        {
+          "type": "own_goal",
+          "side": "away",
+          "minute": "20'",
+          "player": "Аззи",
+          "assist": null
+        },
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "26'",
+          "player": "Барриос"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "40'",
+          "player": "Глушенков",
+          "assist": "Карпукас"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "46'",
+          "playerIn": "Олейников",
+          "playerOut": "Лукин"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "51'",
+          "player": "Луис Энрике",
+          "assist": "Соболев"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "73'",
+          "player": "Круговой",
+          "assist": "Кармо"
+        },
+        {
+          "type": "goal",
+          "side": "away",
+          "minute": "87'",
+          "player": "Глушенков",
+          "assist": "Соболев"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Красные карточки",
+          "home": "0",
+          "away": "0"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-11-28-Балтика-Ахмат",
@@ -10150,11 +10263,68 @@
       "away": "Ахмат",
       "homeSlug": "baltika",
       "awaySlug": "akhmat",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 0,
       "live": null,
-      "status": "scheduled",
-      "url": "/football/rpl/552665062-baltika-akhmat-28-11-2026"
+      "status": "finished",
+      "url": "/football/rpl/552665062-baltika-akhmat-28-11-2026",
+      "stadium": "Ростех Арена (Калининград)",
+      "referee": "Казарцев",
+      "events": [
+        {
+          "type": "yellow",
+          "side": "away",
+          "minute": "29'",
+          "player": "Мелкадзе"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "52'",
+          "player": "Андерсон"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "61'",
+          "playerIn": "Хиль",
+          "playerOut": "Голенков"
+        },
+        {
+          "type": "sub",
+          "side": "home",
+          "minute": "61'",
+          "playerIn": "Беликов",
+          "playerOut": "Мендель"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "62'",
+          "player": "Мурид"
+        },
+        {
+          "type": "goal",
+          "side": "home",
+          "minute": "66'",
+          "player": "Муфи",
+          "assist": "Рядно"
+        },
+        {
+          "type": "yellow",
+          "side": "home",
+          "minute": "68'",
+          "player": "Беликов"
+        }
+      ],
+      "stats": [
+        {
+          "name": "Красные карточки",
+          "home": "1",
+          "away": "1"
+        }
+      ],
+      "detailsVersion": 3
     },
     {
       "id": "rpl-2026-11-29-Оренбург-Родина",
